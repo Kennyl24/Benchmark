@@ -1,0 +1,22 @@
+{
+  "name": "nvt",
+  "version": "1.0.0",
+  "description": "Napa Valley Transmissions Inc. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kennyl24/NVT-.git"
+  },
+  "author": "Kenny Laprelle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kennyl24/NVT-/issues"
+  },
+  "homepage": "https://github.com/Kennyl24/NVT-#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
