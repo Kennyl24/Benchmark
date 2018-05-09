@@ -11,27 +11,46 @@ class LeadingBar extends React.Component {
     this.state = {
       phoneNumber:'7072245898'
     }
+    this.titleClick=this.titleClick.bind(this);
+  //  this.phoneNumber = this.phoneNumber.bind(this)
+  }
+  titleClick(){
+    location.reload();
   }
   render () {
     return (
       <MuiThemeProvider>
   <AppBar
-    style={{backgroundColor:'#0033cc'}}
-    title="Napa Valley Transmissions"
+    style={{backgroundColor:'#696969', height:'50px' , cursor: 'auto'}}
+    // titleStyle={{paddingLeft:'50px', cursor: 'pointer'}}
+    // title="Napa Valley Transmissions"
+    // onTitleClick={this.titleClick}
     showMenuIconButton={false}
-    iconElementRight={<FlatButton label="707-224-5898" />}
-  />
+    // iconElementRight={<FlatButton style={{fontSize:'42px'}} label="">(707)-224-5898</FlatButton>}
+  >
+  <div className="lead-bar-text">
+  <FlatButton style={{fontSize:'18px', color:'white'}} label="">536 Soscol Avenue #3 Napa, Ca 94558 |&nbsp;</FlatButton>
+  <FlatButton style={{fontSize:'22px', color:'white'}} label=""><a style={{fontSize:'18px', color:'white'}} href="tel:707-224-5898">(707)-224-5898</a></FlatButton>
+    </div>
+    </AppBar>
     <AppBar
-    // title={<span style={{ backgroundColor: '#f47023' }}><img src="https://imgur.com/WCuRL6i" alt="" /></span>}
-    iconElementLeft={<img src={'https://i.imgur.com/WCuRL6i.jpg'} alt="" height='110px' width="110px"/>}
-    style={{backgroundColor:'white', height:'125px'}}>
-    <FlatButton primary={true} style={{ padding: '10px', minWidth: 'none' }}><Link to={{ pathname:'/home' }}>Home</Link></FlatButton>                                                                                                                                                                                                                     
-    <FlatButton style={{ padding: '10px', minWidth: 'none' }} ><Link to={{ pathname: '/logout' }}>About</Link></FlatButton>
-    <FlatButton style={{ padding: '10px', minWidth: 'none' }}><Link to={{ pathname: '/profile' }}>Services</Link></FlatButton>
-    <FlatButton style={{ padding: '10px', minWidth: 'none' }}><Link to={{ pathname: '/profile' }}>Galley</Link></FlatButton>
-    <FlatButton style={{ padding: '10px', minWidth: 'none' }}><Link to={{ pathname: '/profile' }}>Reviews</Link></FlatButton>
-    <FlatButton style={{ padding: '10px', minWidth: 'none' }}><Link to={{ pathname: '/profile' }}>Contact</Link></FlatButton>
+    title="536 Soscol Avenue #3"
+    // titleStyle={{color:'black'}}
+    iconStyleLeft={{marginLeft:'220px'}}
+    iconElementLeft={<img className="backgroundimage" src={'https://i.imgur.com/WCuRL6i.jpg'} alt=""/>}
+    style={{backgroundColor:'white', height:'150px'}}>
+    <div style={{paddingTop:'30px', paddingRight:'8px'}}>
+    <FlatButton hoverColor={'blue'} primary={true} style={{ padding: '10px', minWidth: 'none'}}><Link to={{ pathname:'/home' }}className="nav-links">Home</Link></FlatButton>                                                                                                                                                                                                                     
+    <FlatButton style={{ padding: '10px', minWidth: 'none' }} ><Link to={{ pathname: '/logout' }} className="nav-links">About</Link></FlatButton>
+    <FlatButton style={{ padding: '10px', minWidth: 'none' }}><Link to={{ pathname: '/profile' }}className="nav-links">Services</Link></FlatButton>
+    <FlatButton style={{ padding: '10px', minWidth: 'none' }}><Link to={{ pathname: '/profile' }}className="nav-links">Gallery</Link></FlatButton>
+    <FlatButton style={{ padding: '10px', minWidth: 'none' }}><Link to={{ pathname: '/profile' }}className="nav-links">Reviews</Link></FlatButton>
+    <FlatButton style={{ padding: '10px', minWidth: 'none' }}><Link to={{ pathname: '/profile' }}className="nav-links">Contact</Link></FlatButton>
+  </div>
    </AppBar>
+   <div>
+   <img className="frontPicture" src={'https://i.imgur.com/00AmaHN.jpg'} alt="" height='600px' width='70%'/>
+   </div>
    </MuiThemeProvider>
 )
 }

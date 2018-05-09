@@ -1,0 +1,26 @@
+.nav-links{
+  color:black;
+  font-size:24px;
+  text-decoration: bold;
+  font-family: Helvetica;
+
+}
+
+.backgroundimage { 
+  height: 100%;
+  width: 100%;
+  opacity: 0.4;
+  cursor: pointer;
+}
+.frontPicture {
+  height: 600px;
+  width: 100%;
+  /* margin-right: 10%; */
+  text-align: center;
+  /* margin-left: 10%; */
+}
+
+.lead-bar-text {
+  color: white;
+  
+}
