@@ -8,6 +8,9 @@ import TestModal from './TestModal.jsx'
 import LeadingBar from './LeadingBar.jsx';
 import FrontPictures from './FrontPictures.jsx';
 import CustomerSection from './CustomerSection.jsx';
+import ServiceSection from './ServiceSection.jsx';
+import AboutMe from './AboutMe.jsx';
+import BottomNav from './BottomNav.jsx';
 class HomePage extends React.Component { 
   constructor(props) {
     super(props);
@@ -22,9 +25,13 @@ class HomePage extends React.Component {
   render () {
     return (
       <MuiThemeProvider>
+        <div style={{backgroundColor:'#fafafa'}}>
         <LeadingBar/>
         <FrontPictures/>
         <CustomerSection/>
+        <ServiceSection/>
+        <BottomNav/>
+        </div>
    </MuiThemeProvider>
 )
 }

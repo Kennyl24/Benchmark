@@ -4,7 +4,8 @@ import AppBar from 'material-ui/AppBar';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import FlatButton from 'material-ui/FlatButton';
 import { Link } from 'react-router-dom';
-const phoneNumber = '7072245898'
+import TestModal from './TestModal.jsx'
+
 class LeadingBar extends React.Component { 
   constructor(props) {
     super(props);
@@ -12,7 +13,6 @@ class LeadingBar extends React.Component {
       phoneNumber:'7072245898'
     }
     this.titleClick=this.titleClick.bind(this);
-  //  this.phoneNumber = this.phoneNumber.bind(this)
   }
   titleClick(){
     location.reload();
@@ -21,39 +21,40 @@ class LeadingBar extends React.Component {
     return (
       <MuiThemeProvider>
   <AppBar
+  title="NAPA VALLEY TRANSMISSIONS"
+  titleStyle={{textAlign:'none', fontSize:'28px',fontFamily:'Arial, Helvetica, sans-serif', lineHeight:'50px', color:'#000080'}}
     style={{backgroundColor:'#696969', height:'50px' , cursor: 'auto'}}
-    // titleStyle={{paddingLeft:'50px', cursor: 'pointer'}}
-    // title="Napa Valley Transmissions"
-    // onTitleClick={this.titleClick}
     showMenuIconButton={false}
-    // iconElementRight={<FlatButton style={{fontSize:'42px'}} label="">(707)-224-5898</FlatButton>}
   >
   <div className="lead-bar-text">
-  <FlatButton style={{fontSize:'18px', color:'white'}} label="">536 Soscol Avenue #3 Napa, Ca 94558 |&nbsp;</FlatButton>
+  <FlatButton style={{fontSize:'18px', color:'white'}} label="">536 Soscol Avenue #3 Napa, Ca 94559 |&nbsp;</FlatButton>
   <FlatButton style={{fontSize:'22px', color:'white'}} label=""><a style={{fontSize:'18px', color:'white'}} href="tel:707-224-5898">(707)-224-5898</a></FlatButton>
     </div>
     </AppBar>
     <AppBar
-    title="536 Soscol Avenue #3"
-    // titleStyle={{color:'black'}}
-    iconStyleLeft={{marginLeft:'220px'}}
-    iconElementLeft={<img className="backgroundimage" src={'https://i.imgur.com/WCuRL6i.jpg'} alt=""/>}
-    style={{backgroundColor:'white', height:'150px'}}>
-    <div style={{paddingTop:'30px', paddingRight:'8px'}}>
-    <FlatButton hoverColor={'blue'} primary={true} style={{ padding: '10px', minWidth: 'none'}}><Link to={{ pathname:'/home' }}className="nav-links">Home</Link></FlatButton>                                                                                                                                                                                                                     
-    <FlatButton style={{ padding: '10px', minWidth: 'none' }} ><Link to={{ pathname: '/logout' }} className="nav-links">About</Link></FlatButton>
-    <FlatButton style={{ padding: '10px', minWidth: 'none' }}><Link to={{ pathname: '/profile' }}className="nav-links">Services</Link></FlatButton>
-    <FlatButton style={{ padding: '10px', minWidth: 'none' }}><Link to={{ pathname: '/profile' }}className="nav-links">Gallery</Link></FlatButton>
-    <FlatButton style={{ padding: '10px', minWidth: 'none' }}><Link to={{ pathname: '/profile' }}className="nav-links">Reviews</Link></FlatButton>
-    <FlatButton style={{ padding: '10px', minWidth: 'none' }}><Link to={{ pathname: '/profile' }}className="nav-links">Contact</Link></FlatButton>
+    style={{height:'150px', backgroundImage:'url(' + 'http://olatheclutchandtransmissionkc.com/wp-content/uploads/2015/04/SERVER_public_general_1-PBA_Olathe-Clutch-and-Transmission_background-2.jpg' + ')', cursor:'auto'}}
+    // title={'Napa "\n" Valley "\n" Transmissions'}
+    titleStyle={{color:'black'}}
+    showMenuIconButton={false}
+    iconElementLeft={<span className="logo">Napa Valley {'/n'} Transmissions</span>}
+    // iconStyleLeft={{marginLeft:'220px'}}
+    >
+    <div className="nav_links_container">
+    <FlatButton><Link to={{ pathname:'/home' }}className="nav-links">HOME</Link></FlatButton>   
+    <FlatButton><Link to={{ pathname: '/AboutMe' }}className="nav-links">ABOUT</Link></FlatButton>      
+    <FlatButton><Link to={{ pathname: '/Services' }}className="nav-links">SERVICES</Link></FlatButton>                                                                                                                                                                                                                  
+    {/* <FlatButton><Link to={{ pathname: '/Gallery' }}className="nav-links">GALLERY</Link></FlatButton> */}
+    <FlatButton><Link to={{ pathname: '/Reviews' }}className="nav-links">REVIEWS</Link></FlatButton>
+    <FlatButton><Link to={{ pathname: '/Directions' }}className="nav-links">DIRECTIONS</Link></FlatButton>  
+    <FlatButton><Link to={{ pathname: '/' }}className="nav-links">CONTACT</Link></FlatButton>
   </div>
    </AppBar>
-   <div>
-   <img className="frontPicture" src={'https://i.imgur.com/00AmaHN.jpg'} alt="" height='600px' width='70%'/>
-   </div>
    </MuiThemeProvider>
 )
 }
 };
 
 export default LeadingBar;
+
+
+// backgroundImage: 'url(' + 'http://olatheclutchandtransmissionkc.com/wp-content/uploads/2015/04/transmission-background.jpg' + ')', backgroundSize: 'cover', 

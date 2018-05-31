@@ -7,10 +7,9 @@ import { Link } from 'react-router-dom';
 import TestModal from './TestModal.jsx'
 import LeadingBar from './LeadingBar.jsx';
 import Paper from 'material-ui/Paper';
-import PictureDesc from './PictureDesc.jsx';
 
 const style = {
-  height: '100%',
+  height: '607px',
   width: '30%',
   textAlign: 'center',
   verticalAlign:'top',
@@ -18,20 +17,22 @@ const style = {
   borderColor: 'black',
   borderTopStyle: 'solid',
   borderWidth: '5px',
-  backgroundImage:'url(' + 'https://i.imgur.com/7YNAzkv.jpg' + ')',
+  marginLeft: '33%',
+  // backgroundImage:'url(' + 'https://i.imgur.com/pfantZT.jpg' + ')',
   
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'auto',
   // backgroundSize: 'cover',
   overflow: 'hidden', 
-  opacity: '0.2'
+  // opacity: '0.2'
 };
 const leadImages = 
 [
+  'https://i.pinimg.com/originals/d9/fa/f5/d9faf59b412ef0cc520272cf63544456.jpg',
   'https://i.imgur.com/00AmaHN.jpg', 
-  'https://i.imgur.com/SDOKZLE.jpg',
-  'https://i.imgur.com/LlJlKTo.jpg',
-  'https://i.imgur.com/RHYbBTL.jpg'
+  // 'https://i.imgur.com/SDOKZLE.jpg',
+  // 'https://i.imgur.com/LlJlKTo.jpg',
+  // 'https://i.imgur.com/RHYbBTL.jpg'
 ]
 let test;
 class FrontPictures extends React.Component { 
@@ -40,7 +41,9 @@ class FrontPictures extends React.Component {
     this.state = {
       imageIndex: 0,
       clicked: false,
+      currentImage: leadImages[0],
     }
+    this.test=this.test.bind(this);
     this.stopTimer=this.stopTimer.bind(this);
     this.startTimer=this.startTimer.bind(this);
     this.displayNext=this.displayNext.bind(this);
@@ -86,27 +89,21 @@ class FrontPictures extends React.Component {
     this.displayPrevious();
     this.stopTimer();
   }
+  test(event){
+    console.log('hello', event)
+  }
   render () {
     return (
   <MuiThemeProvider>
    <div style={{backgroundColor:'white'}}>
-   <Paper style={style} zDepth={5} rounded={false}>
-   <h1>NAPA VALLEY TRANSMISSIONS</h1>
-   {/* <div
-   style={{paddingTop:'3%', paddingBottom:'4%'}}>
-   <img src='https://i.imgur.com/7YNAzkv.jpg' alt="" height='100px' width='100px'/>
-   </div> */}
-   <div className="description">
-   Marty and Susie Laprelle have owned and operated Napa Valley Transmissions since 1992. Marty decided to open his own business, so he could continue to grow personally and become the best that he can be. 26+ years later, Marty has continually served the Napa Valley with any transmission needs. Including working on car fleets for local businesses, family cars, muscle cars, large 4x4 trucks, and not to mention, some drag racing cars as well!
-   Marty and Susie Laprelle have owned and operated Napa Valley Transmissions since 1992. Marty decided
-   Napa Valley Transmissions since 1992. Marty decided    
+   <img className="frontPicture" src={leadImages[this.state.imageIndex]} alt="" height='600px' width='1300px'/>
+   <div className="dot-container">
+   <span className="dot" onClick={this.test}></span>
+   <span className="dot"></span>
    </div>
-   </Paper>
-   <img className="frontPicture" src={leadImages[this.state.imageIndex]} alt="" height='600px' width='70%'/>
-   {/* <PictureDesc/> */}
    </div>
-   <i class="arrow right" onClick={this.displayNextClick}></i>
-   <i class="arrow left" onClick={this.displayPrevious}></i>
+   <i className="arrow right" onClick={this.displayNextClick}></i>
+   <i className="arrow left" onClick={this.displayPrevious}></i> 
    </MuiThemeProvider>
 )
 }

@@ -12,9 +12,7 @@ class FrontPageModal extends React.Component {
   render () {
     return (
     <MuiThemeProvider>
-      <div style={{backgroundColor:'black'}}>
         <TestModal/>
-        </div>
    </MuiThemeProvider>
 )
 }
