@@ -4,8 +4,10 @@
   "description": "Benchmark Napa",
   "main": "index.js",
   "scripts": {
+    "postinstall": "./node_modules/bower/bin/bower install",
     "react-dev": "webpack -d --watch",
     "start": "nodemon server/index.js"
+    
   },
   "repository": {
     "type": "git",
