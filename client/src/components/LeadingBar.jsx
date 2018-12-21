@@ -5,12 +5,13 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import FlatButton from 'material-ui/FlatButton';
 import { Link } from 'react-router-dom';
 import TestModal from './TestModal.jsx'
+import Button from '@material-ui/core/Button';
 
 class LeadingBar extends React.Component { 
   constructor(props) {
     super(props);
     this.state = {
-      phoneNumber:'7072245898'
+      phoneNumber: '(707) 254-8891'
     }
     this.titleClick=this.titleClick.bind(this);
   }
@@ -20,33 +21,29 @@ class LeadingBar extends React.Component {
   render () {
     return (
       <MuiThemeProvider>
-  <AppBar
-  title="NAPA VALLEY TRANSMISSIONS"
-  titleStyle={{textAlign:'none', fontSize:'28px',fontFamily:'Arial, Helvetica, sans-serif', lineHeight:'50px', color:'#000080'}}
-    style={{backgroundColor:'#696969', height:'50px' , cursor: 'auto'}}
-    showMenuIconButton={false}
-  >
-  <div className="lead-bar-text">
-  <FlatButton style={{fontSize:'18px', color:'white'}} label="">536 Soscol Avenue #3 Napa, Ca 94559 |&nbsp;</FlatButton>
-  <FlatButton style={{fontSize:'22px', color:'white'}} label=""><a style={{fontSize:'18px', color:'white'}} href="tel:707-224-5898">(707)-224-5898</a></FlatButton>
-    </div>
-    </AppBar>
+
     <AppBar
-    style={{height:'150px', backgroundImage:'url(' + 'http://olatheclutchandtransmissionkc.com/wp-content/uploads/2015/04/SERVER_public_general_1-PBA_Olathe-Clutch-and-Transmission_background-2.jpg' + ')', cursor:'auto'}}
-    // title={'Napa "\n" Valley "\n" Transmissions'}
+    style={{    
+    overflowY:'scroll', 
+    top: '0px',
+    left:'0px',
+    right:'0px',
+    zIndex: '9999',
+    height:'120px',
+    position:'fixed', backgroundColor:'rgba(255,255,255)', cursor:'auto'}}
     titleStyle={{color:'black'}}
-    showMenuIconButton={false}
-    iconElementLeft={<span className="logo">Napa Valley {'/n'} Transmissions</span>}
-    // iconStyleLeft={{marginLeft:'220px'}}
+    showMenuIconButton={true}
+    iconElementLeft={<img style={{height: '100px', width: '275px'}}src="https://napa.benchmark.us/wp-content/uploads/sites/485/2015/08/home-banner-logo.png"/>}
+    iconStyleLeft={{marginLeft:'10px'}}
     >
     <div className="nav_links_container">
-    <FlatButton><Link to={{ pathname:'/home' }}className="nav-links">HOME</Link></FlatButton>   
-    <FlatButton><Link to={{ pathname: '/AboutMe' }}className="nav-links">ABOUT</Link></FlatButton>      
-    <FlatButton><Link to={{ pathname: '/Services' }}className="nav-links">SERVICES</Link></FlatButton>                                                                                                                                                                                                                  
-    {/* <FlatButton><Link to={{ pathname: '/Gallery' }}className="nav-links">GALLERY</Link></FlatButton> */}
-    <FlatButton><Link to={{ pathname: '/Reviews' }}className="nav-links">REVIEWS</Link></FlatButton>
-    <FlatButton><Link to={{ pathname: '/Directions' }}className="nav-links">DIRECTIONS</Link></FlatButton>  
-    <FlatButton><Link to={{ pathname: '/' }}className="nav-links">CONTACT</Link></FlatButton>
+    <Button><Link to={{ pathname:'/home' }}className="nav-links">Home</Link></Button>   
+    <Button><Link to={{ pathname: '/About' }}className="nav-links">About</Link></Button>      
+    <Button><Link to={{ pathname: '/Blog' }}className="nav-links">Blog</Link></Button>                                                                                                                                                                                                                  
+    <Button><Link to={{ pathname: '/Vlog' }}className="nav-links">Vlog</Link></Button>
+    <Button><Link to={{ pathname: '/Reviews' }}className="nav-links">Reviews</Link></Button>  
+    <Button variant="outlined" style={{marginRight:'5px', marginLeft: '10px'}} className="nav-contact"><Link to={{ pathname: '/Contact' }}className="nav-links">Contact</Link></Button>
+    <Button variant="contained"style={{backgroundColor:"#242f6e", color: 'white'}} ><a href="https://napa.benchmark.us/apply/" target="_blank">Apply Now</a></Button>
   </div>
    </AppBar>
    </MuiThemeProvider>
@@ -55,6 +52,3 @@ class LeadingBar extends React.Component {
 };
 
 export default LeadingBar;
-
-
-// backgroundImage: 'url(' + 'http://olatheclutchandtransmissionkc.com/wp-content/uploads/2015/04/transmission-background.jpg' + ')', backgroundSize: 'cover', 

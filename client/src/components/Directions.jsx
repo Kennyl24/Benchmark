@@ -21,12 +21,8 @@ class Directions extends React.Component {
   render () {
     return (
     <MuiThemeProvider>
-      {/* <DirectionsModal/> */}
         <LeadingBar/>
-        <MapTabs/>
-        {/* <Map/> */}
-      {/* <StreetViewPanormaWithAnOverlayView/> */}
-        {/* <Map/> */}
+        <Map/>
    </MuiThemeProvider>
 )
 }

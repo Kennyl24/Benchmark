@@ -17,10 +17,7 @@ class ServiceSection extends React.Component {
     return (
       <div className="service_container">
       <ServiceTest/>
-      <div style={{textAlign:'center', paddingTop:'15px'}}>
-{/* <Link to={{ pathname: '/Services' }}>View all Services</Link> */}
-</div>
-</div>
+      </div>
 )
 }
 };
