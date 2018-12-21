@@ -21,7 +21,6 @@ class YelpApi extends React.Component {
   }
   render () {
     return (
-      HIx
 
 )
 }
