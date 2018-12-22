@@ -22,8 +22,10 @@ class BlogIntro extends React.Component {
     <MuiThemeProvider>
     <div style={{height:'80vh', background: 'linear-gradient(to right bottom, #242f6e, #e0e0e0)', marginBottom: '50px'}}>
     {/* <img src='https://images.unsplash.com/photo-1539666455488-99208279e51e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80'height="400px"width="100%"/> */}
-      <div  style={{textAlign: 'center', position: 'absolute', top: '25%', left:'35%', color: 'white'}}>
-      <h1 style={{fontFamily:'Graphik Web,Helvetica,sans-serif!important'}}>
+    <div  style={{textAlign: 'center', paddingTop: '15%', color: 'white', display:'flex',
+    flexDirection:'column', justifyContent:'center', alignItems:'center'
+    }}>
+      <h1 style={{fontFamily:'Graphik Web,Helvetica,sans-serif!important', paddingTop:'12%'}}>
         Mortgage Lender Blog
         </h1>
         <p style={{fontFamily:'Graphik Web,Helvetica,sans-serif!important', fontSize:'22px'}}>
@@ -59,7 +61,7 @@ class BlogIntro extends React.Component {
           variant="outlined"
         />
         </div>
-        <Button variant="contained" style={{marginTop:'.5%', marginBottom: '2%',width: '250px', height: '50px', backgroundColor:"#242f6e", color: 'white'}}>
+        <Button variant="contained" style={{marginTop:'.5%', marginBottom: '2%',width: '30%', height: '50px', backgroundColor:"#242f6e", color: 'white'}}>
           Subscribe
       </Button>
     </div>

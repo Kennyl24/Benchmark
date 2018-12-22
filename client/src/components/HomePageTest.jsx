@@ -105,7 +105,7 @@ const images = [
   },
   {
     url: 'https://images.pexels.com/photos/1549000/pexels-photo-1549000.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-    title: 'Investment Loans',
+    title: 'And More!',
     width: '30%',
   },
 ];
@@ -115,7 +115,9 @@ function ButtonBases(props) {
 
   return (
     <div style={{marginTop:'150px'}}>
-    <h3 className="homepage-header" style={{color:'#787878'}} >WHY BENCHMARK NAPA?</h3>
+    <h3 className="homepage-header" style={{cursor: 'pointer', color:'#787878'}}
+    onClick={()=> window.location.href = "/about"}
+    >WHY BENCHMARK NAPA?</h3>
     <div className={classes.root}>
       {images.map(image => (
         <ButtonBase

@@ -51,15 +51,18 @@ So before you apply for your next mortgage, contact us. We can help you make the
     <Link to={{ pathname:'/blog' }}><h3 className="homepage-header"> BLOGS </h3></Link>
     <div style={{
       display: 'flex',
+      flexDirection: 'row',
       flexWrap: 'wrap',
-      justifyContent: 'space-around'
+      maxWidth:'100%',
+      // justifyContent: 'space-around'
     }}>
         {homeBlogs.length > 0 ? homeBlogs.map((blog, key) =>  
     <Card style={{height:'auto', 
-      width:'33%', 
+      width: '33%',
+      minWidth:'400px', 
       display: 'flex',
-      flexWrap: 'nowrap',
-      overflowX: 'auto'}}>
+      flexWrap: 'wrap',
+      }}>
       <CardHeader
         title={blog.blogTitle}
         titleStyle={{fontSize:'20px', fontWeight: 'bold'}}
@@ -68,6 +71,7 @@ So before you apply for your next mortgage, contact us. We can help you make the
       <CardMedia
         overlay={<Link to={{ pathname:'/blog' }}className="home-links"><CardTitle title="Read Me"
         titleStyle={{color:'white'}}
+        // style={{height:'200px'}}
         /></Link>}
       >
         <img src={blog.blogImage} style={{height: '280px'}}alt="" />

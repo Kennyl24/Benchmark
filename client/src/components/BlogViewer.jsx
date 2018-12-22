@@ -12,9 +12,9 @@ const BlogViewer = props => (
     <p className="blog-modal-text" style={{padding:'20px'}}>{props.blog.blogText}</p>
     </div>
     <div class="addthis_inline_share_toolbox"></div>
-    {/* <Button variant="contained" style={{backgroundColor:"#242f6e", color: 'white', width:'10%', marginLeft:'45%', marginBottom:'20px'}}>
+    <Button variant="contained" style={{backgroundColor:"#242f6e", color: 'white', width:'10%', marginLeft:'45%', marginBottom:'20px'}}>
           Subscribe
-  </Button> */}
+  </Button>
 {/* </div> */}
 </div>
 );

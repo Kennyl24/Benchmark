@@ -29,7 +29,7 @@ class Blog extends React.Component {
   render () {
     return (
     <MuiThemeProvider>
-    <div style={{padding:'0 24px 48px', maxWidth: '26%'}}>
+    <div style={{padding:'0 24px 48px', minWidth: '26%', maxWidth:'380px'}}>
     <div className="card">
     <img className="card-image" src={this.props.blog.blogImage}/>
     <div className="container">

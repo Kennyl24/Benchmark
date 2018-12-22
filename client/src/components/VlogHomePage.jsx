@@ -35,16 +35,19 @@ import TextField from '@material-ui/core/TextField';
     render () {
       return (
         <MuiThemeProvider>
-        <h3 className="homepage-header" style={{color:'#787878', marginBottom:''}} > VLOGS </h3>
+        <h3 className="homepage-header" style={{color:'#787878', cursor:'pointer',marginBottom:''}} 
+        onClick={() => window.location.href = "/vlog"}
+        > VLOGS </h3>
         <div className="comingsoon-modal-home">
         <h2 style={{marginTop:'0%'}}>COMING SOON</h2>
         <p className="blog-text" style={{textAlign:'center'}}>Our vlog is close to launching<br/>
         Be the first to know, subscribe below!
         </p>
-        <div style={{margin:'auto', width: '40%', marginLeft:'35%'}}>
-        <div>
+        <div style={{display:'flex', flexDirection: 'column',
+    alignItems: 'center'}}>
+        <div style={{alignItems: 'center'}}>
         <TextField
-          style={{width: '250px', height: '50px'}}
+          style={{width:'100%', height: '50px'}}
           id="outlined-email-input"
           label="Email"
           type="email"
@@ -55,7 +58,7 @@ import TextField from '@material-ui/core/TextField';
         />
         </div>
         <div>
-        <Button variant="contained" style={{marginTop:'.5%', marginBottom: '2%',width: '250px', height: '50px', backgroundColor:"#242f6e", color: 'white'}}>
+        <Button variant="contained" style={{marginTop:'.5%', width:'100%', marginBottom: '2%', height: '50px', backgroundColor:"#242f6e", color: 'white'}}>
           Notify Me
       </Button>
       </div>
