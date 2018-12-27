@@ -65,7 +65,7 @@ class BottomNav extends Component {
           <span><Button><Link to={{ pathname: '/Blog' }}className="bottomnav-links">Blog</Link></Button> <br/>  </span>                                                                                                                                                                                                               
           <span><Button><Link to={{ pathname: '/Vlog' }}className="bottomnav-links">Vlog</Link></Button><br/></span>
           <span><Button><Link to={{ pathname: '/Reviews' }}className="bottomnav-links">Reviews</Link></Button><br/></span>  
-          <span><Button><Link to={{ pathname: '/Reviews' }}className="bottomnav-links">Contact</Link></Button> <br/> </span>
+          <span><Button><Link to={{ pathname: '/Contact' }}className="bottomnav-links">Contact</Link></Button> <br/> </span>
         
           </div>
       </div> 

@@ -8,20 +8,29 @@ import TestModal from './TestModal.jsx'
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import MenuDrawer from './MenuDrawer.jsx';
 
 class LeadingBar extends React.Component { 
   constructor(props) {
     super(props);
     this.state = {
       width: window.innerWidth,
+      menu: false
     }
     this.titleClick=this.titleClick.bind(this);
+    this.showMenuDrawer=this.showMenuDrawer.bind(this);
   }
   componentDidUpdate(){
     console.log(window.innerWidth)
   }
   titleClick(){
     location.reload();
+  }
+  showMenuDrawer(){
+    console.log('hello')
+    this.setState({
+      menu:!this.state.menu
+    })
   }
   render () {
     return (
@@ -33,7 +42,7 @@ class LeadingBar extends React.Component {
     top: '0px',
     left:'0px',
     right:'0px',
-    zIndex: '9999',
+    zIndex: '999',
     height:'120px',
     position:'fixed', backgroundColor:'rgba(255,255,255)', cursor:'auto'}}
     titleStyle={{color:'black'}}
@@ -53,9 +62,10 @@ class LeadingBar extends React.Component {
   </div>
   : 
   <IconButton color="inherit" aria-label="Menu">
-            <MenuIcon />
+            <MenuIcon onClick={this.showMenuDrawer} />
   </IconButton>
   }
+  {this.state.menu ? <MenuDrawer/> : null }
    </AppBar>
    </MuiThemeProvider>
 )
