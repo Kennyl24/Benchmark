@@ -32,10 +32,16 @@ class ReviewsIntro extends React.Component {
         <p style={{fontFamily:'Graphik Web,Helvetica,sans-serif!important', fontSize:'22px'}}>
           Here is how our clients and partners felt we did
         </p>
-        <div className='social-icons' style={{marginTop: '10%'}}/>
-          <SocialIcon style={{marginRight:'15px'}} url="https://www.yelp.com/biz/hilda-garcia-hensley-benchmark-mortgage-napa" network="yelp" color="white"/>
-          <SocialIcon style={{marginRight:'15px'}} url="https://www.zillow.com/lender-profile/hilda%20hensley/" color="white" />
         <div> 
+        <div className='social-icons' style={{marginTop: '10%'}}/>
+        <span style={{maxWidth:'20%'}}>
+          <SocialIcon style={{marginRight:'15px'}} url="https://www.yelp.com/biz/hilda-garcia-hensley-benchmark-mortgage-napa" network="yelp" color="white"/>
+          </span>
+          <span style={{maxWidth:'20%'}}>
+        
+        <SocialIcon style={{marginRight:'15px'}} url="https://www.zillow.com/lender-profile/hilda%20hensley/" color="white" />
+        </span>
+        
           </div>
       </div>
     </div>

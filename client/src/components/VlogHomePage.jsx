@@ -47,7 +47,7 @@ import TextField from '@material-ui/core/TextField';
     alignItems: 'center'}}>
         <div style={{alignItems: 'center'}}>
         <TextField
-          style={{width:'100%', height: '50px'}}
+          style={{width:'60%', minWidth:'200px', height: '50px'}}
           id="outlined-email-input"
           label="Email"
           type="email"
@@ -58,7 +58,7 @@ import TextField from '@material-ui/core/TextField';
         />
         </div>
         <div>
-        <Button variant="contained" style={{marginTop:'.5%', width:'100%', marginBottom: '2%', height: '50px', backgroundColor:"#242f6e", color: 'white'}}>
+        <Button variant="contained" fullWidth={true} style={{marginTop:'.5%', marginBottom: '2%', height: '50px', backgroundColor:"#242f6e", color: 'white'}}>
           Notify Me
       </Button>
       </div>

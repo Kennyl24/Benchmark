@@ -109,7 +109,7 @@ class FrontPictures extends React.Component {
    <div style={{ fontFamily: 'Apple Chancery, cursive', fontSize: '350%', textAlign:'center', color:'#242f6e', paddingTop:'12%'}}>
      {this.state.currentText ? this.state.currentText : null}
   </div>
-  <p style={{fontFamily: 'Comic Sans MS", cursive, sans-serif', textAlign:'center', margin:'auto', padding:'25px 20% 0% 20%', color: 'white', fontSize: '22px', maxWidth: '600px', lineHeight:'1.6', textShadow: '1px 1px black'}}>
+  <p style={{fontFamily: 'Comic Sans MS", cursive, sans-serif', textAlign:'center', margin:'auto', padding:'25px 20% 0% 20%', color: 'white', fontSize: '22px', minWidth:'250px', maxWidth: '600px', lineHeight:'1.6', textShadow: '1px 1px black'}}>
     Want to buy your dream home? Let your team of Home Financial Experts provide clear options and advice to help you make your dream home a reality! 
     {/* Your local napa valley mortgage lenders, we are a team of Home Financial Experts, we provide clear options and advice to help buyers make confident mortgage decisions */}
       </p>

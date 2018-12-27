@@ -26,7 +26,7 @@ class Review extends React.Component {
     }
     return (
     <MuiThemeProvider>
-    <div style={{padding:'0 24px 48px', maxWidth: '26%'}}>
+    <div style={{padding:'0 24px 48px', minWidth: '27%', maxWidth:'350px'}}>
     <div className="review-card">
     <div style={{marginTop:'5%', alignItems:'center', margin:'auto', textAlign:'center'}}>
     <StarRateSharp style={{fill:"rgb(36, 47, 110)", marginTop:'10%'}}/>

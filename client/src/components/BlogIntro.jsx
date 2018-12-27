@@ -20,12 +20,12 @@ class BlogIntro extends React.Component {
   render () {
     return (
     <MuiThemeProvider>
-    <div style={{height:'80vh', background: 'linear-gradient(to right bottom, #242f6e, #e0e0e0)', marginBottom: '50px'}}>
+    <div style={{marginTop:'120px', height:'70vh', background: 'linear-gradient(to right bottom, #242f6e, #e0e0e0)', marginBottom: '50px'}}>
     {/* <img src='https://images.unsplash.com/photo-1539666455488-99208279e51e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80'height="400px"width="100%"/> */}
-    <div  style={{textAlign: 'center', paddingTop: '15%', color: 'white', display:'flex',
+    <div  style={{textAlign: 'center', paddingTop: '5%', color: 'white', display:'flex',
     flexDirection:'column', justifyContent:'center', alignItems:'center'
     }}>
-      <h1 style={{fontFamily:'Graphik Web,Helvetica,sans-serif!important', paddingTop:'12%'}}>
+      <h1 style={{fontFamily:'Graphik Web,Helvetica,sans-serif!important'}}>
         Mortgage Lender Blog
         </h1>
         <p style={{fontFamily:'Graphik Web,Helvetica,sans-serif!important', fontSize:'22px'}}>

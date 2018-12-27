@@ -21,7 +21,7 @@ class GetInTouch extends React.Component {
   render () {
     return (
   <MuiThemeProvider>
-    <div style={{display:'flex', marginLeft: '7%', marginTop:'1%', marginBottom:'10%'}}>
+    <div style={{display:'flex', flexDirection:'row', flexWrap:'wrap', marginLeft: '7%', marginTop:'1%', marginBottom:'10%'}}>
       <div style={{width:'70%'}}>
       <h3 style={{fontSize:'24px', textAlign: 'center'}}>GET IN TOUCH</h3>
       <TextField
@@ -69,12 +69,12 @@ class GetInTouch extends React.Component {
           rowsMax={4}
         />
         <div>
-        <Button variant="contained"style={{marginLeft: '40%', marginTop:'5%', width: '25%', backgroundColor:"#242f6e", color: 'white'}}> 
+        <Button variant="contained"style={{marginLeft: '40%', marginTop:'5%', width: '25%', minWidth:'150px', backgroundColor:"#242f6e", color: 'white'}}> 
           Submit
           </Button>
           </div>
       </div>
-      <div style={{width:'25%'}}>
+    <div style={{width:'25%', minWidth:'340px'}}>
     <ul style={{listStyle: 'none'}}>
       <p style={{fontSize:'22px', fontWeight: '500'}}>Reach Out Directly</p> <br/>
       <li style={{marginBottom:'15px'}}><a href="tel:(707) 254-8891" style={{color:'black', marginBottom:'12px'}}> (707) 254-8891</a> <br/> </li>

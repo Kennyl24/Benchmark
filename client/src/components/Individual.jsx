@@ -31,16 +31,19 @@ class Individual extends React.Component {
     <p style={{fontSize:'24px', fontWeight:'600'}}>{this.props.individual.name}</p>
     <p style={{fontSize:'18px', fontWeight:'500'}}>{this.props.individual.title}</p>
     <p  style={{padding:'20px'}}>{this.props.individual.about}</p>
-    <div style={{display:'flex', flexDirection:'row'}}>
+    <div style={{display:'flex', flexDirection:'row', flexWrap:'wrap'}}>
+    <div style={{display:'flex', flexDirection:'row', flexWrap:'nowrap'}}>
     <a href={'mailto:' + this.props.individual.email} style={{color:'black', marginTop:'10px',}}> 
     <Email style={{marginRight:'15px'}} network="email" color="white"/>
     </a>
     <p style={{padding:'0px'}}>{this.props.individual.email}&nbsp;&nbsp;</p>
-    <a href="tel:(707) 254-8891" style={{color:'black', marginTop:'10px', height:'200%'}}>
+    </div>
+    <div style={{display:'flex', flexDirection:'row', flexWrap:'nowrap'}}>
+    <a href="tel:(707) 254-8891" style={{color:'black', marginTop:'0px', height:'200%'}}>
     <Phone fill="blue"/>
     </a>
-    
-    <p style={{padding:'0px'}}>{this.props.individual.phone}</p>&nbsp;&nbsp;
+    <p style={{padding:'4px'}}>{this.props.individual.phone}</p>&nbsp;&nbsp;
+    </div>
     <p style={{padding:'0px'}}>{this.props.individual.nmls ? 'NMLS# ' + this.props.individual.nmls : null}</p>
     </div>
     </div>
