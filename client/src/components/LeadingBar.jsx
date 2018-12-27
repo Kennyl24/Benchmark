@@ -21,7 +21,7 @@ class LeadingBar extends React.Component {
     this.showMenuDrawer=this.showMenuDrawer.bind(this);
   }
   componentDidUpdate(){
-    console.log(window.innerWidth)
+    console.log(this.props)
   }
   titleClick(){
     location.reload();
@@ -29,7 +29,7 @@ class LeadingBar extends React.Component {
   showMenuDrawer(){
     console.log('hello')
     this.setState({
-      menu:!this.state.menu
+      menu:true
     })
   }
   render () {
@@ -61,13 +61,12 @@ class LeadingBar extends React.Component {
     <Button variant="contained"style={{backgroundColor:"#242f6e", color: 'white'}} ><a href="https://napa.benchmark.us/apply/" target="_blank">Apply Now</a></Button>
   </div>
   : 
-  <IconButton color="inherit" aria-label="Menu">
-            <MenuIcon onClick={this.showMenuDrawer} />
-  </IconButton>
+  // <IconButton color="inherit" aria-label="Menu">
+    <MenuDrawer/>
+  // </IconButton>
   }
-  {this.state.menu ? <MenuDrawer/> : null }
    </AppBar>
-   </MuiThemeProvider>
+  </MuiThemeProvider>
 )
 }
 };

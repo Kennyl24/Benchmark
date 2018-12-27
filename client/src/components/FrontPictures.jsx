@@ -105,23 +105,23 @@ class FrontPictures extends React.Component {
     return (
   <MuiThemeProvider>
    <div style={{position:'relative', top:'116px', backgroundImage: 'url(https://images.pexels.com/photos/792034/pexels-photo-792034.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)', backgroundRepeat: 'no-repeat', backgroundSize: '100% 100%', height:'auto', width: '100%', marginBottom:'10px'}}>
-   <div style={{top: '10%', position: 'relative', marginLeft:'15%', maxWidth:'30%'}}>
-   <div style={{ fontFamily: 'Apple Chancery, cursive', fontSize: '350%', textAlign:'center', color:'#242f6e', paddingTop:'12%'}}>
+   <div style={{top: '10%', position: 'relative', marginLeft:'15%', maxWidth:'30%', display: 'flex', flexDirection: 'column', alignItems:'cetner', justifyContent:'center',}}>
+   <div style={{ fontFamily: 'Apple Chancery, cursive', fontSize: '350%', color:'#242f6e', paddingTop:'12%'}}>
      {this.state.currentText ? this.state.currentText : null}
   </div>
-  <p style={{fontFamily: 'Comic Sans MS", cursive, sans-serif', textAlign:'center', margin:'auto',  color: 'white', fontSize: '22px', minWidth:'250px', maxWidth: '600px', lineHeight:'1.6', textShadow: '1px 1px black'}}>
+  <p style={{fontFamily: 'Comic Sans MS", cursive, sans-serif', margin:'auto',  color: 'white', fontSize: '22px', minWidth:'250px', maxWidth: '600px', lineHeight:'1.6', textShadow: '1px 1px black'}}>
     Want to buy your dream home? Let your team of Home Financial Experts provide clear options and advice to help you make your dream home a reality! 
     {/* Your local napa valley mortgage lenders, we are a team of Home Financial Experts, we provide clear options and advice to help buyers make confident mortgage decisions */}
       </p>
-    <div style={{marginTop: '5%', display: 'flex', justifyContent:'center', padding: '15px'}}>
-    
+    {/* <div style={{marginTop: '5%', display: 'flex', justifyContent:'center', padding: '15px'}}> */}
+    <div style={{marginTop:'10%', justifyContent:'center'}}>
     <Button style={{backgroundColor:"#242f6e", color: 'white', borderRadius: 25}} size="large" variant="contained">
     <a href="https://napa.benchmark.us/apply/" target="_blank">Apply Now</a>
     </Button>
     </div>
-    <div style={{paddingBottom:'20%'}}>
+    <div style={{paddingBottom:'20%', marginTop:'5%'}}>
     {/* <li><Button><Link to={{ pathname: '/Reviews' }}className="bottomnav-links">Contact</Link></Button>  </li> */}
-    <Link to={{ pathname: '/Contact' }}className="bottomnav-links"> <p style={{fontFamily: 'plexeina-regular,Helvetica,sans-serif', cursor:'pointer',textAlign:'center', margin:'auto', padding:'25px 20% 0% 20%', color: 'white', fontSize: '16px', maxWidth: '400px', textDecoration:'underline'}}>
+    <Link to={{ pathname: '/Contact' }}className="bottomnav-links"> <p style={{fontFamily: 'plexeina-regular,Helvetica,sans-serif', cursor:'pointer', padding:'0px 20% 0% 0%', color: 'white', fontSize: '16px', maxWidth: '400px', textDecoration:'underline'}}>
     Speak with a Financial Expert Directly.
       </p></Link>
       </div>

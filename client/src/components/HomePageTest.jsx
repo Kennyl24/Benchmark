@@ -122,8 +122,8 @@ function ButtonBases(props) {
       {images.map(image => (
         <ButtonBase
           onClick={()=> {
-            window.confirm('Would you like to learn more?')
-            window.location.href = "/contact"
+            window.confirm('Would you like to learn more?') ? window.location.href = "/contact" : null
+            
           }}
           focusRipple
           key={image.title}

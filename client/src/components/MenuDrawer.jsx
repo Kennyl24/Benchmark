@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
+import Drawer from '@material-ui/core/Drawer';
 import Button from '@material-ui/core/Button';
 import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
@@ -10,6 +10,8 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
+import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/icons/Menu';
 
 const styles = {
   fullList: {
@@ -25,6 +27,7 @@ class MenuDrawer extends React.Component {
     left: false,
     bottom: false,
     right: false,
+    showMenu: false
   };
 
   toggleDrawer = (side, open) => () => {
@@ -32,22 +35,45 @@ class MenuDrawer extends React.Component {
       [side]: open,
     });
   };
-
+  showMenu = () => {
+    console.log('yipee')
+    this.setState({
+      showMenu: !this.state.showMenu
+    })
+  }
   render() {
     const { classes } = this.props;
-
 
     const fullList = (
       <div className={classes.fullList}>
         <List>
-          {['Home', 'About', 'Blog', 'Vlog', 'Reviews', 'Contact', 'Apply Now'].map((text, index) => (
-            <ListItem button key={text} style={{textAlign:'center'}}>
+        
+          {['Home', 'About', 'Blog', 'Vlog', 'Reviews', 'Contact'].map((text, index) => (
+            
+            <ListItem button key={text} style={{textAlign:'center'}}
+            onClick={()=> 
+            window.location.href=`/${text}`
+            }
+            >
             <Divider />
+           
               <ListItemText primary={text} />
-              
+
             </ListItem>
             
           ))}
+          <ListItem button key={10} style={{textAlign:'center'}}
+            onClick={()=> 
+            window.location.href='https://napa.benchmark.us/apply/'
+            }
+          >
+          <ListItemText primary={'Apply Now'} />
+          </ListItem>
+          <ListItem button key={22} style={{textAlign:'center'}}
+        onClick={this.showMenu}
+          >
+          <ListItemText primary={'Close'} />
+          </ListItem>
         </List>
         <Divider />
 
@@ -56,12 +82,14 @@ class MenuDrawer extends React.Component {
 
     return (
       <div style={{
-        position:'fixed', 
-        top:'20%'
+        marginTop:'10%', 
       }} >
-        <SwipeableDrawer
+      <IconButton onClick={this.showMenu}color="inherit" aria-label="Menu">
+      <MenuIcon/>
+      </IconButton>
+        <Drawer
           anchor="top"
-          open={true}
+          open={this.state.showMenu}
           onClose={this.toggleDrawer('top', false)}
           onOpen={this.toggleDrawer('top', true)}
           PaperProps={{
@@ -79,7 +107,7 @@ class MenuDrawer extends React.Component {
           >
             {fullList}
           </div>
-        </SwipeableDrawer>
+        </Drawer>
       </div>
     );
   }

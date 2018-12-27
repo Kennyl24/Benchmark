@@ -27,7 +27,7 @@ class TeamIntro extends React.Component {
       <h1 style={{fontFamily:'Graphik Web,Helvetica,sans-serif!important'}}>
         About Us
         </h1>
-        <p style={{fontFamily:'Graphik Web,Helvetica,sans-serif!important', fontSize: '18px'}}>
+        <p style={{fontFamily:'Graphik Web,Helvetica,sans-serif!important', fontSize: '16px'}}>
         <FormatQuoteOutlined/>
         Our mission is to deliver an honest, well-communicated,
 financially sound lending experience.

@@ -84,11 +84,11 @@ class GetInTouch extends React.Component {
       <li style={{marginBottom:'15px'}}>   M-F 8:30AM-6:00PM <br/> </li>
       <li>  NMLS # 2143 </li>
       <div className='social-icons' style={{marginTop: '10%'}}/>
-          <SocialIcon style={{marginRight:'15px'}} url="https://www.facebook.com/hildahensleynapa/" network="facebook" color="#242f6e"/>
+          <SocialIcon style={{marginRight:'15px'}} url="https://www.facebook.com/hildahensleynapa/" network="facebook" color="#242f6e" className="social"/>
           <SocialIcon style={{marginRight:'15px'}} url="https://www.zillow.com/lender-profile/hilda%20hensley/" color="#242f6e" />
           <SocialIcon style={{marginRight:'15px'}} url="http://youtube.com" network="youtube" color="#242f6e"/>
           <SocialIcon style={{marginRight:'15px'}} url="https://www.yelp.com/biz/hilda-garcia-hensley-benchmark-mortgage-napa" network="yelp" color="#242f6e"/>
-        </ul>
+      </ul>
       </div>
       </div>
    </MuiThemeProvider>

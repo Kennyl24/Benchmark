@@ -616,6 +616,12 @@ li {
   flex-direction: row;
   flex-wrap: nowrap;
 }
+.social {
+  color:black
+}
+.social:hover {
+  color: purple
+}
 .blog-modal-contianer {
     background: rgba(0, 0, 0, 0.5);
     position: fixed;
