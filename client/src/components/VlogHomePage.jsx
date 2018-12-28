@@ -10,7 +10,7 @@ import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'mat
 import ComingSoonModal from './ComingSoonModal.jsx';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
-
+import axios from 'axios';
 
   class VlogHomePage extends React.Component { 
     constructor(props) {
@@ -19,7 +19,21 @@ import TextField from '@material-ui/core/TextField';
         videos: null,
         hovering: false,
         showEverything: false,
+        email: '',
       }
+      this.submitted = this.submitted.bind(this);
+    }
+    submitted(){
+      axios.post('/Vlog', {
+        email: this.state.email,
+      })
+      .then( (response) =>  {
+        setTimeout(() => {
+        }, 500);
+      })
+      .catch( (error) => {
+        return ('There seems to have been an error');
+      });
     }
     componentWillMount(){
       fetch('https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=25&playlistId=PLhVpGPBTPb700oGkIbfp_rYaaz4TXzmBu&key=AIzaSyCrHVss1cDavtAH-fXIPO8PiXWncGJa48o')
@@ -55,10 +69,16 @@ import TextField from '@material-ui/core/TextField';
           autoComplete="email"
           margin="normal"
           variant="outlined"
+          value={this.state.email}
+          onChange={(event) => {
+            this.setState({
+              email:event.target.value
+            })
+          } }
         />
         </div>
         <div>
-        <Button variant="contained" fullWidth={true} style={{marginTop:'.5%', marginBottom: '2%', height: '50px', backgroundColor:"#242f6e", color: 'white'}}>
+        <Button onClick={this.submitted} variant="contained" fullWidth={true} style={{marginTop:'.5%', marginBottom: '2%', height: '50px', backgroundColor:"#242f6e", color: 'white'}}>
           Notify Me
       </Button>
       </div>

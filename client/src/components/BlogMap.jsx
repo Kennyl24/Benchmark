@@ -288,7 +288,7 @@ Available on 5/1, 7/1, 10/1 + 15/1 Adjustable Rate Mortgages (ARMS)<br/><br/>
 const BlogMap = props => (
   <div >
   <div className="blog-container">
-      {blogs.length > 0 ? blogs.map((blog, key) => <Blog blog={blog} key={key} />) : null}
+      {blogs.length > 0 ? blogs.map((blog, index) => <Blog blog={blog} index={index} />) : null}
   </div>
 </div>
 );

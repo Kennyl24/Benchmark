@@ -9,14 +9,29 @@ import Popup from "reactjs-popup";
 import TextField from '@material-ui/core/TextField';
 import SvgIcon from '@material-ui/core/SvgIcon';
 import IconButton from '@material-ui/core/IconButton';
+import axios from 'axios';
+
 
 class BlogIntro extends React.Component { 
   constructor(props) {
     super(props);
     this.state = {
+      email: null
     }
+    this.submitted = this.submitted.bind(this);
   }
-
+  submitted(){
+    axios.post('/Email', {
+      email: this.state.email,
+    })
+    .then( (response) =>  {
+      setTimeout(() => {
+      }, 500);
+    })
+    .catch( (error) => {
+      return ('There seems to have been an error');
+    });
+  }
   render () {
     return (
     <MuiThemeProvider>
@@ -59,9 +74,15 @@ class BlogIntro extends React.Component {
           autoComplete="email"
           margin="normal"
           variant="outlined"
+          value={this.state.email}
+          onChange={(event) => {
+            this.setState({
+              email: event.target.value
+            });
+          }}
         />
         </div>
-        <Button variant="contained" style={{marginTop:'.5%', marginBottom: '2%',width: '30%', height: '50px', backgroundColor:"#242f6e", color: 'white'}}>
+        <Button onClick={this.submitted} variant="contained" style={{marginTop:'.5%', marginBottom: '2%',width: '30%', height: '50px', backgroundColor:"#242f6e", color: 'white'}}>
           Subscribe
       </Button>
     </div>

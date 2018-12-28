@@ -3,14 +3,29 @@ import ReactDOM from 'react-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
+import axios from 'axios';
+
 
 class ComingSoonModal extends React.Component { 
   constructor(props) {
     super(props);
     this.state = {
+      email: '',
     }
+    this.submitIt = this.submitIt.bind(this);
   }
-
+  submitIt(){
+    axios.post('/Vlog', {
+      email: this.state.email,
+    })
+    .then( (response) =>  {
+      setTimeout(() => {
+      }, 500);
+    })
+    .catch( (error) => {
+      return ('There seems to have been an error');
+    });
+  }
   render () {
     return (
       <MuiThemeProvider>
@@ -31,10 +46,16 @@ class ComingSoonModal extends React.Component {
           autoComplete="email"
           margin="normal"
           variant="outlined"
+          value={this.state.email}
+          onChange={(event) => {
+            this.setState({
+              email: event.target.value
+            });
+          }}
         />
         </div>
         <div>
-        <Button variant="contained" style={{marginTop:'.5%', marginBottom: '2%',width: '100%', height: '50px', backgroundColor:"#242f6e", color: 'white'}}>
+        <Button onClick={this.submitIt}variant="contained" style={{marginTop:'.5%', marginBottom: '2%',width: '100%', height: '50px', backgroundColor:"#242f6e", color: 'white'}}>
           Notify Me
       </Button>
       </div>

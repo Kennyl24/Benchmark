@@ -39,10 +39,10 @@ class Individual extends React.Component {
     <p style={{padding:'0px'}}>{this.props.individual.email}&nbsp;&nbsp;</p>
     </div>
     <div style={{display:'flex', flexDirection:'row', flexWrap:'nowrap'}}>
-    <a href="tel:(707) 254-8891" style={{color:'black', marginTop:'0px', height:'200%'}}>
+    <a href="tel:(707) 254-8891" style={{color:'black', marginTop:'10px', height:'200%'}}>
     <Phone fill="blue"/>
     </a>
-    <p style={{padding:'4px'}}>{this.props.individual.phone}</p>&nbsp;&nbsp;
+    <p style={{padding:'0px'}}>{this.props.individual.phone}</p>&nbsp;&nbsp;
     </div>
     <p style={{padding:'0px'}}>{this.props.individual.nmls ? 'NMLS# ' + this.props.individual.nmls : null}</p>
     </div>

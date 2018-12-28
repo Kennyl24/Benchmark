@@ -4,14 +4,28 @@ import { SocialIcon } from 'react-social-icons';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 class BottomNav extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      email: ''
     }
+    this.submitted = this.submitted.bind(this);
   }
-
+  submitted(){
+    axios.post('/Email', {
+      email: this.state.email,
+    })
+    .then( (response) =>  {
+      setTimeout(() => {
+      }, 500);
+    })
+    .catch( (error) => {
+      return ('There seems to have been an error');
+    });
+  }
 
   render() {
     return (
@@ -26,7 +40,7 @@ class BottomNav extends Component {
       <div className="grid"> 
         <div className="grid-item">
         {/* <ul style={{listStyle: 'none'}}> */}
-        <div style={{marginBottom:'15px', fontSize:'16px'}}><a href="tel:(707) 254-8891" style={{color:'white', paddingBottom:'0px'}}> (707) 254-8891</a> <br/> </div>
+        <div style={{marginBottom:'15px', fontSize:'16px'}} className="bottomnav-links"><a href="tel:(707) 254-8891" style={{color:'white', paddingBottom:'0px'}}> (707) 254-8891</a> <br/> </div>
       <div style={{marginBottom:'15px', fontSize:'16px'}}><a href="mailto:teamhensley@benchmark.us" style={{color:'white', marginBottom:'0px'}}>  teamhensley@benchmark.us</a> <br/></div>
       <div style={{marginBottom:'15px', fontSize:'16px'}}><a href="https://www.google.com/maps/dir/4123+Solano+Ave,+Napa,+CA+94558/''/@38.3344478,-122.3566659,13z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x808500d2af41b48d:0x2760ab5bef29d629!2m2!1d-122.3216465!2d38.334453!1m5!1m1!1s0x808500d2af41b48d:0x2760ab5bef29d629!2m2!1d-122.3216465!2d38.334453" target="_blank" 
              style={{color: 'white', marginBottom:'15px'}}>  4123 Solano Ave, Napa, CA 94558 </a> <br/> </div>
@@ -46,15 +60,21 @@ class BottomNav extends Component {
           </div>
           <TextField
           style={{width: '100%', height: '50px'}}
-          id="outlined-email-input"
-          label="Email"
+          id="this-input"
+          label="email"
           type="email"
           name="email"
           autoComplete="email"
           margin="normal"
           variant="outlined"
+          value={this.state.email}
+          onChange={(event) => {
+            this.setState({
+              email: event.target.value
+            });
+          }}
         />
-        <Button variant="contained" style={{backgroundColor:"#242f6e", color: 'white'}}>
+        <Button onClick={this.submitted} variant="contained" style={{backgroundColor:"#242f6e", color: 'white'}}>
           Subscribe
       </Button>
       </div>

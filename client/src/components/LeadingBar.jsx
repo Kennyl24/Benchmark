@@ -10,6 +10,7 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import MenuDrawer from './MenuDrawer.jsx';
 
+
 class LeadingBar extends React.Component { 
   constructor(props) {
     super(props);
@@ -21,7 +22,6 @@ class LeadingBar extends React.Component {
     this.showMenuDrawer=this.showMenuDrawer.bind(this);
   }
   componentDidUpdate(){
-    console.log(this.props)
   }
   titleClick(){
     location.reload();
