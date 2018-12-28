@@ -44,7 +44,7 @@ class LeadingBar extends React.Component {
     right:'0px',
     zIndex: '999',
     height:'120px',
-    position:'fixed', backgroundColor:'rgba(255,255,255)', cursor:'auto'}}
+    position:'fixed', backgroundColor:'rgba(255,255,255, 1.0)', cursor:'auto'}}
     titleStyle={{color:'black'}}
     showMenuIconButton={true}
     iconElementLeft={<img style={{height: '100px', width: '275px'}}src="https://napa.benchmark.us/wp-content/uploads/sites/485/2015/08/home-banner-logo.png"/>}

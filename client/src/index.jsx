@@ -9,6 +9,8 @@ import HomePage from './components/HomePage.jsx'
 import Reviews from './components/Reviews.jsx'
 import BlogPage from './components/BlogPage.jsx'
 import VlogPage from './components/VlogPage.jsx'
+import Individualblog from './components/Individualblog.jsx'
+
 
 import StreetViewPanormaWithAnOverlayView from './components/Test.jsx'
 ReactDOM.render(
@@ -19,6 +21,7 @@ ReactDOM.render(
       <Route  path="/Home" component={HomePage} />
       <Route  path="/Vlog" component={VlogPage} />
       <Route  path="/Blog" component={BlogPage} />
+      <Route  path="/Individualblog" component={Individualblog} />
       <Route  path="/Reviews" component={Reviews} />
       <Route  path="/Contact" component={Contact} />
     </Switch>

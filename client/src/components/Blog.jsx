@@ -8,25 +8,19 @@ import Popup from "reactjs-popup";
 import SvgIcon from '@material-ui/core/SvgIcon';
 import IconButton from '@material-ui/core/IconButton';
 import BlogViewer from './BlogViewer.jsx'
+import IndividualBlog from './IndividualBlog.jsx'
+
 
 class Blog extends React.Component { 
   constructor(props) {
     super(props);
     this.state = {
       showBlog: false,
+      test: false,
     }
-    this.showFull = this.showFull.bind(this)
-  }
-  showFull(){
-    console.log('showing full')
-    this.setState({
-      showBlog: !this.state.showBlog
-    })
-  }
-  componentWillMount(){
-    console.log(this.props)
   }
   render () {
+    const blog = this.props.blog
     return (
     <MuiThemeProvider>
     <div style={{padding:'0 24px 48px', minWidth: '26%', maxWidth:'380px'}}>
@@ -40,17 +34,14 @@ class Blog extends React.Component {
       </div>
     </div>
     <div style={{paddingBottom:'10px', paddingTop:'10px'}}>
-    <Button onClick={this.showFull}variant="outlined" style={{borderColor: '#242f6e', color: '#242f6e'}}>
+    <Link to={{ pathname: '/Individualblog', state: { title: this.props.blog.blogTitle} }}> <Button variant="outlined" style={{cursor:'pointer', borderColor: '#242f6e', color: '#242f6e'}}>Read More</Button> </Link>
+    {/* <Button onClick={this.showFull}variant="outlined" style={{borderColor: '#242f6e', color: '#242f6e'}}>
     Read More
-</Button>
+</Button> */}
+  {/* {this.state.test ? <IndividualBlog blog={blog}/>: null} */}
     </div>
     </div>
     </div>
-    {this.state.showBlog ? 
-    <div className="modal-backdrop" onClick={this.showFull}>
-    <BlogViewer blog={this.props.blog}/>
-    </div>
-      : null }
    </MuiThemeProvider>
 )
 }
