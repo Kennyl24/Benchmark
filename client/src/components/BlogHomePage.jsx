@@ -12,22 +12,6 @@ const homeBlogs = [
   {
     blogTitle: 'Why an Online Mortgage May Not Be Your Best Option',
     blogAuthor: 'Hilda Hensley', 
-    blogText: 
-  <p className="blog-text">
-
-We live in an era where people want everything online, from online shopping and food delivery to an online mortgage and doctor visit. But is online really better, especially for your mortgage needs?
-
-Chances are you’ve seen numerous ads for an “easier” and “faster” way to get your mortgage. Just press a button and in a few moments you can have a mortgage approval in your hands. Unfortunately, few people question whether that online mortgage is the best mortgage for their needs. This is where an experienced mortgage banker can help. 
-
-<h2>Why a Mortgage Banker is Better than an Online Mortgage</h2>
-Mortgage bankers are skilled at helping you make sure you have not just any old mortgage, but the best mortgage for your unique situation. Rather than place you in a one-size-fits-all option, mortgage bankers analyze your situation and look at both your long-term and short-term goals. Armed with this knowledge, they can help you secure the right mortgage that enables you to reach your financial goals. The fact is that no online mortgage site can give you this type of professional advice.
-
-Aside from advice, mortgage bankers can usually give you superior customer service compared to an online mortgage site. Think about your last customer service call to a large company. Assuming you made it through the phone maze and actually got to a live person, you probably had to re-explain your situation to each person you spoke with. Getting the same person to help you more than once rarely occurs, so you’re at the mercy of the last person’s note taking skills and luck of the draw of who you will speak with during this call. 
-
-A good mortgage banker, on the other hand, creates a relationship of trust and reliability. Because they know you and your situation, they can hold your hand through the process, help prevent you from making major mistakes, and answer all of your questions. You get to work with the same person throughout the entire transaction, and even have access to them after your loan is closed. It’s a level of peace of mind that no online mortgage option can offer.
-
-So before you apply for your next mortgage, contact us. We can help you make the best decision for your needs. 
-    </p>,
     blogSnippet: 'We live in an era where people want everything online, from online shopping and food delivery to an online mortgage and doctor visit. Learn why online may not be better, especially for your mortgage needs.',
     blogImage: 'https://i.ibb.co/2PXHtrR/euhfwue.jpg'
   },
@@ -65,7 +49,7 @@ So before you apply for your next mortgage, contact us. We can help you make the
       }}>
       <CardHeader
         title={blog.blogTitle}
-        titleStyle={{fontSize:'20px', fontWeight: 'bold'}}
+        titleStyle={{fontSize:'20px', fontWeight: 'bold', textAlign:'center', paddingRight:'10px'}}
         // subtitle="Subtitle"
       />
       <CardMedia

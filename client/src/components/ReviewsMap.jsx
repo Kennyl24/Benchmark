@@ -114,11 +114,9 @@ const reviews = [
 ];
 
 const ReviewsMap = props => (
-  <div style={{marginTop:'10%'}}>
   <div className="review-container">
       {reviews.length > 0 ? reviews.map((review, key) => <Review review={review} key={key} />) : null}
   </div>
-</div>
 );
 
 export default ReviewsMap;

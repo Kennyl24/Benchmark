@@ -30,7 +30,7 @@ class Individual extends React.Component {
     <div>
     <p style={{fontSize:'24px', fontWeight:'600'}}>{this.props.individual.name}</p>
     <p style={{fontSize:'18px', fontWeight:'500'}}>{this.props.individual.title}</p>
-    <p  style={{padding:'20px'}}>{this.props.individual.about}</p>
+    <p  style={{padding:'20px', fontFamily:'Graphik Web,Helvetica,sans-serif!important', lineHeight:'1.3'}}>{this.props.individual.about}</p>
     <div style={{display:'flex', flexDirection:'row', flexWrap:'wrap'}}>
     <div style={{display:'flex', flexDirection:'row', flexWrap:'nowrap'}}>
     <a href={'mailto:' + this.props.individual.email} style={{color:'black', marginTop:'10px',}}> 

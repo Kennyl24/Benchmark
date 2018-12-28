@@ -35,11 +35,11 @@ class ReviewsIntro extends React.Component {
         <div> 
         <div className='social-icons' style={{marginTop: '10%'}}/>
         <span style={{maxWidth:'20%'}}>
-          <SocialIcon style={{marginRight:'15px'}} url="https://www.yelp.com/biz/hilda-garcia-hensley-benchmark-mortgage-napa" network="yelp" color="white"/>
+          <SocialIcon style={{marginRight:'15px'}} url="https://www.yelp.com/biz/hilda-garcia-hensley-benchmark-mortgage-napa" network="yelp" color="#d32323"/>
           </span>
           <span style={{maxWidth:'20%'}}>
         
-        <SocialIcon style={{marginRight:'15px'}} url="https://www.zillow.com/lender-profile/hilda%20hensley/" color="white" />
+        <SocialIcon style={{marginRight:'15px'}} url="https://www.zillow.com/lender-profile/hilda%20hensley/" color="#0074ef" />
         </span>
         
           </div>
