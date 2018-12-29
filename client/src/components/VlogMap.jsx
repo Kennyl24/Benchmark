@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Vlog from './Vlog.jsx';
 import SocialMediaBar from 'react-social-media-bar';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const VlogMap = props => (
   <div >

@@ -2,9 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Blog from './Blog.jsx';
 import SocialMediaBar from 'react-social-media-bar';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
-import { fab } from '@fortawesome/free-brands-svg-icons'
 
 const blogs = [
   {
