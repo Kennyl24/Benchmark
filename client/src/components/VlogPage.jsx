@@ -66,7 +66,7 @@ class VlogPage extends React.Component {
   render () {
     return (
     <MuiThemeProvider>
-      <body style={{overflowY:'hidden', position: 'fixed'}} >
+      <body style={{position: 'fixed'}} >
       <div id="helloitsme">
       <LeadingBar/>
       <VlogIntro/>
