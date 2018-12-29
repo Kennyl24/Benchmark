@@ -5,8 +5,7 @@ const nodemailer = require('nodemailer');
 const smtpTransport = require('nodemailer-smtp-transport');
 const fs = require('fs');
 var cors = require('cors');
-require('es6-promise').polyfill();
-require('isomorphic-fetch');
+
 app.use(bodyParser.json());
 app.use('/', express.static(__dirname + '/../client/dist'));
 app.use('/Home', express.static(__dirname + '/../client/dist'));
@@ -22,13 +21,24 @@ app.use('/Directions', express.static(__dirname + '/../client/dist'));
 app.use('/Individualblog', express.static(__dirname + '/../client/dist'));
 app.use('/Email', express.static(__dirname + '/../client/dist'));
 app.use('/Vlog', express.static(__dirname + '/../client/dist'));
-// app.get('/blogs/*', function(req, res) {
-//   for (let i = 0; i < blogs.length; i++) {
-//     let title = blogs[i].blogTitle;
-//     console.log(title)
-//     res.render(page.render, page.language);
-//   } 
-// });
+// app.use('/blogs/:title', express.static(__dirname + '/../client/dist'));
+const blogs = [
+  'FHFA Announces Conforming Loan Limit Increase In 2019',
+  'Nervous About Buying? Here’s A Dose of Confidence',
+  'Can I Still Get A VA Loan With Bad Credit?',
+  'Benchmark and The Patriot Tour by Team Never Quit',
+  'How To Avoid Roadblocks Before Closing On Your New Home',
+  'Construction Loans: What to Expect',
+  'Benchmark Introduces New Program to Expand Options for Medical Professionals',
+];
+app.get('/blogs/*', function(req, res) {
+  console.log('trying');
+  for (let i = 0; i < blogs.length; i++) {
+    let title = blogs[i].blogTitle;
+    console.log(title);
+    res.render(page.render, page.language);
+  } 
+});
 
 app.post('/Email', (req, res) => {
   const mailOptions = {
@@ -82,12 +92,13 @@ app.post('/Vlog', (req, res) => {
   res.sendStatus(200);
 });
 
+app.use(cors());
 
 
-app.get('/blogs/:title', cors(), function (req, res, next) {
-  res.json({msg: 'This is CORS-enabled for a Single Route'});
+
+app.get('/blogs/:title', function (req, res, next) {
+  res.json({msg: 'This is CORS-enabled for all origins!'});
 });
-
 app.listen(process.env.PORT || 3000, function() {
   console.log('listening!');
 });

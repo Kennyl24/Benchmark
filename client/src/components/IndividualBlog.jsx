@@ -29,18 +29,38 @@ class Individualblog extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      key: this.props.location.state.key ? this.props.location.state.key : null,
-      blog: this.props.blogs[this.props.location.state.key],
+      key: null,
+      blog: null,
       email:'',
+      data: null,
+      test: window.location.href.split('/')[window.location.href.split('/').length-2].split('-').join(' ')
     }
     this.submitted = this.submitted.bind(this);
   }
   componentWillMount(){
-      let test = window.location.href.split('/').pop().split('-').join(' ');
+      if(typeof this.props.location.state !== 'undefined'){
+        this.setState({
+          key: this.props.location.state.key
+        }, () => this.setState({
+          blog: this.props.blogs[this.state.key],
+          data: true
+        }));
+      } else {
+      console.log('trying this one boo');
+      console.log(window.location.href);
       for( let i = 0; i < this.props.blogs.length; i++){
-
-        console.log(test);
-      }
+        console.log(this.state.test)
+        console.log(this.props.blogs[i].blogTitle)
+        if(this.state.test === this.props.blogs[i].blogTitle){
+          this.setState({
+            key: i,
+          }, ()=> this.setState({
+            blog: this.props.blogs[this.state.key],
+            data: true
+          }));
+        }
+      };
+    }
   }
   submitted(){
     axios.post('/Email', {
@@ -55,6 +75,9 @@ class Individualblog extends React.Component {
     });
   }
   render () {
+    if (!this.state.data) {
+      return <div />
+  }
     return (
     <MuiThemeProvider>
     <LeadingBar/>
@@ -95,7 +118,7 @@ class Individualblog extends React.Component {
   <LinkedinShareButton children="IndividualBlog" url={window.location.href}  title={this.state.blog.blogTitle} description={this.state.blog.blogSnippet}>
   <LinkedinIcon size={32} round={true} />
   </LinkedinShareButton>
-  <TwitterShareButton children="IndividualBlog" url={window.location.href}  title={this.state.blog.blogTitle} via={'BenchmarkMortgage'} hashtags={["#BenchmarkMortgage"]}>
+  <TwitterShareButton children="IndividualBlog" url={window.location.href}  title={this.state.blog.blogTitle} via={'BenchmarkMortgage'} hashtags={["BenchmarkMortgage"]}>
   <TwitterIcon size={32} round={true} />
   </TwitterShareButton>
   <GooglePlusShareButton children="IndividualBlog" url={window.location.href}>
