@@ -5,7 +5,8 @@ const nodemailer = require('nodemailer');
 const smtpTransport = require('nodemailer-smtp-transport');
 const fs = require('fs');
 var cors = require('cors');
-
+require('es6-promise').polyfill();
+require('isomorphic-fetch');
 app.use(bodyParser.json());
 app.use('/', express.static(__dirname + '/../client/dist'));
 app.use('/Home', express.static(__dirname + '/../client/dist'));

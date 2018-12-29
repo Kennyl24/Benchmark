@@ -71,10 +71,6 @@ class VlogPage extends React.Component {
       <LeadingBar/>
       <VlogIntro/>
       <ComingSoonModal/>
-      {/* <VlogMap videos={this.state.videos}/>
-      <div className="floating-connect" >
-      <div className="g-ytsubscribe" data-channelid="UC8ChbdS8JIQjSUML3Isx0IQ" data-layout="default" data-theme="dark" data-count="hidden"></div>
-      </div> */}
       </div> 
       <BottomNav/>
       </body>
