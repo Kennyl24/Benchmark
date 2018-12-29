@@ -15,14 +15,44 @@ class LeadingBar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      width: window.innerWidth,
+      width: null,
       menu: false
     }
     this.titleClick=this.titleClick.bind(this);
     this.showMenuDrawer=this.showMenuDrawer.bind(this);
+    this.resize = this.resize.bind(this);
   }
-  componentDidUpdate(){
+  componentWillMount(){
+    if(window.innerWidth < 995){
+      this.setState({
+        width: false,
+      });
+    } else {
+      this.setState({
+        width: true,
+      });
+    }
   }
+  componentDidMount() {
+    window.addEventListener('resize', this.resize);
+  }
+
+componentWillUnmount(){
+    window.removeEventListener('resize', this.resize);
+}
+
+resize = () => {
+  this.forceUpdate();
+  if(window.innerWidth < 995){
+    this.setState({
+      width: false,
+    });
+  } else {
+    this.setState({
+      width: true,
+    });
+  }
+};
   titleClick(){
     location.reload();
   }
@@ -47,10 +77,12 @@ class LeadingBar extends React.Component {
     position:'fixed', backgroundColor:'rgba(255,255,255, 1.0)', cursor:'auto'}}
     titleStyle={{color:'black'}}
     showMenuIconButton={true}
-    iconElementLeft={<img style={{height: '100px', width: '275px'}}src="https://napa.benchmark.us/wp-content/uploads/sites/485/2015/08/home-banner-logo.png"/>}
+    iconElementLeft={<img style={{height: '100px', width: '275px'}}
+    onClick={() => window.location.href = '/home'}
+    src="https://napa.benchmark.us/wp-content/uploads/sites/485/2015/08/home-banner-logo.png"/>}
     iconStyleLeft={{marginLeft:'10px'}}
     >
-    { this.state.width > 600 ? 
+    { this.state.width ? 
     <div className="nav_links_container">
     <Button><Link to={{ pathname:'/home' }}className="nav-links">Home</Link></Button>   
     <Button><Link to={{ pathname: '/About' }}className="nav-links">About</Link></Button>      

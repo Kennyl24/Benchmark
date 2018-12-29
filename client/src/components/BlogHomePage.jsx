@@ -40,7 +40,7 @@ const homeBlogs = [
       maxWidth:'100%',
       // justifyContent: 'space-around'
     }}>
-        {homeBlogs.length > 0 ? homeBlogs.map((blog, key) =>  
+        {homeBlogs.length > 0 ? homeBlogs.map((blog, index) =>  
     <Card style={{height:'auto', 
       width: '33%',
       minWidth:'400px', 
@@ -53,7 +53,7 @@ const homeBlogs = [
         // subtitle="Subtitle"
       />
       <CardMedia
-        overlay={<Link to={{ pathname:'/blog' }}className="home-links"><CardTitle title="Read Me"
+        overlay={<Link to={{ pathname: `/blogs/${blog.blogTitle.split(' ').join('-')}`, state: { key: index} }}className="read-more"><CardTitle title="Read Me"
         titleStyle={{color:'white'}}
         // style={{height:'200px'}}
         /></Link>}
