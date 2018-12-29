@@ -10,6 +10,8 @@ import Reviews from './components/Reviews.jsx'
 import BlogPage from './components/BlogPage.jsx'
 import VlogPage from './components/VlogPage.jsx'
 import Individualblog from './components/Individualblog.jsx'
+import "isomorphic-fetch"
+import "@babel/polyfill";
 
 
 import StreetViewPanormaWithAnOverlayView from './components/Test.jsx'
