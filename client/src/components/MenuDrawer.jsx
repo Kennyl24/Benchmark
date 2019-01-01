@@ -48,21 +48,31 @@ class MenuDrawer extends React.Component {
       <div className={classes.fullList}>
         <List>
         
-          {['Home', 'About', 'Blog', 'Vlog', 'Reviews', 'Contact'].map((text, index) => (
+          {['Home', 'About', 'Blog', 'Vlog', 'Reviews', 'Contact', 'Apply Now'].map((text, index) => (
             
-            <ListItem button key={text} style={{textAlign:'center'}}
-            onClick={()=> 
-            window.location.href=`/${text}`
+            <ListItem button key={text} style={{fontFamily: 'Graphik Web,Helvetica,sans-serif!important', textAlign:'center', borderBottom: '1px solid rgba(242, 241, 239, 1)'}}
+            onClick={()=> {
+            if (text === 'Apply Now'){
+              window.open(
+                'https://napa.benchmark.us/apply/',
+                '_blank' // <- This is what makes it open in a new window.
+              );
+             } else {
+              window.location.href=`/${text}`
+            }
+            }
             }
             >
-            <Divider />
-           
-              <ListItemText primary={text} />
-
+              <ListItemText primary={text.toUpperCase()} />
             </ListItem>
             
           ))}
-          <ListItem button key={10} style={{textAlign:'center'}}
+          <ListItem button key={22} style={{textAlign:'center'}}
+        onClick={this.showMenu}
+          >
+          <ListItemText primary={'Close'.toUpperCase()} />
+          </ListItem>
+          {/* <ListItem button key={10} style={{textAlign:'center'}}
             onClick={()=> 
             window.location.href='https://napa.benchmark.us/apply/'
             }
@@ -73,17 +83,14 @@ class MenuDrawer extends React.Component {
         onClick={this.showMenu}
           >
           <ListItemText primary={'Close'} />
-          </ListItem>
+          </ListItem> */}
         </List>
-        <Divider />
 
       </div>
     );
 
     return (
-      <div style={{
-        marginTop:'10%', 
-      }} >
+      <div style={{marginTop:'10%'}}>
       <IconButton onClick={this.showMenu}color="inherit" aria-label="Menu">
       <MenuIcon/>
       </IconButton>
@@ -100,6 +107,7 @@ class MenuDrawer extends React.Component {
           }}
         >
           <div
+          // style={{position:'fixed', top:'100px'}}
             tabIndex={0}
             role="button"
             onClick={this.toggleDrawer('top', false)}

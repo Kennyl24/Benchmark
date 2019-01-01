@@ -49,7 +49,7 @@ const homeBlogs = [
       }}>
       <CardHeader
         title={blog.blogTitle}
-        titleStyle={{fontSize:'20px', fontWeight: 'bold', textAlign:'center', paddingRight:'10px'}}
+        titleStyle={{fontSize:'20px', fontWeight: 'bold'}}
         // subtitle="Subtitle"
       />
       <CardMedia
