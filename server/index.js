@@ -5,7 +5,12 @@ const nodemailer = require('nodemailer');
 const smtpTransport = require('nodemailer-smtp-transport');
 const fs = require('fs');
 var cors = require('cors');
-
+let forceSsl = function (req, res, next) {
+  if (req.headers['x-forwarded-proto'] !== 'https') {
+    return res.redirect(['https://', req.get('Host'), req.url].join(''));
+  }
+  return next();
+};
 app.use(bodyParser.json());
 app.use('/', express.static(__dirname + '/../client/dist'));
 app.use('/Home', express.static(__dirname + '/../client/dist'));
@@ -99,6 +104,7 @@ app.use(cors());
 app.get('/blogs/:title', function (req, res, next) {
   res.json({msg: 'This is CORS-enabled for all origins!'});
 });
+app.use(forceSsl);
 app.listen(process.env.PORT || 3000, function() {
   console.log('listening!');
 });
