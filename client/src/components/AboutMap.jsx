@@ -69,9 +69,11 @@ class AboutMap extends React.Component {
   render () {
     return (
       <MuiThemeProvider>
-        <h3 className="homepage-header" style={{color:'#787878'}} >Meet the Team</h3>
+        <div style={{backgroundColor:'#fafafa'}}>
+    <h3 className="homepage-header" style={{color:'#787878', margin: '0'}} >Meet the Team</h3>
     <div className="about-container">
         {team.length > 0 ? team.map((individual, key) => <Individual individual={individual} key={key} />) : null}
+    </div>
     </div>
       </MuiThemeProvider>
 )

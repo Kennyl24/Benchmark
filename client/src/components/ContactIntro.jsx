@@ -20,7 +20,7 @@ class ContactIntro extends React.Component {
   render () {
     return (
     <MuiThemeProvider>
-    <div style={{marginTop:'120px', height:'60vh', background: 'linear-gradient(#e0e0e0, #242f6e)', marginBottom: '50px'}}>
+    <div style={{marginTop:'120px', height:'auto', paddingBottom:'4%', background: 'linear-gradient(#e0e0e0, #242f6e)', marginBottom: '50px'}}>
       <div  style={{textAlign: 'center', top: '35%', color: 'white', display:'flex',
     flexDirection:'column', justifyContent:'center', alignItems:'center'
     }}>

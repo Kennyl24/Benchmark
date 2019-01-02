@@ -290,7 +290,7 @@ footer{
   flex-wrap: wrap;
   width: 100%;
   justify-content: center;
-  background-color: white;
+  background-color: #fafafa;
 }
 .blog-title {
   font-family: Graphik Web,Helvetica,sans-serif!important;
@@ -369,7 +369,6 @@ footer{
   -webkit-flex-wrap: wrap; /* Safari 6.1+ */
   display: flex;   
   flex-wrap: wrap;
-  padding: 20px;
   /* width: 100%; */
   /* justify-content: center; */
 }
@@ -718,8 +717,8 @@ li {
   /* z-index: 99999999; */
   /* position: fixed; */
   height: 40%;
-  top: 30%; 
-  left: 20%;
+  /* top: 30%;  */
+  /* left: 20%; */
   /* margin:auto; */
   /* overflow: auto; */
   /* border: 5px solid red; */
@@ -785,7 +784,7 @@ li {
   /* margin-bottom: 2%; */
   box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  z-index: 99999999;
+  /* z-index: 99999; */
   position: fixed;
   height: auto;
   top: 25%; 

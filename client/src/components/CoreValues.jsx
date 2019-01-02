@@ -47,8 +47,8 @@ class CoreValues extends React.Component {
   render () {
     return (
     <MuiThemeProvider>
-        <div className="service_container" style={{marginTop:'0px'}}>
-        <h3 className="homepage-header" style={{color:'#787878'}} >Core Values</h3>
+        <div className="service_container" style={{marginTop:'0px', backgroundColor:'#fafafa'}}>
+        <h3 className="homepage-header" style={{color:'#787878', margin: '0', paddingTop:'2%', paddingBottom:'2%'}} >Core Values</h3>
         <div style={{display: 'flex', flexFlow:'row wrap',   justifyContent: 'center', }}>
         {coreValues.length > 0 ? coreValues.map((value, key) => 
         // <div className="circle" style={{backgroundColor: value.color}} onClick={() => this.setState({

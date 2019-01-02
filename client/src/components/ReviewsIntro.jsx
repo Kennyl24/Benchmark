@@ -21,7 +21,7 @@ class ReviewsIntro extends React.Component {
   render () {
     return (
     <MuiThemeProvider>
-    <div style={{marginTop:'120px', height:'70vh', background: 'linear-gradient(#e0e0e0, #242f6e)'}}>
+    <div style={{marginTop:'120px', height:'auto', paddingBottom:'8%', background: 'linear-gradient(#e0e0e0, #242f6e)'}}>
     {/* <img src='https://images.unsplash.com/photo-1539666455488-99208279e51e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80'height="400px"width="100%"/> */}
     <div  style={{textAlign: 'center', paddingTop: '5%', color: 'white', display:'flex',
     flexDirection:'column', justifyContent:'center', alignItems:'center'

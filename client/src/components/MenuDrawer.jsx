@@ -16,7 +16,8 @@ import MenuIcon from '@material-ui/icons/Menu';
 const styles = {
   fullList: {
     width: 'auto',
-    height:'50%', 
+    height:'50%',
+    zIndex: '999999' 
     // marginTop:'15%'
   },
 };

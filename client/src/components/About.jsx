@@ -21,7 +21,7 @@ class About extends React.Component {
         <LeadingBar/>
         <TeamIntro/>
         {/* <Mission/> */}
-        <CoreValues style={{backgroundColor:'#fafafa'}}/>
+        <CoreValues/>
         <AboutMap style={{backgroundColor:'#fafafa'}}/>
         <BottomNav/>
       </MuiThemeProvider>

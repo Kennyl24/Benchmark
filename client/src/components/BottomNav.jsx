@@ -31,7 +31,7 @@ class BottomNav extends Component {
     return (
       <Paper zDepth={1} style={{height:'auto', verticalAlign:'middle', paddingBottom:'5%', backgroundColor:'#929497'}}>
       <div style={{color: 'white'}}>
-      <h6> 
+      <h6 style={{margin:'0', marginBottom:'4%'}}> 
       
         Benchmark Napa
       {/* <img style={{height: '100px', width: '275px'}}src="https://napa.benchmark.us/wp-content/uploads/sites/485/2015/08/home-banner-logo.png"/> */}

@@ -38,7 +38,7 @@ class Individualblog extends React.Component {
     this.submitted = this.submitted.bind(this);
   }
   componentWillMount(){
-      if(typeof this.props.location.state !== 'undefined'){
+      if (typeof this.props.location.state !== 'undefined'){
         this.setState({
           key: this.props.location.state.key
         }, () => this.setState({
@@ -81,7 +81,7 @@ class Individualblog extends React.Component {
     return (
     <MuiThemeProvider>
     <LeadingBar/>
-  <div style={{marginTop:'17%'}}>
+  <div style={{marginTop:'5%', padding:'5%'}}>
     <h1>{this.state.blog.blogTitle}</h1>
     <img src={this.state.blog.blogImage} className="modal-blog-image"style={{marginLeft:'5%', width: '25%', height:'250px'}}/>
     <p className="blog-modal-text" style={{padding:'20px'}}>{this.state.blog.blogText}</p>

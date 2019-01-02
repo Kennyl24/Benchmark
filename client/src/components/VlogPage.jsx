@@ -66,13 +66,13 @@ class VlogPage extends React.Component {
   render () {
     return (
     <MuiThemeProvider>
-      <body style={{position: 'fixed'}} >
+      <body >
       <div id="helloitsme">
       <LeadingBar/>
-      <VlogIntro/>
+      <VlogIntro style={{position:'fixed'}}/>
       <ComingSoonModal/>
       </div> 
-      <BottomNav/>
+      {/* <BottomNav/> */}
       </body>
    </MuiThemeProvider>
 

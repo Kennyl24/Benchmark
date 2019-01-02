@@ -21,9 +21,11 @@ class TeamIntro extends React.Component {
   render () {
     return (
     <MuiThemeProvider>
-        <div style={{marginTop:'120px', minHeight:'90vh', height:'auto', background: 'linear-gradient(#242f6e, #e0e0e0)'}}>
+        <div style={{marginTop:'120px', height:'auto', paddingLeft:'4%', paddingRight:'4%', paddingBottom:'4%', background: 'linear-gradient(#242f6e, #e0e0e0)'}}>
     {/* <img src='https://images.unsplash.com/photo-1539666455488-99208279e51e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80'height="400px"width="100%"/> */}
-      <div  style={{textAlign: 'center', position: 'absolute', top: '25%', left:'10%', right:'10%', color: 'white'}}>
+    <div  style={{textAlign: 'center', paddingTop: '5%', color: 'white', display:'flex',
+    flexDirection:'column', justifyContent:'center', alignItems:'center'
+    }}>
       <h1 style={{fontFamily:'Graphik Web,Helvetica,sans-serif!important'}}>
         About Us
         </h1>
