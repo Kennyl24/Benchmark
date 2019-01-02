@@ -230,7 +230,7 @@ If you are uncertain about what you need to do, or which steps you should take, 
 
       </p>,
     blogSnippet: 'You have submitted a mortgage application, found your dream home, and put in an offer. Now what? Applying for a home loan is an ongoing process, from application to closing, that does not have to be stressful. There are several things you can do to make the process more efficient, and things not to do …',
-    blogImage: 'http://brandonvaughn.com/wp-content/uploads/2014/01/overcoming-blocks.jpg'
+    blogImage: 'https://brandonvaughn.com/wp-content/uploads/2014/01/overcoming-blocks.jpg'
   },
   {
     blogTitle: 'Construction Loans: What to Expect',
