@@ -12,6 +12,7 @@ import LeadingBar from './LeadingBar.jsx';
 import BottomNav from './BottomNav.jsx';
 import TextField from '@material-ui/core/TextField';
 import axios from 'axios';
+import MetaTags from 'react-meta-tags';
 import {
   FacebookShareButton,
   GooglePlusShareButton,
@@ -33,11 +34,12 @@ class Individualblog extends React.Component {
       blog: null,
       email:'',
       data: null,
-      test: window.location.href.split('/')[window.location.href.split('/').length-2].split('-').join(' ')
+      test: window.location.href.split('/')[window.location.href.split('/').length-2].split('-').join(' '),
     }
     this.submitted = this.submitted.bind(this);
   }
   componentWillMount(){
+    console.log(window.location.href)
       if (typeof this.props.location.state !== 'undefined'){
         this.setState({
           key: this.props.location.state.key
@@ -80,7 +82,28 @@ class Individualblog extends React.Component {
   }
     return (
     <MuiThemeProvider>
+      <MetaTags>
+            <title>{this.state.blog.blogTitle}</title>
+            <meta name="description" content={this.state.blog.blogTitle} />
+            <meta property="og:title" content={this.state.blog.blogTitle} />
+            <meta property="og:image" content={this.state.blog.blogImage} />
+          </MetaTags>
     <LeadingBar/>
+    <div style={{position:'fixed', top: '20%', left:'2%', display:'flex', flexDirection:'column'}}>
+  
+  <FacebookShareButton children="IndividualBlog" url={window.location.href}  quote={this.state.blog.blogTitle} hashtag="#BenchmarkMortgage">
+  <FacebookIcon size={40} round={true} />
+  </FacebookShareButton>
+  <LinkedinShareButton children="IndividualBlog" url={window.location.href}  title={this.state.blog.blogTitle} description={this.state.blog.blogSnippet}>
+  <LinkedinIcon size={40} round={true} />
+  </LinkedinShareButton>
+  <TwitterShareButton children="IndividualBlog" url={window.location.href}  title={this.state.blog.blogTitle} via={'BenchmarkMortgage'} hashtags={["BenchmarkMortgage"]}>
+  <TwitterIcon size={40} round={true} />
+  </TwitterShareButton>
+  <GooglePlusShareButton children="IndividualBlog" url={window.location.href}>
+  <GooglePlusIcon size={40} round={true} />
+  </GooglePlusShareButton>
+  </div>
   <div style={{marginTop:'5%', padding:'5%'}}>
     <h1>{this.state.blog.blogTitle}</h1>
     <img src={this.state.blog.blogImage} className="modal-blog-image"style={{marginLeft:'5%', width: '25%', height:'250px'}}/>
@@ -110,21 +133,6 @@ class Individualblog extends React.Component {
 
   </div>
   <h1 className="homepage-header"> Share on your platform of choice: </h1>
-  <div style={{display:'flex', flexDirection:'wrap', width:'10%', marginLeft:'45%', marginRight:'45%'}}>
-  
-  <FacebookShareButton children="IndividualBlog" url={window.location.href}  quote={this.state.blog.blogTitle} hashtag="#BenchmarkMortgage">
-  <FacebookIcon size={32} round={true} />
-  </FacebookShareButton>
-  <LinkedinShareButton children="IndividualBlog" url={window.location.href}  title={this.state.blog.blogTitle} description={this.state.blog.blogSnippet}>
-  <LinkedinIcon size={32} round={true} />
-  </LinkedinShareButton>
-  <TwitterShareButton children="IndividualBlog" url={window.location.href}  title={this.state.blog.blogTitle} via={'BenchmarkMortgage'} hashtags={["BenchmarkMortgage"]}>
-  <TwitterIcon size={32} round={true} />
-  </TwitterShareButton>
-  <GooglePlusShareButton children="IndividualBlog" url={window.location.href}>
-  <GooglePlusIcon size={32} round={true} />
-  </GooglePlusShareButton>
-  </div>
 </div>
 <BottomNav/>
    </MuiThemeProvider>
