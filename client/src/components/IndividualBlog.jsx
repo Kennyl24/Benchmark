@@ -34,12 +34,12 @@ class Individualblog extends React.Component {
       blog: null,
       email:'',
       data: null,
-      test: window.location.href.split('/')[window.location.href.split('/').length-2].split('-').join(' '),
+      test: window.location.href.split('/')[window.location.href.split('/').length-1].split('-').join(' '),
     }
     this.submitted = this.submitted.bind(this);
   }
   componentWillMount(){
-    console.log(window.location.href)
+    console.log(window.location.href);
       if (typeof this.props.location.state !== 'undefined'){
         this.setState({
           key: this.props.location.state.key
@@ -132,7 +132,6 @@ class Individualblog extends React.Component {
   </Button>
 
   </div>
-  <h1 className="homepage-header"> Share on your platform of choice: </h1>
 </div>
 <BottomNav/>
    </MuiThemeProvider>
