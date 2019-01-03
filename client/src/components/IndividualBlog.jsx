@@ -34,7 +34,7 @@ class Individualblog extends React.Component {
       blog: null,
       email:'',
       data: null,
-      test: window.location.href.split('/')[window.location.href.split('/').length-1].split('-').join(' '),
+      test: window.location.href.split('/')[window.location.href.split('/').length-2].split('-').join(' '),
     }
     this.submitted = this.submitted.bind(this);
   }

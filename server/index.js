@@ -26,7 +26,7 @@ app.use('/Directions', express.static(__dirname + '/../client/dist'));
 app.use('/Individualblog', express.static(__dirname + '/../client/dist'));
 app.use('/Email', express.static(__dirname + '/../client/dist'));
 app.use('/Vlog', express.static(__dirname + '/../client/dist'));
-// app.use('/blogs/:title', express.static(__dirname + '/../client/dist'));
+app.use('/blogs/:title', express.static(__dirname + '/../client/dist'));
 const blogs = [
   'FHFA Announces Conforming Loan Limit Increase In 2019',
   'Nervous About Buying? Here’s A Dose of Confidence',
@@ -41,7 +41,7 @@ const blogs = [
 //   for (let i = 0; i < blogs.length; i++) {
 //     let title = blogs[i].blogTitle;
 //     console.log(title);
-//     res.render();
+//     res.render('/blogs/title');
 //   } 
 // });
 
@@ -101,9 +101,9 @@ app.use(cors());
 
 
 
-app.get('/blogs/:title', function (req, res, next) {
-  res.json({msg: 'This is CORS-enabled for all origins!'});
-});
+// app.get('/blogs/:title', function (req, res, next) {
+//   res.json({msg: 'This is CORS-enabled for all origins!'});
+// });
 app.use(forceSsl);
 app.listen(process.env.PORT || 3000, function() {
   console.log('listening!');
