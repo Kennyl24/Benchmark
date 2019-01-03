@@ -36,14 +36,14 @@ const blogs = [
   'Construction Loans: What to Expect',
   'Benchmark Introduces New Program to Expand Options for Medical Professionals',
 ];
-app.get('/blogs/*', function(req, res) {
-  console.log('trying');
-  for (let i = 0; i < blogs.length; i++) {
-    let title = blogs[i].blogTitle;
-    console.log(title);
-    res.render(page.render, page.language);
-  } 
-});
+// app.get('/blogs/*', function(req, res) {
+//   console.log('trying');
+//   for (let i = 0; i < blogs.length; i++) {
+//     let title = blogs[i].blogTitle;
+//     console.log(title);
+//     res.render();
+//   } 
+// });
 
 app.post('/Email', (req, res) => {
   const mailOptions = {
