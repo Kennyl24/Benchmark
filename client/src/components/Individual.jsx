@@ -53,7 +53,12 @@ class Individual extends React.Component {
       <img src={this.props.individual.image} style={{height:'200px', width:'90%', paddingLeft:'5%', paddingRigh:'5%'}}/>
       {this.state.hovered ? 
       <div style={{position:'absolute', top:0, bottom:0, left:0, right:0, height:'100%', width:'100%', backgroundColor:'rgba(108, 122, 137, .8)'}}>
-    <img src="https://img.icons8.com/ios/50/000000/plus.png" style={{minHeight:'15%', maxHeight:'15%', maxHeight:'20%', maxWidth:'20%', marginTop:'30%', marginLeft:'40%'}}alt="info-circle-outline-512" border="0"/>
+    {/* <img src="https://img.icons8.com/ios/50/000000/plus.png" alt="info-circle-outline-512" border="0"/> */}
+    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="48" height="48"
+viewBox="0 0 224 224"
+style={{fill: '#000000', maxHeight:'15%', maxHeight:'20%', maxWidth:'20%', marginTop:'23%', marginLeft:'40%'}}
+><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style={{mixBlendMode: 'normal'}}><path d="M0,224v-224h224v224z" fill="none"></path><g fill="#201783"><g id="surface1"><path d="M98,28h23.33333v163.33333h-23.33333z"></path><path d="M28,98h163.33333v23.33333h-163.33333z"></path></g></g></g></svg>
       </div> 
       :
       null
@@ -68,6 +73,7 @@ class Individual extends React.Component {
       modal
       closeOnDocumentClick
       open={this.state.modal}
+      contentStyle={{minWidth:'400px'}}
     >
     <div style={{textAlign: 'center', height:'80%'}}
     onClick={() => this.setState({
@@ -84,7 +90,7 @@ class Individual extends React.Component {
   </SvgIcon>
 </IconButton>
         <div style={{flexDirection: 'row'}}>
-    <img src={this.props.individual.image} className="modal-blog-image"style={{position:'absolute', top: '-10px', width: '25%', height:'30%'}}/>
+    <img src={this.props.individual.image} className="modal-blog-image"style={{position:'absolute', top: '-20px', width: '25%', height:'25%'}}/>
     <div style={{lineHeight:'1.5em'}}>
     <p style={{fontFamily:'plexeina-regular,Helvetica,sans-serif',paddingLeft:'20px', lineHeight:'2.0', fontSize:'24px', textAlign:'left',fontWeight:'600'}}>{this.props.individual.name}</p>
     <p style={{fontFamily:'plexeina-regular,Helvetica,sans-serif',paddingLeft:'20px', lineHeight:'2.0', fontSize:'18px', textAlign:'left',fontWeight:'500'}}>{this.props.individual.title}</p>
