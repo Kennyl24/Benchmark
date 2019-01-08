@@ -10,12 +10,115 @@ import Reviews from './components/Reviews.jsx'
 import BlogPage from './components/BlogPage.jsx'
 import VlogPage from './components/VlogPage.jsx'
 import Individualblog from './components/Individualblog.jsx'
+import Information from './components/Information.jsx'
+import Button from '@material-ui/core/Button';
+import { Link } from 'react-router-dom';
+
 import "isomorphic-fetch"
 import "@babel/polyfill";
 
 
 import StreetViewPanormaWithAnOverlayView from './components/Test.jsx'
 const blogs = [
+      {
+            blogTitle: 'Mortgage Banker Versus Mortgage Broker',
+            blogAuthor: 'Hilda Hensley',
+            blogText: 
+            <p className="blog-text">
+        <h1 className="blog-subtitle"> Should You Use a Mortgage Banker or a Mortgage Broker?</h1>
+        
+        When it’s time to secure a home loan, many people seek out a mortgage broker. But is this your best option? Would a mortgage banker be a better option?
+        
+        If you’re not sure of the difference between a mortgage broker and a mortgage banker, you’re not alone. Most people use the terms “mortgage broker” and “mortgage banker” interchangeably. In reality, they are two very different things. 
+        
+        <h2 className="blog-subtitle2">  Mortgage Broker </h2> 
+        A mortgage broker deals with many different wholesale lenders. The broker is an independent operator and can be a one-person office or a large organization with different loan agents acting under the one broker’s license. Mortgage brokers do not have affiliation with any one company. As a result, they are at the whim of the individual wholesale lenders guidelines, overlays, timeframes, and underwriters. Often, they don’t have strong relationships with underwriters, and communication is not encouraged. 
+         
+        <h2 className="blog-subtitle2">  Mortgage Banker  </h2> 
+        A mortgage banker is also called a correspondent lender. Mortgage bankers are independent offices working under a corporate umbrella where they underwrite and fund/close their loans in their own name.  They retain the servicing of the loans or they sell the servicing after closing. Mortgage bankers often have deep relationships with their underwriters, who are dedicated to the team at the mortgage banker’s office. They work in concert with underwriters to ensure each and every possible loan reaches the closing table.  
+        
+        <h2 className="blog-subtitle2">  Which is Better?  </h2> 
+        So which is better, the mortgage broker or the mortgage banker? While the mortgage broker might have been a competitive choice in the past, today’s mortgage programs are more commoditized, which means you really need a mortgage banker working for you. By having a mortgage banker in control of your home loan process, you’ll get better service, more competitive pricing, and often a faster path to closing on the loan. 
+        
+        Before you apply for your next mortgage, <span><Link to={{ pathname:'/contact' }}className="nav-links" style={{color:'black'}}>Contact Us</Link></span> . As mortgage bankers, we can help you make the best decision for your needs.
+        
+              </p>
+            ,
+            blogSnippet:'When it’s time to secure a home loan, many people seek out a mortgage broker. But is this your best option? Would a mortgage banker be a better option? Learn the difference between the two',
+            blogImage: 'https://i.ibb.co/YtcC90W/3.jpg'
+      },
+       {
+            blogTitle: 'Fast Track your Mortgage Approval',
+            blogAuthor: 'Hilda Hensley',
+            blogText: 
+            <p className="blog-text">
+        Many people think getting a mortgage approval is a difficult and stressful process. Since a mortgage is often the biggest financial obligation someone has, it’s no wonder qualifying for one requires some work. Between the mounds of paperwork and the waiting time involved as approvals are processed, it’s normal to feel anxious and stressed. However, there are steps you can take before you apply that can make getting a mortgage approval easier.
+        <br/>
+        As a mortgage banker who has helped thousands of people through the home-buying process, here are my top tips to fast-track your mortgage approval. 
+        
+        <h3> 1. Check Your Credit </h3>
+        Your credit score is vital to any type of lending decision, particularly a mortgage. Realize, though, that this does not mean you must have perfect credit. However, the higher your credit score, the lower your interest rate will likely be. When you check your credit, you can often find an estimation of your score through your bank, your credit card issuer, or even via online credit monitoring sites. But your score is only half the equation. You’ll also want an actual copy of your credit report from each of the three credit reporting agencies: Experian, Equifax, and TransUnion. Review each agency’s report for accuracy. If something doesn’t seem right, get it fixed before you apply for a mortgage.
+        
+        <h3> 2. Save for a Down Payment </h3>
+        Almost all mortgages require a down payment. The exact amount can range anywhere from 5% to 20% depending on the loan type. Realize that if you put less than 20% down, your mortgage lender will require you to carry PMI (Private Mortgage Insurance). The cost of PMI varies, but it’s usually around one half of 1% of the loan amount. So if you can avoid it, you should. You may be able to remove it later once your loan balance is paid down enough so that you have at least 20% equity. You’ll need to talk to your lender for specifics regarding this option. 
+        
+        <h3> 3. Build a Nest Egg </h3>
+        In addition to saving for a down payment, you’ll also want some extra cash on hand. Most lenders prefer to see that you have a couple of months of mortgage payments in reserve. No mortgage lender wants to think you’ll be living paycheck to paycheck with nothing saves for emergencies. One appliance repair shouldn’t impede on your ability to make your mortgage payment. Additionally, the greater your reserves, the more that can help make up for less than perfect credit history.
+        
+        <h3>4. Be Realistic About What You Can Afford </h3>
+        We all want our dream home now. But depending on your circumstances, that dream home may have to wait a few years. Be honest about what you can really afford. What kind of monthly payment can you comfortably carry? Remember that your mortgage amount may also need to include PMI, homeowner’s insurance, and property taxes. Calculate all this into your equation. Also look at your debt to income ratio, or DTI. This is the amount of monthly debt payments you have compared to your monthly income. Most mortgages will allow a maximum DTI of 41%. Ideally your DTI should be no higher than 36%. If your DTI is too high, or if you bite off more than you can chew in terms of a monthly payment, you’ll be more likely to miss mortgage payments if an emergency arises. 
+        
+        <h3>5. Get Your Documents Ready </h3>
+        Getting a mortgage requires a lot of paperwork and documentation. If you come to your lender with all the documents they are likely to need, you can make the process of getting a mortgage faster and less stressful. Here are the most common documents you’ll need to have ready.
+        
+        <h4>General:</h4>
+        <ul>
+        <li>Driver’s Licenses for all applicants</li>
+        <li>Social Security Card (only on FHA and VA)</li>
+        <li>Resident Alien Card or VISA – when applicable</li>
+        </ul>
+        <h4> Income: </h4>
+        <ul>
+      <li>Most recent 30 days of pay stubs with year-to-date totals</li>
+      <li>W-2 forms and/or 1099s (past 2 years)</li>
+      <li>Verification of other income such as social security (provide award letter for current year), alimony, or child support (provide divorce decree)</li>
+      <li>Most current 2 years tax returns (Federal only including all schedules)</li>
+      <li>Partnerships, S-Corp, and/or Corporate Federal returns for the previous 2 years including all schedules and K1s</li>
+      <li>If you have rental property income: Copies of all lease/rental agreements</li>
+      </ul>
+      <h4>Assets:</h4>
+        <ul>
+  <li>Most recent 2 months (60 days) actual bank statements. Include all pages for both checking and savings accounts.</li>
+  <li>Most recent 2 months retirement and investment account statements. Include all pages.</li>
+  <li>Source of any non-direct deposit(s) that are greater than 50% of your monthly income.</li>
+  <li>Proof of where the earnest money funds will originate. Lenders need proof that the earnest money has cleared your account.</li>
+  <li>If you are receiving gift money for this transaction, additional documentation may be required.</li>
+</ul>
+        <h4>Properties Owned:</h4>
+        <ul>
+  <li>Copy of current mortgage statement on all properties owned</li>
+  <li>Property tax information on all properties</li>
+  <li>Insurance Declarations page on all properties</li>
+</ul>
+        <h4>Other:</h4>
+        <ul>
+  <li>Bankruptcy – Copy of discharge and schedule of creditors</li>
+  <li>Divorced? – If so please provide your Divorce Decree if less than 18 years ago</li>
+  <li>VA only – Copy of Form DD214</li>
+  <li>Self Employed – Copy of current business license</li>
+</ul>
+        
+        You Can Get an Easy Mortgage Approval
+        <br/>
+        <br/>
+        Remember that you’re never alone when getting your mortgage. Both your mortgage banker and real estate agent can help guide you through the process to make it easier. So while getting a mortgage can be a big undertaking, it doesn’t have to be a stressful or difficult process. By doing some financial pre-planning, you can get approved and reap the rewards of home ownership.
+
+When you’re ready to apply for a mortgage, contact us at 707-254-8891 or hilda.hensley@benchmark.us. We can also direct you to the perfect real estate agent to help you.
+            </p>
+            ,
+            blogSnippet:'Many people think getting a mortgage approval is a difficult and stressful process. Since a mortgage is often the biggest financial obligation someone has, it’s no wonder qualifying for one requires some work.',
+            blogImage: 'https://i.ibb.co/vjsD0p9/app.jpg'
+          },
   {
 
     blogTitle: 'Why an Online Mortgage May Not Be Your Best Option',
@@ -297,6 +400,7 @@ ReactDOM.render(
     <Switch>
       <Route exact path="/" component={HomePage} />
       <Route exact path="/About" component={About} />
+      <Route  path="/About/" component={Information} />
       <Route  path="/Home" component={HomePage} />
       <Route  path="/Vlog" component={VlogPage} />
       <Route  exact path="/Blog" component={BlogPage} />

@@ -104,13 +104,16 @@ class FrontPictures extends React.Component {
   render () {
     return (
   <MuiThemeProvider>
-   <div style={{position:'relative', top:'50px', backgroundImage: 'url(https://images.pexels.com/photos/792034/pexels-photo-792034.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)', backgroundRepeat: 'no-repeat', backgroundSize: '100% 100%', height:'auto', width: '100%', marginBottom:'0px'}}>
-   <div style={{top: '9%', position: 'relative', marginLeft:'7%', maxWidth:'30%', display: 'flex', flexDirection: 'column', alignItems:'cetner', justifyContent:'center',}}>
-   <div style={{ fontFamily: 'Apple Chancery, cursive', fontSize: '350%', color:'#242f6e', paddingTop:'12%'}}>
+   <div style={{position:'relative', top:'40px', backgroundImage: 'url(https://i.ibb.co/MBTBvrM/welcome-home.jpg)', backgroundRepeat: 'no-repeat', backgroundSize: '100% 100%', height:'auto', width: '100%', marginBottom:'0px'}}>
+   <div style={{top: '7%', position: 'relative', marginLeft:'7%', maxWidth:'30%', display: 'flex', flexDirection: 'column', alignItems:'cetner', justifyContent:'center',}}>
+   <div style={{ fontFamily: 'Apple Chancery, cursive', fontSize: '350%', color:'#242f6e', paddingTop:'6%', textShadow: '1px 1px black' }}>
      {this.state.currentText ? this.state.currentText : null}
   </div>
   <p style={{fontFamily: 'Comic Sans MS", cursive, sans-serif', margin:'auto',  marginTop:'4%', color: 'white', fontSize: '18px', minWidth:'180px', maxWidth: '600px', lineHeight:'1.6', textShadow: '1px 1px black'}}>
-    Want to buy your dream home? Let your team of Home Financial Experts provide clear options and advice to help you make your dream home a reality! 
+    Want to buy your Napa Valley dream home? Let your team of Home Financial Experts provide clear options and advice to help you make your dream home a reality! 
+    <Link to={{ pathname: '/Contact' }}className="bottomnav-links"> <span style={{fontFamily: 'plexeina-regular,Helvetica,sans-serif', cursor:'pointer', padding:'0px 20% 0% 0%', color: 'white', fontSize: '16px', maxWidth: '400px', textDecoration:'underline'}}>
+    Speak with a Mortgage Expert Today!
+      </span></Link>
     {/* Your local napa valley mortgage lenders, we are a team of Home Financial Experts, we provide clear options and advice to help buyers make confident mortgage decisions */}
       </p>
     {/* <div style={{marginTop: '5%', display: 'flex', justifyContent:'center', padding: '15px'}}> */}
@@ -121,9 +124,9 @@ class FrontPictures extends React.Component {
     </div>
     <div style={{paddingBottom:'20%', marginTop:'5%'}}>
     {/* <li><Button><Link to={{ pathname: '/Reviews' }}className="bottomnav-links">Contact</Link></Button>  </li> */}
-    <Link to={{ pathname: '/Contact' }}className="bottomnav-links"> <p style={{fontFamily: 'plexeina-regular,Helvetica,sans-serif', cursor:'pointer', padding:'0px 20% 0% 0%', color: 'white', fontSize: '16px', maxWidth: '400px', textDecoration:'underline'}}>
-    Speak with a Financial Expert Today!
-      </p></Link>
+    {/* <Link to={{ pathname: '/Contact' }}className="bottomnav-links"> <p style={{fontFamily: 'plexeina-regular,Helvetica,sans-serif', cursor:'pointer', padding:'0px 20% 0% 0%', color: 'white', fontSize: '16px', maxWidth: '400px', textDecoration:'underline'}}>
+    Speak with a Mortgage Expert Today!
+      </p></Link> */}
       </div>
     </div>
    </div>
