@@ -17,6 +17,7 @@ class Individual extends React.Component {
     this.state = {
       hovered: false,
       clicked: false,
+      modal: false,
     }
     this.moused = this.moused.bind(this);
     this.clicked = this.clicked.bind(this);

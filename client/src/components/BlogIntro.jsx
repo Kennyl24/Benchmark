@@ -49,11 +49,16 @@ class BlogIntro extends React.Component {
           <Popup trigger={<Button variant="contained" style={{backgroundColor:"#242f6e", color: 'white'}}>
           Subscribe
       </Button>} 
+      closeBtn={true}
       modal
       closeOnDocumentClick
       >
-    <div style={{textAlign: 'center'}}>
-    <IconButton style={{
+    <div style={{textAlign: 'center'}}
+        onClick={()=> {
+        Popup.close()}}
+    >
+    <IconButton 
+    style={{
       position: 'absolute',
       right: '10px',
     }}

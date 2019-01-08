@@ -91,7 +91,7 @@ resize = () => {
     <Button><Link to={{ pathname: '/Vlog' }}className="nav-links">Vlog</Link></Button>
     <Button><Link to={{ pathname: '/Reviews' }}className="nav-links">Reviews</Link></Button>  
     <Button variant="outlined" style={{marginRight:'5px', marginLeft: '10px'}} className="nav-contact"><Link to={{ pathname: '/Contact' }}className="nav-links">Contact</Link></Button>
-    <Button variant="contained"style={{backgroundColor:"#242f6e", color: 'white'}} ><a href="https://napa.benchmark.us/apply/" target="_blank">Apply Now</a></Button>
+    <Button variant="contained"style={{backgroundColor:"#242f6e", color: 'white'}} ><a href="https://hildahensley.floify.com/apply?noheaderfooter#tab_a" target="_blank">Apply Now</a></Button>
   </div>
   : 
   // <IconButton color="inherit" aria-label="Menu">

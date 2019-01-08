@@ -291,6 +291,7 @@ Available on 5/1, 7/1, 10/1 + 15/1 Adjustable Rate Mortgages (ARMS)<br/><br/>
       super(props);
       this.state = {
         open: false,
+        modal: false
       }
     }
     render () {
@@ -305,14 +306,31 @@ Available on 5/1, 7/1, 10/1 + 15/1 Adjustable Rate Mortgages (ARMS)<br/><br/>
         <p style={{fontFamily:'plexeina-bold,Helvetica,sans-serif', fontSize:'18px', color:'#3f4245', lineHeight:'1.7em', paddingBottom: '28px!important', maxWidth:'600px', padding:'6px'}}>
           Whether you are a first time home buyer, or this isn't your first rodeo, our blog is the perfect place to learn about home mortgage loans.
           </p>
-          <Popup trigger={<Button variant="contained" style={{backgroundColor:"#242f6e", color: 'white'}}>
-          Subscribe
-      </Button>} 
+          <Button variant="contained" style={{backgroundColor:"#242f6e", color: 'white'}}
+          onClick={()=> this.setState({
+            modal:true
+          })}
+          >
+            Subscribe
+       </Button>
+            <Popup 
+            
+        //     trigger={<Button variant="contained" style={{backgroundColor:"#242f6e", color: 'white'}}>
+        //     Subscribe
+        // </Button>} 
       modal
       closeOnDocumentClick
+      open={this.state.modal}
+      // closeBtn={true}
       >
-    <div style={{textAlign: 'center'}}>
-    <IconButton style={{
+    <div style={{textAlign: 'center'}}
+    >
+    <IconButton 
+      onClick={()=> 
+        this.setState({
+          modal: false,
+        })}  
+    style={{
       position: 'absolute',
       right: '10px',
     }}

@@ -30,7 +30,7 @@ class ComingSoonModal extends React.Component {
     return (
       <MuiThemeProvider>
         <div className="comingsoon-modal">
-        <h2 style={{marginTop:'7%'}}>COMING SOON</h2>
+        <h2 className="homepage-header"style={{marginTop:'7%'}}>COMING SOON</h2>
         <p className="blog-text" style={{textAlign:'center'}}>Our vlog is close to launching<br/>
         Be the first to know, subscribe below!
         </p>
