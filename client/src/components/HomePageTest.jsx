@@ -80,7 +80,7 @@ const styles = theme => ({
 const images = [
   {
     url: 'https://images.pexels.com/photos/1202723/pexels-photo-1202723.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-    title: 'Va Loans',
+    title: 'VA Loans',
     width: '33.3%',
   },
   {
@@ -95,7 +95,7 @@ const images = [
   },
   {
     url: 'https://images.pexels.com/photos/872957/pexels-photo-872957.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-    title: 'conventional loan',
+    title: 'Conventional loans',
     width: '33.3%',
   },
   {

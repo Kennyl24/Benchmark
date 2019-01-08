@@ -26,7 +26,7 @@ class ReviewsIntro extends React.Component {
     <div  style={{textAlign: 'center', paddingTop: '5%', color: 'white', display:'flex',
     flexDirection:'column', justifyContent:'center', alignItems:'center'
     }}>
-      <h1 className="homepage-header" style={{color:'white'}}>
+      <h1 className="homepage-header" style={{color:'white', fontSize:'42px'}}>
       Reviews 
       </h1>
       <p style={{fontFamily:'plexeina-bold,Helvetica,sans-serif', fontSize:'18px', color:'white', lineHeight:'1.7em', paddingBottom:'1%', maxWidth:'600px'}}>

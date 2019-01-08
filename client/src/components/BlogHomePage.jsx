@@ -110,7 +110,7 @@ You Can Get an Easy Mortgage Approval
     <div className="card">
     <img className="card-image" src={blog.blogImage}/>
     <div className="container">
-    <p className="blog-snippet"> {blog.blogAuthor}</p>
+    <p className="blog-snippet" style={{paddingBottom:'0'}}> {blog.blogAuthor}</p>
       <h4 className="blog-title"><b>{blog.blogTitle}</b></h4> 
       <div style={{height:'180px'}}>
       <p className="blog-snippet"> {blog.blogSnippet}</p>
