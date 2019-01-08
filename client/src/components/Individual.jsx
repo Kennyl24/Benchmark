@@ -37,10 +37,11 @@ class Individual extends React.Component {
   render () {
     return (
     <MuiThemeProvider>
-    <Popup 
-    overlayStyle={{background:'rgba(0, 0, 0, 0.8)'}}
-    trigger={
-      <div className="individual-box">
+      <div className="individual-box"
+      onClick={() => this.setState({
+        modal:true,
+      })}
+      >
       <div onMouseEnter={this.moused} onMouseLeave={this.moused}
       style={{position: 'relative',
         width: '100%',
@@ -61,11 +62,18 @@ class Individual extends React.Component {
       <h3 className="homepage-header" style={{color:'#282a2d', margin: '0', fontSize:'1.2em', paddingTop:'10px', paddingBottom:'5px', fontWeight:'400'}}>{this.props.individual.name}</h3>
       <p style={{fontFamily:'plexeina-regular,Helvetica,sans-serif', color:'#787878', lineHeight:'1.5em', textAlign:'center'}}>{this.props.individual.title}</p>
       </div>
-    } 
+
+    <Popup 
+    overlayStyle={{background:'rgba(0, 0, 0, 0.8)'}}
       modal
       closeOnDocumentClick
+      open={this.state.modal}
     >
-    <div style={{textAlign: 'center', height:'80%'}}>
+    <div style={{textAlign: 'center', height:'80%'}}
+    onClick={() => this.setState({
+      modal:false,
+    })}
+    >
     <IconButton style={{
       position: 'absolute',
       right: '10px',

@@ -69,7 +69,7 @@ class CoreValues extends React.Component {
     return (
     <MuiThemeProvider>
         <div className="service_container" style={{backgroundColor:'#fafafa'}} id="corevalues">
-        <h3 className="homepage-header" style={{color:'#787878', margin: '0', paddingTop:'2%', paddingBottom:'2%'}} > Our Core Values</h3>
+        <h3 className="homepage-header" style={{color:'rgb(37, 45, 114)', margin: '0', paddingTop:'2%', paddingBottom:'2%'}} > Our Core Values</h3>
         <div style={{display: 'flex', flexFlow:'row wrap', justifyContent: 'center', paddingBottom:'3%'}}>
         {coreValues.length > 0 ? coreValues.map((value, key) => 
         <div style={{display: 'flex', flexDirection:'row', flexWrap:'wrap', justifyContent: 'center', width:'20%', minWidth:'250px'}}>

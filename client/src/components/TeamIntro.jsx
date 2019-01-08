@@ -31,7 +31,7 @@ class TeamIntro extends React.Component {
     <div  style={{textAlign: 'center', paddingTop: '5%', color: 'black', display:'flex',
     flexDirection:'column', justifyContent:'center', alignItems:'center', opacity: this.state.opacity
     }}>
-      <h1 className="homepage-header" style={{fontSize:'50px'}}>
+      <h1 className="homepage-header" style={{fontSize:'50px', color:'rgb(37, 45, 114)'}}>
         About 
         </h1>
         <div>

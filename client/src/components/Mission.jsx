@@ -11,7 +11,7 @@ class Mission extends React.Component {
     return (
       <MuiThemeProvider>
         <div style={{backgroundColor:'white', paddingTop:'3%', paddingBottom:'3%'}} id="mission">
-        <h3 className="homepage-header" style={{color:'#787878', margin:'0', paddingTop:'15px'}}>Our Mission</h3>
+        <h3 className="homepage-header" style={{color:'rgb(37, 45, 114)', margin:'0', paddingTop:'15px'}}>Our Mission</h3>
         <div style={{width:'60%', marginLeft:'20%'}}>
 <p style={{fontSize:'18px', textAlign:'center', lineHeight:'1.5em', color:'#3f4245', fontFamily:'plexeina-regular,Helvetica,sans-serif'}}> 
         Our mission is to deliver an honest, well-communicated,

@@ -104,9 +104,9 @@ class FrontPictures extends React.Component {
   render () {
     return (
   <MuiThemeProvider>
-   <div style={{position:'relative', top:'40px', backgroundImage: 'url(https://i.ibb.co/MBTBvrM/welcome-home.jpg)', backgroundRepeat: 'no-repeat', backgroundSize: '100% 100%', height:'auto', width: '100%', marginBottom:'0px'}}>
-   <div style={{top: '7%', position: 'relative', marginLeft:'7%', maxWidth:'30%', display: 'flex', flexDirection: 'column', alignItems:'cetner', justifyContent:'center',}}>
-   <div style={{ fontFamily: 'Apple Chancery, cursive', fontSize: '350%', color:'#242f6e', paddingTop:'6%', textShadow: '1px 1px black' }}>
+   <div style={{position:'relative', top:'40px', backgroundImage: 'url(https://media.cntraveler.com/photos/53d9d7316dec627b149daed7/16:9/w_1400,c_limit/vineyard-napa-california.jpg)', backgroundRepeat: 'no-repeat', backgroundSize: '100% 100%', height:'800px', width: '100%', marginBottom:'0px'}}>
+   <div style={{top: '7%', position: 'relative', marginLeft:'50%', maxWidth:'30%', display: 'flex', flexDirection: 'column', alignItems:'cetner', justifyContent:'center',}}>
+   <div style={{ fontFamily: 'Apple Chancery, cursive', fontWeight:'900', fontSize: '350%', color:'#242f6e', paddingTop:'35%'}}>
      {this.state.currentText ? this.state.currentText : null}
   </div>
   <p style={{fontFamily: 'Comic Sans MS", cursive, sans-serif', margin:'auto',  marginTop:'4%', color: 'white', fontSize: '18px', minWidth:'180px', maxWidth: '600px', lineHeight:'1.6', textShadow: '1px 1px black'}}>

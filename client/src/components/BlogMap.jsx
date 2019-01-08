@@ -400,7 +400,7 @@ Available on 5/1, 7/1, 10/1 + 15/1 Adjustable Rate Mortgages (ARMS)<br/><br/>
     <div  style={{backgroundColor:'#f5f5f5', textAlign: 'center', paddingTop: '4%', paddingBottom: '2%',  color: 'black', display:'flex',
     flexDirection:'column', justifyContent:'center', alignItems:'center'
     }}>
-      <h1 style={{fontFamily: 'Apple Chancery, cursive', fontSize:'42px', color:'#242f6e'}}>
+      <h1 className="homepage-header"style={{color:'#242f6e', fontSize: '50px'}}>
         Mortgage Lender Blog
         </h1>
         <p style={{fontFamily:'plexeina-bold,Helvetica,sans-serif', fontSize:'18px', color:'#3f4245', lineHeight:'1.7em', paddingBottom: '28px!important', maxWidth:'600px', padding:'6px'}}>

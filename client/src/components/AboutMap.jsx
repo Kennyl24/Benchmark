@@ -78,7 +78,7 @@ class AboutMap extends React.Component {
     return (
       <MuiThemeProvider>
     <div style={{backgroundColor:'#f5f5f5'}} id="team">
-    <h3 className="homepage-header" style={{ margin: '0', paddingTop:'6%'}} >Meet the Team</h3>
+    <h3 className="homepage-header" style={{ margin: '0', paddingTop:'6%', color:'rgb(37, 45, 114)'}} >Meet the Team</h3>
     {/* <div className="individual-box">
     <img src={team[0].image} style={{height:'200px'}}/>
     <h3 className="homepage-header" style={{color:'black', margin: '0'}}>{team[0].name}</h3>
