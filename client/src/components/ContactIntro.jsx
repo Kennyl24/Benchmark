@@ -20,12 +20,12 @@ class ContactIntro extends React.Component {
   render () {
     return (
     <MuiThemeProvider>
-    <div style={{marginTop:'120px', height:'auto', paddingBottom:'4%', background: 'linear-gradient(#e0e0e0, #242f6e)', marginBottom: '50px'}}>
-      <div  style={{textAlign: 'center', top: '35%', color: 'white', display:'flex',
+    <div style={{height:'auto', paddingBottom:'4%', background: 'linear-gradient(#e0e0e0, #242f6e)', marginBottom: '50px'}}>
+      <div  style={{textAlign: 'center', paddingTop: '5%', color: 'white', display:'flex',
     flexDirection:'column', justifyContent:'center', alignItems:'center'
     }}>
-      <h1 style={{fontFamily:'Simplifica', textAlign:'center', paddingTop:'5%'}}>
-        CONTACT US
+      <h1 className="homepage-header" style={{color:'white'}}>
+        Contact us
         </h1>
         <p style={{fontFamily:'Graphik Web,Helvetica,sans-serif!important', fontSize:'22px', marginTop:'2.5%'}}>
           Yes, you will speak with a human

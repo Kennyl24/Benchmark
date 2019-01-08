@@ -6,5 +6,4 @@ const blogs = [
   'How To Avoid Roadblocks Before Closing On Your New Home',
   'Construction Loans: What to Expect',
   'Benchmark Introduces New Program to Expand Options for Medical Professionals',
- 
 ];

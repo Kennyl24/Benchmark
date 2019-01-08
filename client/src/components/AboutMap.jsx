@@ -7,7 +7,7 @@ const team = [
   {
     name: 'Hilda Hensley',
     title: 'Branch Manager',
-    image: 'https://i.ibb.co/NNb98LG/hilda-hensley.jpg', 
+    image: 'https://i.ibb.co/XXdQxQb/Cropped-hilda.jpg', 
     color: 'red',
     nmls: '280206',
     about: 'As a financial home expert here in the Napa Valley I advise people like yourself on how to maximize your financial situation through strategic mortgage planning. I have been in the Mortgage Business 24 years always as a Loan Originator/Manager.  I opened Benchmark Mortgage in Napa in July of 2009!',
@@ -17,7 +17,7 @@ const team = [
   {
     name: 'Johnathn Weber',
     title: 'Loan Officer',
-    image: 'https://i.ibb.co/rKBmVNk/john-weber-horizontal.jpg', 
+    image: 'https://i.ibb.co/QKKPs22/cropped-john.jpg', 
     color: 'blue',
     nmls: '940566',
     phone: '7073498257',
@@ -27,7 +27,7 @@ const team = [
   {
     name: 'Kelly Winkle',
     title: 'Senior Loan Processor',
-    image: 'https://i.ibb.co/j8r5RYj/Kelly-Winkle.jpg', 
+    image: 'https://i.ibb.co/KFyWnNp/Cropped-kelly.jpg', 
     color: 'red',
     phone: '7072548891',
     email: 'kelly.winkle@benchmark.us',
@@ -36,7 +36,7 @@ const team = [
   {
     name: 'Diana Arana',
     title: 'Administrative Assistant',
-    image: 'https://i.ibb.co/YdM1q05/diana-arana.jpg', 
+    image: 'https://i.ibb.co/HgxhHzH/cropped-diana.jpg', 
     color: 'blue',
     phone: '7072548891',
     email: 'diana.arana@benchmark.us',
@@ -64,15 +64,36 @@ class AboutMap extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      clicked:false,
     }
+    this.clicked = this.clicked.bind(this)
+  }
+  clicked(){
+    console.log('clicking', key)
+    this.setState({
+      clicked: !this.state.clicked
+    })
   }
   render () {
     return (
       <MuiThemeProvider>
-        <div style={{backgroundColor:'#fafafa'}}>
-    <h3 className="homepage-header" style={{color:'#787878', margin: '0'}} >Meet the Team</h3>
+    <div style={{backgroundColor:'#f5f5f5'}} id="team">
+    <h3 className="homepage-header" style={{ margin: '0', paddingTop:'6%'}} >Meet the Team</h3>
+    {/* <div className="individual-box">
+    <img src={team[0].image} style={{height:'200px'}}/>
+    <h3 className="homepage-header" style={{color:'black', margin: '0'}}>{team[0].name}</h3>
+    <h5 style={{color:'#787878', textAlign:'center'}}>{team[0].title}</h5>
+    </div> */}
+    
+    
+    
     <div className="about-container">
-        {team.length > 0 ? team.map((individual, key) => <Individual individual={individual} key={key} />) : null}
+        {team.length > 0 ? team.map((individual, key) => 
+        <Individual 
+        individual={individual} 
+        key={key} 
+        onClick={this.clicked}
+        />) : null}
     </div>
     </div>
       </MuiThemeProvider>

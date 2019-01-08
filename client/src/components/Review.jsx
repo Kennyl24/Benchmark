@@ -26,7 +26,7 @@ class Review extends React.Component {
     }
     return (
     <MuiThemeProvider>
-    <div style={{padding:'0 24px 48px', minWidth: '27%', marginTop:'10%', maxWidth:'350px'}}>
+    <div style={{padding:'0 24px 48px', minWidth: '27%', marginTop:'2%', marginBottom:'2%', maxWidth:'350px'}}>
     <div className="review-card">
     <div style={{marginTop:'5%', alignItems:'center', margin:'auto', textAlign:'center'}}>
     <StarRateSharp style={{fill:"rgb(36, 47, 110)", marginTop:'10%'}}/>
@@ -35,7 +35,6 @@ class Review extends React.Component {
     <StarRateSharp style={{fill:"rgb(36, 47, 110)"}}/>
     <StarRateSharp style={{fill:"rgb(36, 47, 110)"}}/>
     </div>
-    {/* {photoHolder.map(i => <div key={i}></div>)} */}
     <div className="container">
       <p className="blog-text">{this.props.review.review}</p> 
       <p className="blog-text" style={{fontWeight: 'bold'}}>{this.props.review.name}</p> 

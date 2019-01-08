@@ -10,9 +10,10 @@ class Mission extends React.Component {
   render () {
     return (
       <MuiThemeProvider>
-        <h3 className="homepage-header" style={{color:'#787878'}}>Our Mission</h3>
+        <div style={{backgroundColor:'white', paddingTop:'3%', paddingBottom:'3%'}} id="mission">
+        <h3 className="homepage-header" style={{color:'#787878', margin:'0', paddingTop:'15px'}}>Our Mission</h3>
         <div style={{width:'60%', marginLeft:'20%'}}>
-       <p style={{fontSize:'18px', textAlign:'center'}}> 
+<p style={{fontSize:'18px', textAlign:'center', lineHeight:'1.5em', color:'#3f4245', fontFamily:'plexeina-regular,Helvetica,sans-serif'}}> 
         Our mission is to deliver an honest, well-communicated,
 financially sound lending experience.
 
@@ -21,6 +22,7 @@ As Home Financial Experts, we provide clear options and advice to help buyers ma
 Thank you for your business.
 <br/><br/>
 Hilda Hensley, Branch Manager</p>
+</div>
 </div>
       </MuiThemeProvider>
 )

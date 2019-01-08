@@ -54,7 +54,7 @@ import axios from 'axios';
         > VLOGS </h3>
         <div className="comingsoon-modal-home">
         <h2 style={{marginTop:'0%'}}>COMING SOON</h2>
-        <p className="blog-text" style={{textAlign:'center'}}>Our vlog is close to launching<br/>
+        <p className="vlog-text" style={{textAlign:'center'}}>Our vlog is close to launching<br/>
         Be the first to know, subscribe below!
         </p>
         <div style={{display:'flex', flexDirection: 'column',

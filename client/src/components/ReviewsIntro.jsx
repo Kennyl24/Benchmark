@@ -21,29 +21,37 @@ class ReviewsIntro extends React.Component {
   render () {
     return (
     <MuiThemeProvider>
-    <div style={{marginTop:'120px', height:'auto', paddingBottom:'8%', background: 'linear-gradient(#e0e0e0, #242f6e)'}}>
+    <div style={{height:'auto', paddingBottom:'2%', background: 'linear-gradient(0.25turn, rgb(37, 45, 114), rgb(211, 209, 209), rgb(37, 45, 114))'}}>
     {/* <img src='https://images.unsplash.com/photo-1539666455488-99208279e51e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80'height="400px"width="100%"/> */}
     <div  style={{textAlign: 'center', paddingTop: '5%', color: 'white', display:'flex',
     flexDirection:'column', justifyContent:'center', alignItems:'center'
     }}>
-      <h1 style={{fontFamily:'Graphik Web,Helvetica,sans-serif!important'}}>
-        TESTIMONIALS
-        </h1>
-        <p style={{fontFamily:'Graphik Web,Helvetica,sans-serif!important', fontSize:'22px'}}>
-          Here is how our clients and partners felt we did
+      <h1 className="homepage-header" style={{color:'white'}}>
+      Reviews 
+      </h1>
+      <p style={{fontFamily:'plexeina-bold,Helvetica,sans-serif', fontSize:'18px', color:'white', lineHeight:'1.7em', paddingBottom:'1%', maxWidth:'600px'}}>
+      Here is how our clients and partners felt we did!<br/>
+      Feel free to check these reviews out on <span style={{borderBottom:'1px solid black', color:'red', cursor:'pointer'}}
+      onClick={()=> {
+        window.open('https://www.yelp.com/biz/hilda-garcia-hensley-benchmark-mortgage-napa', '_blank');}}
+      >Yelp</span> and <span style={{borderBottom:'1px solid black', color:'blue', cursor:'pointer'}}
+      onClick={()=>{
+        window.open('https://www.zillow.com/lender-profile/hilda%20hensley/', '_blank');}}
+      >Zillow</span> as well.
         </p>
         <div> 
-        <div className='social-icons' style={{marginTop: '10%'}}/>
-        <span style={{maxWidth:'20%'}}>
-          <SocialIcon style={{marginRight:'15px'}} url="https://www.yelp.com/biz/hilda-garcia-hensley-benchmark-mortgage-napa" network="yelp" color="#d32323"/>
-          </span>
-          <span style={{maxWidth:'20%'}}>
-        
-        <SocialIcon style={{marginRight:'15px'}} url="https://www.zillow.com/lender-profile/hilda%20hensley/" color="#0074ef" />
-        </span>
-        
           </div>
-      </div>
+    </div>
+    {/* <div className='social-icons'>
+  <img src="https://i.ibb.co/8N0N6Z4/Yelp-Inc-Vector-Logo.png" 
+  onClick={()=> {
+    window.open('https://www.yelp.com/biz/hilda-garcia-hensley-benchmark-mortgage-napa', '_blank');}}
+  style={{cursor: 'pointer', width:'150px', height:'100px'}} alt="yelp" border="0"/>
+  <img src="https://i.ibb.co/5ThzGxS/hack-week-css-logo.png" 
+  onClick={()=>{
+   window.open('https://www.zillow.com/lender-profile/hilda%20hensley/', '_blank');}}
+  style={{cursor: 'pointer', width:'150px', height:'100px'}} alt="Zillow-Logo" border="0"/>
+  </div> */}
     </div>
    </MuiThemeProvider>
 )

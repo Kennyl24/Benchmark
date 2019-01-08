@@ -41,6 +41,7 @@ class VlogPage extends React.Component {
     }
   }
   componentDidMount(){
+    window.scrollTo(0, 0);
     this.targetElement = document.querySelector('#helloitsme');
     fetch('https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=25&playlistId=PLhVpGPBTPb700oGkIbfp_rYaaz4TXzmBu&key=AIzaSyCrHVss1cDavtAH-fXIPO8PiXWncGJa48o')
     .then(resp => resp.json())
@@ -66,7 +67,7 @@ class VlogPage extends React.Component {
   render () {
     return (
     <MuiThemeProvider>
-      <body >
+      <body style={{paddingTop:'0px'}}>
       <div id="helloitsme">
       <LeadingBar/>
       <VlogIntro style={{position:'fixed'}}/>

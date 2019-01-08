@@ -15,36 +15,31 @@ class TeamIntro extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      opacity:0,
     }
   }
-
+  componentDidMount(){
+    setTimeout(() => {
+      this.setState({opacity: 1});
+    }, 1000)
+  }
   render () {
     return (
     <MuiThemeProvider>
-        <div style={{marginTop:'120px', height:'auto', paddingLeft:'4%', paddingRight:'4%', paddingBottom:'4%', background: 'linear-gradient(#242f6e, #e0e0e0)'}}>
+        <div style={{ height:'auto', paddingLeft:'4%', paddingRight:'4%', paddingBottom:'4%', background: '#f5f5f5'}}>
     {/* <img src='https://images.unsplash.com/photo-1539666455488-99208279e51e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80'height="400px"width="100%"/> */}
-    <div  style={{textAlign: 'center', paddingTop: '5%', color: 'white', display:'flex',
-    flexDirection:'column', justifyContent:'center', alignItems:'center'
+    <div  style={{textAlign: 'center', paddingTop: '5%', color: 'black', display:'flex',
+    flexDirection:'column', justifyContent:'center', alignItems:'center', opacity: this.state.opacity
     }}>
-      <h1 style={{fontFamily:'Graphik Web,Helvetica,sans-serif!important'}}>
-        About Us
+      <h1 className="homepage-header" style={{fontSize:'50px'}}>
+        About 
         </h1>
-        <p style={{fontFamily:'Graphik Web,Helvetica,sans-serif!important', fontSize: '16px'}}>
-        <FormatQuoteOutlined/>
-        Our mission is to deliver an honest, well-communicated,
-financially sound lending experience.
-
-As Home Financial Experts, we provide clear options and advice to help buyers make confident mortgage decisions. Simply put, we put our clients first! Our motto at Benchmark is “Welcome Home”, which means that everyone who walks through our doors is family. As you do with family, we put your best interest first. Whether that’s finding you the best price in the marketplace, keeping you informed throughout the process or being there when the keys are placed in your hands. Here at Benchmark we create clients for life!
-<FormatQuoteOutlined/>
-<br/><br/>
-Thank you for your business.
-<br/><br/>
-<span style={{fontFamily: 'Apple Chancery, cursive'}}>
-Hilda Hensley, Branch Manager</span>
-</p>
-
-       
-      </div>
+        <div>
+        <p style={{fontFamily:'plexeina-bold,Helvetica,sans-serif', fontSize:'18px', color:'#3f4245', lineHeight:'1.7em', paddingBottom: '28px!important', maxWidth:'800px'}}>
+        At Benchmark Mortgage Napa we specialize in Mortgage Banking for Residential Home Loans. With some of the lowest interest rates in the industry and our amazingly fast underwriting, we offer our clients the best in mortgage lending.
+          </p>
+    </div>
+    </div>
     </div>
    </MuiThemeProvider>
 )

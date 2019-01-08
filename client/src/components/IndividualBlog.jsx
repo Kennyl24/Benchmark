@@ -13,6 +13,8 @@ import BottomNav from './BottomNav.jsx';
 import TextField from '@material-ui/core/TextField';
 import axios from 'axios';
 import MetaTags from 'react-meta-tags';
+import {isMobile} from 'react-device-detect';
+
 import {
   FacebookShareButton,
   GooglePlusShareButton,
@@ -38,6 +40,9 @@ class Individualblog extends React.Component {
     }
     this.submitted = this.submitted.bind(this);
   }
+  componentDidMount() {
+    window.scrollTo(0, 0);
+}
   componentWillMount(){
     console.log(window.location.href);
       if (typeof this.props.location.state !== 'undefined'){
@@ -89,7 +94,26 @@ class Individualblog extends React.Component {
             <meta property="og:image" content={this.state.blog.blogImage} />
           </MetaTags>
     <LeadingBar/>
-    <div style={{position:'fixed', top: '20%', left:'2%', display:'flex', flexDirection:'column'}}>
+  <div style={{marginTop:'5%', padding:'5%'}}>
+    <h1>{this.state.blog.blogTitle}</h1>
+    { isMobile ? <img src={this.state.blog.blogImage} className="modal-blog-image"style={{marginLeft:'8%', width: '80%', height:'250px'}}/> : 
+    <img src={this.state.blog.blogImage} className="modal-blog-image"style={{marginLeft:'5%', width: '25%', height:'250px'}}/>}
+    <p className="blog-modal-text" style={{padding:'20px'}}>{this.state.blog.blogText}</p>
+    { isMobile?     <div style={{display:'flex', flexDirection:'row', paddingLeft:'25%'}}>
+  
+  <FacebookShareButton children="IndividualBlog" url={window.location.href}  quote={this.state.blog.blogTitle} hashtag="#BenchmarkMortgage">
+  <FacebookIcon size={40} round={true} />
+  </FacebookShareButton>
+  <LinkedinShareButton children="IndividualBlog" url={window.location.href}  title={this.state.blog.blogTitle} description={this.state.blog.blogSnippet}>
+  <LinkedinIcon size={40} round={true} />
+  </LinkedinShareButton>
+  <TwitterShareButton children="IndividualBlog" url={window.location.href}  title={this.state.blog.blogTitle} via={'BenchmarkMortgage'} hashtags={["BenchmarkMortgage"]}>
+  <TwitterIcon size={40} round={true} />
+  </TwitterShareButton>
+  <GooglePlusShareButton children="IndividualBlog" url={window.location.href}>
+  <GooglePlusIcon size={40} round={true} />
+  </GooglePlusShareButton>
+  </div> : <div style={{position:'fixed', top: '20%', left:'2%', display:'flex', flexDirection:'column'}}>
   
   <FacebookShareButton children="IndividualBlog" url={window.location.href}  quote={this.state.blog.blogTitle} hashtag="#BenchmarkMortgage">
   <FacebookIcon size={40} round={true} />
@@ -104,10 +128,9 @@ class Individualblog extends React.Component {
   <GooglePlusIcon size={40} round={true} />
   </GooglePlusShareButton>
   </div>
-  <div style={{marginTop:'5%', padding:'5%'}}>
-    <h1>{this.state.blog.blogTitle}</h1>
-    <img src={this.state.blog.blogImage} className="modal-blog-image"style={{marginLeft:'5%', width: '25%', height:'250px'}}/>
-    <p className="blog-modal-text" style={{padding:'20px'}}>{this.state.blog.blogText}</p>
+    }
+    
+    
     <div style={{minWidth:'30%', marginLeft:'35%', marginRight:'35%'}}>
     <TextField
     style={{width:'100%'}}

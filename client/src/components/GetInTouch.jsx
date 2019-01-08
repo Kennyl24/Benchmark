@@ -74,16 +74,16 @@ class GetInTouch extends React.Component {
           </Button>
           </div>
       </div>
-    <div style={{width:'25%', minWidth:'340px'}}>
+    <div style={{width:'25%', minWidth:'340px', fontFamily: 'plexeina-bold,Helvetica,sans-serif'}}>
     <ul style={{listStyle: 'none'}}>
-      <p style={{fontSize:'22px', fontWeight: '500'}}>Reach Out Directly</p> <br/>
-      <li style={{marginBottom:'15px'}}><a href="tel:(707) 254-8891" style={{color:'black', marginBottom:'12px'}}> (707) 254-8891</a> <br/> </li>
-      <li style={{marginBottom:'15px'}}><a href="mailto:hilda.hensley@benchmark.us" style={{color:'black'}}>  teamhensley@benchmark.us</a> <br/></li>
-      <li style={{marginBottom:'15px'}}><a href="https://www.google.com/maps/dir/4123+Solano+Ave,+Napa,+CA+94558/''/@38.3344478,-122.3566659,13z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x808500d2af41b48d:0x2760ab5bef29d629!2m2!1d-122.3216465!2d38.334453!1m5!1m1!1s0x808500d2af41b48d:0x2760ab5bef29d629!2m2!1d-122.3216465!2d38.334453" target="_blank" 
-             style={{color: 'black'}}>  4123 Solano Ave, Napa, CA 94558 </a> <br/> </li>
-      <li style={{marginBottom:'15px'}}>   M-F 8:30AM-6:00PM <br/> </li>
+      <p style={{fontSize:'22px', width:'190px', fontWeight: '500', borderBottom:'1px solid black'}}>Reach Out Directly</p> <br/>
+      <li style={{marginBottom:'25px', fontSize:'18px'}}><a href="tel:(707) 254-8891" style={{color:'black', marginBottom:'12px'}}> (707) 254-8891</a> <br/> </li>
+      <li style={{marginBottom:'25px', fontSize:'18px',}}><a href="mailto:hilda.hensley@benchmark.us" style={{color:'black'}}>  teamhensley@benchmark.us</a> <br/></li>
+      <li style={{marginBottom:'25px', fontSize:'18px',}}><a href="https://www.google.com/maps/dir/4123+Solano+Ave,+Napa,+CA+94558/''/@38.3344478,-122.3566659,13z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x808500d2af41b48d:0x2760ab5bef29d629!2m2!1d-122.3216465!2d38.334453!1m5!1m1!1s0x808500d2af41b48d:0x2760ab5bef29d629!2m2!1d-122.3216465!2d38.334453" target="_blank" 
+             style={{color: 'black', fontSize:'18px',}}>  4123 Solano Ave Napa, CA 94558 </a> <br/> </li>
+      <li style={{marginBottom:'25px', fontSize:'18px',}}>   M-F 8:30AM-6:00PM <br/> </li>
       <li>  NMLS # 2143 </li>
-      <div className='social-icons' style={{marginTop: '10%'}}/>
+      <div className='social-bottom' style={{marginTop: '12%'}}/>
           <SocialIcon style={{marginRight:'15px'}} url="https://www.facebook.com/hildahensleynapa/" network="facebook" color="#242f6e" className="social"/>
           <SocialIcon style={{marginRight:'15px'}} url="https://www.zillow.com/lender-profile/hilda%20hensley/" color="#242f6e" />
           <SocialIcon style={{marginRight:'15px'}} url="http://youtube.com" network="youtube" color="#242f6e"/>

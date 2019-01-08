@@ -114,8 +114,8 @@ function ButtonBases(props) {
   const { classes } = props;
 
   return (
-    <div style={{marginTop:'150px'}}>
-    <h3 className="homepage-header" style={{cursor: 'pointer', color:'#787878'}}
+    <div style={{marginTop:'80px'}}>
+    <h3 className="homepage-header" style={{cursor: 'pointer', color:'#787878', margin:'0', paddingBottom:'1.5%'}}
     onClick={()=> window.location.href = "/about"}
     >WHY BENCHMARK NAPA?</h3>
     <div className={classes.root}>

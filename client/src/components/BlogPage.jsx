@@ -34,6 +34,9 @@ class BlogPage extends React.Component {
       open: false,
     }
   }
+  componentDidMount() {
+    window.scrollTo(0, 0);
+}
   handleOpen = () => {
     this.setState({ open: true });
   };
@@ -47,7 +50,7 @@ class BlogPage extends React.Component {
     <MuiThemeProvider>
       <div style={{backgroundColor: '#F5F5F5'}}>
       <LeadingBar/>
-      <BlogIntro/>
+      {/* <BlogIntro/> */}
       <BlogMap/>
       </div>
       <BottomNav/>

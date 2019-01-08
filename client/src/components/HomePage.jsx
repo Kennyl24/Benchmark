@@ -28,6 +28,9 @@ class HomePage extends React.Component {
   titleClick(){
     location.reload();
   }
+  componentDidMount() {
+    window.scrollTo(0, 0);
+}
   render () {
     return (
       <MuiThemeProvider>

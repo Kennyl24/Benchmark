@@ -2,7 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Blog from './Blog.jsx';
 import SocialMediaBar from 'react-social-media-bar';
-
+import Popup from "reactjs-popup";
+import TextField from '@material-ui/core/TextField';
+import SvgIcon from '@material-ui/core/SvgIcon';
+import IconButton from '@material-ui/core/IconButton';
+import Button from '@material-ui/core/Button';
 const blogs = [
   {
     blogTitle: 'Why an Online Mortgage May Not Be Your Best Option',
@@ -28,8 +32,8 @@ A good mortgage banker, on the other hand, creates a relationship of trust and r
 So before you apply for your next mortgage, contact us. We can help you make the best decision for your needs. 
 </p>
     </p>,
-    blogSnippet: 'We live in an era where people want everything online, from online shopping and food delivery to an online mortgage and doctor visit. Learn why online may not be better, especially for your mortgage needs.',
-    blogImage: 'https://i.ibb.co/2PXHtrR/euhfwue.jpg'
+    blogSnippet: 'We live in an era where people want everything online, from online shopping and food delivery to an online mortgage and doctor visit. Learn why online may not be better, especially for your mortgage needs...',
+    blogImage: 'https://i.ibb.co/c3Zw89D/mortgag.jpg'
   },
   {
     blogTitle: 'FHFA Announces Conforming Loan Limit Increase In 2019',
@@ -48,8 +52,8 @@ The new limits are effective January 1st, 2019. Typically, the VA and Federal Ho
     </p>
     
     ,
-    blogSnippet: 'The Federal Housing Finance Agency has announced that the maximum conforming loan limits for mortgages has increased. In most of the country, the confirming loan limits will increase nearly 6.5%, from $453,100 to $484,350 for 2019. For most high-cost areas, where 115% of the local median home value exceeds the loan limit, the loan limit',
-    blogImage: 'https://1xajpy1pi3fu42ewvj3ek189-wpengine.netdna-ssl.com/wp-content/uploads/2018/11/jumping-on-bed.jpg'
+    blogSnippet: 'The Federal Housing Finance Agency has announced that the maximum conforming loan limits for mortgages has increased. In most of the country, the confirming loan limits will increase nearly 6.5%, from...',
+    blogImage: 'https://i.ibb.co/FWt6C7P/firstime.jpg'
   },
   {
     blogTitle: 'Nervous About Buying? Here’s A Dose of Confidence',
@@ -86,7 +90,7 @@ Your real estate agent can help you find the right home for you in your price ra
     
     
     </p>,
-    blogSnippet: 'If you are interested in buying a house, but do not know what you might need, or whether you can qualify, you’re not alone. Many would-be buyers are intimidated by the thought of what it takes to buy a home. Some wonder whether they can afford to buy, if they have enough saved for a',
+    blogSnippet: 'If you are interested in buying a house, but do not know what you might need, or whether you can qualify, you’re not alone. Many would-be buyers are intimidated by the thought of what it takes to buy a home...',
     blogImage: 'https://1xajpy1pi3fu42ewvj3ek189-wpengine.netdna-ssl.com/wp-content/uploads/2018/11/confident-buyers-in-new-home.jpg'
   },
   {
@@ -119,7 +123,7 @@ At Benchmark, we don’t leave you to figure it out all on your own.
     
     </p>
     , 
-    blogSnippet: 'Unfortunately, it depends on the situation and reasons, so there is no simple answer for bad credit. A few potential reasons could be that you have experienced a divorce which led to a bankruptcy, mismanaged your finances, experienced job loss, or any other financial hazards. Your credit is calculated from many moving parts. The good',
+    blogSnippet: 'Unfortunately, it depends on the situation and reasons, so there is no simple answer for bad credit. A few potential reasons could be that you have experienced a divorce which led to a bankruptcy, mismanaged your finances...',
     blogImage: 'https://1xajpy1pi3fu42ewvj3ek189-wpengine.netdna-ssl.com/wp-content/uploads/2018/10/bad-credit-mortgage-graphic.jpg'
   },
   {
@@ -134,7 +138,7 @@ The Patriot Tour features retired Navy SEAL Marcus Luttrell, New York Times best
 <br/><br/>
 The Patriot Tour brings together things worth protecting, and things worth celebrating: Family, Service, Sacrifice, and Community. We are excited to be joining the Patriot Tour with these amazing heroes. Stay tuned for more exciting updates as we tour the country, coming to a city near you!
     </p>,
-    blogSnippet: 'Benchmark Mortgage is proud to announce our partnership with Team Never Quit. This year, we will be hitting the road with the 2018 Patriot Tour! Our Team is proud to have changed the way VA lending is done, and we take a “never quit” attitude with our veterans and their dreams. NO MORE will the',
+    blogSnippet: 'Benchmark Mortgage is proud to announce our partnership with Team Never Quit. This year, we will be hitting the road with the 2018 Patriot Tour! Our Team is proud to have changed the way VA lending is done, and we take a...',
     blogImage: 'https://1xajpy1pi3fu42ewvj3ek189-wpengine.netdna-ssl.com/wp-content/uploads/2018/08/40223498_10217472993639726_8198719343995912192_n.jpg'
   },
   {
@@ -175,7 +179,7 @@ After analyzing their demographics and buying habits, it is clear that millennia
 
 
     </p>,
-    blogSnippet: 'In 2017, Australian millionaire Tim Gurner famously attempted to blame millennial homebuyer obstacles on their inability to avoid frivolous spending on $19 avocado toast, in comments that were widely mocked throughout the internet. Many commentators are still quick to point the finger at extravagant spending to explain why homeownership among younger adults has declined compared …',
+    blogSnippet: 'In 2017, Australian millionaire Tim Gurner famously attempted to blame millennial homebuyer obstacles on their inability to avoid frivolous spending on $19 avocado toast, in comments that were widely mocked throughout the internet…',
     blogImage: 'https://1xajpy1pi3fu42ewvj3ek189-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/cover-1.jpg'
   },
   {
@@ -229,11 +233,11 @@ New credit inquiries can have a negative impact on your credit score and your de
 If you are uncertain about what you need to do, or which steps you should take, we at Benchmark are here to help you through the process. Together, we can work towards a truly great experience purchasing your brand new home!
 
       </p>,
-    blogSnippet: 'You have submitted a mortgage application, found your dream home, and put in an offer. Now what? Applying for a home loan is an ongoing process, from application to closing, that does not have to be stressful. There are several things you can do to make the process more efficient, and things not to do …',
+    blogSnippet: 'You have submitted a mortgage application, found your dream home, and put in an offer. Now what? Applying for a home loan is an ongoing process, from application to closing, that does not have to be stressful. There are several…',
     blogImage: 'https://brandonvaughn.com/wp-content/uploads/2014/01/overcoming-blocks.jpg'
   },
   {
-    blogTitle: 'Construction Loans: What to Expect',
+    blogTitle: 'Construction Loans: What you should expect for a construction loan',
     blogAuthor: 'I Am Benchmark',
     blogText: <p>
       Building a new home offers many advantages over purchasing an existing home on the market. You are able to customize the home to your specific needs and preferences and avoid costly repairs of outdated features. New homes are often also more energy efficient and technologically equipped.
@@ -252,7 +256,7 @@ With a one-time close program, the borrower will take out all of the financing t
 Construction loans are a great option for aspiring home owners who want to build their custom dream home from the ground up. While the process differs from obtaining a mortgage on an existing home, your lender can walk you through the process and advise you on the advantages and disadvantages of undergoing a building project.
       
       </p>,
-    blogSnippet: 'Building a new home offers many advantages over purchasing an existing home on the market. You are able to customize the home to your specific needs and preferences and avoid costly repairs of outdated features. New homes are often also more energy efficient and technologically equipped. Different from Traditional mortgages. Securing financing for a construction …',
+    blogSnippet: 'Building a new home offers many advantages over purchasing an existing home on the market. You are able to customize the home to your specific needs and preferences and avoid costly repairs of outdated features. New homes are often…',
     blogImage:'https://1xajpy1pi3fu42ewvj3ek189-wpengine.netdna-ssl.com/wp-content/uploads/2018/06/cover.jpg'
   },
   {
@@ -277,17 +281,76 @@ Available on 5/1, 7/1, 10/1 + 15/1 Adjustable Rate Mortgages (ARMS)<br/><br/>
 
 
     </p>,
-    blogSnippet: 'Benchmark has launched a new mortgage product that is customized to the unique career and financial outlook of professionals in the medical field. Last year, we launched the Medical Doctor Loan Program to better serve medical residents and doctors. Now we have further expanded our options for medical professionals to include jumbo loan amounts up …',
+    blogSnippet: 'Benchmark has launched a new mortgage product that is customized to the unique career and financial outlook of professionals in the medical field. Last year, we launched the Medical Doctor Loan Program to better serve medical residents…',
     blogImage:'https://1xajpy1pi3fu42ewvj3ek189-wpengine.netdna-ssl.com/wp-content/uploads/2018/06/Doctor-Picture-960w.jpg'
   },
 ]
 
-const BlogMap = props => (
-  <div >
+  class BlogMap extends React.Component { 
+    constructor(props) {
+      super(props);
+      this.state = {
+        open: false,
+      }
+    }
+    render () {
+      return (
+  <div>
+    <div  style={{backgroundColor:'#f5f5f5', textAlign: 'center', paddingTop: '4%', paddingBottom: '2%',  color: 'black', display:'flex',
+    flexDirection:'column', justifyContent:'center', alignItems:'center'
+    }}>
+      <h1 style={{fontFamily: 'Apple Chancery, cursive', fontSize:'42px', color:'#242f6e'}}>
+        Mortgage Lender Blog
+        </h1>
+        <p style={{fontFamily:'plexeina-bold,Helvetica,sans-serif', fontSize:'18px', color:'#3f4245', lineHeight:'1.7em', paddingBottom: '28px!important', maxWidth:'600px', padding:'6px'}}>
+          Whether you are a first time home buyer, or this isn't your first rodeo, our blog is the perfect place to learn about home mortgage loans.
+          </p>
+          <Popup trigger={<Button variant="contained" style={{backgroundColor:"#242f6e", color: 'white'}}>
+          Subscribe
+      </Button>} 
+      modal
+      closeOnDocumentClick
+      >
+    <div style={{textAlign: 'center'}}>
+    <IconButton style={{
+      position: 'absolute',
+      right: '10px',
+    }}
+    aria-label="Delete">
+  <SvgIcon>
+    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+  </SvgIcon>
+</IconButton>
+      <h1 className="modal-h1">Be the first to receive our latest tips!</h1>
+      <p className="modal-h2"> Simply enter in your email below and we will send you our latest blogs</p>
+      <div>
+      <TextField
+          style={{width: '250px', height: '50px'}}
+          id="outlined-email-input"
+          label="Email"
+          type="email"
+          name="email"
+          autoComplete="email"
+          margin="normal"
+          variant="outlined"
+          onChange={(event) => {
+            this.setState({
+              email: event.target.value
+            });
+          }}
+        />
+        </div>
+        <Button onClick={this.submitted} variant="contained" style={{marginTop:'.5%', marginBottom: '2%', width: '30%', height: '50px', backgroundColor:"#242f6e", color: 'white'}}>
+          Subscribe
+      </Button>
+    </div>
+  </Popup>
+          
+      </div>
   <div className="blog-container">
       {blogs.length > 0 ? blogs.map((blog, index) => <Blog blog={blog} index={index} />) : null}
   </div>
 </div>
-);
+)}};
 
 export default BlogMap;

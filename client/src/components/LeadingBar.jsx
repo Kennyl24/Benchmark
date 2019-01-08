@@ -74,10 +74,11 @@ resize = () => {
     right:'0px',
     zIndex: '999',
     height:'120px',
+    // boxShadow:'none',
     position:'fixed', backgroundColor:'rgba(255,255,255, 1.0)', cursor:'auto'}}
     titleStyle={{color:'black'}}
     showMenuIconButton={true}
-    iconElementLeft={<img style={{height: '100px', width: '275px'}}
+    iconElementLeft={<img style={{height: '100px', width: '275px', cursor:'pointer'}}
     onClick={() => window.location.href = '/home'}
     src="https://napa.benchmark.us/wp-content/uploads/sites/485/2015/08/home-banner-logo.png"/>}
     iconStyleLeft={{marginLeft:'10px'}}
