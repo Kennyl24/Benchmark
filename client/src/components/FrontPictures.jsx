@@ -41,7 +41,6 @@ class FrontPictures extends React.Component {
       currentImage: leadImages[0],
       currentText: '',
     }
-    this.test=this.test.bind(this);
     this.stopTimer=this.stopTimer.bind(this);
     this.startTimer=this.startTimer.bind(this);
     this.displayNext=this.displayNext.bind(this);
@@ -89,9 +88,6 @@ class FrontPictures extends React.Component {
     this.displayPrevious();
     this.stopTimer();
   }
-  test(){
-    console.log('hello')
-  }
   writeText(message){
     for(let i=0; i<message.length;i++){
       setTimeout(() => {
@@ -106,10 +102,10 @@ class FrontPictures extends React.Component {
     return (
   <MuiThemeProvider>
     {isMobile ?
-       <div style={{position:'relative', top:'40px', backgroundImage: 'url(https://media.cntraveler.com/photos/53d9d7316dec627b149daed7/16:9/w_1400,c_limit/vineyard-napa-california.jpg)', backgroundRepeat: 'no-repeat', backgroundSize: '100% 100%', height:'800px', width: '100%', marginBottom:'0px'}}>
-       <div style={{top: '7%', position: 'relative', marginLeft:'35%', maxWidth:'30%', display: 'flex', flexDirection: 'column', alignItems:'cetner', justifyContent:'center'}}>
+       <div style={{position:'relative', top:'40px', background: 'linear-gradient(0deg, rgb(37, 45, 114), white 40%, white)', height:'600px', width: '100%', marginBottom:'0px'}}>
+       <div style={{top: '0%', position: 'relative',textAlign:'center', padding:'30px', display: 'flex', flexDirection: 'column', alignItems:'cetner', justifyContent:'center'}}>
        
-       <div style={{ fontFamily: 'Apple Chancery, cursive', fontWeight:'900', fontSize: '350%', color:'#242f6e', paddingTop:'45%'}}>
+       <div style={{ fontFamily: 'Apple Chancery, cursive', fontWeight:'900', fontSize: '350%', color:'#242f6e', paddingTop:'15%'}}>
          {this.state.currentText ? this.state.currentText : null}
       </div>
       <p style={{fontFamily: 'Comic Sans MS", cursive, sans-serif', margin:'auto',  marginTop:'4%', color: 'white', fontSize: '18px', minWidth:'250px', maxWidth: '600px', lineHeight:'1.6', textShadow: '1px 1px black'}}>
@@ -117,9 +113,7 @@ class FrontPictures extends React.Component {
         <Link to={{ pathname: '/Contact' }}className="bottomnav-links"> <span style={{fontFamily: 'plexeina-regular,Helvetica,sans-serif', cursor:'pointer', padding:'0px 20% 0% 0%', color: 'white', fontSize: '16px', maxWidth: '400px', textDecoration:'underline'}}>
         Speak with a Mortgage Expert Today!
           </span></Link>
-        {/* Your local napa valley mortgage lenders, we are a team of Home Financial Experts, we provide clear options and advice to help buyers make confident mortgage decisions */}
           </p>
-        {/* <div style={{marginTop: '5%', display: 'flex', justifyContent:'center', padding: '15px'}}> */}
         <div style={{marginTop:'9%', justifyContent:'center'}}>
         <Button style={{backgroundColor:"#242f6e", color: 'white', borderRadius: 25}} size="large" variant="contained">
         <a href="https://hildahensley.floify.com/apply?noheaderfooter#tab_a" target="_blank">Apply Now</a>
@@ -140,9 +134,7 @@ class FrontPictures extends React.Component {
     <Link to={{ pathname: '/Contact' }}className="bottomnav-links"> <span style={{fontFamily: 'plexeina-regular,Helvetica,sans-serif', cursor:'pointer', padding:'0px 20% 0% 0%', color: 'white', fontSize: '16px', maxWidth: '400px', textDecoration:'underline'}}>
     Speak with a Mortgage Expert Today!
       </span></Link>
-    {/* Your local napa valley mortgage lenders, we are a team of Home Financial Experts, we provide clear options and advice to help buyers make confident mortgage decisions */}
       </p>
-    {/* <div style={{marginTop: '5%', display: 'flex', justifyContent:'center', padding: '15px'}}> */}
     <div style={{marginTop:'9%', justifyContent:'center'}}>
     <Button style={{backgroundColor:"#242f6e", color: 'white', borderRadius: 25}} size="large" variant="contained">
     <a href="https://hildahensley.floify.com/apply?noheaderfooter#tab_a" target="_blank">Apply Now</a>

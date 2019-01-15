@@ -101,18 +101,27 @@ class Individualblog extends React.Component {
     <p className="blog-modal-text" style={{padding:'20px'}}>{this.state.blog.blogText}</p>
     { isMobile?     <div style={{display:'flex', flexDirection:'row', paddingLeft:'25%'}}>
   <span style={{cursor:'pointer'}}>
+  <span>
   <FacebookShareButton children="IndividualBlog" url={window.location.href}  quote={this.state.blog.blogTitle} hashtag="#BenchmarkMortgage">
   <FacebookIcon size={40} round={true} />
   </FacebookShareButton>
+  </span>
+  <span>
   <LinkedinShareButton children="IndividualBlog" url={window.location.href}  title={this.state.blog.blogTitle} description={this.state.blog.blogSnippet}>
+  
   <LinkedinIcon size={40} round={true} />
   </LinkedinShareButton>
+  </span>
+  <span>
   <TwitterShareButton children="IndividualBlog" url={window.location.href}  title={this.state.blog.blogTitle} via={'BenchmarkMortgage'} hashtags={["BenchmarkMortgage"]}>
   <TwitterIcon size={40} round={true} />
   </TwitterShareButton>
+  </span>
+  <span>
   <GooglePlusShareButton children="IndividualBlog" url={window.location.href}>
   <GooglePlusIcon size={40} round={true} />
   </GooglePlusShareButton>
+  </span>
   </span>
   </div> : <div style={{position:'fixed', top: '20%', left:'2%', display:'flex', flexDirection:'column'}}>
   <span style={{cursor:'pointer'}}>

@@ -43,7 +43,7 @@ class VlogPage extends React.Component {
   componentDidMount(){
     window.scrollTo(0, 0);
     this.targetElement = document.querySelector('#helloitsme');
-    fetch('https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=25&playlistId=PLhVpGPBTPb700oGkIbfp_rYaaz4TXzmBu&key=AIzaSyCrHVss1cDavtAH-fXIPO8PiXWncGJa48o')
+    fetch('https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=25&playlistId=PLhVpGPBTPb700oGkIbfp_rYaaz4TXzmBu&key=AIzaSyDYv9vF3XMz3CBLuZ73g4VT6vLr5l7n5RM ')
     .then(resp => resp.json())
     .then((resp) => {
       console.log(resp);
