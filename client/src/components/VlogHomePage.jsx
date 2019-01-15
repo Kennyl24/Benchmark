@@ -11,6 +11,8 @@ import ComingSoonModal from './ComingSoonModal.jsx';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import axios from 'axios';
+import config from '../../../config.js';
+
 
   class VlogHomePage extends React.Component { 
     constructor(props) {
@@ -36,7 +38,7 @@ import axios from 'axios';
       });
     }
     componentWillMount(){
-      fetch('https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=25&playlistId=PLhVpGPBTPb700oGkIbfp_rYaaz4TXzmBu&key=AIzaSyDYv9vF3XMz3CBLuZ73g4VT6vLr5l7n5RM ')
+      fetch(`https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=25&playlistId=PLhVpGPBTPb700oGkIbfp_rYaaz4TXzmBu&key=${config.GOOGLE_MAPS_API_KEY}`)
       .then(resp => resp.json())
       .then((resp) => {
         this.setState({

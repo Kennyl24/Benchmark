@@ -18,6 +18,7 @@ import Popup from "reactjs-popup";
 import BottomNav from './BottomNav.jsx';
 import ComingSoonModal from './ComingSoonModal.jsx';
 import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+import config from '../../../config.js';
 
 
 const styles = theme => ({
@@ -43,7 +44,7 @@ class VlogPage extends React.Component {
   componentDidMount(){
     window.scrollTo(0, 0);
     this.targetElement = document.querySelector('#helloitsme');
-    fetch('https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=25&playlistId=PLhVpGPBTPb700oGkIbfp_rYaaz4TXzmBu&key=AIzaSyDYv9vF3XMz3CBLuZ73g4VT6vLr5l7n5RM ')
+    fetch(`https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=25&playlistId=PLhVpGPBTPb700oGkIbfp_rYaaz4TXzmBu&key=${config.GOOGLE_MAPS_API_KEY}`)
     .then(resp => resp.json())
     .then((resp) => {
       console.log(resp);
