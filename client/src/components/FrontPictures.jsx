@@ -105,12 +105,12 @@ class FrontPictures extends React.Component {
        <div style={{position:'relative', top:'40px', background: 'linear-gradient(0deg, rgb(37, 45, 114), white 40%, white)', height:'600px', width: '100%', marginBottom:'0px'}}>
        <div style={{top: '0%', position: 'relative',textAlign:'center', padding:'30px', display: 'flex', flexDirection: 'column', alignItems:'cetner', justifyContent:'center'}}>
        
-       <div style={{ fontFamily: 'Apple Chancery, cursive', fontWeight:'900', fontSize: '350%', color:'#242f6e', paddingTop:'15%'}}>
+       <div style={{ fontFamily: 'Apple Chancery, cursive', fontWeight:'900', fontSize: '350%', color:'#242f6e', paddingTop:'5%'}}>
          {this.state.currentText ? this.state.currentText : null}
       </div>
-      <p style={{fontFamily: 'Comic Sans MS", cursive, sans-serif', margin:'auto',  marginTop:'4%', color: 'white', fontSize: '18px', minWidth:'250px', maxWidth: '600px', lineHeight:'1.6', textShadow: '1px 1px black'}}>
+      <p style={{fontFamily: 'plexeina-regular,Helvetica,sans-serif', margin:'auto',  marginTop:'4%', color: 'black', fontSize: '18px', minWidth:'250px', maxWidth: '600px', lineHeight:'1.6'}}>
         Want to buy your Napa Valley dream home? Let your team of Home Financial Experts provide clear options and advice to help you make your dream home a reality! 
-        <Link to={{ pathname: '/Contact' }}className="bottomnav-links"> <span style={{fontFamily: 'plexeina-regular,Helvetica,sans-serif', cursor:'pointer', padding:'0px 20% 0% 0%', color: 'white', fontSize: '16px', maxWidth: '400px', textDecoration:'underline'}}>
+        <Link to={{ pathname: '/Contact' }}className="bottomnav-links"> <span style={{fontFamily: 'plexeina-regular,Helvetica,sans-serif', cursor:'pointer', padding:'0px 20% 0% 0%', color: 'white', fontSize: '16px', maxWidth: '400px', textDecoration:'underline', color:'black'}}>
         Speak with a Mortgage Expert Today!
           </span></Link>
           </p>
@@ -123,10 +123,10 @@ class FrontPictures extends React.Component {
        </div>
     
     :
-   <div style={{position:'relative', top:'40px', backgroundImage: 'url(https://media.cntraveler.com/photos/53d9d7316dec627b149daed7/16:9/w_1400,c_limit/vineyard-napa-california.jpg)', backgroundRepeat: 'no-repeat', backgroundSize: '100% 100%', height:'800px', width: '100%', marginBottom:'0px'}}>
-   <div style={{top: '7%', position: 'relative', marginLeft:'50%', maxWidth:'30%', display: 'flex', flexDirection: 'column', alignItems:'cetner', justifyContent:'center'}}>
+   <div style={{position:'relative', top:'40px', backgroundImage: 'url(https://media.cntraveler.com/photos/53d9d7316dec627b149daed7/16:9/w_1400,c_limit/vineyard-napa-california.jpg)', backgroundRepeat: 'no-repeat', backgroundSize: '100% 100%', height:'700px', width: '100%', marginBottom:'0px'}}>
+   <div style={{top: '7%', position: 'relative', marginLeft:'40%', maxWidth:'30%', display: 'flex', flexDirection: 'column', alignItems:'cetner', justifyContent:'center'}}>
    
-   <div style={{ fontFamily: 'Apple Chancery, cursive', fontWeight:'900', fontSize: '350%', color:'#242f6e', paddingTop:'35%'}}>
+   <div style={{ fontFamily: 'Apple Chancery, cursive', fontWeight:'900', fontSize: '350%', color:'#242f6e', paddingTop:'24%'}}>
      {this.state.currentText ? this.state.currentText : null}
   </div>
   <p style={{fontFamily: 'Comic Sans MS", cursive, sans-serif', margin:'auto',  marginTop:'4%', color: 'white', fontSize: '18px', minWidth:'180px', maxWidth: '600px', lineHeight:'1.6', textShadow: '1px 1px black'}}>

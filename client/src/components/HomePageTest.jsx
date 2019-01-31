@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Typography from '@material-ui/core/Typography';
+import { Link } from 'react-router-dom';
+import Button from '@material-ui/core/Button';
 
 const styles = theme => ({
   root: {
@@ -82,31 +84,37 @@ const images = [
     url: 'https://images.pexels.com/photos/1202723/pexels-photo-1202723.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
     title: 'VA Loans',
     width: '33.3%',
+    descripition:''
   },
   {
     url: 'https://images.pexels.com/photos/1166414/pexels-photo-1166414.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
     title: 'First Time Home Buyers',
     width: '33.3%',
+    descripition:''
   },
   {
     url: 'https://images.pexels.com/photos/8556/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
     title: 'Refinancing',
     width: '33.4%',
+    descripition:''
   },
   {
     url: 'https://images.pexels.com/photos/872957/pexels-photo-872957.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
     title: 'Conventional loans',
     width: '33.3%',
+    descripition:''
   },
   {
     url: 'https://images.pexels.com/photos/684385/pexels-photo-684385.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
     title: 'Pre-Approvals',
     width: '33.3%',
+    descripition:''
   },
   {
     url: 'https://images.pexels.com/photos/1549000/pexels-photo-1549000.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
     title: 'And More!',
     width: '33.4%',
+    descripition:''
   },
 ];
 
@@ -119,18 +127,20 @@ function ButtonBases(props) {
     onClick={()=> window.location.href = "/about"}
     >WHY BENCHMARK NAPA?</h3>
     <div className={classes.root}>
-      {images.map(image => (
+      {images.map((image, index) => (
+        // <Link to={{ pathname: `/info/${image.title.split(' ').join('-')}`, state: { key: index}}} style={{height:'100%', width:image.width, minWidth: '350px',}}>
         <ButtonBase
-          onClick={()=> {
+          onClick={()=> 
+            {
             window.confirm('Would you like to learn more?') ? window.location.href = "/contact" : null
-            
-          }}
+          }
+        }
           focusRipple
           key={image.title}
           className={classes.image}
           focusVisibleClassName={classes.focusVisible}
           style={{
-            width: image.width,
+            width: image.width
           }}
         >
           <span
@@ -152,6 +162,7 @@ function ButtonBases(props) {
             </Typography>
           </span>
         </ButtonBase>
+        // </Link>
       ))}
     </div>
     </div>

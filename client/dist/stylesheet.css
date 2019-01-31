@@ -670,7 +670,7 @@ h6:after {
   font-size: 1rem;
   display: inline-block;
   width: 30%;
-  min-width:  250px;
+  min-width:  300px;
   text-align:center;
   list-style: none;
   flex-direction: column;
@@ -817,7 +817,7 @@ li {
 .individual-box {
   margin-top: 3%;
   width: 25%;
-  min-width: 250px;
+  min-width: 300px;
   margin-bottom: 2%;
   margin-right: 5%;
   /* box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.2); */
@@ -999,4 +999,34 @@ animation-fill-mode: forwards;
 @keyframes fadeIn {
 from { opacity: 0; }
 to { opacity: 1; }
+}
+
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+} 
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

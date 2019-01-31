@@ -56,7 +56,7 @@ class CoreValues extends React.Component {
     if(isMobile){
     } else {
     window.scroll({ 
-      top: 1880, // could be negative value
+      top: 2200, // could be negative value
       left: 0, 
       behavior: 'smooth' 
     });
@@ -85,15 +85,6 @@ class CoreValues extends React.Component {
         <Button onClick={this.showMore}>{this.state.showMore ? 'Read Less' : 'Read More' }</Button>
           {/* </div> */}
           </div>
-
-        // <div className="value-card">
-        // <div className="circle" style={{backgroundColor: value.color, borderColor:'black', marginTop:'2%'}}>
-        // <p style={{textAlign:'center', marginTop:'35%', fontSize:'18px', color:'white'}}>{value.name}</p>
-        // </div>
-        // <p className="value-text">
-        // {value.description}
-        // </p>
-        // </div>
       )
       
       : null}

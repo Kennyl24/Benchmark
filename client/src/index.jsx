@@ -9,6 +9,7 @@ import HomePage from './components/HomePage.jsx'
 import Reviews from './components/Reviews.jsx'
 import BlogPage from './components/BlogPage.jsx'
 import VlogPage from './components/VlogPage.jsx'
+import IndividualAbout from './components/IndividualAbout.jsx'
 import Individualblog from './components/Individualblog.jsx'
 import Information from './components/Information.jsx'
 import Button from '@material-ui/core/Button';
@@ -19,6 +20,44 @@ import "@babel/polyfill";
 
 
 import StreetViewPanormaWithAnOverlayView from './components/Test.jsx'
+const images = [
+      {
+        url: 'https://images.pexels.com/photos/1202723/pexels-photo-1202723.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+        title: 'VA Loans',
+        width: '33.3%',
+        descripition:''
+      },
+      {
+        url: 'https://images.pexels.com/photos/1166414/pexels-photo-1166414.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+        title: 'First Time Home Buyers',
+        width: '33.3%',
+        descripition:''
+      },
+      {
+        url: 'https://images.pexels.com/photos/8556/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+        title: 'Refinancing',
+        width: '33.4%',
+        descripition:''
+      },
+      {
+        url: 'https://images.pexels.com/photos/872957/pexels-photo-872957.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+        title: 'Conventional loans',
+        width: '33.3%',
+        descripition:''
+      },
+      {
+        url: 'https://images.pexels.com/photos/684385/pexels-photo-684385.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+        title: 'Pre-Approvals',
+        width: '33.3%',
+        descripition:''
+      },
+      {
+        url: 'https://images.pexels.com/photos/1549000/pexels-photo-1549000.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+        title: 'And More!',
+        width: '33.4%',
+        descripition:''
+      },
+    ];
 const blogs = [
       {
             blogTitle: 'Mortgage Banker Versus Mortgage Broker',
@@ -400,12 +439,15 @@ ReactDOM.render(
     <Switch>
       <Route exact path="/" component={HomePage} />
       <Route exact path="/About" component={About} />
-      <Route  path="/About/" component={Information} />
+      {/* <Route  path="/About/" component={Information} /> */}
       <Route  path="/Home" component={HomePage} />
       <Route  path="/Vlog" component={VlogPage} />
       <Route  exact path="/Blog" component={BlogPage} />
       <Route  path="/blogs/"
       render={(props) => <Individualblog {...props} blogs={blogs} />}
+      />
+      <Route  path="/info/"
+      render={(props) => <IndividualAbout {...props} images={images} />}
       />
       <Route  path="/Reviews" component={Reviews} />
       <Route  path="/Contact" component={Contact} />

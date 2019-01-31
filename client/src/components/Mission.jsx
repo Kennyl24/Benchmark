@@ -21,7 +21,12 @@ As Home Financial Experts, we provide clear options and advice to help buyers ma
 <br/><br/>
 Thank you for your business.
 <br/><br/>
-Hilda Hensley, Branch Manager</p>
+<span style={{fontFamily: 'cursive', fontSize:'22px'}}>
+Hilda Hensley, 
+</span>
+<br/>
+Branch Manager</p>
+
 </div>
 </div>
       </MuiThemeProvider>

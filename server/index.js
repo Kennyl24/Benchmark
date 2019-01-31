@@ -27,6 +27,7 @@ app.use('/Individualblog', express.static(__dirname + '/../client/dist'));
 app.use('/Email', express.static(__dirname + '/../client/dist'));
 app.use('/Vlog', express.static(__dirname + '/../client/dist'));
 app.use('/blogs/:title', express.static(__dirname + '/../client/dist'));
+app.use('/about/#', express.static(__dirname + '/../client/dist'));
 const blogs = [
   'FHFA Announces Conforming Loan Limit Increase In 2019',
   'Nervous About Buying? Here’s A Dose of Confidence',
