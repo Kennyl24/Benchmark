@@ -56,7 +56,7 @@ class CoreValues extends React.Component {
     if(isMobile){
     } else {
     window.scroll({ 
-      top: 2200, // could be negative value
+      top: 2050, // could be negative value
       left: 0, 
       behavior: 'smooth' 
     });

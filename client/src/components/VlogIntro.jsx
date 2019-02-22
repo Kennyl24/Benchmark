@@ -21,7 +21,7 @@ class VlogIntro extends React.Component {
     return (
     <MuiThemeProvider>
     
-    <div style={{height:'93vh', paddingLeft:'-5%',  background: 'linear-gradient(to right bottom, #e0e0e0, #242f6e)'}}>
+    <div style={{height:'100vh', paddingLeft:'-5%',  background: 'linear-gradient(to right bottom, #e0e0e0, #242f6e)'}}>
     {/* <img src='https://images.unsplash.com/photo-1539666455488-99208279e51e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80'height="400px"width="100%"/> */}
       {/* <div  style={{textAlign: 'center', position: 'absolute', top: '25%', left:'35%', color: 'white'}}>
       <h1 style={{fontFamily:'Graphik Web,Helvetica,sans-serif!important'}}>

@@ -11,6 +11,8 @@ import SvgIcon from '@material-ui/core/SvgIcon';
 import IconButton from '@material-ui/core/IconButton';
 import FormatQuote from '@material-ui/icons/FormatQuote';
 import FormatQuoteOutlined from '@material-ui/icons/FormatQuoteOutlined';
+import {isMobile} from 'react-device-detect';
+
 class TeamIntro extends React.Component { 
   constructor(props) {
     super(props);
@@ -26,14 +28,14 @@ class TeamIntro extends React.Component {
   render () {
     return (
     <MuiThemeProvider>
-        <div style={{ height:'auto', paddingLeft:'4%', paddingRight:'4%', paddingBottom:'4%', background: '#f5f5f5'}}>
+        <div style={{ height:'auto', paddingLeft:'4%', paddingRight:'4%', paddingBottom:'4%', background: 'white'}}>
     {/* <img src='https://images.unsplash.com/photo-1539666455488-99208279e51e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80'height="400px"width="100%"/> */}
-    <div  style={{textAlign: 'center', paddingTop: '5%', color: 'black', display:'flex',
+    <div  style={{textAlign: 'center', paddingTop: isMobile ? '20%' : '10%', color: 'black', display:'flex',
     flexDirection:'column', justifyContent:'center', alignItems:'center', opacity: this.state.opacity
     }}>
-      <h1 className="homepage-header" style={{fontSize:'50px', color:'rgb(37, 45, 114)'}}>
-        About 
-        </h1>
+      <h3 className="homepage-header" style={{fontSize:'50px', color:'rgb(37, 45, 114)'}}>
+        About Us 
+        </h3>
         <div style={{maxWidth:'600px', minWidth:'450px'}}>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/jIfSP36-kqM?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>

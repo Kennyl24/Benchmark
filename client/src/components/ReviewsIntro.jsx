@@ -10,6 +10,7 @@ import TextField from '@material-ui/core/TextField';
 import SvgIcon from '@material-ui/core/SvgIcon';
 import IconButton from '@material-ui/core/IconButton';
 import { SocialIcon } from 'react-social-icons';
+import {isMobile} from 'react-device-detect';
 
 class ReviewsIntro extends React.Component { 
   constructor(props) {
@@ -23,14 +24,14 @@ class ReviewsIntro extends React.Component {
     <MuiThemeProvider>
     <div style={{height:'auto', paddingBottom:'2%', background: 'linear-gradient(0.25turn, rgb(37, 45, 114), rgb(211, 209, 209), rgb(37, 45, 114))'}}>
     {/* <img src='https://images.unsplash.com/photo-1539666455488-99208279e51e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80'height="400px"width="100%"/> */}
-    <div  style={{textAlign: 'center', paddingTop: '5%', color: 'white', display:'flex',
+    <div  style={{textAlign: 'center', paddingTop: isMobile ? '24%':'11%', color: 'white', display:'flex',
     flexDirection:'column', justifyContent:'center', alignItems:'center'
     }}>
       <h1 className="homepage-header" style={{color:'white', fontSize:'42px'}}>
       Reviews 
       </h1>
       <p style={{fontFamily:'plexeina-bold,Helvetica,sans-serif', fontSize:'18px', color:'white', lineHeight:'1.7em', paddingBottom:'1%', maxWidth:'600px'}}>
-      Here is how our clients and partners felt we did!<br/>
+      
       Feel free to check these reviews out on <span style={{borderBottom:'1px solid black', color:'red', cursor:'pointer'}}
       onClick={()=> {
         window.open('https://www.yelp.com/biz/hilda-garcia-hensley-benchmark-mortgage-napa', '_blank');}}

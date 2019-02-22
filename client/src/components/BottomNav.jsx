@@ -40,13 +40,13 @@ class BottomNav extends Component {
       <div className="grid"> 
         <div className="grid-item">
         {/* <ul style={{listStyle: 'none'}}> */}
-        <div style={{marginBottom:'25px', fontSize:'16px'}} className="bottomnav-links"><a href="tel:(707) 254-8891" style={{color:'white', paddingBottom:'0px'}}> (707) 254-8891</a> <br/> </div>
-      <div style={{marginBottom:'25px', fontSize:'16px'}}className="bottomnav-links"><a href="mailto:teamhensley@benchmark.us" style={{color:'white', marginBottom:'0px'}}>  teamhensley@benchmark.us</a> <br/></div>
-      <div style={{marginBottom:'25px', fontSize:'16px'}}className="bottomnav-links"><a href="https://www.google.com/maps/dir/4123+Solano+Ave,+Napa,+CA+94558/''/@38.3344478,-122.3566659,13z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x808500d2af41b48d:0x2760ab5bef29d629!2m2!1d-122.3216465!2d38.334453!1m5!1m1!1s0x808500d2af41b48d:0x2760ab5bef29d629!2m2!1d-122.3216465!2d38.334453" target="_blank" 
-             style={{color: 'white', marginBottom:'15px'}}className="bottomnav-links">  4123 Solano Ave, Napa, CA 94558 </a> <br/> </div>
-      <div style={{marginBottom:'25px', fontSize:'16px'}}className="bottomnav-links">Monday - Friday 8:30AM-6:00PM <br/> </div>
-      <div style={{marginBottom:'25px', fontSize:'16px'}}className="bottomnav-links">© 2019 Ark-La-Tex Financial Services, LLC</div>
-      <div style={{marginBottom:'25px', fontSize:'16px'}}className="bottomnav-links">NMLS#2143 </div>
+        <div style={{marginBottom:'25px', fontSize:'16px'}} className="bottomnav_links"><a href="tel:(707) 254-8891" style={{color:'white', paddingBottom:'0px'}}> (707) 254-8891</a> <br/> </div>
+      <div style={{marginBottom:'25px', fontSize:'16px'}}className="bottomnav_links"><a href="mailto:teamhensley@benchmark.us" style={{color:'white', marginBottom:'0px'}}>  teamhensley@benchmark.us</a> <br/></div>
+      <div style={{marginBottom:'25px', fontSize:'16px'}}className="bottomnav_links"><a href="https://www.google.com/maps/dir/4123+Solano+Ave,+Napa,+CA+94558/''/@38.3344478,-122.3566659,13z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x808500d2af41b48d:0x2760ab5bef29d629!2m2!1d-122.3216465!2d38.334453!1m5!1m1!1s0x808500d2af41b48d:0x2760ab5bef29d629!2m2!1d-122.3216465!2d38.334453" target="_blank" 
+             style={{color: 'white', marginBottom:'15px'}}className="bottomnav_links">  4123 Solano Ave, Napa, CA 94558 </a> <br/> </div>
+      <div style={{marginBottom:'25px', fontSize:'16px'}}className="bottomnav_links">Monday - Friday 8:30AM-6:00PM <br/> </div>
+      <div style={{marginBottom:'25px', fontSize:'16px'}}className="bottomnav_links">© 2019 Ark-La-Tex Financial Services, LLC</div>
+      <div style={{marginBottom:'25px', fontSize:'16px'}}className="bottomnav_links">NMLS#2143 </div>
         {/* </ul> */}
           </div>
           <div className="grid-item">
@@ -81,12 +81,12 @@ class BottomNav extends Component {
       </div>
           </div>
           <div className="grid-item" style={{minWidth:'250px'}}>
-          <span><Button ><Link to={{ pathname:'/home' }}className="bottomnav-links">Home</Link></Button> <br/> </span> 
-          <span><Button><Link to={{ pathname: '/About' }}className="bottomnav-links">About</Link></Button> <br/> </span>    
-          <span><Button><Link to={{ pathname: '/Blog' }}className="bottomnav-links">Blog</Link></Button> <br/>  </span>                                                                                                                                                                                                               
-          <span><Button><Link to={{ pathname: '/Vlog' }}className="bottomnav-links">Vlog</Link></Button><br/></span>
-          <span><Button><Link to={{ pathname: '/Reviews' }}className="bottomnav-links">Reviews</Link></Button><br/></span>  
-          <span><Button><Link to={{ pathname: '/Contact' }}className="bottomnav-links" style={{paddingLeft:'5px'}}>Contact</Link></Button> <br/> </span>
+          <div style={{marginBottom:'20px', fontSize:'16px'}}><a href='/home'className="bottomnav-links">Home</a></div> 
+          <div style={{marginBottom:'20px', fontSize:'16px'}}><a href='/About'className="bottomnav-links">About</a></div>    
+          <div style={{marginBottom:'20px', fontSize:'16px'}}><a href='/Blog'className="bottomnav-links">Blog</a></div>                                                                                                                                                                                                               
+          <div style={{marginBottom:'20px', fontSize:'16px'}}><a href='/Vlog'className="bottomnav-links">Vlog</a></div>
+          <div style={{marginBottom:'20px', fontSize:'16px'}}><a href='/Reviews'className="bottomnav-links">Reviews</a></div>  
+          <div><a href='/Contact' className="bottomnav-links">Contact</a></div>
         
           </div>
       </div> 

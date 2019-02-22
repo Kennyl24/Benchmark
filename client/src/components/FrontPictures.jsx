@@ -102,42 +102,72 @@ class FrontPictures extends React.Component {
     return (
   <MuiThemeProvider>
     {isMobile ?
-       <div style={{position:'relative', top:'40px', background: 'linear-gradient(0deg, rgb(37, 45, 114), white 40%, white)', height:'600px', width: '100%', marginBottom:'0px'}}>
-       <div style={{top: '0%', position: 'relative',textAlign:'center', padding:'30px', display: 'flex', flexDirection: 'column', alignItems:'cetner', justifyContent:'center'}}>
+       <div style={{position:'relative', top:'0', backgroundImage: 'url(https://media.cntraveler.com/photos/53d9d7316dec627b149daed7/16:9/w_1400,c_limit/vineyard-napa-california.jpg)', backgroundRepeat: 'no-repeat', backgroundSize: '100% 100%', height:'700px', width: '100%', marginBottom:'0px'}}>
+       <div style={{top: '200', position: 'relative', display: 'flex', flexDirection: 'column', alignItems:'cetner', justifyContent:'center'}}>
        
-       <div style={{ fontFamily: 'Apple Chancery, cursive', fontWeight:'900', fontSize: '350%', color:'#242f6e', paddingTop:'5%'}}>
+       {/* <div style={{ fontFamily: 'Apple Chancery, cursive', fontWeight:'900', fontSize: '350%', color:'#242f6e', paddingTop:'24%'}}>
          {this.state.currentText ? this.state.currentText : null}
-      </div>
-      <p style={{fontFamily: 'plexeina-regular,Helvetica,sans-serif', margin:'auto',  marginTop:'4%', color: 'black', fontSize: '18px', minWidth:'250px', maxWidth: '600px', lineHeight:'1.6'}}>
-        Want to buy your Napa Valley dream home? Let your team of Home Financial Experts provide clear options and advice to help you make your dream home a reality! 
-        <Link to={{ pathname: '/Contact' }}className="bottomnav-links"> <span style={{fontFamily: 'plexeina-regular,Helvetica,sans-serif', cursor:'pointer', padding:'0px 20% 0% 0%', color: 'white', fontSize: '16px', maxWidth: '400px', textDecoration:'underline', color:'black'}}>
+      </div> */}
+      {/* <p style={{fontFamily: 'Comic Sans MS", cursive, sans-serif', margin:'auto',  marginTop:'18%', color: 'white', fontSize: '24px', textAlign:'center', marginLeft:'20%', marginRight:'20%', lineHeight:'1.6', textShadow: '1px 1px black'}}>
+        Want to buy your Napa Valley dream Home? Let the Benchmark Mortgage Napa Team make that a reality!
+        </p> */}
+        {/* Want to buy your Napa Valley dream home? Let your team of Home Financial Experts provide clear options and advice to help you make your dream home a reality!  */}
+        {/* <Link to={{ pathname: '/Contact' }}className="bottomnav-links"> <span style={{fontFamily: 'plexeina-regular,Helvetica,sans-serif', cursor:'pointer', padding:'0px 20% 0% 0%', color: 'white', fontSize: '16px', maxWidth: '400px', textDecoration:'underline'}}>
         Speak with a Mortgage Expert Today!
-          </span></Link>
-          </p>
-        <div style={{marginTop:'9%', justifyContent:'center'}}>
-        <Button style={{backgroundColor:"#242f6e", color: 'white', borderRadius: 25}} size="large" variant="contained">
+          </span></Link> */}
+        <div style={{display:'flex', flexDirection:'column', alignItems:'center', marginTop:'25%', justifyContent:'center'}}>
+        <p style={{fontFamily: 'Comic Sans MS", cursive, sans-serif', margin:'auto',  marginTop:'20%', color: 'white', fontSize: '22px', textAlign:'center', marginLeft:'20%', marginRight:'20%', lineHeight:'1.6', textShadow: '1px 1px black'}}>
+        Want to buy your Napa Valley dream home? Let the Benchmark Mortgage Napa Team make that a reality!
+        </p>
+        <Link to={{ pathname: '/Contact' }}className="front-links"> <p style={{fontFamily: 'plexeina-regular,Helvetica,sans-serif', cursor:'pointer', padding:'0px 0% 0% 0%',marginLeft:'20%', marginRight:'20%',  color: 'white', fontSize: '22px', textAlign:'center', textDecoration:'underline'}}>
+        Speak with a Mortgage Expert Today!
+          </p></Link>
+        {/* <Button style={{backgroundColor:"#242f6e", marginTop:'2%', color: 'white', borderRadius: 25}} size="large" variant="contained">
         <a href="https://hildahensley.floify.com/apply?noheaderfooter#tab_a" target="_blank">Apply Now</a>
-        </Button>
+        </Button> */}
         </div>
         </div>
        </div>
+      //  <div style={{position:'relative', top:'40px', background: 'linear-gradient(0deg, rgb(37, 45, 114), white 40%, white)', height:'600px', width: '100%', marginBottom:'0px'}}>
+      //  <div style={{top: '0%', position: 'relative',textAlign:'center', padding:'30px', display: 'flex', flexDirection: 'column', alignItems:'cetner', justifyContent:'center'}}>
+       
+      //  <div style={{ fontFamily: 'Apple Chancery, cursive', fontWeight:'900', fontSize: '350%', color:'#242f6e', paddingTop:'5%'}}>
+      //    {this.state.currentText ? this.state.currentText : null}
+      // </div>
+      // <p style={{fontFamily: 'plexeina-regular,Helvetica,sans-serif', margin:'auto',  marginTop:'4%', color: 'black', fontSize: '18px', minWidth:'250px', maxWidth: '600px', lineHeight:'1.6'}}>
+      //   Want to buy your Napa Valley dream home? Let your team of Home Financial Experts provide clear options and advice to help you make your dream home a reality! 
+      //   <Link to={{ pathname: '/Contact' }}className="bottomnav-links"> <span style={{fontFamily: 'plexeina-regular,Helvetica,sans-serif', cursor:'pointer', padding:'0px 20% 0% 0%', color: 'white', fontSize: '16px', maxWidth: '400px', textDecoration:'underline', color:'black'}}>
+      //   Speak with a Mortgage Expert Today!
+      //     </span></Link>
+      //     </p>
+      //   <div style={{marginTop:'9%', justifyContent:'center'}}>
+      //   <Button style={{backgroundColor:"#242f6e", color: 'white', borderRadius: 25}} size="large" variant="contained">
+      //   <a href="https://hildahensley.floify.com/apply?noheaderfooter#tab_a" target="_blank">Apply Now</a>
+      //   </Button>
+      //   </div>
+      //   </div>
+      //  </div>
     
     :
-   <div style={{position:'relative', top:'40px', backgroundImage: 'url(https://media.cntraveler.com/photos/53d9d7316dec627b149daed7/16:9/w_1400,c_limit/vineyard-napa-california.jpg)', backgroundRepeat: 'no-repeat', backgroundSize: '100% 100%', height:'700px', width: '100%', marginBottom:'0px'}}>
-   <div style={{top: '7%', position: 'relative', marginLeft:'40%', maxWidth:'30%', display: 'flex', flexDirection: 'column', alignItems:'cetner', justifyContent:'center'}}>
+   <div style={{position:'relative', top:'0px', backgroundImage: 'url(https://media.cntraveler.com/photos/53d9d7316dec627b149daed7/16:9/w_1400,c_limit/vineyard-napa-california.jpg)', backgroundRepeat: 'no-repeat', backgroundSize: '100% 100%', height:'700px', width: '100%', marginBottom:'0px'}}>
+   <div style={{top: '0', position: 'relative', display: 'flex', flexDirection: 'column', alignItems:'cetner', justifyContent:'center'}}>
    
-   <div style={{ fontFamily: 'Apple Chancery, cursive', fontWeight:'900', fontSize: '350%', color:'#242f6e', paddingTop:'24%'}}>
+   {/* <div style={{ fontFamily: 'Apple Chancery, cursive', fontWeight:'900', fontSize: '350%', color:'#242f6e', paddingTop:'24%'}}>
      {this.state.currentText ? this.state.currentText : null}
-  </div>
-  <p style={{fontFamily: 'Comic Sans MS", cursive, sans-serif', margin:'auto',  marginTop:'4%', color: 'white', fontSize: '18px', minWidth:'180px', maxWidth: '600px', lineHeight:'1.6', textShadow: '1px 1px black'}}>
-    Want to buy your Napa Valley dream home? Let your team of Home Financial Experts provide clear options and advice to help you make your dream home a reality! 
-    <Link to={{ pathname: '/Contact' }}className="bottomnav-links"> <span style={{fontFamily: 'plexeina-regular,Helvetica,sans-serif', cursor:'pointer', padding:'0px 20% 0% 0%', color: 'white', fontSize: '16px', maxWidth: '400px', textDecoration:'underline'}}>
+  </div> */}
+  <p style={{fontFamily: 'Comic Sans MS", cursive, sans-serif', margin:'auto',  marginTop:'18%', color: 'white', fontSize: '30px', textAlign:'center', marginLeft:'20%', marginRight:'20%', lineHeight:'1.6', textShadow: '1px 1px black'}}>
+    Want to buy your Napa Valley dream home? Let the Benchmark Mortgage Napa Team make that a reality!
+    </p>
+    {/* Want to buy your Napa Valley dream home? Let your team of Home Financial Experts provide clear options and advice to help you make your dream home a reality!  */}
+    {/* <Link to={{ pathname: '/Contact' }}className="bottomnav-links"> <span style={{fontFamily: 'plexeina-regular,Helvetica,sans-serif', cursor:'pointer', padding:'0px 20% 0% 0%', color: 'white', fontSize: '16px', maxWidth: '400px', textDecoration:'underline'}}>
+    Speak with a Mortgage Expert Today!
+      </span></Link> */}
+    <div style={{display:'flex', flexDirection:'column', alignItems:'center', marginTop:'2%', justifyContent:'center'}}>
+    <Link to={{ pathname: '/Contact' }}className="front-links"> <span style={{fontFamily: 'plexeina-regular,Helvetica,sans-serif', cursor:'pointer', padding:'0px 0% 0% 0%', color: 'white', fontSize: '22px', textDecoration:'underline'}}>
     Speak with a Mortgage Expert Today!
       </span></Link>
-      </p>
-    <div style={{marginTop:'9%', justifyContent:'center'}}>
-    <Button style={{backgroundColor:"#242f6e", color: 'white', borderRadius: 25}} size="large" variant="contained">
-    <a href="https://hildahensley.floify.com/apply?noheaderfooter#tab_a" target="_blank">Apply Now</a>
+    <Button style={{backgroundColor:"#242f6e", marginTop:'2%', color: 'white', borderRadius: 25}} size="large" variant="contained">
+    <a href="https://hildahensley.floify.com/apply?noheaderfooter#tab_a" target="_blank" style={{color:'white'}}>Apply Now</a>
     </Button>
     </div>
     </div>

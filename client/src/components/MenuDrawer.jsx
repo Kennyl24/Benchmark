@@ -91,7 +91,7 @@ class MenuDrawer extends React.Component {
     );
 
     return (
-      <div style={{marginTop:'10%'}}>
+      <div style={{marginTop:'6%'}}>
       <IconButton onClick={this.showMenu}color="inherit" aria-label="Menu">
       <MenuIcon/>
       </IconButton>

@@ -33,7 +33,7 @@ class Blog extends React.Component {
     <div className="card">
     <img className="card-image" src={this.props.blog.blogImage}/>
     <div className="container">
-    <p className="blog-snippet" style={{paddingBottom:'0'}}> {this.props.blog.blogAuthor}</p>
+    {/* <p className="blog-snippet" style={{paddingBottom:'0'}}> {this.props.blog.blogAuthor}</p> */}
       <h4 className="blog-title"><b>{this.props.blog.blogTitle}</b></h4> 
       {/* {this.props.blog.blogSnippet} */}
       <div style={{height:'190px'}}>

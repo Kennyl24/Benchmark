@@ -5,6 +5,7 @@ import Directions from './components/Directions.jsx'
 import FrontPageModal from './components/FrontPageModal.jsx'
 import About from './components/About.jsx'
 import Contact from './components/Contact.jsx'
+import ConnectTab from './components/ConnectTab.jsx'
 import HomePage from './components/HomePage.jsx'
 import Reviews from './components/Reviews.jsx'
 import BlogPage from './components/BlogPage.jsx'
@@ -14,6 +15,8 @@ import Individualblog from './components/Individualblog.jsx'
 import Information from './components/Information.jsx'
 import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom';
+import Fab from '@material-ui/core/Fab';
+import {isMobile} from 'react-device-detect';
 
 import "isomorphic-fetch"
 import "@babel/polyfill";
@@ -435,6 +438,11 @@ Available on 5/1, 7/1, 10/1 + 15/1 Adjustable Rate Mortgages (ARMS)<br/><br/>
   },
 ];
 ReactDOM.render(
+  <body>
+    <ConnectTab/>
+  {isMobile ? null :<Fab variant="extended" aria-label="Delete" style={{position:'fixed', bottom: '20px', left:'20px', zIndex:'999999999'}}>
+  Apply today!
+</Fab> }
   <Router>
     <Switch>
       <Route exact path="/" component={HomePage} />
@@ -452,6 +460,6 @@ ReactDOM.render(
       <Route  path="/Reviews" component={Reviews} />
       <Route  path="/Contact" component={Contact} />
     </Switch>
-  </Router>,
+  </Router></body>,
   document.getElementById('app'),
 );

@@ -23,7 +23,7 @@ class About extends React.Component {
       <MuiThemeProvider>
         <LeadingBar/>
         <TeamIntro/>
-        <AboutNav/>
+        {/* <AboutNav/> */}
         <AboutMap style={{backgroundColor:'#fafafa'}}/>
         <Mission/>
         <CoreValues/>

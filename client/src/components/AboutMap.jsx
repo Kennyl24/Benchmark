@@ -45,7 +45,7 @@ const team = [
   {
     name: 'Jeff Pinto',
     title: 'Regional Operations Manager',
-    image: 'https://i.ibb.co/GpthntP/jeff-pinto-735px.jpg', 
+    image: 'https://i.ibb.co/D1RQPd9/image-10.png', 
     color: 'blue',
     phone: '8583493052',
     email: 'jeff.pinto@benchmark.us',
@@ -78,7 +78,7 @@ class AboutMap extends React.Component {
     return (
       <MuiThemeProvider>
     <div style={{backgroundColor:'#f5f5f5'}} id="team">
-    <h3 className="homepage-header" style={{ margin: '0', paddingTop:'6%', color:'rgb(37, 45, 114)'}} >Meet the Team</h3>
+    <h3 className="homepage-header" style={{ margin: '0', paddingTop:'2%', color:'rgb(37, 45, 114)'}} >Meet the Team</h3>
     {/* <div className="individual-box">
     <img src={team[0].image} style={{height:'200px'}}/>
     <h3 className="homepage-header" style={{color:'black', margin: '0'}}>{team[0].name}</h3>

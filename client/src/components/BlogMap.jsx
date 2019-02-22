@@ -7,6 +7,8 @@ import TextField from '@material-ui/core/TextField';
 import SvgIcon from '@material-ui/core/SvgIcon';
 import IconButton from '@material-ui/core/IconButton';
 import Button from '@material-ui/core/Button';
+import {isMobile} from 'react-device-detect';
+
 const blogs = [
   {
     blogTitle: 'Mortgage Banker Versus Mortgage Broker',
@@ -396,16 +398,15 @@ Available on 5/1, 7/1, 10/1 + 15/1 Adjustable Rate Mortgages (ARMS)<br/><br/>
     }
     render () {
       return (
-  <div>
-    <div  style={{backgroundColor:'#f5f5f5', textAlign: 'center', paddingTop: '4%', paddingBottom: '2%',  color: 'black', display:'flex',
+    <div>
+    <div style={{position:'relative', top:'0px', backgroundImage: 'url(https://1xajpy1pi3fu42ewvj3ek189-wpengine.netdna-ssl.com/wp-content/uploads/2018/06/Doctor-Picture-960w.jpg)', backgroundRepeat: 'no-repeat', backgroundSize: '100% 100%', height:'600px', width: '100%', marginBottom:'0px'}}>
+    {/* </div> */}
+    <div  style={{textAlign: 'center', paddingTop: isMobile ? '24%': '12%', paddingBottom: '2%',  color: 'black', display:'flex',
     flexDirection:'column', justifyContent:'center', alignItems:'center'
     }}>
-      <h1 className="homepage-header"style={{color:'#242f6e', fontSize: '42px'}}>
+      <h1 className="homepage-header"style={{color:'#242f6e', letterSpacing:'3px', fontSize: '42px'}}>
         Mortgage Lender Blog
         </h1>
-        <p style={{fontFamily:'plexeina-bold,Helvetica,sans-serif', fontSize:'18px', color:'#3f4245', lineHeight:'1.7em', paddingBottom: '28px!important', maxWidth:'600px', padding:'6px'}}>
-          Whether you are a first time home buyer, or this isn't your first rodeo, our blog is the perfect place to learn about home mortgage loans.
-          </p>
           <Button variant="contained" style={{backgroundColor:"#242f6e", color: 'white'}}
           onClick={()=> this.setState({
             modal:true
@@ -414,14 +415,9 @@ Available on 5/1, 7/1, 10/1 + 15/1 Adjustable Rate Mortgages (ARMS)<br/><br/>
             Subscribe
        </Button>
             <Popup 
-            
-        //     trigger={<Button variant="contained" style={{backgroundColor:"#242f6e", color: 'white'}}>
-        //     Subscribe
-        // </Button>} 
       modal
       closeOnDocumentClick
       open={this.state.modal}
-      // closeBtn={true}
       >
     <div style={{textAlign: 'center'}}
     >
@@ -463,8 +459,13 @@ Available on 5/1, 7/1, 10/1 + 15/1 Adjustable Rate Mortgages (ARMS)<br/><br/>
       </Button>
     </div>
   </Popup>
-          
-      </div>
+  </div>  
+  </div>
+  <div> 
+  <p style={{fontFamily:'plexeina-bold,Helvetica,sans-serif', textShadow: '1px', fontSize:'18px', color:'#3f4245', lineHeight:'1.7em', paddingBottom: '28px!important', marginLeft:'30%', marginRight:'30%', textAlign:'center', padding:'6px'}}>
+          Whether you are a first time home buyer, or this isn't your first rodeo, our blog is the perfect place to learn about home mortgage loans.
+          </p>
+    </div>
   <div className="blog-container">
       {blogs.length > 0 ? blogs.map((blog, index) => <Blog blog={blog} index={index} />) : null}
   </div>
