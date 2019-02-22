@@ -20,7 +20,7 @@ const blogs = [
 When it’s time to secure a home loan, many people seek out a mortgage broker. But is this your best option? Would a mortgage banker be a better option?
 
 If you’re not sure of the difference between a mortgage broker and a mortgage banker, you’re not alone. Most people use the terms “mortgage broker” and “mortgage banker” interchangeably. In reality, they are two very different things. 
-
+<br/>
 <h2>  Mortgage Broker </h2> 
 A mortgage broker deals with many different wholesale lenders. The broker is an independent operator and can be a one-person office or a large organization with different loan agents acting under the one broker’s license. Mortgage brokers do not have affiliation with any one company. As a result, they are at the whim of the individual wholesale lenders guidelines, overlays, timeframes, and underwriters. Often, they don’t have strong relationships with underwriters, and communication is not encouraged. 
  
@@ -462,7 +462,7 @@ Available on 5/1, 7/1, 10/1 + 15/1 Adjustable Rate Mortgages (ARMS)<br/><br/>
   </div>  
   </div>
   <div> 
-  <p style={{fontFamily:'plexeina-bold,Helvetica,sans-serif', textShadow: '1px', fontSize:'18px', color:'#3f4245', lineHeight:'1.7em', paddingBottom: '28px!important', marginLeft:'30%', marginRight:'30%', textAlign:'center', padding:'6px'}}>
+  <p style={{fontFamily:'plexeina-bold,Helvetica,sans-serif', textShadow: '1px', fontSize:'22px', color:'#3f4245', lineHeight:'1.7em', paddingBottom: '28px!important', marginLeft:'30%', marginRight:'30%', textAlign:'center', padding:'6px'}}>
           Whether you are a first time home buyer, or this isn't your first rodeo, our blog is the perfect place to learn about home mortgage loans.
           </p>
     </div>
