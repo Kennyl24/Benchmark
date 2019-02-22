@@ -21,13 +21,13 @@ class ContactIntro extends React.Component {
   render () {
     return (
     <MuiThemeProvider>
-      <div style={{position:'relative', top:'0px', backgroundImage: 'url(https://i.ibb.co/CmSqYcv/hildatets.jpg)', backgroundRepeat: 'no-repeat', backgroundSize: '100% 100%', height:'600px', width: '100%', marginBottom:'0px'}}>
+      <div style={{position:'relative', top:'0px', backgroundImage: 'url(https://i.ibb.co/2WjcBNw/Imagefromvid.jpg)', backgroundRepeat: 'no-repeat', backgroundSize: '100% 100%', height:'500px', width: '100%', marginBottom:'0px'}}>
     {/* <div style={{height:'auto', paddingBottom:'4%', background: 'linear-gradient(#e0e0e0, #242f6e)', marginBottom: '50px'}}> */}
       <div  style={{textAlign: 'center', paddingTop: isMobile ? '32%' :'15%', color: 'white', display:'flex',
-    flexDirection:'column', justifyContent:'center', alignItems:'center', marginLeft:'52%', marginRight:'8%'
+    flexDirection:'column', justifyContent:'center', alignItems:'center', marginLeft:'20%', marginRight:'20%'
     }}>
-      <h1 className="homepage-header" style={{color:'white', fontSize: isMobile ? '22px' : '2em' }}>
-        Hi, I'm Hilda Hensley. Contact us today to find out how we can get you into your dream home. 
+      <h1 className="homepage-header" style={{marginTop:'8%', color:'white', fontSize: isMobile ? '22px' : '2em' }}>
+        Hi, we are Benchmark Mortgage Napa Valley. Contact us today to find out how we can get you into your dream home. 
         </h1>
         {/* <p style={{fontFamily:'Graphik Web,Helvetica,sans-serif!important', fontSize:'22px', marginTop:'2.5%'}}>
           Yes, you will speak with a human

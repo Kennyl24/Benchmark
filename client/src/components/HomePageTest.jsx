@@ -106,7 +106,7 @@ const images = [
   },
   {
     url: 'https://images.pexels.com/photos/684385/pexels-photo-684385.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-    title: 'Pre-Approvals',
+    title: 'FHA Loans',
     width: '33.3%',
     descripition:''
   },

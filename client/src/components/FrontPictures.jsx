@@ -166,8 +166,8 @@ class FrontPictures extends React.Component {
     <Link to={{ pathname: '/Contact' }}className="front-links"> <span style={{fontFamily: 'plexeina-regular,Helvetica,sans-serif', cursor:'pointer', padding:'0px 0% 0% 0%', color: 'white', fontSize: '22px', textDecoration:'underline'}}>
     Speak with a Mortgage Expert Today!
       </span></Link>
-    <Button style={{backgroundColor:"#242f6e", marginTop:'2%', color: 'white', borderRadius: 25}} size="large" variant="contained">
-    <a href="https://hildahensley.floify.com/apply?noheaderfooter#tab_a" target="_blank" style={{color:'white'}}>Apply Now</a>
+    <Button onClick={ ()=> window.open("https://hildahensley.floify.com/apply?noheaderfooter#tab_a", "_blank")}  style={{backgroundColor:"#242f6e", marginTop:'2%', color: 'white', borderRadius: 25}} size="large" variant="contained">
+     Apply Now
     </Button>
     </div>
     </div>

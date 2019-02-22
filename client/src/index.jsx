@@ -440,7 +440,9 @@ Available on 5/1, 7/1, 10/1 + 15/1 Adjustable Rate Mortgages (ARMS)<br/><br/>
 ReactDOM.render(
   <body>
     <ConnectTab/>
-  {isMobile ? null :<Fab variant="extended" aria-label="Delete" style={{position:'fixed', bottom: '20px', left:'20px', zIndex:'999999999'}}>
+  {isMobile ? null :<Fab variant="extended" 
+  onClick={() => window.open('https://hildahensley.floify.com/apply?noheaderfooter#tab_a', '_blank')}
+  aria-label="Delete" style={{position:'fixed', bottom: '20px', left:'20px', zIndex:'999999999'}}>
   Apply today!
 </Fab> }
   <Router>

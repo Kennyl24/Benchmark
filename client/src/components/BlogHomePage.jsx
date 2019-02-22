@@ -103,7 +103,7 @@ You Can Get an Easy Mortgage Approval
   ]
   const BlogHomePage = () => (
     <div>
-    <Link to={{ pathname:'/blog' }}><h3 className="homepage-header"> BLOGS </h3></Link>
+    <Link to={{ pathname:'/blog' }}><h3 className="homepage-header"> Mortgage Lending Tips </h3></Link>
     <div style={{display:'flex', flexDirection:'row', flexWrap: 'wrap', justifyContent: 'center'}}>
     {homeBlogs.length > 0 ? homeBlogs.map((blog, index) =>  
     <div style={{padding:'0 24px 24px', minWidth: '26%', maxWidth:'380px'}}>
