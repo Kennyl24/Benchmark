@@ -11,6 +11,8 @@ import SvgIcon from '@material-ui/core/SvgIcon';
 import SecondTest from './SecondTest.jsx'
 import Popup from "reactjs-popup";
 import IconButton from '@material-ui/core/IconButton';
+import {isMobile} from 'react-device-detect';
+
 class Individual extends React.Component { 
   constructor(props) {
     super(props);
@@ -89,26 +91,31 @@ style={{fill: '#000000', maxHeight:'15%', maxHeight:'20%', maxWidth:'20%', margi
     <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
   </SvgIcon>
 </IconButton>
-        <div style={{flexDirection: 'row', alignItems:'center', justifyContent:'center'}}>
-    {/* <img src={this.props.individual.image} className="modal-blog-image"style={{position:'absolute', top: '-20px', width: '25%', height:'25%'}}/> */}
-    <div style={{lineHeight:'1.5em'}}>
-    <p style={{fontFamily:'plexeina-regular,Helvetica,sans-serif',paddingLeft:'20px', lineHeight:'2.0', fontSize:'24px', textAlign:'center',fontWeight:'600'}} className="homepage-header">{this.props.individual.name}</p>
-    <p className="homepage-header" style={{color:'#242f6e', fontFamily:'plexeina-regular,Helvetica,sans-serif',paddingLeft:'20px', lineHeight:'1.0', fontSize:'20px', textAlign:'center',fontWeight:'500'}}>{this.props.individual.title}</p>
-    <p  style={{fontFamily:'plexeina-regular,Helvetica,sans-serif', lineHeight:'2.0',paddingRight:'20px', paddingLeft:'20px', textAlign:'center', fontFamily:'Graphik Web,Helvetica,sans-serif!important'}}>{this.props.individual.about}</p>
+    <div style={{flexDirection: 'row', alignItems:'center', justifyContent:'center'}}>
+   {isMobile ? null:  <img src={this.props.individual.image} className="modal-blog-image"style={{position:'absolute', top: '-20px', right:'40px', width: '30%', height:'30%'}}/>}
+    {/* <div style={{lineHeight:'1.5em'}}>
+   */}
+   <div style={{paddingTop:'20px'}}>
+   <h2 style={{fontFamily:'plexeina-regular,Helvetica,sans-serif', textAlign:'left', marginLeft:'20px'}}>{this.props.individual.name}</h2>
+   <h2 style={{fontFamily:'plexeina-regular,Helvetica,sans-serif', fontSize:'22px',marginTop:'30px', marginLeft:'20px', textAlign:'left'}}>{this.props.individual.title}</h2>
+    {/* <h2 style={{fontFamily:'plexeina-regular,Helvetica,sans-serif',paddingLeft:'20px', lineHeight:'2.0', fontSize:'24px', textAlign:'center',fontWeight:'400'}} className="homepage-header">{this.props.individual.name}</h2> */}
+    {/* <h2 className="homepage-header" style={{color:'#242f6e', fontFamily:'plexeina-regular,Helvetica,sans-serif',paddingLeft:'20px', lineHeight:'1.0', fontSize:'20px', textAlign:'center',fontWeight:'400'}}>{this.props.individual.title}</h2> */}
+    <p  style={{fontFamily:'plexeina-regular,Helvetica,sans-serif', lineHeight: isMobile ? '1.5' : '2.0',paddingRight:'20px', paddingLeft:'20px', textAlign:'left'}}>{this.props.individual.about}</p>
+    <h2  style={{fontFamily:'plexeina-regular,Helvetica,sans-serif', fontSize:'18px',marginLeft:'20px', textAlign:'left'}}> Reach out to me Directly</h2> 
     <div style={{display:'flex', flexDirection:'column'}}>
-    <div style={{display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'center', flexWrap:'nowrap', paddingLeft:'20px'}}>
+    <div style={{display:'flex', flexDirection:'row',  flexWrap:'nowrap', paddingLeft: isMobile? '0px': '20px'}}>
     <a href={'mailto:' + this.props.individual.email} style={{color:'black', marginTop:'15px',}}> 
     <Email style={{marginRight:'15px'}} network="email" color="white"/>
     </a>
     <p style={{padding:'0px', marginTop:'18px'}}>{this.props.individual.email}&nbsp;&nbsp;</p>
     </div>
-    <div style={{display:'flex', flexDirection:'row', flexWrap:'nowrap', alignItems:'center', justifyContent:'center', paddingLeft:'20px'}}>
+    <div style={{display:'flex', flexDirection:'row', flexWrap:'nowrap', paddingLeft: isMobile? '0px': '20px'}}>
     <a href="tel:(707) 254-8891" style={{color:'black', marginTop:'10px', height:'200%'}}>
     <Phone style={{marginRight:'15px'}} fill="blue"/>
     </a>
-    <p style={{padding:'0px', marginTop:'18px'}}>{this.props.individual.phone}</p>&nbsp;&nbsp;
+    <p style={{fontFamily:'plexeina-regular,Helvetica,sans-serif',padding:'0px', marginTop:'18px'}}>{this.props.individual.phone}</p>&nbsp;&nbsp;
     </div>
-    <p style={{padding:'0px', textAlign:'center', paddingLeft:'20px'}}>{this.props.individual.nmls ? 'NMLS# ' + this.props.individual.nmls : null}</p>
+    <p style={{fontFamily:'plexeina-regular,Helvetica,sans-serif',padding:'0px', textAlign:'left', paddingLeft: isMobile? '0px': '20px'}}>{this.props.individual.nmls ? 'NMLS# ' + this.props.individual.nmls : null}</p>
     </div>
     </div>
     </div>

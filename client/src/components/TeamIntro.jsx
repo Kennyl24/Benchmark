@@ -41,7 +41,7 @@ class TeamIntro extends React.Component {
         </div>
         <div>
         <p style={{fontFamily:'plexeina-bold,Helvetica,sans-serif', fontSize:'18px', color:'#3f4245', lineHeight:'1.7em', paddingBottom: '28px!important', maxWidth:'800px'}}>
-        At Benchmark Mortgage Napa we specialize in Mortgage Banking for Residential Home Loans. With some of the best interest rates in the industry and our amazingly fast underwriting, we offer our clients the best in mortgage lending.
+        The Hilda Hensley Team specializes in Mortgage Banking for Residential Home Loans. With some of the best interest rates in the industry and our amazingly fast underwriting, we offer our clients the best in mortgage lending.
           </p>
     </div>
     </div>

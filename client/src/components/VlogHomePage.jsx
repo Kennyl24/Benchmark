@@ -53,10 +53,10 @@ import config from '../../../config.js';
         <MuiThemeProvider>
         <h3 className="homepage-header" style={{color:'#787878', cursor:'pointer',marginBottom:''}} 
         onClick={() => window.location.href = "/vlog"}
-        > VLOGS </h3>
+        > Mortgage Lending Video Tips </h3>
         <div className="comingsoon-modal-home">
         <h2 style={{marginTop:'0%'}}>COMING SOON</h2>
-        <p className="vlog-text" style={{textAlign:'center'}}>Our vlog is close to launching<br/>
+        <p className="vlog-text" style={{textAlign:'center'}}>Our video tips are close to launching<br/>
         Be the first to know, subscribe below!
         </p>
         <div style={{display:'flex', flexDirection: 'column',

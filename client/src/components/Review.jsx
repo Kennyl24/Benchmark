@@ -11,11 +11,21 @@ class Review extends React.Component {
     super(props);
     this.state = {
     }
+    this.readMore = this.readMore.bind(this);
   }
   componentDidMount(){
-
+   if( this.props.review.review.split('').length > 155){
+     this.setState({
+       expanded:false
+     })
+   } 
   }
   checkCount(){
+  }
+  readMore(){
+    this.setState({
+      expanded: !this.state.expanded
+    })
   }
   render (repeat) {
     let photoHolder = [];
@@ -36,7 +46,10 @@ class Review extends React.Component {
     <StarRateSharp style={{fill:"rgb(36, 47, 110)"}}/>
     </div>
     <div className="container">
-      <p className="blog-text">{this.props.review.review}</p> 
+      {/* <p className="blog-text"> {this.props.review.review.split('').length > 160? <div>{this.props.review.review.split('').splice(0,160)}<Button onClick={this.readMore}>Read More</Button> </div>: this.props.review.review}</p>  */}
+      {this.state.expanded ? 
+      <span>
+      <p className="blog-text">{this.props.review.review}</p>{this.props.review.review.split('').length > 160? <Button style={{color:"#242f6e"}} onClick={this.readMore}>Read Less</Button> : null}</span>: <span> <p className="blog-text">{this.props.review.review.split('').splice(0,160)}</p>{this.props.review.review.split('').length > 155 ? <Button style={{color:"#242f6e"}} onClick={this.readMore}>Read More</Button>: null} </span>}
       <p className="blog-text" style={{fontWeight: 'bold'}}>{this.props.review.name}</p> 
       <p className="blog-text">{this.props.review.date}</p> 
     </div>

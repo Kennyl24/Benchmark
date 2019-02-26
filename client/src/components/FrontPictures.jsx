@@ -156,18 +156,18 @@ class FrontPictures extends React.Component {
      {this.state.currentText ? this.state.currentText : null}
   </div> */}
   <p style={{fontFamily: 'Comic Sans MS", cursive, sans-serif', margin:'auto',  marginTop:'18%', color: 'white', fontSize: '30px', textAlign:'center', marginLeft:'20%', marginRight:'20%', lineHeight:'1.6', textShadow: '1px 1px black'}}>
-    Want to buy your Napa Valley dream home? Let the Benchmark Mortgage Napa Team make that a reality!
+    Want to buy your Napa Valley dream home? Let the Hilda Hensley Team make that a reality!
     </p>
     {/* Want to buy your Napa Valley dream home? Let your team of Home Financial Experts provide clear options and advice to help you make your dream home a reality!  */}
     {/* <Link to={{ pathname: '/Contact' }}className="bottomnav-links"> <span style={{fontFamily: 'plexeina-regular,Helvetica,sans-serif', cursor:'pointer', padding:'0px 20% 0% 0%', color: 'white', fontSize: '16px', maxWidth: '400px', textDecoration:'underline'}}>
     Speak with a Mortgage Expert Today!
       </span></Link> */}
     <div style={{display:'flex', flexDirection:'column', alignItems:'center', marginTop:'2%', justifyContent:'center'}}>
-    <Link to={{ pathname: '/Contact' }}className="front-links"> <span style={{fontFamily: 'plexeina-regular,Helvetica,sans-serif', cursor:'pointer', padding:'0px 0% 0% 0%', color: 'white', fontSize: '22px', textDecoration:'underline'}}>
+    {/* <Link to={{ pathname: '/Contact' }}className="front-links"> <span style={{fontFamily: 'plexeina-regular,Helvetica,sans-serif', cursor:'pointer', padding:'0px 0% 0% 0%', color: 'white', fontSize: '22px', textDecoration:'underline'}}>
     Speak with a Mortgage Expert Today!
-      </span></Link>
-    <Button onClick={ ()=> window.open("https://hildahensley.floify.com/apply?noheaderfooter#tab_a", "_blank")}  style={{backgroundColor:"#242f6e", marginTop:'2%', color: 'white', borderRadius: 25}} size="large" variant="contained">
-     Apply Now
+      </span></Link> */}
+    <Button onClick={ ()=> window.location.href = "/Contact"}  style={{backgroundColor:"#242f6e", marginTop:'2%', color: 'white', borderRadius: 25}} size="large" variant="contained">
+     Contact us Today!
     </Button>
     </div>
     </div>

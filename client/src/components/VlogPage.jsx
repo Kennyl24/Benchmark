@@ -48,7 +48,6 @@ class VlogPage extends React.Component {
     .then(resp => resp.json())
     .then((resp) => {
       console.log(resp);
-      //this.setState({video: resp.results});
       this.setState({videos: resp.items});
       console.log(this.state.videos);
     });
@@ -72,10 +71,11 @@ class VlogPage extends React.Component {
       <div id="helloitsme">
       <LeadingBar/>
       <VlogIntro style={{position:'fixed'}}/>
+      {/* <VlogMap videos={this.state.videos}/> */}
       <ComingSoonModal/>
       </div> 
       {/* <BottomNav/> */}
-      </body>
+       </body>
    </MuiThemeProvider>
 
 )

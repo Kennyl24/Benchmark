@@ -41,7 +41,7 @@ class BlogIntro extends React.Component {
     flexDirection:'column', justifyContent:'center', alignItems:'center'
     }}>
       <h1 style={{fontFamily: 'Apple Chancery, cursive', fontSize:'35px'}}>
-        Mortgage Lender Blog
+        Mortgage <br/>Lender<br/> Blog
         </h1>
         <p style={{fontFamily:'Graphik Web,Helvetica,sans-serif!important', fontSize:'18px'}}>
           Lending insights from a team of financial experts

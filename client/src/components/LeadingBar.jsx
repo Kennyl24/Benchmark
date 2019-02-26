@@ -49,18 +49,12 @@ class LeadingBar extends React.Component {
     }
   }
   componentDidMount() {
-    if(window.location.href.indexOf('home') > -1){
-      console.log('home')
-      this.setState({
-        homeBackground:'#242f6e',
-        homeColor:'white'
-      });
-    } else if(window.location.href.indexOf('About') > -1){
+    if(window.location.href.indexOf('About') > -1){
         this.setState({
           aboutBackground:'#242f6e',
           aboutColor:'white'
         });
-      } else if(window.location.href.indexOf('Blog') > -1){
+      } else if((window.location.href.indexOf('Blog') > -1) || (window.location.href.indexOf('blogs') > -1)){
           this.setState({
             blogBackground:'#242f6e',
             blogColor:'white'
@@ -75,10 +69,16 @@ class LeadingBar extends React.Component {
                 reviewBackground:'#242f6e',
                 reviewColor:'white'
               });
-            } else if(window.location.href.indexOf('Contact') >= -1){
+            } else if(window.location.href.indexOf('Contact') > -1){
                 this.setState({
                   contactBackground:'#242f6e',
                   contactColor:'white'
+            });
+          } else if(window.location.href.indexOf('home') >= -1){
+              console.log('home')
+              this.setState({
+                homeBackground:'#242f6e',
+                homeColor:'white'
             });
           }
     window.addEventListener('resize', this.resize);
@@ -137,8 +137,7 @@ resize = () => {
     iconElementLeft={
     <img style={{marginLeft: this.state.width ? '0px': '0px', height: '110px', width: '275px', cursor:'pointer'}}
     onClick={() => window.location.href = '/home'}
-    src="https://napa.benchmark.us/wp-content/uploads/sites/485/2015/08/home-banner-logo.png"/>}
-    
+    src="https://i.ibb.co/q7N2pv8/teamlogo.png"/>}
     iconStyleLeft={{
       display: 'flex',
       alignItems: 'center',

@@ -399,13 +399,13 @@ Available on 5/1, 7/1, 10/1 + 15/1 Adjustable Rate Mortgages (ARMS)<br/><br/>
     render () {
       return (
     <div>
-    <div style={{position:'relative', top:'0px', backgroundImage: 'url(https://1xajpy1pi3fu42ewvj3ek189-wpengine.netdna-ssl.com/wp-content/uploads/2018/06/Doctor-Picture-960w.jpg)', backgroundRepeat: 'no-repeat', backgroundSize: '100% 100%', height:'600px', width: '100%', marginBottom:'0px'}}>
+    <div style={{position:'relative', top:'0px', backgroundImage: 'url(https://i.ibb.co/rksnyTN/mortgage.jpg)', backgroundRepeat: 'no-repeat', backgroundSize: '100% 100%', height:'500px', width: '100%', marginBottom:'0px'}}>
     {/* </div> */}
-    <div  style={{textAlign: 'center', paddingTop: isMobile ? '24%': '12%', paddingBottom: '2%',  color: 'black', display:'flex',
+    <div  style={{textAlign: 'center', paddingTop: isMobile ? '24%': '13%', paddingBottom: '2%',  color: 'black', display:'flex',
     flexDirection:'column', justifyContent:'center', alignItems:'center'
     }}>
       <h1 className="homepage-header"style={{color:'#242f6e', letterSpacing:'3px', fontSize: '42px'}}>
-        Mortgage Lender Blog
+      Mortgage Lending Tips
         </h1>
           <Button variant="contained" style={{backgroundColor:"#242f6e", color: 'white'}}
           onClick={()=> this.setState({

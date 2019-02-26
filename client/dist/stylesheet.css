@@ -361,6 +361,18 @@ footer{
   padding-top:4%;
   /* border-top: 1px solid #242f6e */
 }
+.vlog-container {
+  display: -webkit-flex; /* Safari */
+  -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+  display: flex;   
+  flex-wrap: wrap;
+  width: 80%;
+  margin-left: 10%;
+  justify-content: center;
+  background-color: #fefefe;
+  padding-top: 4%;
+  /* border-top: 1px solid #242f6e */
+}
 .about-container {
   display: -webkit-flex; /* Safari */
   -webkit-flex-wrap: wrap; /* Safari 6.1+ */
@@ -376,7 +388,8 @@ footer{
 .blog-title {
   font-weight: 500;
   font-size: 18px;
-  max-width: 80%;
+  text-align: center;
+  /* max-width: 80%; */
   margin-left: auto;
   margin-right: auto;
   font-family: plexeina-bold,Helvetica,sans-serif;
@@ -434,6 +447,7 @@ footer{
   padding-bottom: 25px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
+  min-height:580px;
   height: auto;
   align-items: center;
   text-align: center;
@@ -531,7 +545,7 @@ footer{
 }
 .card-image2 {
     position: relative;
-    max-height: 25%;
+    height: 100%;
     width: 100%;
     top: 0;
     left: 0;
@@ -539,7 +553,7 @@ footer{
 .card-secondImage {
   position: absolute;
   top: 40%;
-  left: 40%;
+  left: 35%;
   height: 60px;
 }
 
@@ -649,9 +663,10 @@ a:active {
   text-decoration: none;
 }
 .review-card {
-  padding-bottom: 25px;
+  padding-bottom: 0px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
+  min-height:373px;
   height: auto;
   background-color: #f5f5f5;
 }
@@ -799,6 +814,19 @@ li {
   /* border-bottom: 1px solid #242f6e; */
   /* flex-wrap: nowrap; */
 }
+.social-bottom2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  cursor: pointer;
+  background-color: white;
+  /* margin-left:20%; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* border-top: 1px solid #242f6e; */
+  /* border-bottom: 1px solid #242f6e; */
+  /* flex-wrap: nowrap; */
+}
 .social {
   color:black
 }
@@ -913,6 +941,23 @@ li {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  letter-spacing: -.25px;
+  /* width: 10%; */
+  /* margin-left:45%; */
+  color: #787878;
+}
+.contact-header {
+  width: 50%;
+  border-bottom: 1px solid currentColor;
+  font-family: plexeina-bold,Helvetica,sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  line-height: 2.5;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  text-align: left;
   letter-spacing: -.25px;
   /* width: 10%; */
   /* margin-left:45%; */

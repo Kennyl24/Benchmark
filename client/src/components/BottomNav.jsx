@@ -33,8 +33,8 @@ class BottomNav extends Component {
       <div style={{color: 'white'}}>
       <h6 style={{margin:'0', marginBottom:'4%'}}> 
       
-        Benchmark Napa
-      {/* <img style={{height: '100px', width: '275px'}}src="https://napa.benchmark.us/wp-content/uploads/sites/485/2015/08/home-banner-logo.png"/> */}
+        {/* Benchmark Napa */}
+      <img style={{height: '100px', width: '275px', paddingTop:"-10px"}}src="https://i.ibb.co/689pygv/welcome.png"/>
       
       </h6>
       <div className="grid"> 
@@ -52,9 +52,9 @@ class BottomNav extends Component {
           <div className="grid-item">
           <div className='social-bottom'/>
           <SocialIcon style={{marginRight:'15px'}} url="https://www.facebook.com/hildahensleynapa/" network="facebook" color="#242f6e"/>
-          <SocialIcon style={{marginRight:'15px'}} url="http://youtube.com/" network="youtube" color="white"/>
+          <SocialIcon style={{marginRight:'15px'}} url="http://youtube.com/" network="youtube"/>
           <SocialIcon style={{marginRight:'15px'}} url="https://www.zillow.com/lender-profile/hilda%20hensley/" color="#242f6e" />      
-          <SocialIcon style={{marginRight:'15px'}} url="https://www.yelp.com/biz/hilda-garcia-hensley-benchmark-mortgage-napa" network="yelp" color="white"/>
+          <SocialIcon style={{marginRight:'15px'}} url="https://www.yelp.com/biz/hilda-garcia-hensley-benchmark-mortgage-napa" network="yelp"/>
          <div style={{display: 'flex', flexDirection:'column'}}>
           <div className="footer-subscribe-title"> 
             Subscribe to our Blog

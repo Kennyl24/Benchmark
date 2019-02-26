@@ -12,6 +12,7 @@ import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
 import Phone from '@material-ui/icons/Phone';
 import CalendarToday from '@material-ui/icons/CalendarToday';
+import Assignment from '@material-ui/icons/Assignment';
 
 import { SocialIcon } from 'react-social-icons';
 
@@ -64,6 +65,10 @@ class ConnectTab extends React.Component {
     window.open('https://youtube.com','_blank');
     // window.location.href="https://calendly.com/teamhensley"
   };
+  handleClickApply = (e) => {
+    window.open('https://hildahensley.floify.com/apply?noheaderfooter#tab_a','_blank');
+    // window.location.href="https://calendly.com/teamhensley"
+  };
   render() {
     const { classes } = this.props;
 
@@ -98,6 +103,14 @@ class ConnectTab extends React.Component {
         button >
           <ListItemIcon>{<CalendarToday/>}</ListItemIcon>
         <ListItemText primary={'Schedule a call'} />
+        </ListItem>
+        <ListItem
+        key={5}
+        onTouchTap={this.handleClickApply}
+        onClick={this.handleClickApply}
+        button >
+          <ListItemIcon>{<Assignment/>}</ListItemIcon>
+        <ListItemText primary={'Apply Now'} />
         </ListItem>
         </List>
         <Divider />

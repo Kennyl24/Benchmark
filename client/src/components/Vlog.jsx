@@ -48,8 +48,8 @@ class Vlog extends React.Component {
     let string = 'https://www.youtube.com/embed/"'+ this.props.video.id + '"';
     return (
     <MuiThemeProvider>
-    <div style={{padding:'0 24px 48px', maxWidth: '26%', cursor:'pointer'}}>
-    <div className="vlog-card" onMouseEnter={this.changeColor} onMouseLeave={this.changeColor}>
+    <div style={{padding:'0 24px 48px', maxWidth: '300px', cursor:'pointer'}}>
+    <div onMouseEnter={this.changeColor} onMouseLeave={this.changeColor}>
     {/* <iframe src='https://www.youtube.com/embed/sWlYdCutkLE' style={{width:'100%', height:'30%'}}></iframe> */}
     <div style={{position: 'relative',
       top: 0,
@@ -61,9 +61,7 @@ class Vlog extends React.Component {
     <img className="card-image2" src={this.props.video.snippet.thumbnails.high.url}/>
     <img className="card-secondImage" src={this.state.hovering ? "https://i.ibb.co/hChgLkq/yt-icon-rgb.png" : 'https://i.ibb.co/47cKNLk/youtube-social-icon-dark.png'} />
     </div>
-    <div className="container">
-      <h4 className="blog-title"><b style={{fontFamily: 'Apple Chancery, cursive', color: '#242f6e', fontSize: '20px', borderBottom: '2px solid currentColor'}}>{this.props.video.snippet.title}</b></h4> 
-    </div>
+      <h4 style={{textAlign:'center', lineHeight:'2.0'}}><b style={{color: '#242f6e', fontSize: '16px', borderBottom: '2px solid currentColor'}}>{this.props.video.snippet.title}</b></h4> 
     </div>
     </div>
     {this.state.playingVideo ? 
@@ -75,6 +73,7 @@ class Vlog extends React.Component {
         top: '13%',
         zIndex:'9999999', 
         cursor: 'pointer',
+        backgroundColor:'white'
       }}
     aria-label="Delete"
     onClick={this.closeVideo}

@@ -125,11 +125,10 @@ function ButtonBases(props) {
     <div style={{marginTop:'60px'}}>
     <h3 className="homepage-header" style={{cursor: 'pointer', color:'#787878', margin:'0', paddingBottom:'1.5%'}}
     onClick={()=> window.location.href = "/about"}
-    >WHY BENCHMARK NAPA?</h3>
+    >WHY THE HILDA HENSLEY TEAM?</h3>
       <p style={{fontFamily: 'plexeina-regular,Helvetica,sans-serif', marginLeft:'20%', marginRight:'20%',color: 'black', fontSize: '18px', lineHeight:'1.6', textAlign:'center'}}>
-      Here at Benchmark Mortgage Napa, we are a team of home financial experts that are ready to provide clear options and advice to help you with any of your home purchase needs. 
+      We are a team of home financial experts that are all ready to provide clear options and advice to help you with any of your home purchase needs. 
       Below are some of the mortgages we deal with on a daily basis. 
-      
       {/* Want to buy your Napa Valley dream home? Let your team of Home Financial Experts provide clear options and advice to help you make your dream home a reality!  */}
       {/* <Link to={{ pathname: '/Contact' }}className="bottomnav-links"> <span style={{fontFamily: 'plexeina-regular,Helvetica,sans-serif', cursor:'pointer', padding:'0px 0% 0% 0%', color: 'white', fontSize: '16px', maxWidth: '400px', textDecoration:'underline', color:'black'}}>
       Speak with a Mortgage Expert Today!
