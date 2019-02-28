@@ -21,6 +21,15 @@ module.exports = {
         test: /\.scss$/,
         loaders: ['style-loader', 'css-loader', 'sass-loader'],
         include: path.resolve(__dirname, '../')
+      },
+      {
+        test: /\.(png|jpg|gif|pdf)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {}  
+          }
+        ]
       }
     ]
   }

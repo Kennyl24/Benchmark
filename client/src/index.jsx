@@ -10,6 +10,7 @@ import HomePage from './components/HomePage.jsx'
 import Reviews from './components/Reviews.jsx'
 import BlogPage from './components/BlogPage.jsx'
 import VlogPage from './components/VlogPage.jsx'
+import Privacy from './components/Privacy.jsx'
 import IndividualAbout from './components/IndividualAbout.jsx'
 import Individualblog from './components/Individualblog.jsx'
 import Information from './components/Information.jsx'
@@ -460,6 +461,7 @@ ReactDOM.render(
       render={(props) => <IndividualAbout {...props} images={images} />}
       />
       <Route  path="/Reviews" component={Reviews} />
+      <Route  path="/Privacy" component={Privacy} />
       <Route  path="/Contact" component={Contact} />
     </Switch>
   </Router>

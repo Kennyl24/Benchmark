@@ -26,7 +26,7 @@ app.use('/Directions', express.static(__dirname + '/../client/dist'));
 app.use('/Individualblog', express.static(__dirname + '/../client/dist'));
 app.use('/Email', express.static(__dirname + '/../client/dist'));
 app.use('/Vlog', express.static(__dirname + '/../client/dist'));
-app.use('/privacy-policy', express.static(__dirname + '/../client/dist'));
+app.use('/Privacy', express.static(__dirname + '/../client/dist'));
 app.use('/Disclosure', express.static(__dirname + '/../client/dist'));
 app.use('/blogs/:title', express.static(__dirname + '/../client/dist'));
 app.use('/about/#', express.static(__dirname + '/../client/dist'));
@@ -107,7 +107,7 @@ app.use(cors());
 // app.get('/blogs/:title', function (req, res, next) {
 //   res.json({msg: 'This is CORS-enabled for all origins!'});
 // });
-app.use(forceSsl);
+// app.use(forceSsl);
 app.listen(process.env.PORT || 3000, function() {
   console.log('listening!');
 });
