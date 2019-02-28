@@ -1,5 +1,6 @@
 import React from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import {isMobile} from 'react-device-detect';
 
 class Mission extends React.Component { 
   constructor(props) {
@@ -12,7 +13,7 @@ class Mission extends React.Component {
       <MuiThemeProvider>
         <div style={{backgroundColor:'white', paddingTop:'3%', paddingBottom:'3%'}} id="mission">
         <h3 className="homepage-header" style={{color:'rgb(37, 45, 114)', margin:'0', paddingTop:'15px'}}>Our Mission</h3>
-        <div style={{width:'60%', marginLeft:'20%'}}>
+        <div style={{width: isMobile ? '95%' : '60%', marginRight: isMobile? '2%':'0%', marginLeft: isMobile? '2%':'20%'}}>
 <p style={{fontSize:'18px', textAlign:'center', lineHeight:'1.5em', color:'#3f4245', fontFamily:'plexeina-regular,Helvetica,sans-serif'}}> 
         Our mission is to deliver an honest, well-communicated,
 financially sound lending experience.

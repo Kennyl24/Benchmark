@@ -28,9 +28,10 @@ li{
   color:rgb(72, 72, 72);
   text-decoration: none;
   font-weight: bold;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
   padding-top: 10px;
+  margin-right:10px;
   padding-bottom: 10px;
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
   /* font-size:24px;
@@ -44,9 +45,10 @@ li{
   background-color: #242f6e !important;
   text-decoration: none;
   font-weight: bold;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
   padding-top: 10px;
+  margin-right:10px;
   padding-bottom: 10px;
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
   /* font-size:24px;
@@ -60,8 +62,8 @@ li{
   background-color: black;
   text-decoration: none;
   font-weight: bold;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
   height: 80px;
@@ -947,7 +949,7 @@ li {
   color: #787878;
 }
 .contact-header {
-  width: 50%;
+  width: 20%;
   border-bottom: 1px solid currentColor;
   font-family: plexeina-bold,Helvetica,sans-serif;
   font-size: 18px;

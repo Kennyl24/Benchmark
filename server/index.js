@@ -26,6 +26,8 @@ app.use('/Directions', express.static(__dirname + '/../client/dist'));
 app.use('/Individualblog', express.static(__dirname + '/../client/dist'));
 app.use('/Email', express.static(__dirname + '/../client/dist'));
 app.use('/Vlog', express.static(__dirname + '/../client/dist'));
+app.use('/privacy-policy', express.static(__dirname + '/../client/dist'));
+app.use('/Disclosure', express.static(__dirname + '/../client/dist'));
 app.use('/blogs/:title', express.static(__dirname + '/../client/dist'));
 app.use('/about/#', express.static(__dirname + '/../client/dist'));
 const blogs = [

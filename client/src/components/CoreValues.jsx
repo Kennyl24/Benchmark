@@ -54,9 +54,10 @@ class CoreValues extends React.Component {
   showMore(){
     console.log('test');
     if(isMobile){
+      console.log('doing nothing')
     } else {
     window.scroll({ 
-      top: 2050, // could be negative value
+      top: 2020, // could be negative value
       left: 0, 
       behavior: 'smooth' 
     });
@@ -68,17 +69,17 @@ class CoreValues extends React.Component {
   render () {
     return (
     <MuiThemeProvider>
-        <div className="service_container" style={{backgroundColor:'#fafafa'}} id="corevalues">
+        <div className="service_container" style={{backgroundColor:'#fafafa', }} id="corevalues">
         <h3 className="homepage-header" style={{color:'rgb(37, 45, 114)', margin: '0', paddingTop:'2%', paddingBottom:'2%'}} > Our Core Values</h3>
         <div style={{display: 'flex', flexFlow:'row wrap', justifyContent: 'center', paddingBottom:'3%'}}>
         {coreValues.length > 0 ? coreValues.map((value, key) => 
-        <div style={{display: 'flex', flexDirection:'row', flexWrap:'wrap', justifyContent: 'center', width:'20%', minWidth:'250px'}}>
+        <div style={{display: 'flex', flexDirection:'row', flexWrap:'wrap', justifyContent: 'center', width:'20%', minWidth:'250px', paddingBottom: isMobile ? '10%': '0%'}}>
           <div style={{width:'100%'}}>
           <img src={value.icon} style={{width:'20%', marginLeft:'40%', paddingBottom: '10px'}} />
           </div>
           <h3 className="homepage-header" style={{ margin: '0', fontSize:'20px', color:'black', paddingBottom: '10px'}}>
           {value.name}</h3>
-            <p className="value-text">
+            <p className="value-text" style={{padding: isMobile ? '0px' : '30px'}}>
          {this.state.showMore ?  value.description : value.description.split(' ').slice(0,20).join(' ') }
         </p>
         {/* <div style={{position:'absolute', bottom:'0px'}}>  */}

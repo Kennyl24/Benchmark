@@ -16,8 +16,11 @@ class ContactIntro extends React.Component {
     super(props);
     this.state = {
     }
+    this.openCalendly = this.openCalendly.bind(this)
   }
-
+  openCalendly(){
+    window.open('https://calendly.com/teamhensley', '_blank');
+  }
   render () {
     return (
     <MuiThemeProvider>
@@ -27,13 +30,13 @@ class ContactIntro extends React.Component {
     flexDirection:'column', justifyContent:'center', alignItems:'center', marginLeft:'20%', marginRight:'20%'
     }}>
       <h1 className="homepage-header" style={{marginTop:'8%', color:'white', fontSize: isMobile ? '22px' : '2em' }}>
-        Hi, we are Benchmark Mortgage Napa Valley. Contact us today to find out how we can get you into your dream home. 
+        Hi, we are The Hilda Hensley Team. Contact us today to find out how we can get you into your dream home. 
         </h1>
         {/* <p style={{fontFamily:'Graphik Web,Helvetica,sans-serif!important', fontSize:'22px', marginTop:'2.5%'}}>
           Yes, you will speak with a human
         </p> */}
         <Button variant="contained" style={{marginTop:'.5%', marginBottom: '2%',width: isMobile? '200px' : '200px', height: '50px', backgroundColor:"#242f6e", color: 'white'}}>
-        <a href="https://calendly.com/teamhensley" target="_blank" style={{color:'white'}}>Schedule a call</a>
+        <span onClick={this.openCalendly} style={{color:'white'}}>Schedule a call</span>
       </Button>
         
         <div> 

@@ -55,9 +55,7 @@ class MenuDrawer extends React.Component {
             onClick={()=> {
             if (text === 'Apply Now'){
               window.open(
-                'https://napa.benchmark.us/apply/',
-                '_blank' // <- This is what makes it open in a new window.
-              );
+                'https://hildahensley.floify.com/apply?noheaderfooter#tab_a', '_blank')
              } else {
               window.location.href=`/${text}`
             }

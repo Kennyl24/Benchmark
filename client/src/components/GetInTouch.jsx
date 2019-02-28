@@ -44,11 +44,11 @@ class GetInTouch extends React.Component {
           </div>
       </ul>
       </div>
-      <div style={{marginLeft:'10%', width:'50%', alignItems:'center', justifyContent:'center'}}>
+      <div style={{marginLeft: isMobile ? '0%' : '10%', width:'50%', alignItems:'center', justifyContent:'center'}}>
       <h3 className="homepage-header" style={{fontSize:'24px', textAlign: 'center'}}>Message Us</h3>
       <div style={{marginLeft:'10%'}}>
       <TextField
-          style={{width: '400px', height: '50px', marginRight: '15px'}}
+          style={{width: isMobile? '300px': '400px', height: '50px', marginRight: '15px'}}
           id="outlined-email-input"
           label="Name"
           type="name"
@@ -58,7 +58,7 @@ class GetInTouch extends React.Component {
           variant="outlined"
         />
         <TextField
-          style={{width: '400px', height: '50px', marginRight: '15px'}}
+          style={{width: isMobile? '300px': '400px', height: '50px', marginRight: '15px'}}
           id="outlined-email-input"
           label="Email"
           type="email"
@@ -68,7 +68,7 @@ class GetInTouch extends React.Component {
           variant="outlined"
         />
         <TextField
-          style={{width: '400px', height: '50px' , marginRight: '15px'}}
+          style={{width: isMobile? '300px': '400px',height: '50px' , marginRight: '15px'}}
           id="outlined-email-input"
           label="Phone"
           type="phone"
@@ -78,7 +78,7 @@ class GetInTouch extends React.Component {
           variant="outlined"
         />
         <TextField
-          style={{width: '400px', marginRight: '15px'}}
+          style={{width:isMobile? '300px': '400px',marginRight: '15px'}}
           id="outlined-email-input"
           label="Message"
           type="message"

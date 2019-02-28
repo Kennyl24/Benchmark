@@ -5,6 +5,7 @@ import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import pdf from '../files/DISCLOSURE.pdf';
 
 class BottomNav extends Component {
   constructor(props) {
@@ -90,6 +91,18 @@ class BottomNav extends Component {
         
           </div>
       </div> 
+      <footer >
+      <img style={{width:'100px', height:'100px'}}src ="https://i.ibb.co/FHV0ffT/image-12.png"/>
+   <p>© 2019 Ark-La-Tex Financial Services, LLC, NMLS#2143</p>
+   <div style={{ display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'center'}}>
+        <ul>
+        <li style={{textDecoration:'underline', cursor:'pointer'}}> <a href={pdf} type="application/pdf" target="_blank">State Licensing Disclosure</a></li>
+        <li style={{textDecoration:'underline', cursor:'pointer'}}>Privacy Policy </li>
+        <li style={{textDecoration:'underline', cursor:'pointer'}} onClick={() => window.location.href="http://www.nmlsconsumeraccess.org/"}>NMLS Consumer Access</li>
+        </ul>
+        </div>
+      
+      </footer>
       </div> 
       </Paper>
     );
