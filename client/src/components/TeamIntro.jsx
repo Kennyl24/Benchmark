@@ -37,7 +37,7 @@ class TeamIntro extends React.Component {
         About Us 
         </h3>
         <div style={{maxWidth:'600px', minWidth:'450px'}}>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/jIfSP36-kqM?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/9CuuT6EEYRI?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div>
         <p style={{fontFamily:'plexeina-bold,Helvetica,sans-serif', fontSize:'18px', color:'#3f4245', lineHeight:'1.7em', paddingBottom: '28px!important', maxWidth:'800px'}}>

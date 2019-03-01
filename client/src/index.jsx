@@ -11,6 +11,12 @@ import Reviews from './components/Reviews.jsx'
 import BlogPage from './components/BlogPage.jsx'
 import VlogPage from './components/VlogPage.jsx'
 import Privacy from './components/Privacy.jsx'
+import VaLoans from './components/VaLoans.jsx'
+import Refinance from './components/Refinance.jsx'
+import FHA from './components/FHA.jsx'
+import Conventional from './components/Conventional.jsx'
+import MoreServices from './components/MoreServices.jsx'
+import FirstTimeHome from './components/FirstTimeHome.jsx'
 import IndividualAbout from './components/IndividualAbout.jsx'
 import Individualblog from './components/Individualblog.jsx'
 import Information from './components/Information.jsx'
@@ -462,6 +468,13 @@ ReactDOM.render(
       />
       <Route  path="/Reviews" component={Reviews} />
       <Route  path="/Privacy" component={Privacy} />
+      <Route  path="/first-time-home-buyer" component={FirstTimeHome} />
+      <Route  path="/VA" component={VaLoans} />
+      <Route  path="/Conventional" component={Conventional} />
+      <Route  path="/FHA" component={FHA} />
+      <Route  path="/Refinance" component={Refinance} />
+      <Route  path="/More-services" component={MoreServices} />
+
       <Route  path="/Contact" component={Contact} />
     </Switch>
   </Router>

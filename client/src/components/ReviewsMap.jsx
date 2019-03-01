@@ -4,6 +4,18 @@ import Review from './Review.jsx';
 
 const reviews = [
   {
+    name: 'Nancy Silva',
+    review: 'Great speedy service on my refi by John Weber! and super support every step of the way!',
+    date: '11/26/18',
+    stars: 5
+  },
+  {
+    name: 'cortes6',
+    review: "Going through Benchmark for our purchase was the best decision we made. The team was super dedicated and made sure we got all possible assistance from local resources we did not know about! They had our best interest at heart, and they were very professional and clear. We really enjoyed the process and couldn't have been in better hands. We love Team Hensley!!",
+    date: '2/19/19',
+    stars: 5
+  },
+  {
     name: 'Reggie N.',
     review: 'Johnathn and his team were amazing in handling my home loan purchase! They were very knowledgeable and efficient. Johnathn met with me in person initially and erased all the fears I had about buying a home and helped me every step of the way through the process. In the end they were be able to close my loan in under 3 weeks which helped me get my offer accepted. I could not have done this without Johnathn and his Benchmark team. I would recommend him and then to anyone', 
     date: '6/24/2018', 

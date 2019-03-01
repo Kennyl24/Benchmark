@@ -44,7 +44,7 @@ class VlogPage extends React.Component {
   componentDidMount(){
     window.scrollTo(0, 0);
     this.targetElement = document.querySelector('#helloitsme');
-    fetch(`https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=25&playlistId=PLhVpGPBTPb700oGkIbfp_rYaaz4TXzmBu&key=${config.GOOGLE_MAPS_API_KEY}`)
+    fetch(`https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=25&playlistId=PL3c0jH6bVf991JnYXXEebRBbIr3ZjyAHk&key=${config.GOOGLE_MAPS_API_KEY}`)
     .then(resp => resp.json())
     .then((resp) => {
       console.log(resp);
@@ -71,8 +71,8 @@ class VlogPage extends React.Component {
       <div id="helloitsme">
       <LeadingBar/>
       <VlogIntro style={{position:'fixed'}}/>
-      {/* <VlogMap videos={this.state.videos}/> */}
-      <ComingSoonModal/>
+      <VlogMap videos={this.state.videos}/>
+      {/* <ComingSoonModal/> */}
       </div> 
       {/* <BottomNav/> */}
        </body>

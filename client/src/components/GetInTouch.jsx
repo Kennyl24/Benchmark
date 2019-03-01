@@ -39,7 +39,7 @@ class GetInTouch extends React.Component {
       <div className='social-bottom2' style={{marginTop: '12%'}}>
           <SocialIcon style={{marginRight:'15px'}} url="https://www.facebook.com/hildahensleynapa/" network="facebook" color="#242f6e" className="social"/>
           <SocialIcon style={{marginRight:'15px'}} url="https://www.zillow.com/lender-profile/hilda%20hensley/" color="#242f6e" />
-          <SocialIcon style={{marginRight:'15px'}} url="http://youtube.com" network="youtube" color="#242f6e"/>
+          <SocialIcon style={{marginRight:'15px'}} url="https://www.youtube.com/channel/UCY2tLom-tAtTh-mYMKnsATA/featured" network="youtube" color="#242f6e"/>
           <SocialIcon style={{marginRight:'15px'}} url="https://www.yelp.com/biz/hilda-garcia-hensley-benchmark-mortgage-napa" network="yelp" color="#242f6e"/>
           </div>
       </ul>

@@ -5,6 +5,7 @@ import ButtonBase from '@material-ui/core/ButtonBase';
 import Typography from '@material-ui/core/Typography';
 import { Link } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
+import {isMobile} from 'react-device-detect';
 
 const styles = theme => ({
   root: {
@@ -84,37 +85,43 @@ const images = [
     url: 'https://images.pexels.com/photos/1202723/pexels-photo-1202723.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
     title: 'VA Loans',
     width: '33.3%',
-    descripition:''
+    descripition:'',
+    href: '/VA'
   },
   {
     url: 'https://images.pexels.com/photos/1166414/pexels-photo-1166414.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
     title: 'First Time Home Buyers',
     width: '33.3%',
-    descripition:''
+    descripition:'',
+    href: '/First-time-home-buyer'
   },
   {
     url: 'https://images.pexels.com/photos/8556/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
     title: 'Refinancing',
     width: '33.4%',
-    descripition:''
+    descripition:'',
+    href: '/Refinance'
   },
   {
     url: 'https://images.pexels.com/photos/872957/pexels-photo-872957.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
     title: 'Conventional Loans',
     width: '33.3%',
-    descripition:''
+    descripition:'',
+    href: '/Conventional'
   },
   {
     url: 'https://images.pexels.com/photos/684385/pexels-photo-684385.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
     title: 'FHA Loans',
     width: '33.3%',
-    descripition:''
+    descripition:'',
+    href: '/FHA'
   },
   {
     url: 'https://images.pexels.com/photos/1549000/pexels-photo-1549000.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
     title: 'And More!',
     width: '33.4%',
-    descripition:''
+    descripition:'',
+    href:'/More-services'
   },
 ];
 
@@ -126,7 +133,7 @@ function ButtonBases(props) {
     <h3 className="homepage-header" style={{cursor: 'pointer', color:'#787878', margin:'0', paddingBottom:'1.5%'}}
     onClick={()=> window.location.href = "/about"}
     >WHY THE HILDA HENSLEY TEAM?</h3>
-      <p style={{fontFamily: 'plexeina-regular,Helvetica,sans-serif', marginLeft:'20%', marginRight:'20%',color: 'black', fontSize: '18px', lineHeight:'1.6', textAlign:'center'}}>
+      <p style={{fontFamily: 'plexeina-regular,Helvetica,sans-serif', marginLeft: isMobile ? '5%' :'20%', marginRight: isMobile ? '5%': '20%',color: 'black', fontSize: '18px', lineHeight:'1.6', textAlign:'center'}}>
       We are a team of home financial experts that are all ready to provide clear options and advice to help you with any of your home purchase needs. 
       Below are some of the mortgages we deal with on a daily basis. 
       {/* Want to buy your Napa Valley dream home? Let your team of Home Financial Experts provide clear options and advice to help you make your dream home a reality!  */}
@@ -140,6 +147,7 @@ function ButtonBases(props) {
         <ButtonBase
           onClick={()=> 
             {
+              // window.location.href=image.href
             window.confirm('Would you like to learn more?') ? window.location.href = "/contact" : null
           }
         }

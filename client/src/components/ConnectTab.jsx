@@ -126,7 +126,7 @@ class ConnectTab extends React.Component {
         onTouchTap={this.handleClickYoutube}
         onClick={this.handleClickYoutube}
         button key={6}>
-          <ListItemIcon>{<SocialIcon style={{height:'25px', width:'25px'}}url="http://youtube.com" network="youtube" />}</ListItemIcon>
+          <ListItemIcon>{<SocialIcon style={{height:'25px', width:'25px'}}url="https://www.youtube.com/channel/UCY2tLom-tAtTh-mYMKnsATA/featured" network="youtube" />}</ListItemIcon>
         <ListItemText primary={'YouTube'} />
         </ListItem>
         <ListItem button key={7}
@@ -140,7 +140,7 @@ class ConnectTab extends React.Component {
     );
 
     return (
-      <div style={{position:'fixed', right:'0px', top:'40%', zIndex:'999'}}>
+      <div style={{position:'fixed', right:'0px', top:'40%', zIndex:'9999'}}>
         <Button onClick={this.toggleDrawer('right', true)} style={{color:'white', backgroundColor:'#242f6e', minWidth:'0px', maxWidth:'44px'}}>
         
         C<br/>o<br/>n<br/>n<br/>e<br/>c<br/>t</Button>

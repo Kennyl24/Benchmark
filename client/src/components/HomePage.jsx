@@ -12,7 +12,7 @@ import ServiceSection from './ServiceSection.jsx';
 import BottomNav from './BottomNav.jsx';
 import ReviewHomePage from './ReviewHomePage.jsx';
 import BlogHomePage from './BlogHomePage.jsx';
-import VlogHomePage from './VlogHomePage.jsx';
+import VlogHome from './VlogHome.jsx';
 import AboutHomeMap from './AboutHomeMap.jsx';
 import HomePageTest from './HomePageTest.jsx';
 import MetaTags from 'react-meta-tags';
@@ -36,7 +36,7 @@ class HomePage extends React.Component {
       <MuiThemeProvider>
         <MetaTags>
             <title>Napa Valley Mortgage Lender Home Page</title>
-            <meta name="description" content="Your napa valley mortgage lenders. Here you will see mortgage blogs, vlogs, and more." />
+            <meta name="description" content="Your napa valley mortgage lenders. Napa Mortgage brokers. Napa mortgage bankers. Napa mortgage. Napa home loans. Here you will see mortgage blogs, vlogs, and more." />
             <meta property="og:title" content="Napa Valley Mortgage Lender" />
             <meta property="og:image" content="path/to/image.jpg" />
         </MetaTags>
@@ -47,7 +47,7 @@ class HomePage extends React.Component {
         <HomePageTest/>
         {/* <ReviewHomePage/> */}
         <BlogHomePage/>
-        <VlogHomePage/>
+        <VlogHome/>
         <BottomNav/>
         </div>
    </MuiThemeProvider>

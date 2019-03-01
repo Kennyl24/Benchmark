@@ -12,18 +12,32 @@ import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import axios from 'axios';
 import config from '../../../config.js';
+import YouTube from 'react-youtube';
+import SvgIcon from '@material-ui/core/SvgIcon';
+import IconButton from '@material-ui/core/IconButton';
 
-
+const opts = {
+  height: '390',
+  width: '640',
+  playerVars: { // https://developers.google.com/youtube/player_parameters
+    autoplay: 1
+  }
+};
   class VlogHomePage extends React.Component { 
     constructor(props) {
       super(props);
       this.state = {
-        videos: null,
+        videos: [],
         hovering: false,
         showEverything: false,
         email: '',
+        hovering:false,
       }
       this.submitted = this.submitted.bind(this);
+      this.playVideo = this.playVideo.bind(this);
+      this.closeVideo = this.closeVideo.bind(this);
+      this.changeColor = this.changeColor.bind(this);
+
     }
     submitted(){
       axios.post('/Vlog', {
@@ -38,7 +52,7 @@ import config from '../../../config.js';
       });
     }
     componentWillMount(){
-      fetch(`https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=25&playlistId=PLhVpGPBTPb700oGkIbfp_rYaaz4TXzmBu&key=${config.GOOGLE_MAPS_API_KEY}`)
+      fetch(`https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=25&playlistId=PL3c0jH6bVf991JnYXXEebRBbIr3ZjyAHk&key=${config.GOOGLE_MAPS_API_KEY}`)
       .then(resp => resp.json())
       .then((resp) => {
         this.setState({
@@ -48,87 +62,74 @@ import config from '../../../config.js';
         console.log(this.state.videos);
       });
     }
+    playVideo(){
+      this.setState({
+        playingVideo: true,
+      });
+  
+    }
+    closeVideo(){
+      this.setState({
+        playingVideo: false,
+      })
+    }
+    changeColor(){
+      this.setState({
+        hovering: !this.state.hovering
+      })
+    }
     render () {
+      
       return (
         <MuiThemeProvider>
-        <h3 className="homepage-header" style={{color:'#787878', cursor:'pointer',marginBottom:''}} 
-        onClick={() => window.location.href = "/vlog"}
-        > Mortgage Lending Video Tips </h3>
-        <div className="comingsoon-modal-home">
-        <h2 style={{marginTop:'0%'}}>COMING SOON</h2>
-        <p className="vlog-text" style={{textAlign:'center'}}>Our video tips are close to launching<br/>
-        Be the first to know, subscribe below!
-        </p>
-        <div style={{display:'flex', flexDirection: 'column',
-    alignItems: 'center'}}>
-        <div style={{alignItems: 'center'}}>
-        <TextField
-          style={{width:'60%', minWidth:'200px', height: '50px'}}
-          id="outlined-email-input"
-          label="Email"
-          type="email"
-          name="email"
-          autoComplete="email"
-          margin="normal"
-          variant="outlined"
-          value={this.state.email}
-          onChange={(event) => {
-            this.setState({
-              email:event.target.value
-            })
-          } }
-        />
-        </div>
-        <div>
-        <Button onClick={this.submitted} variant="contained" fullWidth={true} style={{marginTop:'.5%', marginBottom: '2%', height: '50px', backgroundColor:"#242f6e", color: 'white'}}>
-          Notify Me
-      </Button>
+    <div style={{padding:'0 24px 48px', maxWidth: '350px', cursor:'pointer'}}>
+    <div onMouseEnter={this.changeColor} onMouseLeave={this.changeColor}>
+    {/* <iframe src='https://www.youtube.com/embed/sWlYdCutkLE' style={{width:'100%', height:'30%'}}></iframe> */}
+    
+    
+    <div style={{position: 'relative',
+      top: 0,
+      left: 0,
+      overflow:'hidden'
+    }}
+    onClick={this.playVideo}
+    >
+   
+    <img className="card-image2" src={this.props.video.snippet.thumbnails.high.url}/>
+    <img className="card-secondImage" src={this.state.hovering ? "https://i.ibb.co/hChgLkq/yt-icon-rgb.png" : 'https://i.ibb.co/47cKNLk/youtube-social-icon-dark.png'} />
+    </div>
+      <h4 style={{textAlign:'center', lineHeight:'2.0'}}><b style={{color: '#242f6e', fontSize: '16px', borderBottom: '2px solid currentColor'}}>{this.props.video.snippet.title}</b></h4> 
+    </div>
+    </div>
+    {this.state.playingVideo ? 
+    <div>
+    <IconButton 
+      style={{
+        position: 'fixed',
+        right: '10%',
+        top: '13%',
+        zIndex:'9999999', 
+        cursor: 'pointer',
+        backgroundColor:'white'
+      }}
+    aria-label="Delete"
+    onClick={this.closeVideo}
+    >
+  <SvgIcon>
+    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+  </SvgIcon>
+</IconButton>
+    <YouTube
+        className="video-player"
+        containerClassName="video-container"  
+        videoId={this.props.video.snippet.resourceId.videoId}
+        opts={opts}
+        onReady={this._onReady}
+      />
       </div>
-      </div>
-        </div>
-        </MuiThemeProvider>
-    // if(!this.state.showEverything){
-    //     return <div/>
-    //   }
-    //   return (
-    //     <Link to={{ pathname:'/vlog' }} >
-    //     <div style={{marginBottom: '4%'}}>
-    // <h3 className="homepage-header" style={{color:'#787878'}} > VLOGS </h3>
-    // <div style={{
-    //   display: 'flex',
-    //   flexWrap: 'wrap',
-    //   justifyContent: 'space-around'
-    // }}>
-    //     {this.state.videos.length > 0 ? this.state.videos.map((video, key) =>  
-    // <Card style={{height:'auto', 
-    //   width:'33%', 
-    //   display: 'flex',
-    //   flexWrap: 'nowrap',
-    //   overflowX: 'auto'}}>
-    //   <CardHeader
-    //     title={video.snippet.title}
-    //     titleStyle={{fontSize:'16px', fontWeight: 'bold'}}
-    //     // subtitle="Subtitle"
-    //   />
-    //   <CardMedia
-    //     overlay={<Link to={{ pathname:'/vlog' }}className="home-links"><CardTitle title="View More"
-    //     titleStyle={{color:'white'}}
-    //     /></Link>}
-    //   >
-    //   <div style={{position: 'relative',
-    //   top: 0,
-    //   left: 0
-    // }}>
-    //     <img className="card-image2" src={video.snippet.thumbnails.high.url} alt="" />
-    //     <img className="card-secondImage" src={this.state.hovering ? "https://i.ibb.co/hChgLkq/yt-icon-rgb.png" : 'https://i.ibb.co/47cKNLk/youtube-social-icon-dark.png'} />
-    //   </div>
-    //   </CardMedia>
-    // </Card>)
-    // : null}
-    // </div>
-    // </div>
-    // </Link>
+      : null}
+     </MuiThemeProvider>
+     )
+    }};
 
-)
-}};
 export default VlogHomePage;

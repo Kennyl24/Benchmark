@@ -48,12 +48,13 @@ class Vlog extends React.Component {
     let string = 'https://www.youtube.com/embed/"'+ this.props.video.id + '"';
     return (
     <MuiThemeProvider>
-    <div style={{padding:'0 24px 48px', maxWidth: '300px', cursor:'pointer'}}>
+    <div style={{padding:'0 24px 48px', maxWidth: '350px', cursor:'pointer'}}>
     <div onMouseEnter={this.changeColor} onMouseLeave={this.changeColor}>
     {/* <iframe src='https://www.youtube.com/embed/sWlYdCutkLE' style={{width:'100%', height:'30%'}}></iframe> */}
     <div style={{position: 'relative',
       top: 0,
-      left: 0
+      left: 0,
+      overflow:'hidden'
     }}
     onClick={this.playVideo}
     >

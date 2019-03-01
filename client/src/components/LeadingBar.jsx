@@ -51,33 +51,33 @@ class LeadingBar extends React.Component {
   componentDidMount() {
     if(window.location.href.indexOf('About') > -1){
         this.setState({
-          aboutBackground:'#242f6e',
+          aboutBackground:'rgba(36,	47,	110, .8)',
           aboutColor:'white'
         });
       } else if((window.location.href.indexOf('Blog') > -1) || (window.location.href.indexOf('blogs') > -1)){
           this.setState({
-            blogBackground:'#242f6e',
+            blogBackground:'rgba(36,	47,	110, .8)',
             blogColor:'white'
           });
         } else if(window.location.href.indexOf('Vlog') > -1){
             this.setState({
-              vlogBackground:'#242f6e',
+              vlogBackground:'rgba(36,	47,	110, .8)',
               vlogColor:'white'
             });
           } else if(window.location.href.indexOf('Reviews') > -1){
               this.setState({
-                reviewBackground:'#242f6e',
+                reviewBackground:'rgba(36,	47,	110, .8)',
                 reviewColor:'white'
               });
             } else if(window.location.href.indexOf('Contact') > -1){
                 this.setState({
-                  contactBackground:'#242f6e',
+                  contactBackground:'rgba(36,	47,	110, .8)',
                   contactColor:'white'
             });
           } else if(window.location.href.indexOf('home') >= -1){
               console.log('home')
               this.setState({
-                homeBackground:'#242f6e',
+                homeBackground:'rgba(36,	47,	110, .8)',
                 homeColor:'white'
             });
           }
@@ -159,6 +159,9 @@ resize = () => {
     <a href="/Vlog" className="nav-links"style={{backgroundColor:this.state.vlogBackground, color:this.state.vlogColor}}>VLOG</a>
     <a href="/Reviews" className="nav-links"style={{backgroundColor:this.state.reviewBackground, color:this.state.reviewColor}}>REVIEWS</a>
     <a href="/Contact" className="nav-links" style={{backgroundColor:this.state.contactBackground, color:this.state.contactColor}}>CONTACT</a>
+    <Button onClick={() => window.open('https://hildahensley.floify.com/apply?noheaderfooter#tab_a', '_blank')} style={{marginTop:'0%', color: 'white', borderRadius: 2}} size="large" variant="outlined"><a style={{color:'#242f6e'}} className="applybutton" 
+    
+    >Apply Now!</a></Button>
     {/* <a href="https://hildahensley.floify.com/apply?noheaderfooter#tab_a" className="nav-links">Apply</a> */}
     {/* <Button><Link to={{ pathname:'/home' }}className="nav-links">Home</Link></Button>   
     <Button><Link to={{ pathname: '/About' }}className="nav-links">About</Link></Button>      
@@ -168,6 +171,9 @@ resize = () => {
     {/* <Button variant="outlined" style={{marginRight:'5px', marginLeft: '10px'}} className="nav-contact"><a style={{color:'black'}}href='/Contact' >Contact</a></Button> */}
     {/* <Button variant="contained"style={{backgroundColor:"#242f6e", color: 'white'}} ><a href="https://hildahensley.floify.com/apply?noheaderfooter#tab_a" target="_blank">Apply Now</a></Button> */}
   </div>
+  {/* <span style={{position:'fixed', top:'40px', right:'20px'}}>
+  <Button style={{marginTop:'2%', color: 'white', borderRadius: 2}} size="large" variant="outlined"><a style={{color:'#242f6e'}}href="/Contact" className="applybutton" >Apply Now!</a></Button>
+  </span> */}
   </span>
   : 
   // <IconButton color="inherit" aria-label="Menu">

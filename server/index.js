@@ -27,7 +27,12 @@ app.use('/Individualblog', express.static(__dirname + '/../client/dist'));
 app.use('/Email', express.static(__dirname + '/../client/dist'));
 app.use('/Vlog', express.static(__dirname + '/../client/dist'));
 app.use('/Privacy', express.static(__dirname + '/../client/dist'));
-app.use('/Disclosure', express.static(__dirname + '/../client/dist'));
+app.use('/VA', express.static(__dirname + '/../client/dist'));
+app.use('/first-time-home-buyer', express.static(__dirname + '/../client/dist'));
+app.use('/FHA', express.static(__dirname + '/../client/dist'));
+app.use('/Conventional', express.static(__dirname + '/../client/dist'));
+app.use('/Refinance', express.static(__dirname + '/../client/dist'));
+app.use('/More-services', express.static(__dirname + '/../client/dist'));
 app.use('/blogs/:title', express.static(__dirname + '/../client/dist'));
 app.use('/about/#', express.static(__dirname + '/../client/dist'));
 const blogs = [
