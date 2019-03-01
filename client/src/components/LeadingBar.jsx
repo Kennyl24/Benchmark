@@ -88,7 +88,12 @@ class LeadingBar extends React.Component {
           this.setState({ 
             isTop: !this.state.isTop, 
             opacity: 1.0,
-        })
+        });
+      } else if(isTop === true){
+        this.setState({ 
+          isTop: true, 
+          opacity: 0.8,
+      });
       }
     });
   }

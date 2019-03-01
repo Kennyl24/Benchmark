@@ -528,7 +528,7 @@ ReactDOM.render(
   {isMobile ? null :<Fab variant="extended" 
   onClick={() => window.open('https://hildahensley.floify.com/apply?noheaderfooter#tab_a', '_blank')}
   aria-label="Delete" style={{position:'fixed', bottom: '20px', left:'20px', zIndex:'999999999'}}>
-  Get A Free Quote!
+  Apply Now
 </Fab> }
   <Router>
     <Switch>
