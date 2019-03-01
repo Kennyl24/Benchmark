@@ -11,6 +11,83 @@ import {isMobile} from 'react-device-detect';
 
 const blogs = [
   {
+    blogTitle:'Why You Need a Mortgage Pre-Approval',
+    blogAuthor: 'Hilda Hensley',
+    blogText: 
+    <p className="blog-text">
+    Many home buyers wonder if they should get a mortgage pre-approval or a mortgage pre-qualification before they start their home search. If you’re serious about buying a home, getting a mortgage pre-approval before you work with a Realtor and start your home search is preferred.
+    <br/>
+    <h2>Mortgage Pre-Approval versus Mortgage Pre-Qualification</h2>
+    Realize there’s a big difference between being pre-qualified for a mortgage and being pre-approved for one. Many home buyers think these terms are interchangeable, but they are not. Here’s the difference.
+    Pre-qualification means you have supplied a lender with some basic information, such as your income, debts, and assets. You may have given the details via phone or on an online form. Everything is based solely on what you tell the lender, as there’s no verification or credit pull. Since nothing is verified, your pre-qualification amount is likely to change, and it may be given verbally as a price range rather than an exact amount. 
+    <br/>
+Pre-approval, on the other hand, means you have gone a step further. You have completed a mortgage application, paid any applicable fees, supplied documentation to prove your income, and have authorized a credit report be pulled. Because you’ve given the lender permission to review and verify your information, your pre-approval amount is often in writing and for an exact amount that isn’t likely to change. 
+<br/>
+So while pre-qualification is a good start, being pre-approved will make your home buying search more productive and often less stressful. Sellers will know you’re serious and will give higher priority to your offers. By taking the time to get a mortgage pre-approval, you’ll find yourself in your new home faster.
+<br/>
+Need advice on getting a mortgage pre-approval? Before you apply for your next mortgage, <span><Link to={{ pathname:'/contact' }} style={{color:'black'}}>contact us.</Link></span> As mortgage bankers, we can help you make the best decision for your needs.
+
+    </p>
+    
+    ,
+    blogSnippet:'There’s a big difference between a mortgage pre-approval and a mortgage pre-qualification. Many home buyers think these terms are interchangeable, but they are not. Here’s the difference.',
+    blogImage:'https://i.ibb.co/StZkbHS/Pre-Approved-vs-Pre-Qualified1.jpg',
+
+  }, 
+  {
+    blogTitle:'Your Mortgage Application Checklist',
+    blogAuthor: 'Hilda Hensley',
+    blogText: <p className="blog-text">
+    <h2>Your Mortgage Application Checklist</h2>
+
+    Before you apply for a mortgage, you’ll need to gather many different documents to complete your mortgage application. The better prepared you are before you meet with your lender, the less stressful the mortgage application process will be. Here is a handy checklist of the most common documents you’ll need to have ready.
+    <h4 style={{paddingTop:'80px'}}>General:</h4>
+    <ul>
+    <li>Driver’s Licenses for all applicants</li>
+    <li>Social Security Card (only on FHA and VA)</li>
+    <li>Resident Alien Card or VISA – when applicable</li>
+    </ul>
+    <h4> Income: </h4>
+    <ul>
+  <li>Most recent 30 days of pay stubs with year-to-date totals</li>
+  <li>W-2 forms and/or 1099s (past 2 years)</li>
+  <li>Verification of other income such as social security (provide award letter for current year), alimony, or child support (provide divorce decree)</li>
+  <li>Most current 2 years tax returns (Federal only including all schedules)</li>
+  <li>Partnerships, S-Corp, and/or Corporate Federal returns for the previous 2 years including all schedules and K1s</li>
+  <li>If you have rental property income: Copies of all lease/rental agreements</li>
+  </ul>
+  <h4>Assets:</h4>
+    <ul>
+<li>Most recent 2 months (60 days) actual bank statements. Include all pages for both checking and savings accounts.</li>
+<li>Most recent 2 months retirement and investment account statements. Include all pages.</li>
+<li>Source of any non-direct deposit(s) that are greater than 50% of your monthly income.</li>
+<li>Proof of where the earnest money funds will originate. Lenders need proof that the earnest money has cleared your account.</li>
+<li>If you are receiving gift money for this transaction, additional documentation may be required.</li>
+</ul>
+    <h4>Properties Owned:</h4>
+    <ul>
+<li>Copy of current mortgage statement on all properties owned</li>
+<li>Property tax information on all properties</li>
+<li>Insurance Declarations page on all properties</li>
+</ul>
+    <h4>Other:</h4>
+    <ul>
+<li>Bankruptcy – Copy of discharge and schedule of creditors</li>
+<li>Divorced? – If so please provide your Divorce Decree if less than 18 years ago</li>
+<li>VA only – Copy of Form DD214</li>
+<li>Self Employed – Copy of current business license</li>
+</ul>
+<br/>
+Keep in mind that everyone listed on the loan needs to complete the mortgage application and provide their financial information. And don’t be alarmed if your lender asks you for more documents as they review your mortgage application. After all, the lender’s goal is to assess you as a borrower and ensure you can make your payments on time. As such, you’ll need to provide them with numerous documents to showcase your creditworthiness.
+<br/>
+When you’re ready to begin your mortgage application, <span><Link to={{ pathname:'/contact' }} style={{color:'black'}}>contact us.</Link></span>As mortgage bankers, we can help you make the best decision for your needs.
+   
+    </p>,
+    blogSnippet: 'Before you apply for a mortgage, you’ll need to gather many different documents to complete your mortgage application. Here is a handy checklist of the most common documents you’ll need to have ready.',
+    blogImage:'https://i.ibb.co/jG7Bb2C/checklist.jpg',
+
+  },
+  {
     blogTitle: 'Mortgage Banker Versus Mortgage Broker',
     blogAuthor: 'Hilda Hensley',
     blogText: 

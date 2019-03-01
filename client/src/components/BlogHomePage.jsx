@@ -10,6 +10,84 @@ import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'mat
 import Button from '@material-ui/core/Button';
 const homeBlogs = [
   {
+    blogTitle:'Why You Need a Mortgage Pre Approval',
+    blogAuthor: 'Hilda Hensley',
+    blogText: 
+    <p className="blog-text">
+    Many home buyers wonder if they should get a mortgage pre-approval or a mortgage pre-qualification before they start their home search. If you’re serious about buying a home, getting a mortgage pre-approval before you work with a Realtor and start your home search is preferred.
+    <br/>
+    <h2>Mortgage Pre-Approval versus Mortgage Pre-Qualification</h2>
+    Realize there’s a big difference between being pre-qualified for a mortgage and being pre-approved for one. Many home buyers think these terms are interchangeable, but they are not. Here’s the difference.
+    Pre-qualification means you have supplied a lender with some basic information, such as your income, debts, and assets. You may have given the details via phone or on an online form. Everything is based solely on what you tell the lender, as there’s no verification or credit pull. Since nothing is verified, your pre-qualification amount is likely to change, and it may be given verbally as a price range rather than an exact amount. 
+    <br/><br/>
+Pre-approval, on the other hand, means you have gone a step further. You have completed a mortgage application, paid any applicable fees, supplied documentation to prove your income, and have authorized a credit report be pulled. Because you’ve given the lender permission to review and verify your information, your pre-approval amount is often in writing and for an exact amount that isn’t likely to change. 
+<br/><br/>
+So while pre-qualification is a good start, being pre-approved will make your home buying search more productive and often less stressful. Sellers will know you’re serious and will give higher priority to your offers. By taking the time to get a mortgage pre-approval, you’ll find yourself in your new home faster.
+<br/><br/>
+Need advice on getting a mortgage pre-approval? Before you apply for your next mortgage, <span><Link to={{ pathname:'/contact' }} style={{color:'black'}}>contact us.</Link></span> As mortgage bankers, we can help you make the best decision for your needs.
+
+    </p>
+    
+    ,
+    blogSnippet:'There’s a big difference between a mortgage pre-approval and a mortgage pre-qualification. Many home buyers think these terms are interchangeable, but they are not. Here’s the difference.',
+    blogImage:'https://i.ibb.co/StZkbHS/Pre-Approved-vs-Pre-Qualified1.jpg',
+
+  }, 
+  {
+    blogTitle:'Your Mortgage Application Checklist',
+    blogAuthor: 'Hilda Hensley',
+    blogText: <p className="blog-text">
+    <h2>Your Mortgage Application Checklist</h2>
+
+    Before you apply for a mortgage, you’ll need to gather many different documents to complete your mortgage application. The better prepared you are before you meet with your lender, the less stressful the mortgage application process will be. Here is a handy checklist of the most common documents you’ll need to have ready.
+    <br/>
+    <h4 style={{paddingTop:'80px'}}>General:</h4>
+    <ul>
+    <li>Driver’s Licenses for all applicants</li>
+    <li>Social Security Card (only on FHA and VA)</li>
+    <li>Resident Alien Card or VISA – when applicable</li>
+    </ul>
+    <h4> Income: </h4>
+    <ul>
+  <li>Most recent 30 days of pay stubs with year-to-date totals</li>
+  <li>W-2 forms and/or 1099s (past 2 years)</li>
+  <li>Verification of other income such as social security (provide award letter for current year), alimony, or child support (provide divorce decree)</li>
+  <li>Most current 2 years tax returns (Federal only including all schedules)</li>
+  <li>Partnerships, S-Corp, and/or Corporate Federal returns for the previous 2 years including all schedules and K1s</li>
+  <li>If you have rental property income: Copies of all lease/rental agreements</li>
+  </ul>
+  <h4>Assets:</h4>
+    <ul>
+<li>Most recent 2 months (60 days) actual bank statements. Include all pages for both checking and savings accounts.</li>
+<li>Most recent 2 months retirement and investment account statements. Include all pages.</li>
+<li>Source of any non-direct deposit(s) that are greater than 50% of your monthly income.</li>
+<li>Proof of where the earnest money funds will originate. Lenders need proof that the earnest money has cleared your account.</li>
+<li>If you are receiving gift money for this transaction, additional documentation may be required.</li>
+</ul>
+    <h4>Properties Owned:</h4>
+    <ul>
+<li>Copy of current mortgage statement on all properties owned</li>
+<li>Property tax information on all properties</li>
+<li>Insurance Declarations page on all properties</li>
+</ul>
+    <h4>Other:</h4>
+    <ul>
+<li>Bankruptcy – Copy of discharge and schedule of creditors</li>
+<li>Divorced? – If so please provide your Divorce Decree if less than 18 years ago</li>
+<li>VA only – Copy of Form DD214</li>
+<li>Self Employed – Copy of current business license</li>
+</ul>
+<br/>
+Keep in mind that everyone listed on the loan needs to complete the mortgage application and provide their financial information. And don’t be alarmed if your lender asks you for more documents as they review your mortgage application. After all, the lender’s goal is to assess you as a borrower and ensure you can make your payments on time. As such, you’ll need to provide them with numerous documents to showcase your creditworthiness.
+<br/>
+When you’re ready to begin your mortgage application, contact us. As mortgage bankers, we can help you make the best decision for your needs.
+   
+    </p>,
+    blogSnippet: 'Before you apply for a mortgage, you’ll need to gather many different documents to complete your mortgage application. Here is a handy checklist of the most common documents you’ll need to have ready.',
+    blogImage:'https://i.ibb.co/jG7Bb2C/checklist.jpg',
+
+  },
+  {
     blogTitle: 'Mortgage Banker Versus Mortgage Broker',
     blogAuthor: 'Hilda Hensley',
     blogText: 
@@ -35,70 +113,6 @@ Before you apply for your next mortgage, <span><Button ><Link to={{ pathname:'/c
     ,
     blogSnippet:'When it’s time to secure a home loan, many people seek out a mortgage broker. But is this your best option? Would a mortgage banker be a better option? Learn the difference between the two',
     blogImage: 'https://i.ibb.co/YtcC90W/3.jpg'
-  },
-  {
-    blogTitle: 'Fast Track your mortgage approval',
-    blogAuthor: 'Hilda Hensley',
-    blogText: 
-    <p className="blog-text">
-    Many people think getting a mortgage approval is a difficult and stressful process. Since a mortgage is often the biggest financial obligation someone has, it’s no wonder qualifying for one requires some work. Between the mounds of paperwork and the waiting time involved as approvals are processed, it’s normal to feel anxious and stressed. However, there are steps you can take before you apply that can make getting a mortgage approval easier.
-
-As a mortgage banker who has helped thousands of people through the home-buying process, here are my top tips to fast-track your mortgage approval. 
-
-Check Your Credit
-Your credit score is vital to any type of lending decision, particularly a mortgage. Realize, though, that this does not mean you must have perfect credit. However, the higher your credit score, the lower your interest rate will likely be. When you check your credit, you can often find an estimation of your score through your bank, your credit card issuer, or even via online credit monitoring sites. But your score is only half the equation. You’ll also want an actual copy of your credit report from each of the three credit reporting agencies: Experian, Equifax, and TransUnion. Review each agency’s report for accuracy. If something doesn’t seem right, get it fixed before you apply for a mortgage.
-
-Save for a Down Payment
-Almost all mortgages require a down payment. The exact amount can range anywhere from 5% to 20% depending on the loan type. Realize that if you put less than 20% down, your mortgage lender will require you to carry PMI (Private Mortgage Insurance). The cost of PMI varies, but it’s usually around one half of 1% of the loan amount. So if you can avoid it, you should. You may be able to remove it later once your loan balance is paid down enough so that you have at least 20% equity. You’ll need to talk to your lender for specifics regarding this option. 
-
-Build a Nest Egg
-In addition to saving for a down payment, you’ll also want some extra cash on hand. Most lenders prefer to see that you have a couple of months of mortgage payments in reserve. No mortgage lender wants to think you’ll be living paycheck to paycheck with nothing saves for emergencies. One appliance repair shouldn’t impede on your ability to make your mortgage payment. Additionally, the greater your reserves, the more that can help make up for less than perfect credit history.
-
-Be Realistic About What You Can Afford
-We all want our dream home now. But depending on your circumstances, that dream home may have to wait a few years. Be honest about what you can really afford. What kind of monthly payment can you comfortably carry? Remember that your mortgage amount may also need to include PMI, homeowner’s insurance, and property taxes. Calculate all this into your equation. Also look at your debt to income ratio, or DTI. This is the amount of monthly debt payments you have compared to your monthly income. Most mortgages will allow a maximum DTI of 41%. Ideally your DTI should be no higher than 36%. If your DTI is too high, or if you bite off more than you can chew in terms of a monthly payment, you’ll be more likely to miss mortgage payments if an emergency arises. 
-
-Get Your Documents Ready
-Getting a mortgage requires a lot of paperwork and documentation. If you come to your lender with all the documents they are likely to need, you can make the process of getting a mortgage faster and less stressful. Here are the most common documents you’ll need to have ready.
-
-General:
-Driver’s Licenses for all applicants
-Social Security Card (only on FHA and VA)
-Resident Alien Card or VISA – when applicable
-Income:
-Most recent 30 days of pay stubs with year-to-date totals
-W-2 forms and/or 1099s (past 2 years)
-Verification of other income such as social security (provide award letter for current year), alimony, or child support (provide divorce decree)
-Most current 2 years tax returns (Federal only including all schedules)
-Partnerships, S-Corp, and/or Corporate Federal returns for the previous 2 years including all schedules and K1s
-If you have rental property income: Copies of all lease/rental agreements
-Assets:
-Most recent 2 months (60 days) actual bank statements. Include all pages for both checking and savings accounts.
-Most recent 2 months retirement and investment account statements. Include all pages.
-Source of any non-direct deposit(s) that are greater than 50% of your monthly income.
-Proof of where the earnest money funds will originate. Lenders need proof that the earnest money has cleared your account.
-If you are receiving gift money for this transaction, additional documentation may be required.
-Properties Owned:
-Copy of current mortgage statement on all properties owned
-Property tax information on all properties
-Insurance Declarations page on all properties
-Other:
-Bankruptcy – Copy of discharge and schedule of creditors
-Divorced? – If so please provide your Divorce Decree if less than 18 years ago
-VA only – Copy of Form DD214
-Self Employed – Copy of current business license
-
-You Can Get an Easy Mortgage Approval
-
-    </p>
-    ,
-    blogSnippet:'Many people think getting a mortgage approval is a difficult and stressful process. Since a mortgage is often the biggest financial obligation someone has, it’s no wonder qualifying for one requires some work.',
-    blogImage: 'https://i.ibb.co/vjsD0p9/app.jpg'
-  },
-  {
-    blogTitle: 'Why an Online Mortgage May Not Be Your Best Option',
-    blogAuthor: 'Hilda Hensley', 
-    blogSnippet: 'We live in an era where people want everything online, from online shopping and food delivery to an online mortgage and doctor visit. Learn why online may not be better, especially for your mortgage needs.',
-    blogImage: 'https://i.ibb.co/2PXHtrR/euhfwue.jpg'
   },
   ]
   const BlogHomePage = () => (

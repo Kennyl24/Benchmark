@@ -62,7 +62,7 @@ class ConnectTab extends React.Component {
     // window.location.href="https://calendly.com/teamhensley"
   };
   handleClickYoutube = (e) => {
-    window.open('https://youtube.com','_blank');
+    window.open('https://www.youtube.com/channel/UCY2tLom-tAtTh-mYMKnsATA/featured','_blank');
     // window.location.href="https://calendly.com/teamhensley"
   };
   handleClickApply = (e) => {
