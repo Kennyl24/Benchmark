@@ -8,6 +8,7 @@ import Popup from "reactjs-popup";
 import SvgIcon from '@material-ui/core/SvgIcon';
 import IconButton from '@material-ui/core/IconButton';
 import BlogViewer from './BlogViewer.jsx'
+import MetaTags from 'react-meta-tags';
 
 class Blog extends React.Component { 
   constructor(props) {
@@ -29,6 +30,12 @@ class Blog extends React.Component {
   render () {
     return (
     <MuiThemeProvider>
+      <MetaTags>
+            <title>{this.props.blog.blogTitle}</title>
+            <meta name="description" content={this.props.blog.blogSnippet} />
+            <meta property="og:title" content={this.props.blog.blogTitle} />
+            <meta property="og:image" content={this.props.blog.image} />
+    </MetaTags>
     <div style={{padding:'0 24px 48px', minWidth: '26%', maxWidth:'380px'}}>
     <div className="card">
     <img className="card-image" src={this.props.blog.blogImage}/>
