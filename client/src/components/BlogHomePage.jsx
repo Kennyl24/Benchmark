@@ -145,38 +145,5 @@ Need advice on getting a mortgage pre-approval? Before you apply for your next m
     </div> 
     </div> 
     );
-    {/* <div style={{
-      display: 'flex',
-      flexDirection: 'row',
-      flexWrap: 'wrap',
-      maxWidth:'95%',
-      marginLeft:'10%'
-      // justifyContent: 'space-around'
-    }}>
-        {homeBlogs.length > 0 ? homeBlogs.map((blog, index) =>  
-    <Card style={{height:'auto', 
-      width: '22%',
-      minWidth:'340px', 
-      display: 'flex',
-      flexWrap: 'wrap',
-      marginRight:'3%', 
-      }}>
-      <CardHeader
-        title={blog.blogTitle}
-        titleStyle={{fontSize:'20px', fontWeight: 'bold'}}
-        // subtitle="Subtitle"
-      />
-      <CardMedia
-        overlay={<Link to={{ pathname: `/blogs/${blog.blogTitle.split(' ').join('-')}`, state: { key: index} }}className="read-more"><CardTitle title="Read Me"
-        titleStyle={{color:'white'}}
-        // style={{height:'200px'}}
-        /></Link>}
-      >
-        <img src={blog.blogImage} style={{height: '280px'}}alt="" />
-      </CardMedia>
-    </Card>)
-    : null}
-    </div>
-    </div> */}
 
 export default BlogHomePage;

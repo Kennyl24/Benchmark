@@ -19,6 +19,7 @@ class VaLoans extends React.Component {
         <h1 className="homepage-header" style={{color:'white'}}>VA Loans</h1>
         </div>
         </div>
+        <h2>Why VA?</h2>
         <BottomNav/>
         </MuiThemeProvider>
     )

@@ -75,7 +75,7 @@ style={{fill: '#000000', maxHeight:'15%', maxHeight:'20%', maxWidth:'20%', margi
       modal
       closeOnDocumentClick
       open={this.state.modal}
-      contentStyle={{minWidth:'250px', width: '40%'}}
+      contentStyle={{minWidth: isMobile ? '370px' : '600px', width: '40%'}}
     >
     <div style={{textAlign: 'center', height:'80%'}}
     onClick={() => this.setState({
@@ -103,7 +103,7 @@ style={{fill: '#000000', maxHeight:'15%', maxHeight:'20%', maxWidth:'20%', margi
     <p  style={{fontFamily:'plexeina-regular,Helvetica,sans-serif', lineHeight: isMobile ? '1.5' : '2.0',paddingRight:'20px', paddingLeft:'20px', textAlign:'left'}}>{this.props.individual.about}</p>
     <h2  style={{fontFamily:'plexeina-regular,Helvetica,sans-serif', fontSize:'18px',marginLeft:'20px', textAlign:'left'}}> Reach out to me Directly</h2> 
     <div style={{display:'flex', flexDirection:'column'}}>
-    <div style={{display:'flex', flexDirection:'row',  flexWrap:'nowrap', paddingLeft: isMobile? '0px': '20px'}}>
+    <div style={{display:'flex', flexDirection:'row',  flexWrap:'nowrap', paddingLeft: isMobile? '5px': '20px'}}>
     <a href={'mailto:' + this.props.individual.email} style={{color:'black', marginTop:'15px',}}> 
     <Email style={{marginRight:'15px'}} network="email" color="white"/>
     </a>
