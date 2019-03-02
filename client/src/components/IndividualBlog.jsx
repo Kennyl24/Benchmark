@@ -89,7 +89,7 @@ class Individualblog extends React.Component {
     <MuiThemeProvider>
       <MetaTags>
             <title>{this.state.blog.blogTitle}</title>
-            <meta name="description" content={this.state.blog.blogTitle} />
+            <meta name="description" content={this.state.blog.blogSnippet} />
             <meta property="og:title" content={this.state.blog.blogTitle} />
             <meta property="og:image" content={this.state.blog.blogImage} />
           </MetaTags>
@@ -102,7 +102,7 @@ class Individualblog extends React.Component {
     { isMobile?     <div style={{display:'flex', flexDirection:'row', paddingLeft:'25%'}}>
   <span style={{cursor:'pointer'}}>
   <span>
-  <FacebookShareButton children="IndividualBlog" url={window.location.href}  quote={this.state.blog.blogTitle} hashtag="#BenchmarkMortgage">
+  <FacebookShareButton children="IndividualBlog" url={window.location.href}  quote={this.state.blog.blogTitle} hashtag="#HildaHensleyTeam">
   <FacebookIcon size={40} round={true} />
   </FacebookShareButton>
   </span>
@@ -113,7 +113,7 @@ class Individualblog extends React.Component {
   </LinkedinShareButton>
   </span>
   <span>
-  <TwitterShareButton children="IndividualBlog" url={window.location.href}  title={this.state.blog.blogTitle} via={'BenchmarkMortgage'} hashtags={["BenchmarkMortgage"]}>
+  <TwitterShareButton children="IndividualBlog" url={window.location.href}  title={this.state.blog.blogTitle} via={'BenchmarkMortgage'} hashtags={["HildaHensleyTeam"]}>
   <TwitterIcon size={40} round={true} />
   </TwitterShareButton>
   </span>
