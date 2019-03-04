@@ -104,7 +104,7 @@ componentWillUnmount(){
 
 resize = () => {
   this.forceUpdate();
-  if(window.innerWidth < 1015){
+  if(window.innerWidth < 1070){
     this.setState({
       width: false,
     });
@@ -176,10 +176,14 @@ resize = () => {
     {/* <Button variant="outlined" style={{marginRight:'5px', marginLeft: '10px'}} className="nav-contact"><a style={{color:'black'}}href='/Contact' >Contact</a></Button> */}
     {/* <Button variant="contained"style={{backgroundColor:"#242f6e", color: 'white'}} ><a href="https://hildahensley.floify.com/apply?noheaderfooter#tab_a" target="_blank">Apply Now</a></Button> */}
   </div>
-  {/* <span style={{position:'fixed', top:'40px', right:'20px'}}>
-  <Button style={{marginTop:'2%', color: 'white', borderRadius: 2}} size="large" variant="outlined"><a style={{color:'#242f6e'}}href="/Contact" className="applybutton" >Apply Now!</a></Button>
-  </span> */}
+  {/* <Button style={{position: 'absolute', right:'1%'}}onClick={() => window.open('https://hildahensley.floify.com/apply?noheaderfooter#tab_a', '_blank')} style={{color: 'white', borderRadius: 2, marginTop:'16%'}} size="large" variant="outlined"><a style={{color:'#242f6e'}} className="applybutton" 
+    
+    >Apply Now!</a></Button> */}
   </span>
+  /* <span style={{position:'fixed', top:'40px', right:'20px'}}>
+  <Button style={{marginTop:'2%', color: 'white', borderRadius: 2}} size="large" variant="outlined"><a style={{color:'#242f6e'}}href="/Contact" className="applybutton" >Apply Now!</a></Button>
+  </span> */
+  
   : 
   // <IconButton color="inherit" aria-label="Menu">
     <MenuDrawer/>

@@ -20,7 +20,7 @@ li{
 }
 .nav_links_container{
   padding-top: 40px;
-  right: 5%;
+  right: 2%;
   /* padding-right:28px; */
   position: absolute;
 }
@@ -28,11 +28,12 @@ li{
   color:rgb(72, 72, 72);
   text-decoration: none;
   font-weight: bold;
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-top: 10px;
+  padding-right: 7px;
+  padding-left: 7px;
+  padding-top: 7px;
   margin-right:10px;
-  padding-bottom: 10px;
+  padding-bottom: 7px;
+  font-size: 1rem;
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
   /* font-size:24px;
   text-decoration: bold;
@@ -45,11 +46,11 @@ li{
   background-color: rgba(36,	47,	110, .8) !important;
   text-decoration: none;
   font-weight: bold;
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-top: 10px;
+  padding-right: 7px;
+  padding-left: 7px;
+  padding-top: 7px;
   margin-right:10px;
-  padding-bottom: 10px;
+  padding-bottom: 7px;
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
   /* font-size:24px;
   text-decoration: bold;

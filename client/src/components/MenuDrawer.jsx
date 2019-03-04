@@ -12,6 +12,7 @@ import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import {isMobile} from 'react-device-detect';
 
 const styles = {
   fullList: {
@@ -89,7 +90,7 @@ class MenuDrawer extends React.Component {
     );
 
     return (
-      <div style={{marginTop:'6%'}}>
+      <div style={{marginTop: isMobile ? '10%' : '25px'}}>
       <IconButton onClick={this.showMenu}color="inherit" aria-label="Menu">
       <MenuIcon/>
       </IconButton>
