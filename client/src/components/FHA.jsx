@@ -21,10 +21,21 @@ class FHA extends React.Component {
         </div>
         </div>
         <div style={{marginLeft:'20%', marginRight:'20%'}}>
+        <h1 className="homepage-header">What is an FHA loan?</h1>
+        <p className="blog-text">
+        FHA stands for Federal Housing Administration. The word “federal” in there should tell you that this is a government backed product. These loans are managed by the Department of Housing and Urban Development (HUD). Many people believe only first-time buyers can obtain an FHA loan. This is not true. FHA loans are available to all types of borrowers. 
+<br/>
+<br/>
+With FHA loans, the government insures the lender against any losses that might result from a borrower defaulting. Now, before you try to get a multi-million-dollar property with an FHA loan, realize there are borrowing limits. FHA sets single-family loan limits at 115% of median house prices for the area. Talk with your mortgage banker to see how this affects you based on your location. 
+<br/>
+<br/>
+What’s appealing to many about FHA loans is that you can make a low down payment (as low as 3.5% of the purchase price). Keep in mind that all FHA loans require that you pay Mortgage Insurance Premium (MIP), which will increase your monthly payment. Your mortgage banker can help you determine how long you need to keep the Mortgage Insurance.  
+
+          </p>
         <h1 className="homepage-header">When an FHA is right for you.</h1>
        <p className="blog-modal-text" style={{marginLeft:'0%', marginRight:'0%', paddingBottom:'0%'}}> FHA loans bring home ownership into reach for buyers who might have a hard time getting approved with conventional lenders. These loans are not right for everybody, but they have several appealing features: </p>
 
- 
+<div className="blog-text">
 <ul>
 <li><span style={{fontWeight:'bold'}}>Small down payment:</span> FHA loans allow you to buy a home with a down payment as low as 3.5%.</li>
 
@@ -37,7 +48,7 @@ class FHA extends React.Component {
 <li><span style={{fontWeight:'bold'}}>Loan Limits:</span> You can borrow up to the county loan limit where the home is located.  If you live in a high-cost area, you can borrow up to the maximum loan amount, as long as you qualify, with only 3.5% down payment.</li>
        </ul>
        </div>
-
+       </div>
        <h5 style={{textAlign:'center'}}>If you think FHA might be right for you, or have any questions, feel free to <span><Link to={{ pathname:'/contact' }} style={{color:'inherit', textDecortation:'underline'}}>contact us today!</Link></span></h5>
 
         <BottomNav/>

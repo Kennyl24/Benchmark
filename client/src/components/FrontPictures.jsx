@@ -42,6 +42,9 @@ class FrontPictures extends React.Component {
       currentText: '',
       hoveringApply: false, 
       hoveringContact: false,
+      contactColor: '#242f6e',
+      applyColor: '#2b36ad',
+      x: 1,
     }
     this.stopTimer=this.stopTimer.bind(this);
     this.startTimer=this.startTimer.bind(this);
@@ -51,16 +54,38 @@ class FrontPictures extends React.Component {
     this.writeText = this.writeText.bind(this);
     this.changeApply = this.changeApply.bind(this);
     this.changeContact = this.changeContact.bind(this);
+    this.colorTimer = this.colorTimer.bind(this);
+    
   }
   componentDidMount(){
     this.startTimer();
     this.writeText('Welcome Home', 100);
+    setInterval(this.colorTimer, 1000);
   }
   startTimer(){
     test = setInterval(this.displayNext,4000);
   }
   stopTimer(){
     clearInterval(test)
+  }
+  colorTimer(){
+    if(this.state.x === 1 ){
+      this.setState({ 
+        contactColor: '#2b36ad',
+        applyColor: '#242f6e',
+        x: 2,
+    });
+      
+    } else if (this.state.x === 2){
+      this.setState({ 
+        contactColor: '#242f6e',
+        applyColor: '#2b36ad',
+        x: 1, 
+      })
+    }
+  }
+  componentWillUnmount() {
+    clearInterval(this.interval);
   }
   displayNext(){
     if(this.state.imageIndex === leadImages.length-1){
@@ -122,10 +147,10 @@ changeContact(){
    Let the Hilda Hensley Team make your dreams a reality!
   </p>
     <div style={{display:'flex', flexDirection:'row', alignItems:'center', marginTop:'2%', justifyContent:'center'}}>
-    <Button onMouseEnter={this.changeContact} onMouseLeave={this.changeContact} onClick={ ()=> window.location.href = "/Contact"}  style={{backgroundColor: this.state.hoveringContact ? '#2b36ad' : "#242f6e", marginTop:'2%', marginRight:'4%', color: 'white', borderRadius: 5}} size="large" variant="contained">
+    <Button onMouseEnter={this.changeContact} onMouseLeave={this.changeContact} onClick={ ()=> window.location.href = "/Contact"}  style={{backgroundColor: this.state.contactColor, marginTop:'2%', marginRight:'4%', color: 'white', borderRadius: 5}} size="large" variant="contained">
      Contact us
     </Button>
-    <Button onMouseEnter={this.changeApply} onMouseLeave={this.changeApply} onClick={() => window.open('https://hildahensley.floify.com/apply?noheaderfooter#tab_a', '_blank')} style={{backgroundColor:  this.state.hoveringApply ? '#2b36ad' : "#242f6e", marginTop:'2%', color: 'white', borderRadius: 5}} size="large" variant="contained">
+    <Button onMouseEnter={this.changeApply} onMouseLeave={this.changeApply} onClick={() => window.open('https://hildahensley.floify.com/apply?noheaderfooter#tab_a', '_blank')} style={{backgroundColor:  this.state.applyColor, marginTop:'2%', color: 'white', borderRadius: 5}} size="large" variant="contained">
      Apply Now
     </Button>
     </div>

@@ -39,7 +39,7 @@ class BottomNav extends Component {
       <img style={{height: '100px', width: '275px', marginTop:"-40px"}}src="https://i.ibb.co/689pygv/welcome.png"/>
       
       </h6>
-      <div className="grid"> 
+      <div className="grid" style={{paddingBottom: isMobile ? '100px' : '0px'}}> 
         <div className="grid-item">
         {/* <ul style={{listStyle: 'none'}}> */}
         <div style={{marginBottom:'25px', fontSize:'14px'}} className="bottomnav_links"><a href="tel:(707) 254-8891" style={{color:'white', paddingBottom:'0px'}}> (707) 254-8891</a> <br/> </div>
@@ -92,7 +92,6 @@ class BottomNav extends Component {
           <span><a href='/Contact' className="bottomnav-links">Contact</a></span>
           {/* </div> */}
   <img style={{width:'100px', marginTop:'20px', height:'100px'}}src ="https://i.ibb.co/FHV0ffT/image-12.png"/>
-   {/* <p>© 2019 Ark-La-Tex Financial Services, LLC, NMLS#2143</p> */}
    <div style={{ display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'center'}}>
         <ul style={{listStyle:'none', marginLeft:'-30px'}}>
         <li style={{textDecoration:'underline', cursor:'pointer', marginTop:'2px'}}> <a style={{color:'white'}} href={pdf} type="application/pdf" target="_blank">State Licensing Disclosure</a></li>
@@ -102,18 +101,6 @@ class BottomNav extends Component {
         </div>
           </div>
       </div> 
-      {/* <footer >
-      <img style={{width:'100px', height:'100px'}}src ="https://i.ibb.co/FHV0ffT/image-12.png"/>
-   <p>© 2019 Ark-La-Tex Financial Services, LLC, NMLS#2143</p>
-   <div style={{ display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'center'}}>
-        <ul>
-        <li style={{textDecoration:'underline', cursor:'pointer'}}> <a style={{color:'white'}} href={pdf} type="application/pdf" target="_blank">State Licensing Disclosure</a></li>
-        <li style={{textDecoration:'underline', cursor:'pointer'}}> <a style={{color:'white'}} href="/Privacy">Privacy Policy </a></li>
-        <li style={{textDecoration:'underline', cursor:'pointer'}} onClick={() => window.location.href="http://www.nmlsconsumeraccess.org/"}>NMLS Consumer Access</li>
-        </ul>
-        </div>
-      
-      </footer> */}
       </div> 
       </Paper>
     );

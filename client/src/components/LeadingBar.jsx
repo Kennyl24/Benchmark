@@ -67,7 +67,7 @@ class LeadingBar extends React.Component {
             blogBackground:'rgba(36,	47,	110, .8)',
             blogColor:'white'
           });
-         } else if(window.location.href.indexOf('contact') > -1){
+         } else if((window.location.href.indexOf('contact') > -1) || (window.location.href.indexOf('Contact') > -1)){
                 this.setState({
                   contactBackground:'rgba(36,	47,	110, .8)',
                   contactColor:'white'

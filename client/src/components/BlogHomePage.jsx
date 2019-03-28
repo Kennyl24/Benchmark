@@ -10,6 +10,84 @@ import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'mat
 import Button from '@material-ui/core/Button';
 const homeBlogs = [
   {
+    blogTitle: 'Looking for a Mortgage? Know Your Options',
+    blogAuthor: 'Hilda Hensley',
+    blogText: 
+    <p className="blog-text">
+      When it comes to getting a mortgage, you have options. Unfortunately, for many people, the various mortgage options seem confusing and overwhelming. In reality, they’re not, especially when you break them down into categories. That’s when it’s easy to see the many differences of each so you can decide which is the best option for your situation.
+      <br/>
+<br/>
+Because different lenders may offer special programs or loan features, there’s no way to examine every possible option. So let’s take a look at the most common mortgage options that the majority of people choose from. 
+<br/>
+<br/>
+<span style={{fontWeight:'bold'}}>Fixed Rate Versus Adjustable Rate Mortgages</span>
+<br/>
+One of the first decision you’ll need to make is whether you want your loan to have fixed interest rate or an adjustable interest rate. Here’s what these terms mean:
+<br/>
+<br/>
+<ul>
+<li><span style={{fontWeight:'bold'}}>Fixed Rate Mortgage</span> – These loans have the same interest rate for the life of the loan. So if you lock in an interest rate of 5% today, you will always pay 5% interest no matter what the interest rates rise to during the terms of your loan, even if your loan term is for 30 years. As a result, your mortgage payment will not increase or decrease due to interest rate changes. This is great for budgeting and for people who like stability.</li>
+<br/>
+<br/>
+<li><span style={{fontWeight:'bold'}}>Adjustable Rate Mortgage</span> – These loans have an interest rate that will change over time, based on the current mortgage interest rate. Most adjustable rate loans have an initial period (usually 3-5 years) where the rate is stable. After that initial period, the rate will change (adjust) every year. You’ll often see adjustable rate mortgage called things like a “3/1 ARM” or a “5/1 ARM.” The first number indicates the initial rate lock period in years. The second number indicates how often after that initial rate lock period the rate will change (again in years). And “ARM” stands for adjustable rate mortgage. Because the initial interest rate during the lock period is often lower than traditional fixed rate products, these loans are attractive to people who are certain they will not stay in the home for longer than the initial lock time.</li>
+</ul>
+<br/>
+<br/>
+<span style={{fontWeight:'bold'}}>Specific Loan Types</span>
+<br/>
+Now that you know whether you want a fixed or adjustable rate mortgage, it’s time to choose the specific loan type. While there are more than three loan options, these three are the most common that the majority of people opt to use. Talk to your mortgage banker about other options they may offer.
+<br/>
+<br/>
+<ul>
+  
+<li><span style={{fontWeight:'bold'}}>FHA Loan</span> – FHA stands for Federal Housing Administration. The word “federal” in there should tell you that this is a government backed product. These loans are managed by the Department of Housing and Urban Development (HUD). Many people believe only first-time buyers can obtain an FHA loan. This is not true. FHA loans are available to all types of borrowers. 
+
+With FHA loans, the government insures the lender against any losses that might result from a borrower defaulting. Now, before you try to get a multi-million-dollar property with an FHA loan, realize there are borrowing limits. FHA sets single-family loan limits at 115% of median house prices for the area. Talk with your mortgage banker to see how this affects you based on your location. 
+
+What’s appealing to many about FHA loans is that you can make a low down payment (as low as 3.5% of the purchase price). Keep in mind that all FHA loans require that you pay Mortgage Insurance Premium (MIP), which will increase your monthly payment. Your mortgage banker can help you determine how long you need to keep the Mortgage Insurance.  
+</li>
+<li><span style={{fontWeight:'bold'}}>VA Loan </span>– VA Loans are offered through the U.S. Department of Veterans Affairs (VA). These loans are available only to military service members who meet at least one of the following requirements:
+You have served 90 consecutive days of active service during wartime, OR
+You have served 181 days of active service during peacetime, OR
+You have more than 6 years of service in the National Guard or Reserves, OR
+You are the spouse of a service member who has died in the line of duty or as a result of a service-related disability.
+<br/>
+<br/>
+Just like FHA loans, VA loans are guaranteed by the federal government to insure the lender against any potential losses. The biggest benefit of a VA loans is that you can borrow 100% of the purchase price of a home, up to the borrowing limit as determined by your county. If your loan amount is over the borrowing limit, you can still purchase the home provided you put down 25% of the difference between the county limit and the purchase price. But if your home loan is at or under the borrowing limit, you can get a home with no down payment. 
+</li>
+<br/>
+<br/>
+<li><span style={{fontWeight:'bold'}}>Conventional Loan</span> – A conventional loan is a mortgage that is not backed by any government agency, such as the Federal Housing Administration (FHA) or Department of Veterans Affairs (VA). However, conventional loans must meet the lending requirements of Fannie Mae and Freddie Mac, the two largest government-controlled buyers of mortgage loans in the U.S.
+<br/>
+<br/>
+There are many advantages to a conventional loan, such as higher loan limits than FHA, being able to secure one for a second home or investment property, and lower mortgage insurance rates than FHA loans. Of course, to qualify for a conventional loan there are credit score and down payment requirements, as well as other guidelines to meet. 
+<br/>
+<br/>
+Conventional loans are the most common type of mortgage. In fact, according to the US Census Bureau, in 2018, 74% of all mortgage loans were conventional loans.
+</li>
+</ul>
+<span style={{fontWeight:'bold'}}>One More Option – Conforming or Jumbo </span>
+Finally, depending on how much you are borrowing, you might fall into either the conforming or jumbo category. Remember those two government agencies noted earlier – Fannie Mae and Freddie Mac? They are the two government-controlled corporations that purchase and sell mortgages. In other words, they buy loans from the lenders who generate them, and then sell them to investors via Wall Street. 
+<br/>
+<br/>
+A conforming loan falls within their maximum loan size limits (it “conforms” to Fannie Mae’s and Freddie Mac’s criteria). In contrast, a jumbo loan exceeds the conforming loan limits established by Fannie Mae and Freddie Mac. 
+<br/>
+<br/>
+Because jumbo loans are much higher in value, they present a higher risk to the lender. As such, borrowers typically must have excellent credit to qualify, and they must have a higher down payment. 
+<br/>
+<br/>
+<span style={{fontWeight:'bold'}}>Mortgages Made Simple</span>
+Once most people see all these mortgage options broken down by category, the mortgage terminology makes more sense and mortgages in general seem less stressful. The best advice is to always talk with your mortgage banker about any questions or concerns. They can also help steer you to the right mortgage product for your current needs.
+<br/>
+<br/>
+When you’re ready to apply for a mortgage or refinance an existing one, contact us at 707-254-8891 or hilda.hensley@benchmark.us. We can also direct you to the perfect real estate agent to help you.
+
+    </p>
+    ,
+    blogSnippet: 'When it comes to getting a mortgage, you have options. Unfortunately, for many people, the various mortgage options seem confusing and overwhelming. In reality, they’re not, especially when you break them down into categories.',
+    blogImage:'https://i.ibb.co/q71w6Tc/mortgage-types.jpg',
+  },
+  {
     blogTitle:'Avoid These Mistakes When Applying for a Mortgage',
     blogAuthor: 'Hilda Hensley',
     blogText: <p>
@@ -65,50 +143,6 @@ When you’re ready to begin your mortgage application, <span><Link to={{ pathna
     blogSnippet: ' When you apply for a mortgage, you receive many documents—one of which is a loan estimate. Find out what this vital document is and why you need to review it carefully.',
     blogImage: 'https://i.ibb.co/09dXr4w/what-can-you-afford.jpg',
   },
-  {
-    blogTitle:'5 Reasons to Refinance Your Mortgage', 
-    blogAuthor: 'Hilda Hensley',
-    blogText: 
-    <p className="blog-text">
-    <h2>A Special Report from Hilda Hensley, Mortgage Banker with Benchmark Mortgage</h2>
-    If you’ve had a mortgage for any length of time, you may have thought about refinancing it. After all, the TV and internet commercials touting the benefits of doing a mortgage refinance are plentiful. They claim you can do everything from save money and pay off your mortgage faster to use the equity in your home to consolidate debt and embark on that dream vacation. But is refinancing right for you? 
-    <br/><br/>
-    As with anything in life, refinancing a mortgage has both pros and cons. Since refinancing costs money (on average 3% to 6% of the loan) and requires such things as an appraisal, title search, and application fees, you need to be refinancing for the right reasons. Following are some of the top reasons why you may want to refinance your mortgage.
-    <h3>Reason #1: You Can Get a Lower Interest Rate</h3>
-    Perhaps you purchased your home when mortgage interest rates were higher overall. Or maybe when you bought your home, your credit score was lower than it is today. There are many reasons why you may have a higher interest rate than what’s currently being offered. If you can save 1% to 2% on your mortgage interest rate by refinancing, it may be worth the effort. 
-    <br/><br/>
-    When you reduce the interest rate on your mortgage, you increase the rate at which you build equity in your home. Additionally, your monthly payment will be lower. For example, if you have a 30-year, $250,000 mortgage at a 6.5% interest rate, your monthly payment would be approximately $1,580. Reduce that mortgage rate to 4.5% and your monthly payment would go down to $1,267. Over the course of a year, that’s a savings of nearly $4,000.
-    <h3>Reason #2: You Can Shorten Your Loan Term</h3>
-    If you’re comfortable with your current mortgage payment, you may think refinancing has no benefit for you. But what if you could pay the same amount you currently do each month yet shave years off your repayment time? Refinancing may be able to help you.
-    <br/><br/>
-    For example, let’s revisit the earlier example of a 30-year, $250,000 mortgage with a 6.5% interest rate and a monthly payment of $1,580. If you refinance to a 4.5% rate and shorten the loan term to 20 years, your payment is $1,582. So, for essentially the same amount of money paid each month, you could pay off your mortgage 10 years sooner. Over the course of the entire mortgage period, that can save you approximately $190,000 in interest. 
-    <h3>Reason #3: You Can Get More Favorable Terms</h3>
-    When buying their home, some people opt for an adjustable rate mortgage or a mortgage with a balloon payment due. These are often attractive due to their initial low payments. But when their mortgage payments start creeping up, or when the due date for that balloon payment gets closer, refinancing to a fixed rate mortgage may be the best option. 
-
-    Even if you do have a fixed rate mortgage, look closely at all the terms you agreed to, including pre-payment penalties, whether you can make partial payments, late fees you agreed to, etc. If refinancing can give you more favorable terms in other areas, it may be a worthwhile option.
-
-    <h3>Reason #4: You Can Consolidate Debt </h3>
-    Credit card debt can quickly ruin any budget. High interest credit card debt is easy to accumulate, and once you fall into the cycle of carrying a balance, it can be difficult to break free. And with the average credit card interest rate at around 15.96%, it’s easy to see how expensive this type of debt can be. 
-    <br/><br/>
-    If you have enough equity in your home, you could refinance and cash out the equity to pay off your higher interest rate debt. This can then lower the amount you pay to your creditors each month. And instead of writing out multiple checks each month, you’ll only have one payment to make. They key, though, is to make sure you don’t fall back into bad habits and run up credit card debt again. Additionally, refinancing your home mortgage so you can take a vacation, buy an expensive car, or do anything else frivolous or non-essential is never recommended.
-
-    <h3>Reason #5: You Can Make Home Improvements</h3>
-    If your home is older and in need of repairs or updates, but you don’t have the financial resources required for the renovations, refinancing may be a good option. Rather than run up credit card debt or totally deplete your savings, you can tap into your home’s equity to enhance your home. 
-    <br/><br/>
-    One benefit is that by making the repairs or updates you’ll be adding value to your home. So if your plan is to sell the home in a few years, you’ll often get a good return on the investment. And if your plan is to stay in your home long-term, you’ll have a more livable space that warrants your mortgage payment.
-
-    <h3>Is Refinancing Right for You?</h3>
-    Of course, before you refinance your mortgage, you need to know what your goals are and why you’re doing it. Are you hoping to lesson your monthly payment obligation? Do you want to shorten your loan term? Do you need cash for some reason? And most important, how long do you plan to stay in your current home?
-    <br/><br/>
-    While refinancing is often easier than getting the initial mortgage, there are still many steps involved and costs associated with it. Only you can be sure the time, effort, and money involved are worth it in the end. 
-    <br/><br/>
-    If you do decide that refinancing is right for you, shop around for an experienced mortgage banker who can help. You want someone who understands your goals and can direct you to the best products that enable you to meet them. By working together with your mortgage banker, your mortgage refinancing process will be faster and easier than you thought possible.
-    <br/><br/>
-    When you’re ready to apply for a mortgage or refinance an existing one, contact us at 707-254-8891 or hilda.hensley@benchmark.us. We can also direct you to the perfect real estate agent to help you.
-    </p>,
-    blogSnippet: 'If you’ve had a mortgage for any length of time, you may have thought about refinancing it. After all, the TV and internet commercials touting the benefits of doing a mortgage refinance are plentiful.', 
-    blogImage:'https://i.ibb.co/QpD2gcz/should-you-refinance-your-mortgage.jpg',
-  },
   ]
   const BlogHomePage = () => (
     <div>
@@ -121,7 +155,7 @@ When you’re ready to begin your mortgage application, <span><Link to={{ pathna
     <div className="container">
     {/* <p className="blog-snippet" style={{paddingBottom:'0'}}> {blog.blogAuthor}</p> */}
       <h4 className="blog-title"><b>{blog.blogTitle}</b></h4> 
-      <div style={{height:'180px'}}>
+      <div style={{height:'200px'}}>
       <p className="blog-snippet"> {blog.blogSnippet}</p>
       </div>
     </div>
