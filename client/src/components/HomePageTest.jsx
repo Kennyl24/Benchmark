@@ -129,7 +129,7 @@ function ButtonBases(props) {
   const { classes } = props;
 
   return (
-    <div style={{marginTop:'60px'}}>
+    <div style={{marginTop:'30px'}}>
     <h3 className="homepage-header" style={{cursor: 'pointer', color:'#787878', margin:'0', paddingBottom:'1.5%'}}
     onClick={()=> window.location.href = "/about"}
     >WHY THE HILDA HENSLEY TEAM?</h3>
@@ -147,8 +147,8 @@ function ButtonBases(props) {
         <ButtonBase
           onClick={()=> 
             {
-              // window.location.href=image.href
-            window.confirm('Would you like to learn more?') ? window.location.href = "/contact" : null
+              window.location.href=image.href
+            // window.confirm('Would you like to learn more?') ? window.location.href = "/contact" : null
           }
         }
           focusRipple

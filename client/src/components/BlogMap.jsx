@@ -11,6 +11,62 @@ import {isMobile} from 'react-device-detect';
 
 const blogs = [
   {
+    blogTitle:'Avoid These Mistakes When Applying for a Mortgage',
+    blogAuthor: 'Hilda Hensley',
+    blogText: <p>
+      Applying for a mortgage requires that you do certain things, such as check your credit, get your financial papers in order, and save as much money as possible for your down payment. But there are also several things you should NEVER do when applying for a mortgage – things that could potentially cause you to lose your mortgage mid-application.
+<br/>
+<br/>
+To ensure you don’t sabotage your mortgage approval, be sure to avoid the following five things. 
+<br/>
+<br/>
+<ol>
+<li>Don’t make any big purchases. Hold off on buying that new car or boat until after your loan has closed. Even if you feel comfortable with all the new payments, your mortgage lender may determine that you are overextending yourself. </li>
+
+<li>Don’t apply for new credit. It’ll lower your credit score. Keep your credit report as stable as possible when applying for a mortgage. Your debt-to-income ratio is a big factor in your lender’s decision. Keep this percentage stable by not taking on new credit. </li>
+
+<li>Don’t co-sign any loans. Co-signing a loan for a family member is certainly generous, but it also makes you liable for the debt if the main borrower defaults. These co-signed loans act just like a new credit inquiry for you. </li>
+
+<li>Don’t miss payments. Your goal is to show your mortgage lender that you are a good risk for them. Therefore, make every effort to ensure you pay everything on time.</li>
+
+<li>Don’t make big life changes. When applying for a mortgage, keep your life as stable as possible. Don’t start a new career with a new employer, start your self-employment venture, or quit your current job (no matter how much you may dislike your current position). Basically, don’t do anything that could make you look like a higher risk to lenders. </li>
+</ol>
+Remember, when you’re applying for a mortgage, your lender wants to see financial stability. In fact, it’s one of their biggest criteria for deciding to lend money. Therefore, don’t jeopardize your mortgage by doing anything on this list. Wait until after your mortgage is closed and you have the keys to your new home in your hands before making any major financial decisions. 
+<br/>
+<br/>
+Is applying for a mortgage in your future? <span><Link to={{ pathname:'/contact' }} style={{color:'black'}}>Contact us.</Link></span> . As mortgage bankers, we can help you make the best decision for your needs.
+    </p>,
+    blogSnippet:'There are several things you should never do when applying for a mortgage – things that could potentially cause you to lose your mortgage mid-application. To ensure you don’t sabotage your mortgage approval, be sure to avoid the following five things. ',
+    blogImage:'https://i.ibb.co/yBdffHv/mistakes.jpg',
+  },
+  {
+    blogTitle:'Loan Estimate – What it is and Why it’s Important', 
+    blogAuthor: 'Hilda Hensley',
+    blogText: <p>
+      When you apply for a mortgage, you receive many documents—one of which is a loan estimate. Be sure you carefully review this vital three-page document.  It’s essentially your guide to the mortgage you’re applying for. And if you don’t receive one, speak up! By law, your lender must provide you a loan estimate within three days of receiving your application.
+    <h2>Why is the Loan Estimate So Important? </h2>
+    <h4>Your loan estimate gives you important loan information, such as</h4>
+  <ul>
+  <li>The estimated interest rate</li>
+  <li>Monthly payment</li>
+  <li>Total closing costs for the loan, broken down by line item</li>
+  <li>Estimated costs of taxes and insurance</li>
+  <li>How the interest rate and payment may change in the future</li>
+  <li>Special loan features you need to be aware of (such as whether there is a penalty for paying off the loan early)</li>
+  <li>Plus many more loan details</li>
+</ul>
+Fortunately, the loan estimate is an easy-to-read and understand document that isn’t filled with complicated legal jargon. In fact, all lenders are required to use the same standard loan estimate form, which makes it easy for you to compare loans. 
+<br/><br/>
+Keep in mind that just because you receive a loan estimate, this does not mean your loan is approved or denied yet. It just means your application has been accepted. The loan estimate is there to show you what loan terms the lender expects IF you decide to proceed.  Should you decide to move forward, the lender will likely ask you to supply additional financial information. 
+<br/><br/>
+While applying for a mortgage can be stressful and the amount of documentation you receive can be overwhelming, be sure you carefully review your loan estimate (as well as any other papers you receive from your lender). The more involved and aware you are, the easier the process will be. 
+<br/><br/>
+When you’re ready to begin your mortgage application, <span><Link to={{ pathname:'/contact' }} style={{color:'black'}}>contact us.</Link></span> As mortgage bankers, we can help you make the best decision for your needs.
+    </p>,
+    blogSnippet: ' When you apply for a mortgage, you receive many documents—one of which is a loan estimate. Find out what this vital document is and why you need to review it carefully.',
+    blogImage: 'https://i.ibb.co/09dXr4w/what-can-you-afford.jpg',
+  },
+  {
     blogTitle:'5 Reasons to Refinance Your Mortgage', 
     blogAuthor: 'Hilda Hensley',
     blogText: 

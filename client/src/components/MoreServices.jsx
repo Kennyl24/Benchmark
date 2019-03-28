@@ -3,6 +3,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import {isMobile} from 'react-device-detect';
 import LeadingBar from './LeadingBar.jsx';
 import BottomNav from './BottomNav.jsx';
+import { Link } from 'react-router-dom';
 
 class MoreServices extends React.Component { 
   constructor(props) {

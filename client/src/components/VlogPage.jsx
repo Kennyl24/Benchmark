@@ -74,7 +74,7 @@ class VlogPage extends React.Component {
       <VlogMap videos={this.state.videos}/>
       {/* <ComingSoonModal/> */}
       </div> 
-      {/* <BottomNav/> */}
+      <BottomNav/>
        </body>
    </MuiThemeProvider>
 

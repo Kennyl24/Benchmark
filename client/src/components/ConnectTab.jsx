@@ -140,7 +140,7 @@ class ConnectTab extends React.Component {
     );
 
     return (
-      <div style={{position:'fixed', right:'0px', top:'40%', zIndex:'9999'}}>
+      <div style={{position:'fixed', right:'0px', top:'40%', zIndex:'999'}}>
         <Button onClick={this.toggleDrawer('right', true)} style={{color:'white', backgroundColor:'#242f6e', minWidth:'0px', maxWidth:'44px'}}>
         
         C<br/>o<br/>n<br/>n<br/>e<br/>c<br/>t</Button>

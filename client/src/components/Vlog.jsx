@@ -60,7 +60,7 @@ class Vlog extends React.Component {
     >
    
     <img className="card-image2" src={this.props.video.snippet.thumbnails.high.url}/>
-    <img className="card-secondImage" src={this.state.hovering ? "https://i.ibb.co/hChgLkq/yt-icon-rgb.png" : 'https://i.ibb.co/47cKNLk/youtube-social-icon-dark.png'} />
+    <img className="card-secondImage" src={this.state.hovering ? "https://i.ibb.co/hChgLkq/yt-icon-rgb.png" : 'https://i.ibb.co/Ph8qmJF/youtube-social-icon-dark.png'} />
     </div>
       <h4 style={{textAlign:'center', lineHeight:'2.0'}}><b style={{color: '#242f6e', fontSize: '16px', borderBottom: '2px solid currentColor'}}>{this.props.video.snippet.title}</b></h4> 
     </div>

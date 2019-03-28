@@ -10,6 +10,62 @@ import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'mat
 import Button from '@material-ui/core/Button';
 const homeBlogs = [
   {
+    blogTitle:'Avoid These Mistakes When Applying for a Mortgage',
+    blogAuthor: 'Hilda Hensley',
+    blogText: <p>
+      Applying for a mortgage requires that you do certain things, such as check your credit, get your financial papers in order, and save as much money as possible for your down payment. But there are also several things you should NEVER do when applying for a mortgage – things that could potentially cause you to lose your mortgage mid-application.
+<br/>
+<br/>
+To ensure you don’t sabotage your mortgage approval, be sure to avoid the following five things. 
+<br/>
+<br/>
+<ol>
+<li>Don’t make any big purchases. Hold off on buying that new car or boat until after your loan has closed. Even if you feel comfortable with all the new payments, your mortgage lender may determine that you are overextending yourself. </li>
+
+<li>Don’t apply for new credit. It’ll lower your credit score. Keep your credit report as stable as possible when applying for a mortgage. Your debt-to-income ratio is a big factor in your lender’s decision. Keep this percentage stable by not taking on new credit. </li>
+
+<li>Don’t co-sign any loans. Co-signing a loan for a family member is certainly generous, but it also makes you liable for the debt if the main borrower defaults. These co-signed loans act just like a new credit inquiry for you. </li>
+
+<li>Don’t miss payments. Your goal is to show your mortgage lender that you are a good risk for them. Therefore, make every effort to ensure you pay everything on time.</li>
+
+<li>Don’t make big life changes. When applying for a mortgage, keep your life as stable as possible. Don’t start a new career with a new employer, start your self-employment venture, or quit your current job (no matter how much you may dislike your current position). Basically, don’t do anything that could make you look like a higher risk to lenders. </li>
+</ol>
+Remember, when you’re applying for a mortgage, your lender wants to see financial stability. In fact, it’s one of their biggest criteria for deciding to lend money. Therefore, don’t jeopardize your mortgage by doing anything on this list. Wait until after your mortgage is closed and you have the keys to your new home in your hands before making any major financial decisions. 
+<br/>
+<br/>
+Is applying for a mortgage in your future? <span><Link to={{ pathname:'/contact' }} style={{color:'black'}}>Contact us.</Link></span> . As mortgage bankers, we can help you make the best decision for your needs.
+    </p>,
+    blogSnippet:'There are several things you should never do when applying for a mortgage – things that could potentially cause you to lose your mortgage mid-application. To ensure you don’t sabotage your mortgage approval, be sure to avoid the following five things. ',
+    blogImage:'https://i.ibb.co/yBdffHv/mistakes.jpg',
+  },
+  {
+    blogTitle:'Loan Estimate – What it is and Why it’s Important', 
+    blogAuthor: 'Hilda Hensley',
+    blogText: <p>
+      When you apply for a mortgage, you receive many documents—one of which is a loan estimate. Be sure you carefully review this vital three-page document.  It’s essentially your guide to the mortgage you’re applying for. And if you don’t receive one, speak up! By law, your lender must provide you a loan estimate within three days of receiving your application.
+    <h2>Why is the Loan Estimate So Important? </h2>
+    <h4>Your loan estimate gives you important loan information, such as</h4>
+  <ul>
+  <li>The estimated interest rate</li>
+  <li>Monthly payment</li>
+  <li>Total closing costs for the loan, broken down by line item</li>
+  <li>Estimated costs of taxes and insurance</li>
+  <li>How the interest rate and payment may change in the future</li>
+  <li>Special loan features you need to be aware of (such as whether there is a penalty for paying off the loan early)</li>
+  <li>Plus many more loan details</li>
+</ul>
+Fortunately, the loan estimate is an easy-to-read and understand document that isn’t filled with complicated legal jargon. In fact, all lenders are required to use the same standard loan estimate form, which makes it easy for you to compare loans. 
+<br/><br/>
+Keep in mind that just because you receive a loan estimate, this does not mean your loan is approved or denied yet. It just means your application has been accepted. The loan estimate is there to show you what loan terms the lender expects IF you decide to proceed.  Should you decide to move forward, the lender will likely ask you to supply additional financial information. 
+<br/><br/>
+While applying for a mortgage can be stressful and the amount of documentation you receive can be overwhelming, be sure you carefully review your loan estimate (as well as any other papers you receive from your lender). The more involved and aware you are, the easier the process will be. 
+<br/><br/>
+When you’re ready to begin your mortgage application, <span><Link to={{ pathname:'/contact' }} style={{color:'black'}}>contact us.</Link></span> As mortgage bankers, we can help you make the best decision for your needs.
+    </p>,
+    blogSnippet: ' When you apply for a mortgage, you receive many documents—one of which is a loan estimate. Find out what this vital document is and why you need to review it carefully.',
+    blogImage: 'https://i.ibb.co/09dXr4w/what-can-you-afford.jpg',
+  },
+  {
     blogTitle:'5 Reasons to Refinance Your Mortgage', 
     blogAuthor: 'Hilda Hensley',
     blogText: 
@@ -53,73 +109,6 @@ const homeBlogs = [
     blogSnippet: 'If you’ve had a mortgage for any length of time, you may have thought about refinancing it. After all, the TV and internet commercials touting the benefits of doing a mortgage refinance are plentiful.', 
     blogImage:'https://i.ibb.co/QpD2gcz/should-you-refinance-your-mortgage.jpg',
   },
-  {
-    blogTitle:'Understanding the Closing Costs for Home Buyers',
-    blogAuthor: 'Hilda Hensley',
-    blogText:
-    <p className="blog-text">
-    Buying a home has many costs associated with it—not just the down payment, but also the closing costs. In fact, many buyers, especially first-time home buyers, are often surprised at how quickly the closing costs can add up. The average closing costs percentage is about 2% to 5% of the purchase price, but 3% to 6% is certainly not uncommon. 
-    <br/><br/>
-    Here are the typical closing costs buyers are responsible for. Since exact fees vary widely based on location and lender requirements, talk to your mortgage banker for specific details. 
-    <h4> Lender Related Closing Costs </h4>
-    <ul>
-  <li>Credit Report</li>
-  <li>Private Mortgage Insurance: If your down payment is less than 20% of the purchase price, lenders require this insurance to protect their interest in the home.</li>
-  <li>Initial Interest: This covers the interest from the date you close until the end of the month.  </li>
-  <li>Document Preparation Fee</li>
-  <li>Lender’s Title Insurance Policy: This is a title insurance policy that protects the lender’s mortgage interest in the property. </li>
-  <li>Wire Transfer Fees: Most lenders fund the transaction via a wire transfer versus a check. </li>
-  </ul>
-  <h4>Other Closing Costs Potentially Required by Lenders</h4>
-    <ul>
-  <li>Home Appraisal</li>
-  <li>Homeowner’s Insurance: Lenders and insurance companies require payment of the first year’s homeowner’s insurance to protect against natural and manmade disasters.</li>
-  <li>Flood Zone Certification </li>
-</ul>
-<h4>Title Related Closing Costs</h4>
-    <ul>
-  <li>Homeowner’s Title Insurance Policy: This protects your interest in the real estate from claims of ownership or other interests by others. While this is optional, the cost of the lender’s premium goes up without the purchase of the homeowner’s title insurance policy, so it is not cost effective to forgo it. </li>
-  <li>Settlement Fee: This covers the title company’s services. </li>
-  <li>Document Preparation Fee: Charge for the cost of preparing legal papers. </li>
-  <li>Government Recordation Charges</li>
-  <li>Proration of Property Taxes: Expect to pay the property taxes from the date you take ownership to the end of the year. </li>
-</ul>
-    
-    
-    While closing costs do add up, the good news is that most of them are one-time fees. That means you’ll never have to pay them again until you buy another home. Any recurring fees, like taxes and insurance, can be escrowed into your mortgage payment.  
-    <br/><br/>
-    When you’re ready to begin your mortgage application, contact us. As mortgage bankers, we can help you make the best decision for your needs.
-    
-    </p>
-    , 
-    blogSnippet:'Buying a home has many costs associated with it—not just the down payment, but also the closing costs. Here are the typical closing costs buyers are responsible for.',
-    blogImage:'https://i.ibb.co/MgtjfXB/Closing-costs-thumbnail-copy-1.png'
-
-  },
-  {
-    blogTitle:'Why You Need a Mortgage Pre Approval',
-    blogAuthor: 'Hilda Hensley',
-    blogText: 
-    <p className="blog-text">
-    Many home buyers wonder if they should get a mortgage pre-approval or a mortgage pre-qualification before they start their home search. If you’re serious about buying a home, getting a mortgage pre-approval before you work with a Realtor and start your home search is preferred.
-    <br/>
-    <h2>Mortgage Pre-Approval versus Mortgage Pre-Qualification</h2>
-    Realize there’s a big difference between being pre-qualified for a mortgage and being pre-approved for one. Many home buyers think these terms are interchangeable, but they are not. Here’s the difference.
-    Pre-qualification means you have supplied a lender with some basic information, such as your income, debts, and assets. You may have given the details via phone or on an online form. Everything is based solely on what you tell the lender, as there’s no verification or credit pull. Since nothing is verified, your pre-qualification amount is likely to change, and it may be given verbally as a price range rather than an exact amount. 
-    <br/><br/>
-Pre-approval, on the other hand, means you have gone a step further. You have completed a mortgage application, paid any applicable fees, supplied documentation to prove your income, and have authorized a credit report be pulled. Because you’ve given the lender permission to review and verify your information, your pre-approval amount is often in writing and for an exact amount that isn’t likely to change. 
-<br/><br/>
-So while pre-qualification is a good start, being pre-approved will make your home buying search more productive and often less stressful. Sellers will know you’re serious and will give higher priority to your offers. By taking the time to get a mortgage pre-approval, you’ll find yourself in your new home faster.
-<br/><br/>
-Need advice on getting a mortgage pre-approval? Before you apply for your next mortgage, <span><Link to={{ pathname:'/contact' }} style={{color:'black'}}>contact us.</Link></span> As mortgage bankers, we can help you make the best decision for your needs.
-
-    </p>
-    
-    ,
-    blogSnippet:'There’s a big difference between a mortgage pre-approval and a mortgage pre-qualification. Many home buyers think these terms are interchangeable, but they are not. Here’s the difference.',
-    blogImage:'https://i.ibb.co/StZkbHS/Pre-Approved-vs-Pre-Qualified1.jpg',
-
-  }
   ]
   const BlogHomePage = () => (
     <div>
