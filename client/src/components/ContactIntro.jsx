@@ -29,7 +29,7 @@ class ContactIntro extends React.Component {
       <div  style={{textAlign: 'center', paddingTop: isMobile ? '32%' :'10%', color: 'white', display:'flex',
     flexDirection:'column', justifyContent:'center', alignItems:'center', marginLeft:'20%', marginRight:'20%'
     }}>
-      <h1 className="homepage-header" style={{marginTop:'8%', color:'white', fontSize: isMobile ? '22px' : '2em' }}>
+      <h1 className="homepage-header" style={{marginTop:'8%', color:'white', fontSize: isMobile ? '22px' : '34px' }}>
         Hi, we are The Hilda Hensley Team. Contact us today to find out how we can get you into your dream home. 
         </h1>
         {/* <p style={{fontFamily:'Graphik Web,Helvetica,sans-serif!important', fontSize:'22px', marginTop:'2.5%'}}>

@@ -10,15 +10,41 @@ import Paper from 'material-ui/Paper';
 import { SocialIcon } from 'react-social-icons';
 import TextField from '@material-ui/core/TextField';
 import {isMobile} from 'react-device-detect';
+import axios from 'axios';
+
 
 class GetInTouch extends React.Component { 
   constructor(props) {
     super(props);
     this.state = {
-
+      name: '',
+      email:'',
+      phone:'',
+      message:'',
     }
+    this.submitIt = this.submitIt.bind(this);
   }
-
+  submitIt(){
+    axios.post('/Contact', {
+      email: this.state.email,
+      name: this.state.name,
+      phone: this.state.phone,
+      message: this.state.message
+    })
+    .then( (response) =>  {
+      setTimeout(() => {
+      }, 500);
+    })
+    .catch( (error) => {
+      return ('There seems to have been an error');
+    });
+    this.setState({
+      name:'',
+      email: '',
+      phone: '',
+      message: '',
+    });
+  }
   render () {
     return (
   <MuiThemeProvider>
@@ -41,7 +67,7 @@ class GetInTouch extends React.Component {
           <SocialIcon style={{marginRight:'15px'}} url="https://www.zillow.com/lender-profile/hilda%20hensley/" color="#242f6e" />
           <SocialIcon style={{marginRight:'15px'}} url="https://www.youtube.com/channel/UCY2tLom-tAtTh-mYMKnsATA/featured" network="youtube" color="#242f6e"/>
           <SocialIcon style={{marginRight:'15px'}} url="https://www.yelp.com/biz/hilda-garcia-hensley-benchmark-mortgage-napa" network="yelp" color="#242f6e"/>
-          </div>
+      </div>
       </ul>
       </div>
       <div style={{marginLeft: isMobile ? '0%' : '10%', width:'50%', alignItems:'center', justifyContent:'center'}}>
@@ -56,6 +82,12 @@ class GetInTouch extends React.Component {
           autoComplete="name"
           margin="normal"
           variant="outlined"
+          value={this.state.name}
+          onChange={(event) => {
+            this.setState({
+              name: event.target.value
+            });
+          }}
         />
         <TextField
           style={{width: isMobile? '300px': '400px', height: '50px', marginRight: '15px'}}
@@ -66,6 +98,12 @@ class GetInTouch extends React.Component {
           autoComplete="email"
           margin="normal"
           variant="outlined"
+          value={this.state.email}
+          onChange={(event) => {
+            this.setState({
+              email: event.target.value
+            });
+          }}
         />
         <TextField
           style={{width: isMobile? '300px': '400px',height: '50px' , marginRight: '15px'}}
@@ -76,6 +114,12 @@ class GetInTouch extends React.Component {
           autoComplete="phone"
           margin="normal"
           variant="outlined"
+          value={this.state.phone}
+          onChange={(event) => {
+            this.setState({
+              phone: event.target.value
+            });
+          }}
         />
         <TextField
           style={{width:isMobile? '300px': '400px',marginRight: '15px'}}
@@ -90,10 +134,16 @@ class GetInTouch extends React.Component {
           multiline={true}
           rows={4}
           rowsMax={4}
+          value={this.state.message}
+          onChange={(event) => {
+            this.setState({
+              message: event.target.value
+            });
+          }}
         />
         </div>
         <div>
-        <Button variant="contained"style={{marginLeft: '40%', marginTop:'5%', width: '25%', minWidth:'150px', backgroundColor:"#242f6e", color: 'white'}}> 
+        <Button onClick={this.submitIt} variant="contained"style={{marginLeft: '40%', marginTop:'5%', width: '25%', minWidth:'150px', backgroundColor:"#242f6e", color: 'white'}}> 
           Submit
           </Button>
           </div>

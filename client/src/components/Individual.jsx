@@ -47,12 +47,12 @@ class Individual extends React.Component {
       <div onMouseEnter={this.moused} onMouseLeave={this.moused}
       style={{position: 'relative',
         width: '100%',
-        maxWidth: '400px',
+        maxWidth: '320px',
         cursor:'pointer'
       }}
       onClick={this.clicked}
       >
-      <img src={this.props.individual.image} style={{height:'200px', width:'90%', paddingLeft:'5%', paddingRigh:'5%'}}/>
+      <img src={this.props.individual.image} style={{height:'200px', width:'60%', paddingLeft:'20%', paddingRigh:'5%'}}/>
       {this.state.hovered ? 
       <div style={{position:'absolute', top:0, bottom:0, left:0, right:0, height:'100%', width:'100%', backgroundColor:'rgba(108, 122, 137, .8)'}}>
     {/* <img src="https://img.icons8.com/ios/50/000000/plus.png" alt="info-circle-outline-512" border="0"/> */}

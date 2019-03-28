@@ -124,7 +124,7 @@ li{
   text-decoration: none;
   padding-bottom:10px;
   padding-top:10px;
-  padding-right:10px;
+  padding-right:2px;
   padding-left:10px;
   margin-top:40px;
   /* font-weight: bold; */
@@ -967,7 +967,7 @@ li {
 .individual-box {
   margin-top: 3%;
   width: 25%;
-  min-width: 300px;
+  min-width: 220px;
   margin-bottom: 2%;
   margin-right: 5%;
   /* box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.2); */

@@ -23,10 +23,9 @@ class MapContainer extends React.Component{
       timeout: 8000,
       maximumAge: 0,
     };
-    this.id = navigator.geolocation.getCurrentPosition(this.testLocation, this.testError , options);
+    // this.id = navigator.geolocation.getCurrentPosition(this.testLocation, this.testError , options);
   }
   testLocation(pos){
-    console.log('hello');
     const crd = pos.coords;
     this.setState({
       lat: crd.latitude,

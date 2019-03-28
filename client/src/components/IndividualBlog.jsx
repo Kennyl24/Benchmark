@@ -80,6 +80,9 @@ class Individualblog extends React.Component {
     .catch( (error) => {
       return ('There seems to have been an error');
     });
+    this.setState({
+      email:''
+    })
   }
   render () {
     if (!this.state.data) {

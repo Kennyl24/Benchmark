@@ -8,6 +8,7 @@ import TestModal from './TestModal.jsx'
 import LeadingBar from './LeadingBar.jsx';
 import Paper from 'material-ui/Paper';
 import {isMobile} from 'react-device-detect';
+import backgroundPhoto from './backgroundPhoto.jpg';
 
 const style = {
   height: '607px',
@@ -42,9 +43,6 @@ class FrontPictures extends React.Component {
       currentText: '',
       hoveringApply: false, 
       hoveringContact: false,
-      contactColor: '#242f6e',
-      applyColor: '#2b36ad',
-      x: 1,
     }
     this.stopTimer=this.stopTimer.bind(this);
     this.startTimer=this.startTimer.bind(this);
@@ -54,38 +52,16 @@ class FrontPictures extends React.Component {
     this.writeText = this.writeText.bind(this);
     this.changeApply = this.changeApply.bind(this);
     this.changeContact = this.changeContact.bind(this);
-    this.colorTimer = this.colorTimer.bind(this);
-    
   }
   componentDidMount(){
     this.startTimer();
     this.writeText('Welcome Home', 100);
-    setInterval(this.colorTimer, 1000);
   }
   startTimer(){
     test = setInterval(this.displayNext,4000);
   }
   stopTimer(){
     clearInterval(test)
-  }
-  colorTimer(){
-    if(this.state.x === 1 ){
-      this.setState({ 
-        contactColor: '#2b36ad',
-        applyColor: '#242f6e',
-        x: 2,
-    });
-      
-    } else if (this.state.x === 2){
-      this.setState({ 
-        contactColor: '#242f6e',
-        applyColor: '#2b36ad',
-        x: 1, 
-      })
-    }
-  }
-  componentWillUnmount() {
-    clearInterval(this.interval);
   }
   displayNext(){
     if(this.state.imageIndex === leadImages.length-1){
@@ -139,7 +115,7 @@ changeContact(){
   render () {
     return (
   <MuiThemeProvider>
-   <div style={{position:'relative', top:'00px', backgroundImage: 'url(http://i67.tinypic.com/2wnsc2h.jpg)', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', imageRendering: '-webkit-optimize-contrast', backgroundPosition: '50% 50%' ,height:'750px', width: '100%', marginBottom:'0px'}}>
+   <div style={{position:'relative', top:'00px', backgroundImage: `url(${backgroundPhoto})`, backgroundRepeat: 'no-repeat', imageRendering: '-webkit-optimize-contrast', backgroundSize:'cover', backgroundPosition: '50% 50%' ,height:'750px', width: '100%', marginBottom:'0px'}}>
    {/* /Users/kennethlaprelle/Benchmark/client/src/components/BlogHomePage.jsx */}
    <div style={{backgroundColor:'white', width:'40%', minWidth:'300px', height:'auto', position: 'absolute', top:'250px', left: isMobile? '10%' : '30%', right:'30%', display: 'flex', flexDirection: 'column', alignItems:'cetner', justifyContent:'center', borderRadius:10, paddingBottom:'25px'}}>
   <h1 className="homepage-header" style={{fontFamily:'RocketSans,Helvetica,Helvetica Neue,Arial,sans-serif', color:'#333', fontWeight:'700'}}>Purchasing a home or refinancing?</h1>
@@ -147,10 +123,10 @@ changeContact(){
    Let the Hilda Hensley Team make your dreams a reality!
   </p>
     <div style={{display:'flex', flexDirection:'row', alignItems:'center', marginTop:'2%', justifyContent:'center'}}>
-    <Button onMouseEnter={this.changeContact} onMouseLeave={this.changeContact} onClick={ ()=> window.location.href = "/Contact"}  style={{backgroundColor: this.state.contactColor, marginTop:'2%', marginRight:'4%', color: 'white', borderRadius: 5}} size="large" variant="contained">
+    <Button onMouseEnter={this.changeContact} onMouseLeave={this.changeContact} onClick={ ()=> window.location.href = "/Contact"}  style={{backgroundColor: this.state.hoveringContact ? '#2b36ad' : "#242f6e", marginTop:'2%', marginRight:'4%', color: 'white', borderRadius: 5}} size="large" variant="contained">
      Contact us
     </Button>
-    <Button onMouseEnter={this.changeApply} onMouseLeave={this.changeApply} onClick={() => window.open('https://hildahensley.floify.com/apply?noheaderfooter#tab_a', '_blank')} style={{backgroundColor:  this.state.applyColor, marginTop:'2%', color: 'white', borderRadius: 5}} size="large" variant="contained">
+    <Button onMouseEnter={this.changeApply} onMouseLeave={this.changeApply} onClick={() => window.open('https://hildahensley.floify.com/apply?noheaderfooter#tab_a', '_blank')} style={{backgroundColor:  this.state.hoveringApply ? '#2b36ad' : "#242f6e", marginTop:'2%', color: 'white', borderRadius: 5}} size="large" variant="contained">
      Apply Now
     </Button>
     </div>

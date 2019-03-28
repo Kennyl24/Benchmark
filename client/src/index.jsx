@@ -16,6 +16,8 @@ import Refinance from './components/Refinance.jsx'
 import FHA from './components/FHA.jsx'
 import Conventional from './components/Conventional.jsx'
 import MoreServices from './components/MoreServices.jsx'
+import NotFound from './components/NotFound.jsx'
+
 import FirstTimeHome from './components/FirstTimeHome.jsx'
 import IndividualAbout from './components/IndividualAbout.jsx'
 import Individualblog from './components/Individualblog.jsx'
@@ -776,6 +778,8 @@ ReactDOM.render(
       <Route  path="/More-services" component={MoreServices} />
 
       <Route  path="/Contact" component={Contact} />
+      <Route path="/404" component={NotFound} />
+      <Route component={NotFound} />
     </Switch>
   </Router>
   </body>

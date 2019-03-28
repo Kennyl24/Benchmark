@@ -27,6 +27,9 @@ class BottomNav extends Component {
     .catch( (error) => {
       return ('There seems to have been an error');
     });
+    this.setState({
+      email:'',
+    })
   }
 
   render() {
