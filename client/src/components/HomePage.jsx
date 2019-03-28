@@ -37,15 +37,14 @@ class HomePage extends React.Component {
         <MetaTags>
             <title>Napa Valley Mortgage Lender Home Page</title>
             <meta name="description" content="Your napa valley mortgage lenders. Napa Mortgage brokers. Napa mortgage bankers. Napa mortgage. Napa home loans. Here you will see mortgage blogs, vlogs, and more." />
+            <meta name="keywords" content="Your napa valley mortgage lenders. Napa Mortgage brokers. Napa mortgage bankers. Napa mortgage. Napa home loans. Here you will see mortgage blogs, vlogs, and more." />
             <meta property="og:title" content="Napa Valley Mortgage Lender" />
-            <meta property="og:image" content="path/to/image.jpg" />
+            <meta property="og:image" content="https://i.ibb.co/RCsMTx9/teamlogo.png" />
         </MetaTags>
         <div style={{backgroundColor:'#fafafa'}}>
         <LeadingBar/>
         <FrontPictures/>
-        {/* <AboutHomeMap/> */}
         <HomePageTest/>
-        {/* <ReviewHomePage/> */}
         <BlogHomePage/>
         <VlogHome/>
         <BottomNav/>
