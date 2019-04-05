@@ -57,7 +57,7 @@ class CoreValues extends React.Component {
       console.log('doing nothing')
     } else {
     window.scroll({ 
-      top: 2020, // could be negative value
+      top: 2020,
       left: 0, 
       behavior: 'smooth' 
     });
@@ -82,12 +82,9 @@ class CoreValues extends React.Component {
             <p className="value-text" style={{padding: isMobile ? '0px' : '30px'}}>
          {this.state.showMore ?  value.description : value.description.split(' ').slice(0,20).join(' ') }
         </p>
-        {/* <div style={{position:'absolute', bottom:'0px'}}>  */}
         <Button onClick={this.showMore}>{this.state.showMore ? 'Read Less' : 'Read More' }</Button>
-          {/* </div> */}
           </div>
-      )
-      
+      )    
       : null}
         
      </div> 
