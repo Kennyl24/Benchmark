@@ -5,7 +5,6 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import FlatButton from 'material-ui/FlatButton';
 import { Link } from 'react-router-dom';
 import StarBorder from 'material-ui/svg-icons/toggle/star-border';
-import ServiceTest from './ServiceTest.jsx'
 import Button from '@material-ui/core/Button';
 
 

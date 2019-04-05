@@ -4,9 +4,7 @@ import AppBar from 'material-ui/AppBar';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import FlatButton from 'material-ui/FlatButton';
 import { Link } from 'react-router-dom';
-import TestModal from './TestModal.jsx'
 import LeadingBar from './LeadingBar.jsx';
-import GalleryImages from './GalleryImages.jsx';
 import BlogIntro from './BlogIntro.jsx';
 import BlogMap from './BlogMap.jsx';
 import Fab from '@material-ui/core/Fab';

@@ -53,18 +53,6 @@ class DirectionsModal extends React.Component {
       continue: !this.state.continue
     });
     console.log(value)
-    // this.setState({userChoice: value});
-    // console.log(this.state.userChoice);
-    // console.log(value = 'businessLocation');
-    // if(value = 'businessLocation'){
-    //   console.log('biz');
-    //   this.setState({userChoice: value});
-    // this.handleClose();
-    // } else {
-    //   console.log('direc');
-    //   this.directionsChoices();
-    //   this.setState({userChoice: value});
-    // }
   };
   render() {
     const actions = {

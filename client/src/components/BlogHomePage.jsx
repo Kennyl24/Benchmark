@@ -5,7 +5,6 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import FlatButton from 'material-ui/FlatButton';
 import { Link } from 'react-router-dom';
 import StarBorder from 'material-ui/svg-icons/toggle/star-border';
-import ServiceTest from './ServiceTest.jsx';
 import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 import Button from '@material-ui/core/Button';
 const homeBlogs = [
@@ -148,12 +147,12 @@ When you’re ready to begin your mortgage application, <span><Link to={{ pathna
     <div>
     <Link to={{ pathname:'/blog' }}><h3 className="homepage-header"> Mortgage Lending 101 </h3></Link>
     <div style={{display:'flex', flexDirection:'row', flexWrap: 'wrap', justifyContent: 'center'}}>
-    {homeBlogs.length > 0 ? homeBlogs.map((blog, index) =>  
+    {homeBlogs.length > 0 ? 
+    homeBlogs.map((blog, index) => 
     <div style={{padding:'0 24px 24px', minWidth: '26%', maxWidth:'380px'}}>
     <div className="card">
     <img className="card-image" src={blog.blogImage}/>
     <div className="container">
-    {/* <p className="blog-snippet" style={{paddingBottom:'0'}}> {blog.blogAuthor}</p> */}
       <h4 className="blog-title"><b>{blog.blogTitle}</b></h4> 
       <div style={{height:'200px'}}>
       <p className="blog-snippet"> {blog.blogSnippet}</p>

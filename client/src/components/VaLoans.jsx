@@ -94,22 +94,8 @@ class VaLoans extends React.Component {
         </div>
         </div>
         <h2 style={{fontSize:'24px', marginLeft: isMobile? '2%': '18%', marginRight:isMobile? '2%': '18%', marginTop:'1%', marginBottom:0, paddingBottom:'1%'}}>Benchmark appreciates our veterans. We go the extra mile not only because it's an honor to be part of your homeownership goals, but because it's the right thing to do. </h2>
-        <h5 style={{textAlign:'center'}}><span><Link to={{ pathname:'/contact' }} style={{color:'inherit'}}>Contact Us Today if a VA Loan is Right for you</Link></span></h5>
+        <h5 style={{textAlign:'center', marginBottom:0}}><span><Link to={{ pathname:'/contact' }} style={{color:'inherit'}}>Contact Us Today if a VA Loan is Right for you</Link></span></h5>
         </div>
-        {/* <ol>
-        <li>Up to 100% financing/no down payment (Up to the county limit)</li>
-        <li>Low down payment above the county limit</li>
-        <li>No monthly mortgage insurance (MMI)</li>
-        <li>Gift funds acceptable for closing costs</li>
-        <li>No cash reserve requirements</li>
-        <li>A variety of terms or loan types available</li>
-        <li>Available for purchase and refinance</li>
-        <li>Reduced costs for disabled veterans</li>
-        <li>Seller can pay for closing costs</li>
-        <li>Seller or Veteran can pay for any required repairs</li>
-        <li>No pre-payment penalty</li>
-
-          </ol> */}
         
         <BottomNav/>
         </MuiThemeProvider>

@@ -4,7 +4,6 @@ import AppBar from 'material-ui/AppBar';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import FlatButton from 'material-ui/FlatButton';
 import { Link } from 'react-router-dom';
-import TestModal from './TestModal.jsx'
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -81,7 +80,6 @@ class LeadingBar extends React.Component {
               serviceColor:'white'
         });
           } else if(window.location.href.indexOf('home') >= -1){
-              console.log('home')
               this.setState({
                 homeBackground:'rgba(36,	47,	110, .8)',
                 homeColor:'white'
@@ -145,7 +143,6 @@ resize = () => {
     right:'0px',
     zIndex: '999',
     height:'120px',
-    // boxShadow:'none',
     position:'fixed', backgroundColor:`rgba(255,255,255,${this.state.opacity})`, cursor:'auto'}}
     titleStyle={{color:'black'}}
     showMenuIconButton={true}
@@ -167,20 +164,7 @@ resize = () => {
     <div className="nav_links_container2">
     <a href="/home" className="nav-links" style={{backgroundColor:this.state.homeBackground, color:this.state.homeColor}}
     >Home</a>
-    {/* <a href="/About" className="nav-links"style={{backgroundColor:this.state.aboutBackground, color:this.state.aboutColor}}>About</a> */}
-    {/* <a href="/Blog" className="nav-links"style={{backgroundColor:this.state.blogBackground, color:this.state.blogColor}}>Blog</a> */}
-    {/* <a href="/Blog" className="nav-links"style={{backgroundColor:this.state.blogBackground, color:this.state.blogColor}}>Services</a> */}
-    {/* <span>
-    <a onMouseEnter={this.showServiceMenu} onMouseLeave={this.showServiceMenu}className="nav-links-dropdown">Services
-    </a>
-   { this.state.showServiceMenu ? 
-      <span className="menu">
-      <a> Menu item 1 </a>
-      <a> Menu item 2 </a>
-      <a> Menu item 3 </a>
-    </span>: null }
-    </span> */}
-  <div class="dropdown"
+  <div className="dropdown"
   onMouseEnter={()=>{
     console.log('abouting')
       this.setState({
@@ -240,7 +224,6 @@ resize = () => {
   </div>
 </div>
     </div>
-    {/* <img style={{height:'100px', width:'100px'}}src="https://napa.benchmark.us/wp-content/uploads/sites/485/2015/08/home-banner-logo.png"/> */}
     <div className="nav_links_container">
     <div class="dropdown"
        onMouseEnter={()=>{
@@ -269,34 +252,15 @@ onClick={() => window.location.href = '/Blog'}
     <a href="/Vlog" >Vlog</a>
   </div>
 </div>
-    {/* <a href="/Vlog" className="nav-links"style={{backgroundColor:this.state.vlogBackground, color:this.state.vlogColor}}>Vlog</a> */}
-    {/* <a href="/Reviews" className="nav-links"style={{backgroundColor:this.state.reviewBackground, color:this.state.reviewColor}}>Reviews</a> */}
-    <a href="/Contact" className="nav-links" style={{backgroundColor:this.state.contactBackground, color:this.state.contactColor}}>Contact</a>
+   <a href="/Contact" className="nav-links" style={{backgroundColor:this.state.contactBackground, color:this.state.contactColor}}>Contact</a>
     
     <Button onClick={() => window.open('https://hildahensley.floify.com/apply?noheaderfooter#tab_a', '_blank')} style={{marginTop:'0%', color: 'white', borderRadius: 2}} size="large" variant="outlined"><a style={{color:'#242f6e'}} className="applybutton" 
     
     >Apply Now!</a></Button>
-    {/* <a href="https://hildahensley.floify.com/apply?noheaderfooter#tab_a" className="nav-links">Apply</a> */}
-    {/* <Button><Link to={{ pathname:'/home' }}className="nav-links">Home</Link></Button>   
-    <Button><Link to={{ pathname: '/About' }}className="nav-links">About</Link></Button>      
-    <Button><Link to={{ pathname: '/Blog' }}className="nav-links">Blog</Link></Button>                                                                                                                                                                                                                  
-    <Button><Link to={{ pathname: '/Vlog' }}className="nav-links">Vlog</Link></Button>
-    <Button><Link to={{ pathname: '/Reviews' }}className="nav-links">Reviews</Link></Button>   */}
-    {/* <Button variant="outlined" style={{marginRight:'5px', marginLeft: '10px'}} className="nav-contact"><a style={{color:'black'}}href='/Contact' >Contact</a></Button> */}
-    {/* <Button variant="contained"style={{backgroundColor:"#242f6e", color: 'white'}} ><a href="https://hildahensley.floify.com/apply?noheaderfooter#tab_a" target="_blank">Apply Now</a></Button> */}
   </div>
-  {/* <Button style={{position: 'absolute', right:'1%'}}onClick={() => window.open('https://hildahensley.floify.com/apply?noheaderfooter#tab_a', '_blank')} style={{color: 'white', borderRadius: 2, marginTop:'16%'}} size="large" variant="outlined"><a style={{color:'#242f6e'}} className="applybutton" 
-    
-    >Apply Now!</a></Button> */}
   </span>
-  /* <span style={{position:'fixed', top:'40px', right:'20px'}}>
-  <Button style={{marginTop:'2%', color: 'white', borderRadius: 2}} size="large" variant="outlined"><a style={{color:'#242f6e'}}href="/Contact" className="applybutton" >Apply Now!</a></Button>
-  </span> */
-  
   : 
-  // <IconButton color="inherit" aria-label="Menu">
     <MenuDrawer/>
-  // </IconButton>
   }
    </AppBar>
   </MuiThemeProvider>

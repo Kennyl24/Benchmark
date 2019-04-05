@@ -21,10 +21,7 @@ class VlogIntro extends React.Component {
   render () {
     return (
     <MuiThemeProvider>
-    
-    {/* <div style={{height:'100vh', paddingLeft:'-5%',  background: 'linear-gradient(to right bottom, #e0e0e0, #242f6e)'}}> */}
     <div style={{position:'relative', top:'0px', backgroundImage: 'url(https://images.unsplash.com/photo-1539666455488-99208279e51e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80)', backgroundRepeat: 'no-repeat', backgroundSize: '100% 100%', height:'400px', width: '100%', marginBottom:'0px'}}>
-    {/* <img src='https://images.unsplash.com/photo-1539666455488-99208279e51e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80'height="400px"width="100%"/> */}
     <div  style={{textAlign: 'center', paddingTop: isMobile ? '27%': '10%', paddingBottom: '2%',  color: 'black', display:'flex',
     flexDirection:'column', justifyContent:'center', alignItems:'center'
     }}>
@@ -36,7 +33,6 @@ class VlogIntro extends React.Component {
         </p>       
       </div>
       </div>
-    {/* </div> */}
    </MuiThemeProvider>
 )
 }

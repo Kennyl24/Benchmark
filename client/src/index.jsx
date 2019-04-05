@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Directions from './components/Directions.jsx'
-import FrontPageModal from './components/FrontPageModal.jsx'
 import About from './components/About.jsx'
 import Contact from './components/Contact.jsx'
 import ConnectTab from './components/ConnectTab.jsx'
@@ -17,7 +16,6 @@ import FHA from './components/FHA.jsx'
 import Conventional from './components/Conventional.jsx'
 import MoreServices from './components/MoreServices.jsx'
 import NotFound from './components/NotFound.jsx'
-
 import FirstTimeHome from './components/FirstTimeHome.jsx'
 import IndividualAbout from './components/IndividualAbout.jsx'
 import Individualblog from './components/Individualblog.jsx'
@@ -28,10 +26,7 @@ import Fab from '@material-ui/core/Fab';
 import {isMobile} from 'react-device-detect';
 
 import "isomorphic-fetch"
-import "@babel/polyfill";
 
-
-import StreetViewPanormaWithAnOverlayView from './components/Test.jsx'
 const images = [
       {
         url: 'https://images.pexels.com/photos/1202723/pexels-photo-1202723.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
@@ -326,7 +321,6 @@ Need advice on getting a mortgage pre-approval? Before you apply for your next m
     blogTitle:'Your Mortgage Application Checklist',
     blogAuthor: 'Hilda Hensley',
     blogText: <p className="blog-text">
-    {/* <h2>Your Mortgage Application Checklist</h2> */}
     <div style={{paddingTop:'40px'}}>
     Before you apply for a mortgage, you’ll need to gather many different documents to complete your mortgage application. The better prepared you are before you meet with your lender, the less stressful the mortgage application process will be. Here is a handy checklist of the most common documents you’ll need to have ready.
     </div>
@@ -752,7 +746,7 @@ Available on 5/1, 7/1, 10/1 + 15/1 Adjustable Rate Mortgages (ARMS)<br/><br/>
   },
 ];
 ReactDOM.render(
-  <body>
+  <div>
    {isMobile ?  null : <ConnectTab/>}
   <Router>
     <Switch>
@@ -782,7 +776,7 @@ ReactDOM.render(
       <Route component={NotFound} />
     </Switch>
   </Router>
-  </body>
+  </div>
   ,
   document.getElementById('app'),
 );

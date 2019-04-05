@@ -5,7 +5,6 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import FlatButton from 'material-ui/FlatButton';
 import { Link } from 'react-router-dom';
 import StarBorder from 'material-ui/svg-icons/toggle/star-border';
-import ServiceTest from './ServiceTest.jsx';
 import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 import ComingSoonModal from './ComingSoonModal.jsx';
 import Button from '@material-ui/core/Button';
@@ -61,7 +60,6 @@ const opts = {
           videos: resp.items.slice(0,3),
           showEverything: true
         });
-        console.log(this.state.videos);
       });
     }
     playVideo(){
@@ -81,14 +79,16 @@ const opts = {
     }
     render () {   
       return (
-        <MuiThemeProvider>
+        <div>
+         {/* <MuiThemeProvider> */}
         <h3 className="homepage-header" style={{color:'#787878', cursor:'pointer',marginBottom:''}} 
         onClick={() => window.location.href = "/vlog"}
         > Mortgage Lending Video Tips </h3>
   <div className="vlog-container">
       {this.state.videos.length > 0 ? this.state.videos.map((video, key) => <VlogHomePage video={video} key={key} />) : null}
   </div>
-     </MuiThemeProvider>
+  </div>
+    // </MuiThemeProvider>
      )
     }};
 

@@ -5,7 +5,6 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import FlatButton from 'material-ui/FlatButton';
 import { Link } from 'react-router-dom';
 import StarBorder from 'material-ui/svg-icons/toggle/star-border';
-import ServiceTest from './ServiceTest.jsx';
 import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 import ComingSoonModal from './ComingSoonModal.jsx';
 import Button from '@material-ui/core/Button';
@@ -59,7 +58,6 @@ const opts = {
           videos: resp.items.slice(0,3),
           showEverything: true
         });
-        console.log(this.state.videos);
       });
     }
     playVideo(){
@@ -79,14 +77,10 @@ const opts = {
       })
     }
     render () {
-      
       return (
-        <MuiThemeProvider>
+        <div>
     <div style={{padding:'0 24px 48px', maxWidth: '350px', cursor:'pointer'}}>
     <div onMouseEnter={this.changeColor} onMouseLeave={this.changeColor}>
-    {/* <iframe src='https://www.youtube.com/embed/sWlYdCutkLE' style={{width:'100%', height:'30%'}}></iframe> */}
-    
-    
     <div style={{position: 'relative',
       top: 0,
       left: 0,
@@ -128,7 +122,7 @@ const opts = {
       />
       </div>
       : null}
-     </MuiThemeProvider>
+     </div>
      )
     }};
 

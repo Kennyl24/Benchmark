@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import TestModal from './TestModal.jsx';
 
 class AboutNav extends React.Component { 
   constructor(props) {

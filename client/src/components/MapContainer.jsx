@@ -23,7 +23,6 @@ class MapContainer extends React.Component{
       timeout: 8000,
       maximumAge: 0,
     };
-    // this.id = navigator.geolocation.getCurrentPosition(this.testLocation, this.testError , options);
   }
   testLocation(pos){
     const crd = pos.coords;
@@ -60,13 +59,11 @@ class MapContainer extends React.Component{
             lng: -122.321649
           }}
           zoom={15}
-          // onClick={this.onMapClicked}
        >
        <Marker
     title={'Benchmark Mortgage Napa Valley'}
     name={'Benchmark Mortgage Napa Valley'}
     onClick={this.onMarkerClicked}
-    // onMouseover={this.onMarkerClicked}
     position={{lat: 38.335045, lng:-122.321649}} />
     <InfoWindow
     onClick={this.onMarkerClicked}

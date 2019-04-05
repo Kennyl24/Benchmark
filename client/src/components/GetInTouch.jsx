@@ -4,7 +4,6 @@ import AppBar from 'material-ui/AppBar';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom';
-import TestModal from './TestModal.jsx'
 import LeadingBar from './LeadingBar.jsx';
 import Paper from 'material-ui/Paper';
 import { SocialIcon } from 'react-social-icons';

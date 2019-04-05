@@ -4,9 +4,7 @@ import AppBar from 'material-ui/AppBar';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import FlatButton from 'material-ui/FlatButton';
 import { Link } from 'react-router-dom';
-import TestModal from './TestModal.jsx'
 import LeadingBar from './LeadingBar.jsx';
-import GalleryImages from './GalleryImages.jsx';
 import VlogIntro from './VlogIntro.jsx';
 import VlogMap from './VlogMap.jsx';
 import Fab from '@material-ui/core/Fab';
@@ -47,9 +45,7 @@ class VlogPage extends React.Component {
     fetch(`https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=25&playlistId=PL3c0jH6bVf991JnYXXEebRBbIr3ZjyAHk&key=${config.GOOGLE_MAPS_API_KEY}`)
     .then(resp => resp.json())
     .then((resp) => {
-      console.log(resp);
       this.setState({videos: resp.items});
-      console.log(this.state.videos);
     });
 
   }
@@ -72,7 +68,6 @@ class VlogPage extends React.Component {
       <LeadingBar/>
       <VlogIntro style={{position:'fixed'}}/>
       <VlogMap videos={this.state.videos}/>
-      {/* <ComingSoonModal/> */}
       </div> 
       <BottomNav/>
        </body>

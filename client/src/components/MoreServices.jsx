@@ -4,6 +4,7 @@ import {isMobile} from 'react-device-detect';
 import LeadingBar from './LeadingBar.jsx';
 import BottomNav from './BottomNav.jsx';
 import { Link } from 'react-router-dom';
+import pdf from './FICO.pdf';
 
 class MoreServices extends React.Component { 
   constructor(props) {
@@ -23,7 +24,6 @@ class MoreServices extends React.Component {
         <h1 className="homepage-header">Can't find what you are looking for? We offer more!</h1>
 <div style={{marginLeft:'20%', marginRight:'20%'}}>
 <p className="blog-text">
-  {/* Fixed Rate Versus Adjustable Rate Mortgages */}
 One of the first decision you’ll need to make is whether you want your loan to have fixed interest rate or an adjustable interest rate. Here’s what these terms mean:
 <br/>
 <br/>
@@ -32,6 +32,23 @@ One of the first decision you’ll need to make is whether you want your loan to
 <br/>
 <span style={{fontWeight:'bold'}}>Adjustable Rate Mortgage</span> – These loans have an interest rate that will change over time, based on the current mortgage interest rate. Most adjustable rate loans have an initial period (usually 3-5 years) where the rate is stable. After that initial period, the rate will change (adjust) every year. You’ll often see adjustable rate mortgage called things like a “3/1 ARM” or a “5/1 ARM.” The first number indicates the initial rate lock period in years. The second number indicates how often after that initial rate lock period the rate will change (again in years). And “ARM” stands for adjustable rate mortgage. Because the initial interest rate during the lock period is often lower than traditional fixed rate products, these loans are attractive to people who are certain they will not stay in the home for longer than the initial lock time.
           </p>
+         < h1 className="homepage-header">How does a FICO Score Work?</h1>
+         <p className="blog-text">
+         If you’ve applied for several new loans or accounts recently, your score may have taken a very slight drop – if at all. But remember that you can also proactively work to improve their FICO Scores, as well. Fortunately, we know how FICO weighs the particular factors that make up your score, including:
+<ul>
+<li>35% Payment history</li>
+
+<li>30% Credit utilization</li>
+
+<li>15% Length of credit history</li>
+
+<li>10% New credit</li>
+
+<li>10% Credit mix</li>
+</ul>
+So, by keeping your debt levels low compared to your available credit, holding well-seasoned accounts, and always paying your bills on time, you’ll see your FICO Scores on the rise, even if you’ve had credit inquiries.
+        </p>
+        <li style={{textDecoration:'underline', cursor:'pointer', marginTop:'2px'}}> <a style={{color:'black'}} href={pdf} type="application/pdf" target="_blank" title="FICOBlueWater">Want to learn More about Fico Scores? Checkout this write up from Blue Water Credit!</a></li>
           </div>
         <h5 style={{textAlign:'center'}}>
           More services include, but are not limited to: </h5>

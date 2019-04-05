@@ -8,7 +8,6 @@ import { SocialIcon } from 'react-social-icons';
 import Phone from '@material-ui/icons/Phone';
 import Email from '@material-ui/icons/Email';
 import SvgIcon from '@material-ui/core/SvgIcon';
-import SecondTest from './SecondTest.jsx'
 import Popup from "reactjs-popup";
 import IconButton from '@material-ui/core/IconButton';
 import {isMobile} from 'react-device-detect';
