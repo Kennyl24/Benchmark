@@ -47,7 +47,9 @@ class VaVideos extends React.Component {
   render () {
     let string = 'https://www.youtube.com/embed/"'+ this.props.video.id + '"';
     return (
+  this.props.video.snippet.title === 'Deleted video' ? null : 
     <MuiThemeProvider>
+    
     <div style={{padding:'0 24px 48px', maxWidth: '350px', cursor:'pointer'}}>
     <div onMouseEnter={this.changeColor} onMouseLeave={this.changeColor}>
     {/* <iframe src='https://www.youtube.com/embed/sWlYdCutkLE' style={{width:'100%', height:'30%'}}></iframe> */}
@@ -92,7 +94,6 @@ class VaVideos extends React.Component {
       />
       </div>
       : null}
-      
    </MuiThemeProvider>
 )
 }
