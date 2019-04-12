@@ -26,7 +26,7 @@ class ContactIntro extends React.Component {
     <MuiThemeProvider>
       {/* <div style={{position:'relative', top:'0px', backgroundImage: 'url(https://i.ibb.co/2WjcBNw/Imagefromvid.jpg)', backgroundRepeat: 'no-repeat', backgroundSize: '100% 100%', height:'500px', width: '100%', marginBottom:'0px'}}> */}
     <div style={{paddingBottom:'4%', background: 'linear-gradient(#e0e0e0, #242f6e)', marginBottom: '50px'}}>
-      <div  style={{textAlign: 'center', paddingTop: isMobile ? '32%' :'10%', color: 'white', display:'flex',
+      <div className="contact-box" style={{textAlign: 'center', paddingTop: isMobile ? '32%' :'10%', color: 'white', display:'flex',
     flexDirection:'column', justifyContent:'center', alignItems:'center', marginLeft:'20%', msFlexAlign:'center', marginRight:'20%'
     }}>
       <h1 className="homepage-header" style={{marginTop:'8%', color:'white', fontSize: isMobile ? '22px' : '34px' }}>

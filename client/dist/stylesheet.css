@@ -10,7 +10,12 @@ p{
 li{
   font-weight: 200px;
 }
-
+.contact-box {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-pack: center;
+}
 .nav_links_container2{
   padding-top: 50px;
   left: 15%;
