@@ -112,7 +112,7 @@ changeContact(){
   render () {
     return (
   <MuiThemeProvider>
-   <div style={{position:'relative', top:'00px', backgroundImage: `url(${backgroundPhoto})`, backgroundRepeat: 'no-repeat', imageRendering: '-webkit-optimize-contrast', backgroundSize:'cover', backgroundPosition: '50% 50%' ,height:'750px', width: '100%', marginBottom:'0px'}}>
+   <div style={{position:'relative', top:'00px', backgroundImage: `url(${newBack})`, backgroundRepeat: 'no-repeat', imageRendering: '-webkit-optimize-contrast', backgroundSize:'cover', backgroundPosition: '50% 50%' ,height:'750px', width: '100%', marginBottom:'0px'}}>
    <div style={{backgroundColor:'white', width:'40%', minWidth:'300px', height:'auto', position: 'absolute', top:'250px', left: isMobile? '10%' : '30%', right:'30%', display: 'flex', flexDirection: 'column', alignItems:'cetner', justifyContent:'center', borderRadius:10, paddingBottom:'25px'}}>
   <h1 className="homepage-header" style={{fontFamily:'RocketSans,Helvetica,Helvetica Neue,Arial,sans-serif', color:'#333', fontWeight:'700'}}>Purchasing a home or refinancing?</h1>
   <p style={{fontFamily: 'Comic Sans MS", cursive, sans-serif', color:'#787878', margin:'auto',  marginTop:'0%', fontSize: '20px', textAlign:'center', marginLeft:'2%', marginRight:'2%', lineHeight:'1.6'}}>

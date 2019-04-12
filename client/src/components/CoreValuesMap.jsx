@@ -47,8 +47,8 @@ class CoreValuesMap extends React.Component {
         <div className="service_container" style={{backgroundColor:'#fafafa'}}>
         <h3 className="homepage-header" style={{color:'#787878', margin: '0', paddingTop:'2%', paddingBottom:'2%'}} > Our Core Values</h3>
         <div style={{display: 'flex', flexFlow:'row wrap', justifyContent: 'center', paddingBottom:'3%'}}>
-        {coreValues.length > 0 ? coreValues.map((value, key) => 
-        <CoreValues value={value} key={key} />): null}
+        {coreValues.length > 0 ? coreValues.map((value, index) => 
+        <CoreValues value={value} key={index} />): null}
         </div>
         </div>
       </MuiThemeProvider>

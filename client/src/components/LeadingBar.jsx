@@ -186,12 +186,12 @@ resize = () => {
   <button class="dropbtn" style={{backgroundColor: this.state.onAbout ? null : this.state.aboutBackground, color:this.state.aboutColor, cursor:'pointer'}}
   onClick={() => window.location.href = '/About'}
   >About</button>
-  <div class="dropdown-content">
+  <div className="dropdown-content">
     <a href="/About" >About Us</a>
     <a href="/Reviews" >Reviews</a>
   </div>
 </div>
-    <div class="dropdown"
+    <div className="dropdown"
       onMouseEnter={()=>{
     
         console.log('abouting')
@@ -211,10 +211,10 @@ resize = () => {
         }
       }
     >
-  <button class="dropbtn" style={{backgroundColor:this.state.serviceBackground, cursor:'pointer', color:this.state.serviceColor}}
+  <button className="dropbtn" style={{backgroundColor:this.state.serviceBackground, cursor:'pointer', color:this.state.serviceColor}}
   onClick={() => window.location.href = '/VA'}
   >Services</button>
-  <div class="dropdown-content">
+  <div className="dropdown-content">
     <a href="/VA" style={{fontFamily: 'Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important'}}>Va Loans</a>
     <a href="/FHA">FHA</a>
     <a href="/Conventional">Conventional</a>
@@ -225,7 +225,7 @@ resize = () => {
 </div>
     </div>
     <div className="nav_links_container">
-    <div class="dropdown"
+    <div className="dropdown"
        onMouseEnter={()=>{
         console.log('abouting')
           this.setState({
@@ -244,10 +244,10 @@ resize = () => {
         }
       }
     >
-  <button class="dropbtn" style={{width:'100%'}} style={{backgroundColor:this.state.blogBackground, color:this.state.blogColor, cursor:'pointer'}}
+  <button className="dropbtn" style={{width:'100%'}} style={{backgroundColor:this.state.blogBackground, color:this.state.blogColor, cursor:'pointer'}}
 onClick={() => window.location.href = '/Blog'}
   >Mortgage Lending 101</button>
-  <div class="dropdown-content">
+  <div className="dropdown-content">
     <a href="/Blog" >Blog</a>
     <a href="/Vlog" >Vlog</a>
   </div>

@@ -9,6 +9,35 @@ import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'mat
 import Button from '@material-ui/core/Button';
 const homeBlogs = [
   {
+    blogTitle:'Mortgage Points',
+    blogAuthor: 'Hilda Hensley',
+    blogText: 
+    <p>
+      <h1 className="homepage-header" style={{fontSize:'1.4em'}}>Mortgage Points – What Are They and Should You Buy Them?</h1>
+   
+During the mortgage application process, you’re likely to be asked whether you want to pay mortgage points. Typically, few people know what points are or how they work. And, unfortunately, many people inherently believe that points are bad. (Hint: They’re not.)
+<br/><br/>
+<h1 className="homepage-header" style={{fontSize:'1.4em'}}>Let’s start with the first question: “What are mortgage points?”</h1>
+
+In the simplest terms, mortgage points are fees you pay to lower your mortgage interest rate. Typically, one point is equal to 1% of the mortgage total. So, if your mortgage is for $500,000, one point is $5,000, two points is $10,000, etc. For each point you pay, your mortgage interest rate goes down a little bit. Think of it as paying some interest upfront in order to secure a lower interest rate and thereby lower monthly payments.
+<br/><br/>
+<h1 className="homepage-header" style={{fontSize:'1.4em'}}>The next question then is: “Should I pay points?” The answer: “It depends.”</h1>
+
+Let’s go back to that $500,000 mortgage example. For a 30-year fixed loan with a 4% interest rate, the monthly payment would be $2387.08. If you pay one point ($5,000) your lender may reduce your interest rate to 3.75%. That would reduce your monthly payment to $2315.58 – a difference of $71.50 per month. That may not seem significant on a monthly basis, but over the course of the 30-year mortgage, it’s actually a savings of $25,739.47.
+<br/><br/>
+The key, of course, is determining your break-even timeline. In other words, how long would you need to stay in the home to recoup that initial $5,000 you paid for mortgage points? In this example, you’d need to stay in your home 70 months, or 5.8 years, for that $71.50 savings to equal $5,000. On average, most mortgage points have a break-even timeline of between five and eight years. 
+<br/><br/>
+Therefore, if you know the home you’re purchasing is a starter home that you plan to keep for three to five years, then paying points doesn’t make sense. But if you know you’re buying your forever home, then you may want to consider paying a point or two in order to save money in the long run.  
+<br/><br/>
+As you can see, mortgage points aren’t always a bad idea. In some cases, they can help you save a significant amount of money. It all depends on your goals and timeline. Your mortgage banker can help you with calculations so you can determine whether paying mortgage points is a wise decision. 
+<br/><br/>
+Is applying for a mortgage in your future? Contact us. As mortgage bankers, we can help you make the best decision for your needs.
+      </p>
+    ,
+    blogSnippet:'Mortgage points aren’t always a bad idea. In some cases, they can help you save a significant amount of money. It all depends on your goals and timeline. Discover the pros and cons of mortgage points.',
+    blogImage: 'https://i.ibb.co/7Ggm2yg/canstockphoto24940348-1.jpg',
+  },
+  {
     blogTitle: 'Looking for a Mortgage? Know Your Options',
     blogAuthor: 'Hilda Hensley',
     blogText: 
@@ -115,34 +144,7 @@ Is applying for a mortgage in your future? <span><Link to={{ pathname:'/contact'
     blogSnippet:'There are several things you should never do when applying for a mortgage – things that could potentially cause you to lose your mortgage mid-application. To ensure you don’t sabotage your mortgage approval, be sure to avoid the following five things. ',
     blogImage:'https://i.ibb.co/yBdffHv/mistakes.jpg',
   },
-  {
-    blogTitle:'Loan Estimate – What it is and Why it’s Important', 
-    blogAuthor: 'Hilda Hensley',
-    blogText: <p>
-      When you apply for a mortgage, you receive many documents—one of which is a loan estimate. Be sure you carefully review this vital three-page document.  It’s essentially your guide to the mortgage you’re applying for. And if you don’t receive one, speak up! By law, your lender must provide you a loan estimate within three days of receiving your application.
-    <h2>Why is the Loan Estimate So Important? </h2>
-    <h4>Your loan estimate gives you important loan information, such as</h4>
-  <ul>
-  <li>The estimated interest rate</li>
-  <li>Monthly payment</li>
-  <li>Total closing costs for the loan, broken down by line item</li>
-  <li>Estimated costs of taxes and insurance</li>
-  <li>How the interest rate and payment may change in the future</li>
-  <li>Special loan features you need to be aware of (such as whether there is a penalty for paying off the loan early)</li>
-  <li>Plus many more loan details</li>
-</ul>
-Fortunately, the loan estimate is an easy-to-read and understand document that isn’t filled with complicated legal jargon. In fact, all lenders are required to use the same standard loan estimate form, which makes it easy for you to compare loans. 
-<br/><br/>
-Keep in mind that just because you receive a loan estimate, this does not mean your loan is approved or denied yet. It just means your application has been accepted. The loan estimate is there to show you what loan terms the lender expects IF you decide to proceed.  Should you decide to move forward, the lender will likely ask you to supply additional financial information. 
-<br/><br/>
-While applying for a mortgage can be stressful and the amount of documentation you receive can be overwhelming, be sure you carefully review your loan estimate (as well as any other papers you receive from your lender). The more involved and aware you are, the easier the process will be. 
-<br/><br/>
-When you’re ready to begin your mortgage application, <span><Link to={{ pathname:'/contact' }} style={{color:'black'}}>contact us.</Link></span> As mortgage bankers, we can help you make the best decision for your needs.
-    </p>,
-    blogSnippet: ' When you apply for a mortgage, you receive many documents—one of which is a loan estimate. Find out what this vital document is and why you need to review it carefully.',
-    blogImage: 'https://i.ibb.co/09dXr4w/what-can-you-afford.jpg',
-  },
-  ]
+]
   const BlogHomePage = () => (
     <div>
     <Link to={{ pathname:'/blog' }}><h3 className="homepage-header"> Mortgage Lending 101 </h3></Link>

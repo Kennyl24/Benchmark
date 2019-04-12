@@ -70,7 +70,7 @@ class GetInTouch extends React.Component {
       </ul>
       </div>
       <div style={{marginLeft: isMobile ? '0%' : '10%', width:'50%', alignItems:'center', justifyContent:'center'}}>
-      <h3 className="homepage-header" style={{fontSize:'24px', textAlign: 'center'}}>Message Us</h3>
+      <h3 className="homepage-header" style={{textAlign: 'center'}}>Message Us</h3>
       <div style={{marginLeft:'10%'}}>
       <TextField
           style={{width: isMobile? '300px': '400px', height: '50px', marginRight: '15px'}}
