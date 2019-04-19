@@ -55,7 +55,7 @@ class GetInTouch extends React.Component {
       <h3 className="contact-header"> Phone </h3>
       <li style={{marginBottom:'25px',fontFamily: 'plexeina-bold,Helvetica,sans-serif', fontSize:'18px'}}><a href="tel:(707) 254-8891" style={{color:'black', marginBottom:'12px'}}> (707) 254-8891</a> <br/> </li>
       <h3 className="contact-header"> Email </h3>
-      <li style={{marginBottom:'25px',fontSize:'18px',}}><a href="mailto:hilda.hensley@benchmark.us" style={{color:'black'}}>  teamhensley@benchmark.us</a> <br/></li>
+      <li style={{marginBottom:'25px',fontSize:'18px',}}><a href="mailto:teamhensley@benchmark.us" style={{color:'black'}}>  teamhensley@benchmark.us</a> <br/></li>
       <h3 className="contact-header"> Address </h3>
       <li style={{marginBottom:'25px', fontFamily: 'plexeina-bold,Helvetica,sans-serif',  fontSize:'18px',}}><a href="https://www.google.com/maps/dir/4123+Solano+Ave,+Napa,+CA+94558/''/@38.3344478,-122.3566659,13z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x808500d2af41b48d:0x2760ab5bef29d629!2m2!1d-122.3216465!2d38.334453!1m5!1m1!1s0x808500d2af41b48d:0x2760ab5bef29d629!2m2!1d-122.3216465!2d38.334453" target="_blank" 
              style={{color: 'black', textAlign:'center', fontSize:'18px',}}>  4123 Solano Ave Napa, CA 94558 </a> <br/> </li>

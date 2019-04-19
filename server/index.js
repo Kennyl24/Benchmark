@@ -5,12 +5,10 @@ const nodemailer = require('nodemailer');
 const smtpTransport = require('nodemailer-smtp-transport');
 const fs = require('fs');
 var cors = require('cors');
-let forceSsl = function (req, res, next) {
-  if (req.headers['x-forwarded-proto'] !== 'https') {
-    return res.redirect(['https://', req.get('Host'), req.url].join(''));
-  }
-  return next();
-};
+let forceSsl = require('force-ssl-heroku');
+
+app.use(forceSsl);
+
 app.use(bodyParser.json());
 app.use('/', express.static(__dirname + '/../client/dist'));
 app.use('/Home', express.static(__dirname + '/../client/dist'));
