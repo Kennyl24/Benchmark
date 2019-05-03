@@ -9,6 +9,64 @@ import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'mat
 import Button from '@material-ui/core/Button';
 const homeBlogs = [
   {
+    blogTitle: 'Top 10 Mortgage Questions Answered',
+    blogAuthor:'Hilda Hensley',
+    blogText: <p>
+<h1>A Special Report from Hilda Hensley, Mortgage Banker with Benchmark Mortgage</h1>
+<br/><br/>
+Since most people apply for a mortgage only a few times in their life, it’s natural that they have many questions about how the process works. After all, when you don’t do something every day (or even every year), it’s difficult to know exactly all the steps involved and all the nuances of the mortgage application and approval process.
+<br/><br/>
+At Benchmark Mortgage, we hear some variation of the same questions every day. So if you’re serious about securing a mortgage, here are the answers to the most common questions borrowers ask. 
+<br/><br/>
+<h1>1. What credit score do I need to qualify for a mortgage?</h1>
+Most people think they need perfect credit to secure a mortgage. That’s not necessarily true. Fortunately, there are many mortgage programs available for people with less-than-perfect credit, including FHA and VA mortgages. In reality, your credit score is only one part of the approval process. Other factors, like yearly income, debt to income ratio, percent of credit being used, and employment status are just as important as your credit score. Ultimately, while an excellent credit score will likely secure you a lower interest rate, good and even okay credit won’t necessarily disqualify you from a mortgage. 
+
+2. How large of a mortgage can I qualify for?
+A better question is, “How large of a mortgage do I feel comfortable paying?” Just because you qualify for a certain amount doesn’t mean you’ll want to purchase a home at that price range. You really need to consider your income, your monthly financial obligations (including property taxes, home insurance, and HOA fees, if applicable), your savings and retirement goals, and what kind of lifestyle you want to live (how much “fun money” you want left over each month). 
+
+Take your time considering all these things. Look back over your monthly budget for the past three months to ensure you don’t miss anything important. Then, discuss your finances with your mortgage banker so they can help you choose the best option for your needs. 
+
+3. Do I need to get pre-approved for a mortgage before looking at houses?
+You can certainly visit open houses and start getting a feel for neighborhoods and home styles before getting a mortgage pre-approval. However, once you get a Realtor involved, they will usually want to know that you have been pre-approved for a mortgage before showing properties to you. 
+
+Realize that being pre-qualified is not the same thing as being pre-approved. In short, pre-qualification gives you a rough idea of a price range you can afford based on verbal information you supply. None of your information is verified and no credit report is run. Pre-approval is a much more involved process whereby you provide financial documents for review and get a credit report pulled. You will also receive an exact maximum amount that you’re approved for. 
+
+4. Do I even qualify for a mortgage?
+Many people, especially first-time home buyers, often wonder if they are actually eligible for a mortgage or if they’re wasting their time even applying. Self-doubt, particularly around big financial decisions, is quite common. Realize that no one has a crystal ball, so the only way you’ll know for sure is to run the numbers. At the very least, even if you don’t qualify, you’ll know what you need to work on to turn that denial into an approval. Your mortgage banker can help you create a plan so you can reach your home ownership goals sooner rather than later. 
+
+5. Why might I be denied?
+There are a number of reasons why a mortgage application might be denied. Too many late payments, too much credit card debt, unstable employment history, and many other factors could trigger a denial. Lenders want to ensure you are a good risk, so they’ll vet you very thoroughly. 
+
+Realize, though, that a denial does not equal a “no.” It simply means “not now.” The majority of times, the borrower can quickly correct the issues that triggered the denial. For example, perhaps you forgot about that unpaid bill from three years ago and it went to collections. Pay it now and that issue is fixed. Or maybe you had a few late car payments while you or a family member was undergoing intense medical treatment. All you may need is to write a short explanation (and provide some proof of the situation), and that issue is fixed. Therefore, if your application is denied, don’t give up. Talk with your mortgage banker to determine how you can rectify whatever issues arise. 
+
+6. What documents do I need?
+To secure any mortgage, you’ll need to supply a lot of documentation. The most common things asked for are tax returns, pay stubs, bank statements, profit and loss statements if self-employed, and other financials like brokerage accounts and investments. You’ll also be asked to sign a number of documents, such as loan disclosures, credit authorization forms, letters of explanation, and so on. 
+
+While getting all your documentation together can be frustrating and time consuming, work diligently to get everything in by the due date requested. The faster you supply requested information, the faster your loan can be processed. 
+
+7. What type of mortgage should I get?
+When it comes to type of mortgage, you have options. Whether you choose an adjustable-rate mortgage or a fixed-rate mortgage for 15 or 30 years depends on your unique situation. To understand the many differences, review this article we wrote about mortgage options. When you’re done, talk with your mortgage banker to review the various options so you can make the best choice for your needs.    
+
+8. How big of a down payment do I need?
+A lot of people think they must have 20% of the home’s purchase price as a down payment. That’s not always needed. There are many loan options that require as little as 3% to 5% down (and even some that still offer zero down options). In addition, you may qualify for a down payment assistance program. These are typically grant and government funding options that assist homebuyers who meet certain criteria with their down payment. As long as you’re not buying an investment property or a vacation home, you can still get a mortgage with a relatively small down payment. 
+
+9. Do I need to pay mortgage insurance?
+Whether you pay mortgage insurance depends on how much of a down payment you provide. If your down payment is less than 20%, then mortgage insurance will be required. As you make payments and build equity in your home, you may be able to get your lender to remove the mortgage insurance at a later date. Once your loan-to-value ratio reaches 80% or lower, contact your lender to see what they can offer. 
+
+10. How quickly can I get a mortgage?
+In general, most loans take anywhere from 30 to 45 days to process. However, sometimes things happen and the timeline is delayed. In these cases, it can take up to 60 days for the loan to process. Realize that part of this timeline depends on you and how long it takes you to supply requested documentation. So the more timely you are, the better your chances for keeping the timeline on track. 
+
+What Questions Do You Have?
+While this list is not exhaustive, it does cover the most common questions our clients typically ask. Use these answers to help prepare and guide you in the mortgage application process. And of course, feel free to ask us even more comprehensive questions. The more you ask, the more you’ll know, and the more confident you’ll be in the mortgage approval process!
+
+When you’re ready to apply for a mortgage or refinance an existing one, contact us at 707-254-8891 or hilda.hensley@benchmark.us. We can also direct you to the perfect real estate agent to help you.
+
+
+    </p>,
+    blogSnippet: 'A Special Report from Hilda Hensley, Mortgage Banker with Benchmark Mortgage. Since most people apply for a mortgage only a few times in their life, it’s natural that they have many questions about how the process works.',
+    blogImage: 'https://i.ibb.co/VQ6XWJs/Blog-Ten-Questions.jpg',
+  },
+  {
     blogTitle:'Mortgage Points',
     blogAuthor: 'Hilda Hensley',
     blogText: 
@@ -114,35 +172,6 @@ When you’re ready to apply for a mortgage or refinance an existing one, contac
     ,
     blogSnippet: 'When it comes to getting a mortgage, you have options. Unfortunately, for many people, the various mortgage options seem confusing and overwhelming. In reality, they’re not, especially when you break them down into categories.',
     blogImage:'https://i.ibb.co/q71w6Tc/mortgage-types.jpg',
-  },
-  {
-    blogTitle:'Avoid These Mistakes When Applying for a Mortgage',
-    blogAuthor: 'Hilda Hensley',
-    blogText: <p>
-      Applying for a mortgage requires that you do certain things, such as check your credit, get your financial papers in order, and save as much money as possible for your down payment. But there are also several things you should NEVER do when applying for a mortgage – things that could potentially cause you to lose your mortgage mid-application.
-<br/>
-<br/>
-To ensure you don’t sabotage your mortgage approval, be sure to avoid the following five things. 
-<br/>
-<br/>
-<ol>
-<li>Don’t make any big purchases. Hold off on buying that new car or boat until after your loan has closed. Even if you feel comfortable with all the new payments, your mortgage lender may determine that you are overextending yourself. </li>
-
-<li>Don’t apply for new credit. It’ll lower your credit score. Keep your credit report as stable as possible when applying for a mortgage. Your debt-to-income ratio is a big factor in your lender’s decision. Keep this percentage stable by not taking on new credit. </li>
-
-<li>Don’t co-sign any loans. Co-signing a loan for a family member is certainly generous, but it also makes you liable for the debt if the main borrower defaults. These co-signed loans act just like a new credit inquiry for you. </li>
-
-<li>Don’t miss payments. Your goal is to show your mortgage lender that you are a good risk for them. Therefore, make every effort to ensure you pay everything on time.</li>
-
-<li>Don’t make big life changes. When applying for a mortgage, keep your life as stable as possible. Don’t start a new career with a new employer, start your self-employment venture, or quit your current job (no matter how much you may dislike your current position). Basically, don’t do anything that could make you look like a higher risk to lenders. </li>
-</ol>
-Remember, when you’re applying for a mortgage, your lender wants to see financial stability. In fact, it’s one of their biggest criteria for deciding to lend money. Therefore, don’t jeopardize your mortgage by doing anything on this list. Wait until after your mortgage is closed and you have the keys to your new home in your hands before making any major financial decisions. 
-<br/>
-<br/>
-Is applying for a mortgage in your future? <span><Link to={{ pathname:'/contact' }} style={{color:'black'}}>Contact us.</Link></span> . As mortgage bankers, we can help you make the best decision for your needs.
-    </p>,
-    blogSnippet:'There are several things you should never do when applying for a mortgage – things that could potentially cause you to lose your mortgage mid-application. To ensure you don’t sabotage your mortgage approval, be sure to avoid the following five things. ',
-    blogImage:'https://i.ibb.co/yBdffHv/mistakes.jpg',
   },
 ]
   const BlogHomePage = () => (
