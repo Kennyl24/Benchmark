@@ -162,7 +162,7 @@ resize = () => {
     { this.state.width ? 
     <span>
     <div className="nav_links_container2">
-    <a href="/home" className="nav-links" style={{backgroundColor:this.state.homeBackground, color:this.state.homeColor}}
+    <a href="/home" className="nav-links" style={{borderBottom: `1px solid ${this.state.homeBackground}`}}
     >Home</a>
   <div className="dropdown"
   onMouseEnter={()=>{
@@ -183,7 +183,7 @@ resize = () => {
     }
   }
   >
-  <button class="dropbtn" style={{backgroundColor: this.state.onAbout ? null : this.state.aboutBackground, color:this.state.aboutColor, cursor:'pointer'}}
+  <button class="dropbtn" style={{borderBottom: `1px solid ${this.state.aboutBackground}`, backgroundColor: this.state.onAbout ? null : null, cursor:'pointer'}}
   onClick={() => window.location.href = '/About'}
   >About</button>
   <div className="dropdown-content">
@@ -211,7 +211,7 @@ resize = () => {
         }
       }
     >
-  <button className="dropbtn" style={{backgroundColor:this.state.serviceBackground, cursor:'pointer', color:this.state.serviceColor}}
+  <button className="dropbtn" style={{borderBottom: `1px solid ${this.state.serviceBackground}`, cursor:'pointer'}}
   onClick={() => window.location.href = '/VA'}
   >Services</button>
   <div className="dropdown-content">
@@ -244,7 +244,7 @@ resize = () => {
         }
       }
     >
-  <button className="dropbtn" style={{width:'100%'}} style={{backgroundColor:this.state.blogBackground, color:this.state.blogColor, cursor:'pointer'}}
+  <button className="dropbtn" style={{width:'100%'}} style={{borderBottom: `1px solid ${this.state.blogBackground}`, cursor:'pointer'}}
 onClick={() => window.location.href = '/Blog'}
   >Mortgage Lending 101</button>
   <div className="dropdown-content">
@@ -252,7 +252,7 @@ onClick={() => window.location.href = '/Blog'}
     <a href="/Vlog" >Vlog</a>
   </div>
 </div>
-   <a href="/Contact" className="nav-links" style={{backgroundColor:this.state.contactBackground, color:this.state.contactColor}}>Contact</a>
+   <a href="/Contact" className="nav-links" style={{borderBottom: `1px solid ${this.state.contactBackground}`}}>Contact</a>
     
     <Button onClick={() => window.open('https://hildahensley.floify.com/apply?noheaderfooter#tab_a', '_blank')} style={{marginTop:'0%', color: 'white', borderRadius: 2}} size="large" variant="outlined"><a style={{color:'#242f6e'}} className="applybutton" 
     
