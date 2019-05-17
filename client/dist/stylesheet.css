@@ -55,8 +55,8 @@ li{
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
 }
 .nav-links:hover{
-  color:rgb(72, 72, 72) !important;
-  /* background-color: rgba(36,	47,	110, .8) !important; */
+  color:white !important;
+  background-color: rgba(36,	47,	110, .8) !important;
   border-bottom: 1px solid rgba(36,	47,	110, .8);
   text-decoration: none;
   font-weight: bold;

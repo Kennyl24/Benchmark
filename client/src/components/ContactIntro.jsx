@@ -10,6 +10,7 @@ import TextField from '@material-ui/core/TextField';
 import SvgIcon from '@material-ui/core/SvgIcon';
 import IconButton from '@material-ui/core/IconButton';
 import {isMobile} from 'react-device-detect';
+import hildateam from './hildateam.jpg';
 
 class ContactIntro extends React.Component { 
   constructor(props) {
@@ -24,9 +25,13 @@ class ContactIntro extends React.Component {
   render () {
     return (
     <MuiThemeProvider>
-      {/* <div style={{position:'relative', top:'0px', backgroundImage: 'url(https://i.ibb.co/2WjcBNw/Imagefromvid.jpg)', backgroundRepeat: 'no-repeat', backgroundSize: '100% 100%', height:'500px', width: '100%', marginBottom:'0px'}}> */}
-    <div style={{paddingBottom:'4%', background: 'linear-gradient(#e0e0e0, #242f6e)', marginBottom: '50px'}}>
-      <div className="contact-box" style={{textAlign: 'center', paddingTop: isMobile ? '32%' :'10%', color: 'white', display:'flex',
+      {/* <div style={{position:'relative', top:'0px', backgroundImage: 'url(hildateam)', backgroundRepeat: 'no-repeat', backgroundSize: '100% 100%', height:'500px', width: '100%', marginBottom:'0px'}}> */}
+    <div style={{paddingBottom:'4%', background: 'linear-gradient(#e0e0e0, #242f6e)', backgroundImage: `url(${hildateam})`, marginBottom: '50px', 
+   backgroundColor: 'rgba(238, 238, 238, 0.41) !important', backgroundColor: 'rgba(36,	47,	110,.6)', backgroundBlendMode: 'multiply', backgroundRepeat: 'no-repeat', imageRendering: '-webkit-optimize-contrast', backgroundSize:'cover',
+ backgroundRepeat: 'no-repeat', backgroundSize: '100% 100%', height:'500px', width: '100%', marginBottom:'0px'}}>
+  
+  }}>
+      <div className="contact-box" style={{textAlign: 'center', paddingTop: isMobile ? '32%' :'15%', color: 'white', display:'flex',
     flexDirection:'column', justifyContent:'center', alignItems:'center', marginLeft:'20%', msFlexAlign:'center', marginRight:'20%'
     }}>
       <h1 className="homepage-header" style={{marginTop:'8%', color:'white', fontSize: isMobile ? '22px' : '34px' }}>

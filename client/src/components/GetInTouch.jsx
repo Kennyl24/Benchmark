@@ -47,7 +47,7 @@ class GetInTouch extends React.Component {
   render () {
     return (
   <MuiThemeProvider>
-    <div style={{display:'flex', flexDirection:'row', flexWrap:'wrap', marginLeft: isMobile? '0': '20%', marginRight:'0%', marginTop:'1%', marginBottom:'10%'}}>
+    <div style={{display:'flex', flexDirection:'row', flexWrap:'wrap', marginLeft: isMobile? '0': '20%', marginRight:'0%', marginTop:'5%', marginBottom:'5%'}}>
     <div style={{width:'25%', minWidth:'340px', fontFamily: 'plexeina-bold,Helvetica,sans-serif'}}>
     <ul style={{listStyle: 'none'}}>
     <h1 className="homepage-header" style={{marginBottom:'0px', textAlign:'left'}}> Drop us a line </h1>
@@ -69,9 +69,9 @@ class GetInTouch extends React.Component {
       </div>
       </ul>
       </div>
-      <div style={{marginLeft: isMobile ? '0%' : '10%', width:'50%', alignItems:'center', justifyContent:'center'}}>
-      <h3 className="homepage-header" style={{textAlign: 'center'}}>Message Us</h3>
-      <div style={{marginLeft:'10%'}}>
+      <div style={{marginLeft: isMobile ? '10%' : '15%', width:'50%', alignItems:'center', justifyContent:'center'}}>
+      <h1 className="homepage-header" style={{textAlign: 'left'}}>Message Us</h1>
+      <div style={{marginLeft:'0%'}}>
       <TextField
           style={{width: isMobile? '300px': '400px', height: '50px', marginRight: '15px'}}
           id="outlined-email-input"
@@ -142,7 +142,7 @@ class GetInTouch extends React.Component {
         />
         </div>
         <div>
-        <Button onClick={this.submitIt} variant="contained"style={{marginLeft: '40%', marginTop:'5%', width: '25%', minWidth:'150px', backgroundColor:"#242f6e", color: 'white'}}> 
+        <Button onClick={this.submitIt} variant="contained"style={{marginLeft: '0%', marginTop:'5%', width: '25%', minWidth:'150px', backgroundColor:"#242f6e", color: 'white'}}> 
           Submit
           </Button>
           </div>

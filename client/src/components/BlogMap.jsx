@@ -787,12 +787,17 @@ Available on 5/1, 7/1, 10/1 + 15/1 Adjustable Rate Mortgages (ARMS)<br/><br/>
     <div>
     <div style={{position:'relative', top:'0px', background: isMobile ?'linear-gradient(to right bottom, #242f6e, #e0e0e0)' : 'linear-gradient(to right bottom, #242f6e, #e0e0e0)', backgroundImage: isMobile ? null :'url(https://i.ibb.co/rksnyTN/mortgage.jpg)',  backgroundRepeat: 'no-repeat', backgroundSize: '100% 100%', height:'500px', width: '100%', marginBottom:'0px'}}>
     {/* </div> */}
-    <div  style={{textAlign: 'center', paddingTop: isMobile ? '34%': '13%', paddingBottom: '2%',  color: 'black', display:'flex',
+    <div  style={{textAlign: 'center', paddingTop: isMobile ? '28%': '10%', paddingBottom: '2%',  color: 'black', display:'flex',
     flexDirection:'column', justifyContent:'center', alignItems:'center'
     }}>
       <h1 className="homepage-header"style={{color:'#242f6e', letterSpacing:'3px', fontSize: '42px'}}>
       Mortgage Lending 101
         </h1>
+        <div> 
+  <p style={{fontFamily:'plexeina-bold,Helvetica,sans-serif', textShadow: '1px', fontSize:'22px', color:'#3f4245', lineHeight:'1.7em', paddingBottom: '28px!important', marginLeft: isMobile ? '2%': '30%', marginRight: isMobile? '2%': '30%', textAlign:'center', padding:'6px'}}>
+          Whether you are a first time home buyer, or this isn't your first rodeo, our blog is the perfect place to learn about home mortgage loans.
+    </p>
+    </div>
           <Button variant="contained" style={{backgroundColor:"#242f6e", color: 'white'}}
           onClick={()=> this.setState({
             modal:true
@@ -847,11 +852,6 @@ Available on 5/1, 7/1, 10/1 + 15/1 Adjustable Rate Mortgages (ARMS)<br/><br/>
   </Popup>
   </div>  
   </div>
-  <div> 
-  <p style={{fontFamily:'plexeina-bold,Helvetica,sans-serif', textShadow: '1px', fontSize:'22px', color:'#3f4245', lineHeight:'1.7em', paddingBottom: '28px!important', marginLeft: isMobile ? '2%': '30%', marginRight: isMobile? '2%': '30%', textAlign:'center', padding:'6px'}}>
-          Whether you are a first time home buyer, or this isn't your first rodeo, our blog is the perfect place to learn about home mortgage loans.
-          </p>
-    </div>
   <div className="blog-container">
       {blogs.length > 0 ? blogs.map((blog, index) => <Blog blog={blog} index={index} />) : null}
   </div>
