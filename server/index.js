@@ -6,7 +6,8 @@ const smtpTransport = require('nodemailer-smtp-transport');
 const fs = require('fs');
 var cors = require('cors');
 let forceSsl = require('force-ssl-heroku');
-
+const compression = require('compression');
+app.use(compression());
 app.use(forceSsl);
 
 app.use(bodyParser.json());
