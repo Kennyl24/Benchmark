@@ -7,6 +7,8 @@ const fs = require('fs');
 var cors = require('cors');
 let forceSsl = require('force-ssl-heroku');
 const compression = require('compression');
+const sitemap = require('express-sitemap')();
+sitemap.generate(app);
 app.use(compression());
 app.use(forceSsl);
 

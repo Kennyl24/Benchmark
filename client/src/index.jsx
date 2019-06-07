@@ -24,6 +24,7 @@ import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom';
 import Fab from '@material-ui/core/Fab';
 import {isMobile} from 'react-device-detect';
+import {Helmet} from "react-helmet";
 
 import "isomorphic-fetch"
 
@@ -835,6 +836,12 @@ Available on 5/1, 7/1, 10/1 + 15/1 Adjustable Rate Mortgages (ARMS)<br/><br/>
 ];
 ReactDOM.render(
   <div>
+      <Helmet>
+                <meta charSet="utf-8" />
+                <title>Napa Mortgage Loans, Hilda Hensley Team</title>
+                <meta name="description" content="The Hilda Hensley Team is a leading mortgage team in the Napa Valley. With over 50 years of combined experience." />
+                <link rel="canonical" href="https://napamortgageloans.com/" />
+            </Helmet>
    {isMobile ?  null : <ConnectTab/>}
   <Router>
     <Switch>
