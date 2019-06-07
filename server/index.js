@@ -7,10 +7,44 @@ const fs = require('fs');
 var cors = require('cors');
 let forceSsl = require('force-ssl-heroku');
 const compression = require('compression');
-const sitemap = require('express-sitemap')();
-sitemap.generate(app);
+const sitemap = require('express-sitemap');
+var path = require('path');
+
 app.use(compression());
 app.use(forceSsl);
+// sitemap.generate(app);
+sitemap({
+  map: {
+    '/': ['get'],
+    '/home': ['get', 'post'],
+    '/about': ['get'],
+    '/contact': [],
+    '/blog': [],
+    '/vlog': [],
+    '/reviews': [],
+    '/privacy': [],
+    '/blogs': [],
+    '/services': [],
+  },
+  route: {
+    '/': {
+      lastmod: '2019-06-07',
+      changefreq: 'always',
+      priority: 1.0,
+    },
+    '/blog': {
+      lastmod: '2019-06-07',
+      changefreq: 'always',
+      priority: 1.0,
+    },
+    '/vlog': {
+      lastmod: '2019-06-07',
+      changefreq: 'always',
+      priority: 1.0,
+    },
+  },
+}).XMLtoFile();
+// sitemap.toFile();
 
 app.use(bodyParser.json());
 app.use('/', express.static(__dirname + '/../client/dist'));
@@ -36,7 +70,7 @@ app.use('/Refinance', express.static(__dirname + '/../client/dist'));
 app.use('/More-services', express.static(__dirname + '/../client/dist'));
 app.use('/blogs/:title', express.static(__dirname + '/../client/dist'));
 app.use('/about/#', express.static(__dirname + '/../client/dist'));
-app.use('/*', express.static(__dirname + '/../client/dist'));
+// app.use('/*', express.static(__dirname + '/../client/dist'));
 const blogs = [
   'FHFA Announces Conforming Loan Limit Increase In 2019',
   'Nervous About Buying? Here’s A Dose of Confidence',
@@ -210,9 +244,10 @@ app.post('/Contact', (req, res) => {
   });
   res.sendStatus(200);
 });
-
+app.get('/sitemap.xml', function(req, res) {
+  res.sendFile(path.join(__dirname, 'path', '../sitemap.xml'));
+});
 app.use(cors());
-
 
 app.listen(process.env.PORT || 3000, function() {
   console.log('listening!');
