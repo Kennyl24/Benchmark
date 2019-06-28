@@ -11,6 +11,152 @@ import {isMobile} from 'react-device-detect';
 
 const blogs = [
   {
+    blogTitle: 'Tips to Avoid a Mortgage Scam',
+    blogAuthor:'Hilda Hensley',
+    blogText: <p>
+      Because the mortgage industry is so heavily regulated, it’s hard to believe that mortgage scams exist … but, unfortunately, they do. The most common mortgage scam is a wire fraud. This is when hackers send you fake wire transfer instructions. The good news is that with a little diligence and common sense, you can stay safe.
+<br/><br/>
+Before closing on your home, your title company or Realtor will send you instructions for wiring your closing funds. Of course, you can opt to get a cashier’s check from your bank, thus eliminating all possibility of wire fraud and this mortgage scam. However, some people prefer to skip the trip to the bank, or they do their banking exclusively online. In this case, a wire transfer is needed.
+<br/><br/>
+If you’re going to do a wire transfer of funds, here are some tips to ensure you don’t fall victim to a mortgage scam.
+<br/><br/>
+<ol>
+<li>Closely examine any wire transfer instructions you receive. Particularly, review the “from” email address. Is it really from your title company, mortgage company, or Realtor? Look at the actual address, not just the company or person’s name. </li>
+<li>Don’t reply to any wire transfer instructions. Even if the email looks legitimate, it’s best not to hit the “reply” button. Ask questions directly by calling your primary contact person. If you prefer email, open a new message and type in the address you normally use. </li>
+<li>Ask for verification. Forward the email to your lender, title company, or Realtor and verify the instructions are correct. Or print it out and bring it to their office to review. They’ll be more than happy to help you and ensure your money is safe. </li>
+</ol>
+<br/><br/>
+The worst part of this mortgage scam is that there is little recourse for victims. Because the money is often wired overseas, the US law enforcement agencies don’t have jurisdiction to recover the funds. 
+<br/><br/>
+So always keep open communication with your lender, title company, and Realtor. And ask questions when you have any hint of doubt. That’s the best way to avoid being the victim of a mortgage scam.
+<br/><br/>
+Is applying for a mortgage in your future? Contact us. As mortgage bankers, we can help you make the best decision for your needs.
+
+      </p>,
+    blogSnippet: 'Because the mortgage industry is so heavily regulated, it’s hard to believe that mortgage scams exist … but, unfortunately, they do. The most common mortgage scam is a wire fraud. If you’re going to do a wire transfer of funds, here are some tips to ensure you don’t fall victim to a mortgage scam.',
+    blogImage: 'https://i.ibb.co/zf2NC0F/mortgagescams.png',
+  },
+  {
+    blogTitle: 'What to Do If Your Mortgage Application is Denied',
+    blogAuthor:'Hilda Hensley',
+    blogText: <p>
+      “I’m sorry … your mortgage application was denied.” Those are words no home buyer wants to hear. But sometimes it happens. Does it mean that all hope for buying a home is lost? Not necessarily. 
+      <br/><br/>
+Since the mortgage approval process is rigorous, there are a number of factors that could trigger a denial. The key is to find out why. Your lender should tell you exactly why your mortgage application was denied. In some cases, you may be able to quickly rectify the situation and turn the denial into an approval. In other cases, fixing the issue can take some time. 
+<br/><br/>
+Here are some of the more common reasons that could cause your mortgage application to be denied.
+<ol>
+  <li>
+You recently opened a new line of credit or took out a personal loan. Taking on a new debt obligation can negatively affect your debt-to-income ratio. In simplest terms, your debt-to-income ratio is the total of all your monthly debt payments divided by your gross income. Ideally, you want to keep your debt-to-income ratio below 40%. If you couldn’t resist the opportunity to save 20% by opening a new department store credit card, pay off some debt, wait a few months, and try again.
+</li>
+<li>
+You recently missed some debt payments. Missing payments, even if you innocently “forgot,” will definitely trigger a denial. Most lenders are most concerned about missed payments in the immediate two years; however, many credit reports will show late payments as far back as seven years, and some even longer. If your credit report is showing very old missed payments, try to get those items removed from your credit. If the missed payments are more recent, talk with your lender about the situation. If it was an extenuating circumstance, and if you have proof of that, they may be able to overlook it. 
+</li>
+<li>
+You forgot to include important information in your mortgage application. Triple check all the numbers and data you report. For example, did you forget a zero in your figure when reporting income? Did you forget to report that “no payment due for three years” loan that’s showing on your credit report? Be thorough in your application. If you realize your forgot anything or made a mistake, fix it immediately.
+</li>
+</ol>
+<br/><br/>
+The good news is that finding out your mortgage application was denied doesn’t mean your home ownership dreams are over. It simply means you have a little more work to do. Fix what needs to be fixed, and then apply again. Before you know it, you’ll have that approval … and the new home … you’ve been dreaming of. 
+<br/><br/>
+Is applying for a mortgage in your future? Contact us. As mortgage bankers, we can help you make the best decision for your needs.
+      </p>,
+    blogSnippet: ' No one wants to hear that their mortgage application was denied. But getting a denial doesn’t mean that all hope for buying a home is lost. Here are some of the more common reasons that could cause your mortgage application to be denied.',
+     blogImage: 'https://i.ibb.co/s36HbVM/2a162fca19d043f391cf53cbeb361de4.jpg',
+  },
+  {
+    blogTitle: 'Title Insurance – Do You Need It?',
+    blogAuthor:'Hilda Hensley',
+    blogText: <p>
+      As you go through the mortgage process, your mortgage banker will include a line item on your closing documents called Title Insurance. Many home buyers, especially first-time home buyers, are unsure what Title Insurance is and why they need it. So, let’s clear up both those questions.
+      <br/><br/>
+<h1>What is Title Insurance?</h1>
+<br/><br/>
+In simplest terms, Title Insurance protects home buyers and mortgage lenders against defects or problems with a property’s title when there is a transfer of property ownership. Homeowner’s Title Insurance protects your interests in the property, while lender’s Title Insurance protects your lender’s interest in the property. You will need both. Essentially, when you buy a home, a title company will do a records search to make sure there are no undisclosed heirs to the property, unpaid taxes, pending legal action, errors, fraud, or other problems with the deed. Once the title company declares the property’s title “clean,” they will issue Title Insurance for the property.
+<br/><br/>
+<h1>If the Title is Clean, Do I need Title Insurance?</h1>
+<br/><br/>
+Even though title companies are very thorough in their research, sometimes things get missed. Or, more commonly, a lien hasn’t posted to the property yet. For example, suppose the home seller did a big remodel on the home, but they didn’t pay the electrician. While the home was for sale, the electrician may have been sending late notices and starting legal action. However, the home may transfer ownership before the electrician was able to complete the legal paperwork to initiate a lien against the property. Even though the previous owners neglected to pay the bill, the lien goes against the home (now your home) and you are now responsible for the bill.
+<br/><br/>
+Title insurance ensures that you are not liable for any past issues related to the title that may transpire. Of course, if you hire an electrician while you are the owner and fail to make payment, you are responsible for any legal action or liens. Title Insurance applies to past actions that could come back and affect the property’s title. Similarly, lender’s Title Insurance protects your lender from unexpected claims against the property, such as a long-lost heir to the previous owner claiming rights to the property.
+<br/><br/>
+The good news is that your Title Insurance policy is valid for the entire time you own the home, whether that’s 3 years or 30 years. And you typically pay in one lump sum at closing. In other words, unlike other types of insurance, there are no monthly payments or yearly premiums to worry about.
+<br/><br/>
+As you can see, Title Insurance is an important part of the mortgage process. It enables you to rest easy, knowing you have a clean title, and it protects you should the unexpected happen.
+
+      </p>,
+    blogSnippet: 'As you go through the mortgage process, your mortgage banker will include a line item on your closing documents called Title Insurance. Many home buyers, especially first-time home buyers, are unsure what Title Insurance is and why they need it. Here are the answers you need.',
+     blogImage: 'https://i.ibb.co/YDPwpjM/b57cb3fe060b4e365f4756e99b2b4287w-c238696xd-w685-h860-q80.jpg',
+  },
+  {
+    blogTitle: '4 Tips for Making Your Down Payment Easier',
+    blogAuthor:'Hilda Hensley',
+    blogText: <p>
+      Buying a home is likely one of the biggest financial decisions you’ll ever make. If you’re thinking about buying a home, you’re not alone. In 2018, just over 6 million homes were sold. Despite that high number, there are still an unprecedented number of renters in the US. In fact, more people are renting now than at any other point in the past 50 years.  
+      <br/><br/>
+
+So, what’s holding all those renters back from buying? Recent surveys reveal that 40% of potential buyers and 46% of millennials say that the greatest financial barrier to home ownership is their ability to afford the down payment.
+<br/><br/>
+
+It’s true that of all the closing costs you’ll need to buy a home, the down payment is the largest portion. Many people save for five or more years to set aside the recommended 20% down payment. But what if you have your sights on a new home and don’t have that much time to save? Is it possible to buy a home without saving for years? 
+<br/><br/>
+
+Whether you’re buying your first home or your tenth, following are some tips for making your down payment easier. 
+<br/><br/>
+
+<span style={{fontWeight:'700'}}>Know how much down payment you really need.</span>
+According to the 2017 NerdWallet Down Payment Reality Report, 44% of Americans believe you need to have a down payment of 20% or more of the home’s purchase price. While that 20% figure is needed some of the time, it’s not the only down payment option. In fact, most buyers surveyed (54%) put down 10 percent or less, and 36% put down five percent or less.
+<br/><br/>
+
+How is this possible? Different mortgage options have different down payment requirements. FHA mortgages require as little as 3.5% down. With the Freddie Mac Home Possible mortgage®, qualified borrowers can make a down payment of as little as 3%. And USDA and VA loans have zero down payment options (qualifying for zero down is difficult, but not impossible).
+<br/><br/>
+
+The point is to do your research and determine what amount of down payment you really need before you disqualify yourself from home ownership. Chances are you need a lower down payment than you think. 
+<br/><br/>
+
+<span style={{fontWeight:'700'}}>Look into down payment assistance programs (DPA).</span>
+Down payment assistance programs are typically grant and government funding options that assist homebuyers who meet certain criteria with their down payment. Unfortunately, there is a lot of misinformation circulating about DPA programs. One of the most common misconceptions is that only first-time homebuyers can qualify. While it’s true that most of the programs have that as a stipulation (approximately 63%), that still leaves quite a few without that criteria. Additionally, most programs use the HUD definition of a first-time homebuyer, which is someone who has not owned a home for the past three years. So, if you owned a home at one time but have been renting for the past three or more years, you are technically considered a first-time homebuyer again.
+<br/><br/>
+
+There are some benefits to DPA programs. The most obvious is that it can enable you to take out a smaller mortgage. Additionally, if you qualify for 20% or more in down payment funding, you’ll be able to avoid private mortgage insurance. And, qualifying for DPA does not affect your ability to use other homeowner tax breaks, such as deducting your mortgage interest from your federal taxes.
+<br/><br/>
+
+However, as with anything in life, there are some cons. Most programs have many requirements for qualifying, so be prepared for a lot of paperwork. Additionally, there are often stipulations that you must live in the home for a certain amount of time, and you often are not allowed to rent the property. Finally, if you break any of the stipulations in your exact funding program, you could face steep penalties. 
+<br/><br/>
+
+If you think a DPA could help you reach your home ownership goals, investigate this option. But as always, be aware of all the pros and cons before moving forward.
+<br/><br/>
+
+<span style={{fontWeight:'700'}}>Ask family for gift funds.</span>
+According to the 2017 National Association of REALTORS® Profile of Home Buyers and Sellers report, nearly 25% of first-time home buyers use cash gifts from family for a down payment. If any family members are willing to gift you some down payment money, you’ll need to get a signed statement from the giver that explicitly states the money is a gift, not a loan, and that no repayment is required. The mortgage gift letter must include the giver’s name, address, and contact information; the recipient’s name and relationships to the giver; and the dollar amount and approximate date of the gift.
+<br/><br/>
+
+Whatever you do, don’t take a loan from family and try to pass it off as a gift. If it needs to be repaid at any time in the future, it’s a loan and not a gift. If the money really is a loan, your lender will need to factor that amount into your debt-to-income ratio. 
+<br/><br/>
+
+The good news is that people can give up to $14,000 to an unlimited number of people each year and still face no federal gift tax. In other words, two parents could each give a son and daughter-in-law $14,000. That’s $28,000 per person, or $56,000 total. That’s a big down payment.
+<br/><br/>
+
+<span style={{fontWeight:'700'}}>Borrow from your retirement account. </span>
+Using retirement funds to pay your down payment expenses is a decision not to be taken lightly. While owning a home is always a smart move, you want to ensure you’ll have enough set aside for your future goals as well. How much you can withdraw and whether you need to pay it back varies depending upon the type of retirement account you have.
+<br/><br/>
+
+If you have a 401(k), you can borrow up to $50,000 or half of your vested balance, whichever is less. You are required to pay back the loan with interest though. If you don’t repay your 401(k) loan in the allotted time, it will become an early withdrawal, triggering a 10% penalty and income tax payments on the loan amount. Fortunately, 401(k) loan repayments are not included in your debt-to-income ratio for a conventional mortgage, FHA loan, and VA loan. 
+<br/><br/>
+
+If you have a traditional IRA, and if you are a first-time homebuyer, you can borrow up to $10,000 for a down payment without paying a tax penalty. You will have to pay income tax on the loan though. If you are married, each spouse can borrow up to $10,000 for a total of $20,000. However, withdrawing money from a traditional IRA is the least advantageous way to access your retirement savings because of taxes. In contrast, withdrawing funds from a Roth IRA is the most advantageous because the withdrawal of any contributions to the account is tax-free and penalty-free.
+<br/><br/>
+
+<span style={{fontWeight:'700'}}>The Low-Down on Down Payments</span>
+If saving alone is not getting you to your home ownership goal fast enough, you do have options. Research all the outlined suggestions thoroughly before you make any decisions. And of course, talk with your mortgage banker. They will be able to provide customized advice to help you during the home buying process. Armed with this knowledge, you can make an informed decision about how to fund your down payment. 
+<br/><br/>
+
+When you’re ready to apply for a mortgage or refinance an existing one, contact us at 707-254-8891 or hilda.hensley@benchmark.us. We can also direct you to the perfect real estate agent to help you.
+      </p>,
+    blogSnippet: 'Buying a home is likely one of the biggest financial decisions you’ll ever make. If you’re thinking about buying a home, you’re not alone. In 2018, just over 6 million homes were sold. Despite that high number, there are still an unprecedented number of renters in the US.',
+     blogImage: 'https://i.ibb.co/K2gXzzH/down-payment-for-a-house.jpg',
+  },
+  {
     blogTitle: 'Top 10 Mortgage Questions Answered',
     blogAuthor:'Hilda Hensley',
     blogText: <p>
