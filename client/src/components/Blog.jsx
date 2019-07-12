@@ -38,7 +38,7 @@ class Blog extends React.Component {
     </MetaTags>
     <div style={{padding:'0 24px 48px', minWidth: '26%', maxWidth:'380px'}}>
     <div className="card">
-    <img className="card-image" src={this.props.blog.blogImage} alt={blog.blogTitle}/>
+    <img className="card-image" src={this.props.blog.blogImage} alt={this.props.blog.blogTitle}/>
     <div className="container">
     {/* <p className="blog-snippet" style={{paddingBottom:'0'}}> {this.props.blog.blogAuthor}</p> */}
       <h4 className="blog-title"><b>{this.props.blog.blogTitle}</b></h4> 

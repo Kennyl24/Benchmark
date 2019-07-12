@@ -128,7 +128,7 @@ class Individualblog extends React.Component {
   </span>
   </div> : <div style={{position:'fixed', top: '20%', left:'2%', display:'flex', flexDirection:'column'}}>
   <span style={{cursor:'pointer'}}>
-  <FacebookShareButton children="IndividualBlog" url={window.location.href}  quote={this.state.blog.blogTitle} hashtag="#BenchmarkMortgage">
+  <FacebookShareButton children="IndividualBlog" url={window.location.href}  quote={this.state.blog.blogTitle} hashtag="#HildaHensleyTeam">
   <FacebookIcon size={40} round={true} />
   </FacebookShareButton>
   <LinkedinShareButton children="IndividualBlog" url={window.location.href}  title={this.state.blog.blogTitle} description={this.state.blog.blogSnippet}>
