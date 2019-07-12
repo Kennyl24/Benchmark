@@ -95,7 +95,7 @@ class IndividualAbout extends React.Component {
     <LeadingBar/>
     <div style={{marginTop:'1%', padding:'5%'}}> 
       <h1>{this.state.image.title}</h1>
-      <img src={this.state.image.url} style={{height:'20%', width:'50%'}}/>
+      <img src={this.state.image.url} alt={this.state.image.title} style={{height:'20%', width:'50%'}}/>
     </div> 
 
 <BottomNav/>

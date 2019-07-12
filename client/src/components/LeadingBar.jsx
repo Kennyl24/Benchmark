@@ -147,7 +147,7 @@ resize = () => {
     titleStyle={{color:'black'}}
     showMenuIconButton={true}
     iconElementLeft={
-    <img style={{marginLeft: this.state.width ? '0px': '0px', height: '110px', width: '275px', cursor:'pointer'}}
+    <img alt="Hilda Hensley Team Logo" style={{marginLeft: this.state.width ? '0px': '0px', height: '110px', width: '275px', cursor:'pointer'}}
     onClick={() => window.location.href = '/home'}
     src="https://i.ibb.co/q7N2pv8/teamlogo.png"/>}
     iconStyleLeft={{
@@ -250,6 +250,8 @@ onClick={() => window.location.href = '/Blog'}
   <div className="dropdown-content">
     <a href="/Blog" >Blog</a>
     <a href="/Vlog" >Vlog</a>
+    <a href="/Calculator" >Calculator</a>
+    <a href="/Rates" >Rates</a>
   </div>
 </div>
    <a href="/Contact" className="nav-links" style={{borderBottom: `1px solid ${this.state.contactBackground}`}}>Contact</a>

@@ -43,16 +43,6 @@ class ReviewsIntro extends React.Component {
         <div> 
           </div>
     </div>
-    {/* <div className='social-icons'>
-  <img src="https://i.ibb.co/8N0N6Z4/Yelp-Inc-Vector-Logo.png" 
-  onClick={()=> {
-    window.open('https://www.yelp.com/biz/hilda-garcia-hensley-benchmark-mortgage-napa', '_blank');}}
-  style={{cursor: 'pointer', width:'150px', height:'100px'}} alt="yelp" border="0"/>
-  <img src="https://i.ibb.co/5ThzGxS/hack-week-css-logo.png" 
-  onClick={()=>{
-   window.open('https://www.zillow.com/lender-profile/hilda%20hensley/', '_blank');}}
-  style={{cursor: 'pointer', width:'150px', height:'100px'}} alt="Zillow-Logo" border="0"/>
-  </div> */}
     </div>
    </MuiThemeProvider>
 )

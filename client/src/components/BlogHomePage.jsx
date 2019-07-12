@@ -95,7 +95,7 @@ As you can see, Title Insurance is an important part of the mortgage process. It
     homeBlogs.map((blog, index) => 
     <div style={{padding:'0 24px 24px', minWidth: '26%', maxWidth:'380px'}}>
     <div className="card">
-    <img className="card-image" src={blog.blogImage}/>
+    <img className="card-image" src={blog.blogImage} alt={blog.blogTitle}/>
     <div className="container">
       <h4 className="blog-title"><b>{blog.blogTitle}</b></h4> 
       <div style={{height:'200px'}}>

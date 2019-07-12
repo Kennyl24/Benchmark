@@ -75,7 +75,7 @@ class CoreValues extends React.Component {
         {coreValues.length > 0 ? coreValues.map((value, key) => 
         <div style={{display: 'flex', flexDirection:'row', flexWrap:'wrap', justifyContent: 'center', width:'20%', minWidth:'250px', paddingBottom: isMobile ? '10%': '0%'}}>
           <div style={{width:'100%'}}>
-          <img src={value.icon} style={{width:'20%', marginLeft:'40%', paddingBottom: '10px'}} />
+          <img src={value.icon} alt={value.name}style={{width:'20%', marginLeft:'40%', paddingBottom: '10px'}} />
           </div>
           <h3 className="homepage-header" style={{ margin: '0', fontSize:'20px', color:'black', paddingBottom: '10px'}}>
           {value.name}</h3>

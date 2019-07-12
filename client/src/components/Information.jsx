@@ -96,8 +96,8 @@ class Individualblog extends React.Component {
     <LeadingBar/>
   <div style={{marginTop:'5%', padding:'5%'}}>
     <h1>{this.state.blog.blogTitle}</h1>
-    { isMobile ? <img src={this.state.blog.blogImage} className="modal-blog-image"style={{marginLeft:'8%', width: '80%', height:'250px'}}/> : 
-    <img src={this.state.blog.blogImage} className="modal-blog-image"style={{marginLeft:'5%', width: '25%', height:'250px'}}/>}
+    { isMobile ? <img src={this.state.blog.blogImage}alt={this.state.blog.blogTitle} className="modal-blog-image"style={{marginLeft:'8%', width: '80%', height:'250px'}}/> : 
+    <img src={this.state.blog.blogImage} alt={this.state.blog.blogTitle} className="modal-blog-image"style={{marginLeft:'5%', width: '25%', height:'250px'}}/>}
     <p className="blog-modal-text" style={{padding:'20px'}}>{this.state.blog.blogText}</p>
     { isMobile?     <div style={{display:'flex', flexDirection:'row', paddingLeft:'25%'}}>
   
