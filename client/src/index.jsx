@@ -25,7 +25,8 @@ import { Link } from 'react-router-dom';
 import Fab from '@material-ui/core/Fab';
 import {isMobile} from 'react-device-detect';
 import {Helmet} from "react-helmet";
-
+import Rates from './components/Rates.jsx'
+import Calculator from './components/Calculator.jsx'
 import "isomorphic-fetch"
 
 const images = [
@@ -1005,6 +1006,8 @@ ReactDOM.render(
       />
       <Route  path="/Reviews" component={Reviews} />
       <Route  path="/Privacy" component={Privacy} />
+      <Route  path="/Calculator" component={Calculator} />
+      <Route  path="/Rates" component={Rates} />
       <Route  path="/first-time-home-buyer" component={FirstTimeHome} />
       <Route  path="/VA" component={VaLoans} />
       <Route  path="/Conventional" component={Conventional} />

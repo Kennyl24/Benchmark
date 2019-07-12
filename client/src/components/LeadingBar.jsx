@@ -251,7 +251,7 @@ onClick={() => window.location.href = '/Blog'}
     <a href="/Blog" >Blog</a>
     <a href="/Vlog" >Vlog</a>
     <a href="/Calculator" >Calculator</a>
-    <a href="/Rates" >Rates</a>
+    {/* <a href="/Rates" >Rates</a> */}
   </div>
 </div>
    <a href="/Contact" className="nav-links" style={{borderBottom: `1px solid ${this.state.contactBackground}`}}>Contact</a>
