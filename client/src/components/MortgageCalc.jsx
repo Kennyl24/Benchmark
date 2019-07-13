@@ -97,7 +97,7 @@ class MortgageCalc extends React.Component {
   }
   render () {
     return (
-      <div style={{marginBottom:'50px', marginLeft:'50px'}}>
+      <div style={{marginBottom:'50px', marginLeft: isMobile ? '10px' :'50px'}}>
         <div>
         {/* <Button> Close <Button/> */}
         <TextField
@@ -305,6 +305,7 @@ class MortgageCalc extends React.Component {
       <br/>
       </h1>
       <div style={{width:'100%'}}>
+      <h1 style={{fontSize:'20px'}}>Amortization Schedule</h1>
       <div style={{textAlign:'left', display:'flex', flexDirection:'row'}}>
       <h1 style={{textAlign:'left', width:'60px', fontSize:'14px', padding:'10px', minWidth:'60px',marginRight:'10px'}}>Month</h1>
       <h1 style={{width:'60px', fontSize:'14px', padding:'10px',minWidth:'60px',marginRight:'10px'}}>Principal Payment</h1>
