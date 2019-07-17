@@ -26,7 +26,7 @@ class ContactIntro extends React.Component {
     return (
     <MuiThemeProvider>
       {/* <div style={{position:'relative', top:'0px', backgroundImage: 'url(hildateam)', backgroundRepeat: 'no-repeat', backgroundSize: '100% 100%', height:'500px', width: '100%', marginBottom:'0px'}}> */}
-    <div style={{paddingBottom:'4%', background: 'linear-gradient(#e0e0e0, #242f6e)', backgroundImage: `url(${hildateam})`, marginBottom: '50px', 
+    <div style={{paddingBottom:'4%', background: 'linear-gradient(#e0e0e0, #242f6e)', marginBottom: '50px', 
    backgroundColor: 'rgba(238, 238, 238, 0.41) !important', backgroundColor: 'rgba(36,	47,	110, .3)', backgroundBlendMode: 'multiply', backgroundRepeat: 'no-repeat', imageRendering: '-webkit-optimize-contrast', backgroundSize:'cover',
  backgroundRepeat: 'no-repeat', backgroundSize: '100% 100%', height:'500px', width: '100%', marginBottom:'0px'}}>
   
