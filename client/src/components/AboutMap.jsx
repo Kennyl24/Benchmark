@@ -15,16 +15,6 @@ const team = [
     email: 'hilda.hensley@benchmark.us'
   }, 
   {
-    name: 'Johnathn Weber',
-    title: 'Loan Officer',
-    image: 'https://i.ibb.co/QKKPs22/cropped-john.jpg', 
-    color: 'blue',
-    nmls: '940566',
-    phone: '7073498257',
-    email: 'john.weber@benchmark.us',
-    about: 'I have been in the Real Estate space for 7 years now. I previously worked as a Marketing Rep for a title company. I also have previosuly worked for a bank as a loan originator before coming home to join the Benchmark team!'
-  },
-  {
     name: 'Kelly Winkle',
     title: 'Senior Loan Processor',
     image: 'https://i.ibb.co/KFyWnNp/Cropped-kelly.jpg', 
@@ -42,15 +32,15 @@ const team = [
     email: 'diana.arana@benchmark.us',
     about: 'I came to Benchmark after two years at a Credit Union. I have been fortunate to work with Hilda and her team for 4 years now.'
   },
-  {
-    name: 'Jeff Pinto',
-    title: 'Regional Operations Manager',
-    image: 'https://i.ibb.co/D1RQPd9/image-10.png', 
-    color: 'blue',
-    phone: '8583493052',
-    email: 'jeff.pinto@benchmark.us',
-    about: 'I started in the mortgage business in 2002. I have worked as a Loan Originator, Processor and now currently work as an Operations Manager for the Bencmark community.'
-  },
+  // {
+  //   name: 'Jeff Pinto',
+  //   title: 'Regional Operations Manager',
+  //   image: 'https://i.ibb.co/D1RQPd9/image-10.png', 
+  //   color: 'blue',
+  //   phone: '8583493052',
+  //   email: 'jeff.pinto@benchmark.us',
+  //   about: 'I started in the mortgage business in 2002. I have worked as a Loan Originator, Processor and now currently work as an Operations Manager for the Bencmark community.'
+  // },
 
 ]
 const hilda = {
