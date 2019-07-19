@@ -17,11 +17,14 @@ module.exports = {
         exclude: /node_modules/,      
         query: {
           presets: [ 'react', 'es2015', 'stage-0']
-        }
+        },
       }, {
         test: /\.scss$/,
         loaders: ['style-loader', 'css-loader', 'sass-loader'],
-        include: path.resolve(__dirname, '../')
+        include: [
+          path.resolve(__dirname, '../'),
+          '/node_modules/ms/index.js',
+        ]
       },
       {
         test: /\.(png|jpg|gif|pdf)$/,
