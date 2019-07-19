@@ -10,7 +10,7 @@ import Button from '@material-ui/core/Button';
 import AmortSchedule from './AmortSchedule.jsx';
 // import PieChart from 'react-minimal-pie-chart';
 import { ResponsiveContainer, PieChart, Pie } from 'recharts';
-let data02;
+// let data02;
 let mortgageCalculator = mortgageJs.createMortgageCalculator();
 class MortgageCalc extends React.Component { 
   constructor(props) {
