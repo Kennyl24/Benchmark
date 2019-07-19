@@ -23,7 +23,7 @@ module.exports = {
         loaders: ['style-loader', 'css-loader', 'sass-loader'],
         include: [
           path.resolve(__dirname, '../'),
-          '/node_modules/ms/index.js',
+          '/node_modules/mortgage-js/index.js',
         ]
       },
       {
