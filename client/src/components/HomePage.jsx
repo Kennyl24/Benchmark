@@ -14,7 +14,7 @@ import AboutHomeMap from './AboutHomeMap.jsx';
 import HomePageTest from './HomePageTest.jsx';
 import MetaTags from 'react-meta-tags';
 import {Helmet} from "react-helmet";
-import MortgageCalc from './MortgageCalc.jsx';
+// import MortgageCalc from './MortgageCalc.jsx';
 
 class HomePage extends React.Component { 
   constructor(props) {
