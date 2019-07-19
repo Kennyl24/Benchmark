@@ -9,6 +9,7 @@ import CoreValues from './CoreValues.jsx';
 import Mission from './Mission.jsx';
 import AboutNav from './AboutNav.jsx';
 
+
 class About extends React.Component { 
   constructor(props) {
     super(props);
