@@ -52,7 +52,7 @@ class HomePage extends React.Component {
         <BlogHomePage/>
         <VlogHome/>
         <h3 className="homepage-header">Mortgage Calculator</h3>
-        <MortgageCalc/>
+        {/* <MortgageCalc/> */}
         <BottomNav/>
         </div>
 )

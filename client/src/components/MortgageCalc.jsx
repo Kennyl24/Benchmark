@@ -8,25 +8,16 @@ import {isMobile} from 'react-device-detect';
 import axios from 'axios';
 import Button from '@material-ui/core/Button';
 import AmortSchedule from './AmortSchedule.jsx';
-
-// let mortgageCalculator = mortgageJs.createMortgageCalculator();
-// mortgageCalculator.totalPrice = 800000;
-// mortgageCalculator.downPayment = 160000;
-// mortgageCalculator.interestRate = 0.045;
-// mortgageCalculator.months = 360;
-// mortgageCalculator.taxRate = 0.012;
-// mortgageCalculator.insuranceRate = 0.0013;
-// mortgageCalculator.mortgageInsuranceRate = 0.010;
-// mortgageCalculator.mortgageInsuranceEnabled = true;
-// mortgageCalculator.mortgageInsuranceThreshold = 0.2;
-// mortgageCalculator.additionalPrincipalPayment = 100;
-// let payment = mortgageCalculator.calculatePayment();
+// import PieChart from 'react-minimal-pie-chart';
+import { ResponsiveContainer, PieChart, Pie } from 'recharts';
+let data02;
 let mortgageCalculator = mortgageJs.createMortgageCalculator();
 class MortgageCalc extends React.Component { 
   constructor(props) {
     super(props);
     this.state = {
       price: null,
+      data: false,
       interestRate: '4.5',
       loanLength: 30,
       taxRate: 1.25, 
@@ -90,8 +81,33 @@ class MortgageCalc extends React.Component {
     this.setState({
       numbers: true, 
       payment: payment,
-      paymentSchedule: payment.paymentSchedule
+      paymentSchedule: payment.paymentSchedule,
+     
     }, () => {
+      this.setState({
+        data: true,  
+        data02: [
+          {
+            "name": "Principal & Interest",
+            'label': "Principal & Interest",
+            "value": parseInt(this.state.payment.total.toFixed(2))
+          },
+          {
+            "name": "Taxes",
+            "value": parseInt(this.state.payment.tax.toFixed(2))
+          },
+          {
+            "name": "Insurance",
+            "value": parseInt(this.state.payment.insurance.toFixed(2))
+          },
+          {
+            "name": "Mortgage Insurance",
+            "value": parseInt(this.state.payment.mortgageInsurance.toFixed(2))
+          },
+        ]
+      })
+      console.log(isNaN(this.state.payment.tax.toFixed(2)))
+      console.log(isNaN(this.state.payment.insurance.toFixed(2)))
       window.scrollTo('500px', '200px')
     })
   }
@@ -289,8 +305,10 @@ class MortgageCalc extends React.Component {
     <Button variant="contained" onClick={this.submitData}>Submit</Button>
     </div>
     {this.state.numbers ? 
+       
     <div>
-    <h1 style={{color:'black', fontSize:'16px', textAlign:'left', fontWeight:'200'}}>
+      <div style={{display:'flex', flexDirection:'row'}}>
+    <h1 style={{color:'black', fontSize:'16px', marginTop:'80px', textAlign:'left', fontWeight:'200'}}>
       <span style={{paddingBottom:'20px'}}>Total Loan Amount: <span style={{color:'#00367b'}}>${this.state.payment.loanAmount}</span></span>
       <br/>
       Total Monthly Payment (Estimated): <span style={{color:'#00367b'}}> ${this.state.payment.total.toFixed(2)}</span>
@@ -303,7 +321,19 @@ class MortgageCalc extends React.Component {
       <br/>
       Insurance Monthly (Estimated): <span style={{color:'#00367b'}}> ${this.state.payment.insurance.toFixed(2)}</span>
       <br/>
+      {this.state.payment.mortgageInsurance ? 
+      <span>
+      Mortgage Insurance Monthly (Estimated): <span style={{color:'#00367b'}}> ${this.state.payment.insurance.toFixed(2)}</span>
+      <br/>
+      </span>
+       : null }
       </h1>
+      {this.state.data ? 
+        <ResponsiveContainer width="50%" height={250}>
+      <PieChart width={730} height={250}>
+  <Pie data={this.state.data02} dataKey="value" nameKey="name" cx="50%" cy="50%" innerRadius={60} outerRadius={80} fill="#00367a" label='name' />
+</PieChart></ResponsiveContainer > : null }
+      </div>
       <div style={{width:'100%'}}>
       <h1 style={{fontSize:'20px'}}>Amortization Schedule</h1>
       <div style={{textAlign:'left', display:'flex', flexDirection:'row'}}>
