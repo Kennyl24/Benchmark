@@ -69,6 +69,8 @@ app.use('/FHA', express.static(__dirname + '/../client/dist'));
 app.use('/Conventional', express.static(__dirname + '/../client/dist'));
 app.use('/Refinance', express.static(__dirname + '/../client/dist'));
 app.use('/More-services', express.static(__dirname + '/../client/dist'));
+app.use('/Updates', express.static(__dirname + '/../client/dist'));
+
 app.use('/blogs/:title', express.static(__dirname + '/../client/dist'));
 app.use('/about/#', express.static(__dirname + '/../client/dist'));
 // app.use('/*', express.static(__dirname + '/../client/dist'));

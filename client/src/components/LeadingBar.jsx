@@ -8,6 +8,7 @@ import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import MenuDrawer from './MenuDrawer.jsx';
+import {isMobile} from 'react-device-detect';
 
 
 class LeadingBar extends React.Component { 
@@ -134,11 +135,15 @@ resize = () => {
   }
   render () {
     return (
-      <MuiThemeProvider>
-
+  <MuiThemeProvider>
+    {isMobile ? null :
+    <div 
+   onClick={() => location.href='/Updates'} style={{textAlign:'center', height:'20px', color:'white', cursor:'pointer', backgroundColor:'#242e6e'}}>
+    See The Latest Financial Updates
+      </div>}
     <AppBar
     style={{    
-    top: '0px',
+    top: isMobile ? '0px' : '20px',
     left:'0px',
     right:'0px',
     zIndex: '999',
@@ -156,7 +161,7 @@ resize = () => {
       justifyContent: 'center',
       width: '100%',
       marginRight:'0px',
-      marginTop:'0px',
+      marginTop:'10px',
       marginLeft:'0px'}}
     >
     { this.state.width ? 
@@ -251,6 +256,7 @@ onClick={() => window.location.href = '/Blog'}
     <a href="/Blog" >Blog</a>
     <a href="/Vlog" >Vlog</a>
     <a href="/Calculator" >Calculator</a>
+    <a href="/Updates" >Weekly Update</a>
     {/* <a href="/Rates" >Rates</a> */}
   </div>
 </div>
