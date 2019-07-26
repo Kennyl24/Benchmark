@@ -138,7 +138,7 @@ resize = () => {
   <MuiThemeProvider>
     {isMobile ? null :
     <div 
-   onClick={() => location.href='/Updates'} style={{textAlign:'center', height:'20px', color:'white', cursor:'pointer', backgroundColor:'#242e6e'}}>
+   onClick={() => location.href='/Updates'} style={{position:'fixed', zIndex:'9999999', minWidth:'100%',textAlign:'center', height:'20px', color:'white', cursor:'pointer', backgroundColor:'#242e6e'}}>
     See The Latest Financial Updates
       </div>}
     <AppBar
