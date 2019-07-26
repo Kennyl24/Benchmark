@@ -108,7 +108,7 @@ class MortgageCalc extends React.Component {
       })
       console.log(isNaN(this.state.payment.tax.toFixed(2)))
       console.log(isNaN(this.state.payment.insurance.toFixed(2)))
-      window.scrollTo('500px', '200px')
+      // window.scrollTo('500px', '200px')
     })
   }
   render () {

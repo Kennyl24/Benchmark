@@ -17,8 +17,10 @@ class Calculator extends React.Component {
     return (
       <div>
         <LeadingBar/>
-        <h3 style={{marginTop:"150px"}}className="homepage-header">Mortgage Calculator</h3>
+        <div style={{paddingTop:"150px"}}>
+        <h3 className="homepage-header">Mortgage Calculator</h3>
         <MortgageCalc/>
+        </div>
         <BottomNav/>
       </div>
 )
