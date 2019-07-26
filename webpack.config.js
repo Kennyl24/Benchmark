@@ -14,6 +14,11 @@ module.exports = {
       {
         test: /.jsx?$/,
         loader: 'babel-loader',
+        include: [
+          path.resolve(__dirname, '../'),
+          '/node_modules/mortgage-js/index.js',
+          '/node_modules/ms/index.js',
+        ],
         exclude: /node_modules/,      
         query: {
           presets: [ 'react', 'es2015', 'stage-0']
@@ -21,11 +26,6 @@ module.exports = {
       }, {
         test: /\.scss$/,
         loaders: ['style-loader', 'css-loader', 'sass-loader'],
-        include: [
-          path.resolve(__dirname, '../'),
-          '/node_modules/mortgage-js/index.js',
-          '/node_modules/ms/index.js',
-        ]
       },
       {
         test: /\.(png|jpg|gif|pdf)$/,
