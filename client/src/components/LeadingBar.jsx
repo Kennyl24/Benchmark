@@ -255,7 +255,7 @@ onClick={() => window.location.href = '/Blog'}
   <div className="dropdown-content">
     <a href="/Blog" >Blog</a>
     <a href="/Vlog" >Vlog</a>
-    <a href="/Calculator" >Calculator</a>
+    {/* <a href="/Calculator" >Calculator</a> */}
     <a href="/Updates" >Weekly Update</a>
     {/* <a href="/Rates" >Rates</a> */}
   </div>
