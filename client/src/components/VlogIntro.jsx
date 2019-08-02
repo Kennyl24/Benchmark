@@ -22,7 +22,7 @@ class VlogIntro extends React.Component {
     return (
     <MuiThemeProvider>
     <div style={{position:'relative', top:'0px', 
-    backgroundColor: 'rgba(238, 238, 238, 0.41) !important', backgroundColor: 'rgba(36,	47,	110,.3)', backgroundBlendMode: 'multiply', backgroundRepeat: 'no-repeat', imageRendering: '-webkit-optimize-contrast', backgroundSize:'cover',
+    backgroundColor: 'rgba(15, 15, 15, 0.3) !important', backgroundColor: 'rgba(36,	47,	110,.3)', backgroundBlendMode: 'multiply', backgroundRepeat: 'no-repeat', imageRendering: '-webkit-optimize-contrast', backgroundSize:'cover',
     backgroundImage: 'url(https://images.unsplash.com/photo-1539666455488-99208279e51e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80)', backgroundRepeat: 'no-repeat', backgroundSize: '100% 100%', height:'400px', width: '100%', marginBottom:'0px'}}>
     <div  style={{textAlign: 'center', paddingTop: isMobile ? '27%': '10%', paddingBottom: '2%',  color: 'black', display:'flex',
     flexDirection:'column', justifyContent:'center', alignItems:'center'
