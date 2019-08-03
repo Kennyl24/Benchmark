@@ -9,82 +9,237 @@ import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'mat
 import Button from '@material-ui/core/Button';
 const homeBlogs = [
   {
-    blogTitle: 'Tips to Avoid a Mortgage Scam',
+    blogTitle: 'Using Gift Money for Your Down Payment',
     blogAuthor:'Hilda Hensley',
     blogText: <p>
-      Because the mortgage industry is so heavily regulated, it’s hard to believe that mortgage scams exist … but, unfortunately, they do. The most common mortgage scam is a wire fraud. This is when hackers send you fake wire transfer instructions. The good news is that with a little diligence and common sense, you can stay safe.
+Saving for a down payment can take a long time. However, if you’re fortunate to have family willing to
+give you a monetary gift that you can use for your down payment, you can reach your goal of home
+ownership must faster.
 <br/><br/>
-Before closing on your home, your title company or Realtor will send you instructions for wiring your closing funds. Of course, you can opt to get a cashier’s check from your bank, thus eliminating all possibility of wire fraud and this mortgage scam. However, some people prefer to skip the trip to the bank, or they do their banking exclusively online. In this case, a wire transfer is needed.
+According to the 2017 National Association of REALTORS® Profile of Home Buyers and Sellers report,
+nearly 25% of first-time home buyers used cash gifts from family for a down payment. If any family
+members are willing to gift you some down payment money, you’ll need to get a signed statement from
+the giver that explicitly states the money is a gift, not a loan, and that no repayment is required. The
+mortgage gift letter must include the giver’s name, address, and contact information; the recipient’s
+name and relationships to the giver; and the dollar amount and approximate date of the gift.
 <br/><br/>
-If you’re going to do a wire transfer of funds, here are some tips to ensure you don’t fall victim to a mortgage scam.
+Here is a sample gift letter you may be able to use. Your lender may require additional information:
 <br/><br/>
-<ol>
-<li>Closely examine any wire transfer instructions you receive. Particularly, review the “from” email address. Is it really from your title company, mortgage company, or Realtor? Look at the actual address, not just the company or person’s name. </li>
-<li>Don’t reply to any wire transfer instructions. Even if the email looks legitimate, it’s best not to hit the “reply” button. Ask questions directly by calling your primary contact person. If you prefer email, open a new message and type in the address you normally use. </li>
-<li>Ask for verification. Forward the email to your lender, title company, or Realtor and verify the instructions are correct. Or print it out and bring it to their office to review. They’ll be more than happy to help you and ensure your money is safe. </li>
-</ol>
+<div style={{marginLeft:'100px'}}>
+August 1, 2019
 <br/><br/>
-The worst part of this mortgage scam is that there is little recourse for victims. Because the money is often wired overseas, the US law enforcement agencies don’t have jurisdiction to recover the funds. 
+To Whom It May Concern:
 <br/><br/>
-So always keep open communication with your lender, title company, and Realtor. And ask questions when you have any hint of doubt. That’s the best way to avoid being the victim of a mortgage scam.
+I am giving my son, John Smith, a gift of $7,000 toward the purchase of his home. I do not expect
+or require any kind of repayment for this gift. I wrote the check for these funds on July 15, 2019,
+and he deposited it the next day. Should you need to contact me regarding this gift, you can do
+so using the information below.
 <br/><br/>
-Is applying for a mortgage in your future? Contact us. As mortgage bankers, we can help you make the best decision for your needs.
+Sincerely,
+<br/><br/>
+Michael Smith
+<br/>
+1234 Main Street
+<br/>
+Anytown, CA 90210
+<br/>
+(123) 555-4459
+</div>
+<br/><br/>
+Whatever you do, don’t take a loan from family and try to pass it off as a gift. If it needs to be repaid at
+any time in the future, it’s a loan and not a gift. If the money really is a loan, your lender will need to
+factor that amount into your debt-to-income ratio.
+<br/><br/>
+The good news is an individual can give up to $14,000 to an unlimited number of people each year and
+still face no federal gift tax. In other words, two parents could each give a son and daughter-in-law
+$14,000. That’s $28,000 per person, or $56,000 total. That’s a big down payment.
+<br/><br/>
+So don’t be afraid to ask Mom or Dad (or your favorite aunt or uncle) if a gift is possible. It may help you
+get that home of your dreams sooner than you ever thought possible.
+<br/><br/>
+Is applying for a mortgage in your future? Contact us. As mortgage bankers, we can help you make the
+best decision for your needs.
 
-      </p>,
-    blogSnippet: 'Because the mortgage industry is so heavily regulated, it’s hard to believe that mortgage scams exist … but, unfortunately, they do. The most common mortgage scam is a wire fraud. If you’re going to do a wire transfer of funds, here are some tips to ensure you don’t fall victim to a mortgage scam.',
-    blogImage: 'https://i.ibb.co/zf2NC0F/mortgagescams.png',
+
+    </p>,
+    blogSnippet: 'Saving for a down payment can take a long time. However, if you’re fortunate to have family willing to give you a monetary gift that you can use for your down payment, you can reach your goal of home ownership must faster.',
+    blogImage: 'https://i.ibb.co/vJXG8tf/gift1.jpg',
   },
   {
-    blogTitle: 'What to Do If Your Mortgage Application is Denied',
+    blogTitle: 'The Facts about Lender Placed Insurance',
     blogAuthor:'Hilda Hensley',
     blogText: <p>
-      “I’m sorry … your mortgage application was denied.” Those are words no home buyer wants to hear. But sometimes it happens. Does it mean that all hope for buying a home is lost? Not necessarily. 
-      <br/><br/>
-Since the mortgage approval process is rigorous, there are a number of factors that could trigger a denial. The key is to find out why. Your lender should tell you exactly why your mortgage application was denied. In some cases, you may be able to quickly rectify the situation and turn the denial into an approval. In other cases, fixing the issue can take some time. 
+      All mortgage lenders require homeowners to have adequate insurance on the property. This protects
+the homeowner as well as the mortgage company, which has a vested interest in the home. At some
+point during your home ownership, you may receive notice that your lender has issued “Lender Placed
+Insurance,” “Creditor Placed Insurance,” or “Force Placed Insurance” on your property. What is this?
+And why would a mortgage company make this move?
 <br/><br/>
-Here are some of the more common reasons that could cause your mortgage application to be denied.
+Typically, there are three main reasons why Lender Placed Insurance may go into effect.
+<br/><br/>
 <ol>
   <li>
-You recently opened a new line of credit or took out a personal loan. Taking on a new debt obligation can negatively affect your debt-to-income ratio. In simplest terms, your debt-to-income ratio is the total of all your monthly debt payments divided by your gross income. Ideally, you want to keep your debt-to-income ratio below 40%. If you couldn’t resist the opportunity to save 20% by opening a new department store credit card, pay off some debt, wait a few months, and try again.
+Your current homeowner’s insurance has lapsed or been cancelled. If your insurance payments
+are not escrowed and you pay them yourself each year, you may have mistakenly missed your
+payment date. Or perhaps your insurance company cancelled your policy for some other reason.
+While you would likely receive several notifications prior to any termination of coverage,
+oversights happen and your life is busy. So sometimes things get missed. In this case, your
+mortgage company would jump in and secure this insurance for you.
 </li>
 <li>
-You recently missed some debt payments. Missing payments, even if you innocently “forgot,” will definitely trigger a denial. Most lenders are most concerned about missed payments in the immediate two years; however, many credit reports will show late payments as far back as seven years, and some even longer. If your credit report is showing very old missed payments, try to get those items removed from your credit. If the missed payments are more recent, talk with your lender about the situation. If it was an extenuating circumstance, and if you have proof of that, they may be able to overlook it. 
+Your property insurance doesn’t provide adequate coverage. Maybe your home has significantly
+risen in value, but you haven’t updated your homeowner’s insurance coverage in years. If your
+policy no longer provides adequate protection from a loss, your mortgage company would issue
+Lender Placed Insurance to fill in the gap.
 </li>
 <li>
-You forgot to include important information in your mortgage application. Triple check all the numbers and data you report. For example, did you forget a zero in your figure when reporting income? Did you forget to report that “no payment due for three years” loan that’s showing on your credit report? Be thorough in your application. If you realize your forgot anything or made a mistake, fix it immediately.
+Your bank or mortgage servicer has no record of adequate homeowner’s insurance coverage.
+Your insurance company should provide your mortgage company with proof of coverage. If they
+fail to do so, or something gets overlooked, your mortgage company will think you don’t have
+insurance and will issue a policy.
 </li>
+<br/><br/>
+It’s important to note that Lender Placed Insurance is meant to be temporary. It’s usually basic coverage
+that only offers protection for the lender for the loan balance should a major loss occur. Additionally,
+this basic coverage is often more expensive than a traditional homeowner policy, and you as the
+homeowner are responsible for paying the premium of the Lender Placed Insurance.
+<br/><br/>
+Once you have proof that your property is covered by traditional homeowner’s insurance, your
+mortgage company will promptly cancel the Lender Placed Insurance. So if you receive a notice of
+Lender Placed Insurance, address it right away to ensure your home is properly insured.
+<br/><br/>
+Is applying for a mortgage in your future? Contact us. As mortgage bankers, we can help you make the
+best decision for your needs.
 </ol>
-<br/><br/>
-The good news is that finding out your mortgage application was denied doesn’t mean your home ownership dreams are over. It simply means you have a little more work to do. Fix what needs to be fixed, and then apply again. Before you know it, you’ll have that approval … and the new home … you’ve been dreaming of. 
-<br/><br/>
-Is applying for a mortgage in your future? Contact us. As mortgage bankers, we can help you make the best decision for your needs.
-      </p>,
-    blogSnippet: ' No one wants to hear that their mortgage application was denied. But getting a denial doesn’t mean that all hope for buying a home is lost. Here are some of the more common reasons that could cause your mortgage application to be denied.',
-     blogImage: 'https://i.ibb.co/s36HbVM/2a162fca19d043f391cf53cbeb361de4.jpg',
+    </p>,
+    blogSnippet: 'At some point during your home ownership, you may receive notice that your lender has issued “Lender Placed Insurance,” “Creditor Placed Insurance,” or “Force Placed Insurance” on your property. Find out what this is and what it means for you.',
+    blogImage: 'https://i.ibb.co/RgmktZN/covered.jpg',
   },
   {
-    blogTitle: 'Title Insurance – Do You Need It?',
+    blogTitle: 'Tips for Getting a Mortgage When You’re Self-Employed',
     blogAuthor:'Hilda Hensley',
     blogText: <p>
-      As you go through the mortgage process, your mortgage banker will include a line item on your closing documents called Title Insurance. Many home buyers, especially first-time home buyers, are unsure what Title Insurance is and why they need it. So, let’s clear up both those questions.
-      <br/><br/>
-<h1>What is Title Insurance?</h1>
+While getting a mortgage is usually a straight-forward process, when you’re self-employed, it
+can get a little complicated. Even if you earn a good living from your self-employment, without
+a weekly paycheck and W2 to present as proof of income, your mortgage application and
+approval process can often involve a few more steps and more paperwork. Fortunately, by
+being proactive and keeping good records you can get approved.
 <br/><br/>
-In simplest terms, Title Insurance protects home buyers and mortgage lenders against defects or problems with a property’s title when there is a transfer of property ownership. Homeowner’s Title Insurance protects your interests in the property, while lender’s Title Insurance protects your lender’s interest in the property. You will need both. Essentially, when you buy a home, a title company will do a records search to make sure there are no undisclosed heirs to the property, unpaid taxes, pending legal action, errors, fraud, or other problems with the deed. Once the title company declares the property’s title “clean,” they will issue Title Insurance for the property.
+First, here are the key things mortgage companies are looking for from self-employed
+borrowers. When you know what they’re looking for before you apply, you can position
+yourself in the best light possible.
 <br/><br/>
-<h1>If the Title is Clean, Do I need Title Insurance?</h1>
-<br/><br/>
-Even though title companies are very thorough in their research, sometimes things get missed. Or, more commonly, a lien hasn’t posted to the property yet. For example, suppose the home seller did a big remodel on the home, but they didn’t pay the electrician. While the home was for sale, the electrician may have been sending late notices and starting legal action. However, the home may transfer ownership before the electrician was able to complete the legal paperwork to initiate a lien against the property. Even though the previous owners neglected to pay the bill, the lien goes against the home (now your home) and you are now responsible for the bill.
-<br/><br/>
-Title insurance ensures that you are not liable for any past issues related to the title that may transpire. Of course, if you hire an electrician while you are the owner and fail to make payment, you are responsible for any legal action or liens. Title Insurance applies to past actions that could come back and affect the property’s title. Similarly, lender’s Title Insurance protects your lender from unexpected claims against the property, such as a long-lost heir to the previous owner claiming rights to the property.
-<br/><br/>
-The good news is that your Title Insurance policy is valid for the entire time you own the home, whether that’s 3 years or 30 years. And you typically pay in one lump sum at closing. In other words, unlike other types of insurance, there are no monthly payments or yearly premiums to worry about.
-<br/><br/>
-As you can see, Title Insurance is an important part of the mortgage process. It enables you to rest easy, knowing you have a clean title, and it protects you should the unexpected happen.
 
-      </p>,
-    blogSnippet: 'As you go through the mortgage process, your mortgage banker will include a line item on your closing documents called Title Insurance. Many home buyers, especially first-time home buyers, are unsure what Title Insurance is and why they need it. Here are the answers you need.',
-     blogImage: 'https://i.ibb.co/YDPwpjM/b57cb3fe060b4e365f4756e99b2b4287w-c238696xd-w685-h860-q80.jpg',
+Here’s what lenders want to see from self-employed mortgage applicants:
+<br/><br/>
+<ul>
+  <li>
+Stable income: Even though self-employment has its share of financial ups and downs,
+you should be able to prove stability, with an overall upward financial trend. Lenders
+will definitely ask for your last two years’ worth of tax returns (possibly more), so make
+sure you are always reporting all your income. When lenders review your tax returns,
+they are looking not only at your gross income via 1099s and other reportable income,
+but also your business expenses so they can calculate your net profit and taxable
+income.
+</li>
+<li>
+
+Consistency: Ideally, you’ll be self-employed for two or more years (in the same
+industry) before applying for a mortgage. If you’re new to self-employment but have
+filed at least one tax return as a self-employed professional and have W2s from an
+employer in the same field, lenders may give you some leeway. The goal is for you to
+show that you are stable and not career hopping.
+</li>
+
+<li>
+
+Good credit: Credit is always a big factor when getting a mortgage, perhaps more so
+when you’re self-employed. If you have a business credit rating, lenders will check that
+as well.
+</li>
+<li>
+
+Cash reserves: Because self-employment income often fluctuates, lenders will want to
+see that you have enough cash reserves to weather any dry spells. Plan to show at least
+6 months’ worth of living expenses set aside in savings.
+</li>
+<li>
+
+Adequate down payment: Whether you’re self-employed or a traditional W2 employee,
+the down payment requirements are the same. However, if your credit isn’t strong or
+your income is very unstable, having a larger down payment can certainly help get you
+approved.
+</li>
+
+</ul>
+Now that you know the key things lenders are looking for from self-employed applicants,
+here are some tips for making the approval process easier.
+
+<br/><br/>
+<ul>
+<li>
+Have your paperwork ready: The first thing you’ll notice when you’re self-employed is
+that lenders will want a lot of paperwork from you. It helps to have it ready and
+complete as soon as possible. Although the requirements may vary by lender, the most
+common documents you’ll need are:
+</li>
+<br/>
+<div style={{marginLeft:'100px'}}>
+o Complete personal tax returns for two years
+<br/>
+o Business tax returns for two years (usually Schedule C)
+<br/>
+o IRS Form 4506-T, giving permission to the lender to request transcripts for tax
+returns
+<br/>
+o Profit and loss statements for the past two years
+<br/>
+o Business bank statements for the last 90 days (some will require longer)
+<br/>
+o Business verification, such as a DBA (“doing business as”) or a letter from your
+CPA or clients
+<br/>
+o A business license (if applicable for your type of self-employment)
+<br/>
+<br/>
+</div>
+<li>
+Clean up your credit: Whether self-employed or not, you should always keep on top on
+your credit, especially before applying for a mortgage. Obtain a current credit report
+from each of the three credit reporting agencies. Review your report for errors, and be
+sure to dispute anything that shouldn’t be there (and address any legitimate concerns
+that appear). Do this before your lender pulls your credit. You want it as spotless as
+possible before the mortgage application process.
+</li>
+<li>
+Save as much as you can: Many self-employed professionals understand that it’s
+common to go through periods of financial feast and periods of financial famine. Be sure
+to save as much money as possible during times of feast so you can boost your reserves
+and your down payment amount.
+</li>
+<li>
+Keep clean business records: If you haven’t already, separate your business and
+personal income. Be sure you have separate checking and savings accounts for each.
+Have a separate credit card for business expenses. Also, use a business accounting
+software program to make generating reports easier and more accurate.
+</li>
+</ul>
+<br/> <br/>
+Being self-employed certainly doesn’t mean you can’t get a mortgage. It just means you may
+have to do a few more steps to get the approval you desire. So be proactive in the process. Get
+all your paperwork in order before submitting your application, and be prepared to gather
+additional forms and papers as requested. With some patience and planning, any self-employed
+professional can get a mortgage approval.
+<br/> <br/>
+
+
+When you’re ready to apply for a mortgage or refinance an existing one, contact us at 707-254-
+8891 or hilda.hensley@benchmark.us. We can also direct you to the perfect real estate agent
+to help you.
+
+    </p>,
+    blogSnippet: 'While getting a mortgage is usually a straight-forward process, when you’re self-employed, it can get a little complicated.',
+    blogImage: 'https://i.ibb.co/dbk8hBp/self-employ.jpg',
   },
 ]
   const BlogHomePage = () => (

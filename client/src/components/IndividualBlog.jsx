@@ -97,8 +97,8 @@ class Individualblog extends React.Component {
             <meta property="og:image" content={this.state.blog.blogImage} />
           </MetaTags>
     <LeadingBar/>
-  <div style={{marginTop: isMobile ? '21%' :'4%', padding:'5%'}}>
-    <h1>{this.state.blog.blogTitle}</h1>
+  <div style={{padding:'5%'}}>
+    <h1 style={{marginTop: isMobile ? '21%' :'10%'}}>{this.state.blog.blogTitle}</h1>
     { isMobile ? <img src={this.state.blog.blogImage} alt={this.state.blog.blogTitle} className="modal-blog-image"style={{marginLeft:'8%', width: '80%', height:'250px'}}/> : 
     <img src={this.state.blog.blogImage} alt={this.state.blog.blogTitle} className="modal-blog-image"style={{marginLeft:'5%', width: '25%', height:'250px'}}/>}
     <p className="blog-modal-text" style={{padding:'20px'}}>{this.state.blog.blogText}</p>
