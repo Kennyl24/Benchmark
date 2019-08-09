@@ -9,7 +9,7 @@ import axios from 'axios';
 import Button from '@material-ui/core/Button';
 import AmortSchedule from './AmortSchedule.jsx';
 // import PieChart from 'react-minimal-pie-chart';
-import { ResponsiveContainer, PieChart, Pie } from 'recharts';
+import { ResponsiveContainer, PieChart, Pie, Tooltip } from 'recharts';
 // let data02;
 let mortgageCalculator = mortgageJs.createMortgageCalculator();
 class MortgageCalc extends React.Component { 
@@ -88,9 +88,9 @@ class MortgageCalc extends React.Component {
         data: true,  
         data02: [
           {
-            "name": "Principal & Interest",
+            'name': "Principal & Interest",
             'label': "Principal & Interest",
-            "value": parseInt(this.state.payment.total.toFixed(2))
+            'value': parseInt(this.state.payment.total.toFixed(2))
           },
           {
             "name": "Taxes",
@@ -112,6 +112,9 @@ class MortgageCalc extends React.Component {
     })
   }
   render () {
+    let renderLabel = function(entry) {
+      return '$' + entry.value + ' ' + '(' + entry.name + ')';
+    }
     return (
       <div style={{marginBottom:'50px', marginLeft: isMobile ? '10px' :'50px'}}>
         <div>
@@ -331,17 +334,28 @@ class MortgageCalc extends React.Component {
       {this.state.data ? 
         <ResponsiveContainer width="50%" height={250}>
       <PieChart width={730} height={250}>
-  <Pie data={this.state.data02} dataKey="value" nameKey="name" cx="50%" cy="50%" innerRadius={60} outerRadius={80} fill="#00367a" label='name' />
+  <Pie data={this.state.data02} dataKey="value" nameKey="name" cx="50%" cy="50%" innerRadius={60} outerRadius={80} fill="#00367a"
+  label={renderLabel}
+  >
+  <Tooltip cursor={{ stroke: 'red', strokeWidth: 2 }} />
+
+  </Pie>
 </PieChart></ResponsiveContainer > : null }
       </div>
+      <Button onClick={() => this.setState({
+        showAmort: !this.state.showAmort
+      })}>{this.state.showAmort ? 'Hide Amortization Schedule' : 'View Amortization Schedule'} </Button>
+      {this.state.showAmort ? 
       <div style={{width:'100%'}}>
+      
       <h1 style={{fontSize:'20px'}}>Amortization Schedule</h1>
       <div style={{textAlign:'left', display:'flex', flexDirection:'row'}}>
       <h1 style={{textAlign:'left', width:'60px', fontSize:'14px', padding:'10px', minWidth:'60px',marginRight:'10px'}}>Month</h1>
       <h1 style={{width:'60px', fontSize:'14px', padding:'10px',minWidth:'60px',marginRight:'10px'}}>Principal Payment</h1>
       <h1 style={{width:'60px', fontSize:'14px',padding:'10px', minWidth:'60px',marginRight:'10px'}}>Interest Payment</h1>
       <h1 style={{width:'60px', fontSize:'14px',padding:'10px',minWidth:'60px',marginRight:'10px'}}>Balance Remaining</h1>
-        </div>
+      </div>
+      
       {this.state.payment.paymentSchedule.map((month, index) => {
         return(
       // <div style={{width:' 20%', displau:'flex', flexDirection:'row'}}>
@@ -351,8 +365,8 @@ class MortgageCalc extends React.Component {
       //   <span style={{padding:'10px'}}>${month.balance}</span>
       // </div>
         <AmortSchedule month={month}/>
-      )})}
-      </div>
+      )})} 
+      </div> : null }
       {/* Total Monthly Payment(Estimated): ${this.state.payment.total}
       <br/> */}
       {/* Total Monthly Payment(Estimated): ${this.state.monthlyPayment} */}

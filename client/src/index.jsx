@@ -1,3 +1,6 @@
+import 'react-app-polyfill/ie9';
+import 'react-app-polyfill/stable';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
@@ -26,7 +29,7 @@ import Fab from '@material-ui/core/Fab';
 import {isMobile} from 'react-device-detect';
 import {Helmet} from "react-helmet";
 import Rates from './components/Rates.jsx'
-// import Calculator from './components/Calculator.jsx'
+import Calculator from './components/Calculator.jsx'
 import Updates from './components/Updates.jsx'
 
 import "isomorphic-fetch"
@@ -1241,7 +1244,7 @@ ReactDOM.render(
       />
       <Route  path="/Reviews" component={Reviews} />
       <Route  path="/Privacy" component={Privacy} />
-      {/* <Route  path="/Calculator" component={Calculator} /> */}
+      <Route  path="/Calculator" component={Calculator} />
       <Route  path="/Rates" component={Rates} />
       <Route  path="/first-time-home-buyer" component={FirstTimeHome} />
       <Route  path="/VA" component={VaLoans} />

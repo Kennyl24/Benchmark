@@ -23,6 +23,28 @@ const team = [
     email: 'kelly.winkle@benchmark.us',
     about: 'I have been a Loan Processor since 2003, and I have been with Hilda for 10 years now.'
   },
+  // {
+  //   name: 'Kelly Duke',
+  //   title: 'Loan Officer Assistant',
+  //   image: 'https://i.ibb.co/py0Qv8T/IMG-1808-removebg-preview.png',
+  //   // image: 'https://i.ibb.co/qkx4RZP/IMG-1807-removebg-preview.png', 
+  //   color: 'blue',
+  //   phone: '7072548891',
+  //   email: 'kelly.duke@benchmark.us',
+  //   about: 'I started in the mortgage business in 2002. I have worked as a Loan Originator, Processor and now currently work as an Operations Manager for the Bencmark community.'
+  // },
+  // {
+  //   name: 'Kelly Duke',
+  //   title: 'Loan Officer Assistant',
+  //   image: 'https://i.ibb.co/Bf0BQ2z/IMG-1807.jpg',
+  //   // image: 'https://i.ibb.co/py0Qv8T/IMG-1808-removebg-preview.png',
+  //   // image: 'https://i.ibb.co/vVTS49g/IMG-1807-removebg-preview.png',
+  //   // image: 'https://i.ibb.co/qkx4RZP/IMG-1807-removebg-preview.png', 
+  //   color: 'blue',
+  //   phone: '7072548891',
+  //   email: 'kelly.duke@benchmark.us',
+  //   about: 'I started in the mortgage business in 2002. I have worked as a Loan Originator, Processor and now currently work as an Operations Manager for the Bencmark community.'
+  // },
   {
     name: 'Diana Arana',
     title: 'Administrative Assistant',
