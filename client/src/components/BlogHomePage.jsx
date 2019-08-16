@@ -9,6 +9,36 @@ import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'mat
 import Button from '@material-ui/core/Button';
 const homeBlogs = [
   {
+    blogTitle: 'What to do if the Home Appraisal Comes in Low',
+    blogAuthor:'Hilda Hensley',
+    blogText: <p>
+A home appraisal is an important step when buying a home—and one that is absolutely necessary if you’re getting a mortgage. The purpose of the home appraisal is to determine the property’s actual value. Lenders require this, as it’s a way for them to protect their investment.
+<br/><br/>
+For example, suppose you and the seller agree on a purchase price of $500,000. You are putting $25,000 down, meaning your mortgage will be for $475,000. If the appraisal says the home is valued at $450,000, your lender many deny your application. That’s because there’s a $25,000 gap between the mortgage amount and the home’s value. If you were to default on the loan, chances are high that the mortgage company wouldn’t be able to recoup the full amount of the loss.
+<br/><br/>
+
+So, what happens when your home appraisal comes in lower than expected? Is your dream home gone forever? Not necessarily. Here are some things to consider.
+<br/><br/>
+<ol>
+<li>
+Get your lender involved. Due to mandated mortgage industry requirements, you as a consumer cannot request a new appraisal. However, your lender can rebut an appraisal on your behalf. Therefore, let your lender know why you agreed to the price you did. Show your lender the comparables you and your Realtor used to determine an offer price. If that doesn’t work, consider the next two suggestions. 
+  </li> 
+<li>Re-negotiate with the seller. If the appraisal stands as is (even with a second opinion), see if the seller will lower the price. After all, unless they find a cash buyer, in which appraisals aren’t needed, they’re going to run into this problem again with a new buyer. </li>
+<li>Make up the difference with a higher down payment. If you have the means, you can increase your down payment so that the lender is no longer at risk. </li>
+</ol>
+<br/><br/>
+
+As you can see, all is not lost if your home appraisal comes in lower than expected. Take the next step that makes the most sense for your situation. And always work closely with your Realtor and mortgage banker to ensure the best outcome for all.
+<br/><br/>
+
+Is applying for a mortgage in your future? Contact us. As mortgage bankers, we can help you make the best decision for your needs.
+
+    </p>,
+    blogSnippet: 'A home appraisal is an important step when buying a home—and one that is absolutely necessary if you’re getting a mortgage. What happens when your home appraisal comes in lower than expected? Here are some things to consider.',
+    blogImage: 'https://i.ibb.co/RSCh1cZ/5-Best-Ways-Home-Inspection-1.png',
+ 
+  },
+  {
     blogTitle: 'Using Gift Money for Your Down Payment',
     blogAuthor:'Hilda Hensley',
     blogText: <p>
@@ -114,132 +144,6 @@ best decision for your needs.
     </p>,
     blogSnippet: 'At some point during your home ownership, you may receive notice that your lender has issued “Lender Placed Insurance,” “Creditor Placed Insurance,” or “Force Placed Insurance” on your property. Find out what this is and what it means for you.',
     blogImage: 'https://i.ibb.co/RgmktZN/covered.jpg',
-  },
-  {
-    blogTitle: 'Tips for Getting a Mortgage When You’re Self-Employed',
-    blogAuthor:'Hilda Hensley',
-    blogText: <p>
-While getting a mortgage is usually a straight-forward process, when you’re self-employed, it
-can get a little complicated. Even if you earn a good living from your self-employment, without
-a weekly paycheck and W2 to present as proof of income, your mortgage application and
-approval process can often involve a few more steps and more paperwork. Fortunately, by
-being proactive and keeping good records you can get approved.
-<br/><br/>
-First, here are the key things mortgage companies are looking for from self-employed
-borrowers. When you know what they’re looking for before you apply, you can position
-yourself in the best light possible.
-<br/><br/>
-
-Here’s what lenders want to see from self-employed mortgage applicants:
-<br/><br/>
-<ul>
-  <li>
-Stable income: Even though self-employment has its share of financial ups and downs,
-you should be able to prove stability, with an overall upward financial trend. Lenders
-will definitely ask for your last two years’ worth of tax returns (possibly more), so make
-sure you are always reporting all your income. When lenders review your tax returns,
-they are looking not only at your gross income via 1099s and other reportable income,
-but also your business expenses so they can calculate your net profit and taxable
-income.
-</li>
-<li>
-
-Consistency: Ideally, you’ll be self-employed for two or more years (in the same
-industry) before applying for a mortgage. If you’re new to self-employment but have
-filed at least one tax return as a self-employed professional and have W2s from an
-employer in the same field, lenders may give you some leeway. The goal is for you to
-show that you are stable and not career hopping.
-</li>
-
-<li>
-
-Good credit: Credit is always a big factor when getting a mortgage, perhaps more so
-when you’re self-employed. If you have a business credit rating, lenders will check that
-as well.
-</li>
-<li>
-
-Cash reserves: Because self-employment income often fluctuates, lenders will want to
-see that you have enough cash reserves to weather any dry spells. Plan to show at least
-6 months’ worth of living expenses set aside in savings.
-</li>
-<li>
-
-Adequate down payment: Whether you’re self-employed or a traditional W2 employee,
-the down payment requirements are the same. However, if your credit isn’t strong or
-your income is very unstable, having a larger down payment can certainly help get you
-approved.
-</li>
-
-</ul>
-Now that you know the key things lenders are looking for from self-employed applicants,
-here are some tips for making the approval process easier.
-
-<br/><br/>
-<ul>
-<li>
-Have your paperwork ready: The first thing you’ll notice when you’re self-employed is
-that lenders will want a lot of paperwork from you. It helps to have it ready and
-complete as soon as possible. Although the requirements may vary by lender, the most
-common documents you’ll need are:
-</li>
-<br/>
-<div style={{marginLeft:'100px'}}>
-o Complete personal tax returns for two years
-<br/>
-o Business tax returns for two years (usually Schedule C)
-<br/>
-o IRS Form 4506-T, giving permission to the lender to request transcripts for tax
-returns
-<br/>
-o Profit and loss statements for the past two years
-<br/>
-o Business bank statements for the last 90 days (some will require longer)
-<br/>
-o Business verification, such as a DBA (“doing business as”) or a letter from your
-CPA or clients
-<br/>
-o A business license (if applicable for your type of self-employment)
-<br/>
-<br/>
-</div>
-<li>
-Clean up your credit: Whether self-employed or not, you should always keep on top on
-your credit, especially before applying for a mortgage. Obtain a current credit report
-from each of the three credit reporting agencies. Review your report for errors, and be
-sure to dispute anything that shouldn’t be there (and address any legitimate concerns
-that appear). Do this before your lender pulls your credit. You want it as spotless as
-possible before the mortgage application process.
-</li>
-<li>
-Save as much as you can: Many self-employed professionals understand that it’s
-common to go through periods of financial feast and periods of financial famine. Be sure
-to save as much money as possible during times of feast so you can boost your reserves
-and your down payment amount.
-</li>
-<li>
-Keep clean business records: If you haven’t already, separate your business and
-personal income. Be sure you have separate checking and savings accounts for each.
-Have a separate credit card for business expenses. Also, use a business accounting
-software program to make generating reports easier and more accurate.
-</li>
-</ul>
-<br/> <br/>
-Being self-employed certainly doesn’t mean you can’t get a mortgage. It just means you may
-have to do a few more steps to get the approval you desire. So be proactive in the process. Get
-all your paperwork in order before submitting your application, and be prepared to gather
-additional forms and papers as requested. With some patience and planning, any self-employed
-professional can get a mortgage approval.
-<br/> <br/>
-
-
-When you’re ready to apply for a mortgage or refinance an existing one, contact us at 707-254-
-8891 or hilda.hensley@benchmark.us. We can also direct you to the perfect real estate agent
-to help you.
-
-    </p>,
-    blogSnippet: 'While getting a mortgage is usually a straight-forward process, when you’re self-employed, it can get a little complicated.',
-    blogImage: 'https://i.ibb.co/dbk8hBp/self-employ.jpg',
   },
 ]
   const BlogHomePage = () => (

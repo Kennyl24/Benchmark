@@ -32,6 +32,8 @@ class Blog extends React.Component {
     <MuiThemeProvider>
       <MetaTags>
             <title>{this.props.blog.blogTitle}</title>
+            <meta property="keywords" content={this.props.blog.blogTitle} />
+            <meta property="title" content={this.props.blog.blogTitle} />
             <meta name="description" content={this.props.blog.blogSnippet} />
             <meta property="og:title" content={this.props.blog.blogTitle} />
             <meta property="og:image" content={this.props.blog.image} />

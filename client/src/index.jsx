@@ -74,6 +74,36 @@ const images = [
     ];
 const blogs = [
   {
+    blogTitle: 'What to do if the Home Appraisal Comes in Low',
+    blogAuthor:'Hilda Hensley',
+    blogText: <p>
+A home appraisal is an important step when buying a home—and one that is absolutely necessary if you’re getting a mortgage. The purpose of the home appraisal is to determine the property’s actual value. Lenders require this, as it’s a way for them to protect their investment.
+<br/><br/>
+For example, suppose you and the seller agree on a purchase price of $500,000. You are putting $25,000 down, meaning your mortgage will be for $475,000. If the appraisal says the home is valued at $450,000, your lender many deny your application. That’s because there’s a $25,000 gap between the mortgage amount and the home’s value. If you were to default on the loan, chances are high that the mortgage company wouldn’t be able to recoup the full amount of the loss.
+<br/><br/>
+
+So, what happens when your home appraisal comes in lower than expected? Is your dream home gone forever? Not necessarily. Here are some things to consider.
+<br/><br/>
+<ol>
+<li>
+Get your lender involved. Due to mandated mortgage industry requirements, you as a consumer cannot request a new appraisal. However, your lender can rebut an appraisal on your behalf. Therefore, let your lender know why you agreed to the price you did. Show your lender the comparables you and your Realtor used to determine an offer price. If that doesn’t work, consider the next two suggestions. 
+  </li> 
+<li>Re-negotiate with the seller. If the appraisal stands as is (even with a second opinion), see if the seller will lower the price. After all, unless they find a cash buyer, in which appraisals aren’t needed, they’re going to run into this problem again with a new buyer. </li>
+<li>Make up the difference with a higher down payment. If you have the means, you can increase your down payment so that the lender is no longer at risk. </li>
+</ol>
+<br/><br/>
+
+As you can see, all is not lost if your home appraisal comes in lower than expected. Take the next step that makes the most sense for your situation. And always work closely with your Realtor and mortgage banker to ensure the best outcome for all.
+<br/><br/>
+
+Is applying for a mortgage in your future? Contact us. As mortgage bankers, we can help you make the best decision for your needs.
+
+    </p>,
+    blogSnippet: 'A home appraisal is an important step when buying a home—and one that is absolutely necessary if you’re getting a mortgage. What happens when your home appraisal comes in lower than expected? Here are some things to consider.',
+    blogImage: 'https://i.ibb.co/RSCh1cZ/5-Best-Ways-Home-Inspection-1.png',
+ 
+  },
+  {
     blogTitle: 'Using Gift Money for Your Down Payment',
     blogAuthor:'Hilda Hensley',
     blogText: <p>
