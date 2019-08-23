@@ -90,6 +90,7 @@ class Individualblog extends React.Component {
             <title>{this.state.blog.blogTitle}</title>
             <meta name="keywords" content={this.state.blog.blogTitle} />
             <meta name="description" content={this.state.blog.blogSnippet} />
+            <meta name="og:description" content={this.state.blog.blogSnippet} />
             <meta property="og:title" content={this.state.blog.blogTitle} />
             <meta property="og:image" content={this.state.blog.blogImage} />
             <meta property="og:url" content={window.location.href}>
