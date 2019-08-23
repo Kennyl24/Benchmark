@@ -367,7 +367,8 @@ It’s true that of all the closing costs you’ll need to buy a home, the down 
 Whether you’re buying your first home or your tenth, following are some tips for making your down payment easier. 
 <br/><br/>
 
-<span style={{fontWeight:'700'}}>Know how much down payment you really need.</span>
+<div style={{fontWeight:'700'}}>Know how much down payment you really need.</div>
+<br/>
 According to the 2017 NerdWallet Down Payment Reality Report, 44% of Americans believe you need to have a down payment of 20% or more of the home’s purchase price. While that 20% figure is needed some of the time, it’s not the only down payment option. In fact, most buyers surveyed (54%) put down 10 percent or less, and 36% put down five percent or less.
 <br/><br/>
 
@@ -377,7 +378,8 @@ How is this possible? Different mortgage options have different down payment req
 The point is to do your research and determine what amount of down payment you really need before you disqualify yourself from home ownership. Chances are you need a lower down payment than you think. 
 <br/><br/>
 
-<span style={{fontWeight:'700'}}>Look into down payment assistance programs (DPA).</span>
+<div style={{fontWeight:'700'}}>Look into down payment assistance programs (DPA).</div>
+<br/>
 Down payment assistance programs are typically grant and government funding options that assist homebuyers who meet certain criteria with their down payment. Unfortunately, there is a lot of misinformation circulating about DPA programs. One of the most common misconceptions is that only first-time homebuyers can qualify. While it’s true that most of the programs have that as a stipulation (approximately 63%), that still leaves quite a few without that criteria. Additionally, most programs use the HUD definition of a first-time homebuyer, which is someone who has not owned a home for the past three years. So, if you owned a home at one time but have been renting for the past three or more years, you are technically considered a first-time homebuyer again.
 <br/><br/>
 
@@ -390,7 +392,8 @@ However, as with anything in life, there are some cons. Most programs have many 
 If you think a DPA could help you reach your home ownership goals, investigate this option. But as always, be aware of all the pros and cons before moving forward.
 <br/><br/>
 
-<span style={{fontWeight:'700'}}>Ask family for gift funds.</span>
+<div style={{fontWeight:'700'}}>Ask family for gift funds.</div>
+<br/>
 According to the 2017 National Association of REALTORS® Profile of Home Buyers and Sellers report, nearly 25% of first-time home buyers use cash gifts from family for a down payment. If any family members are willing to gift you some down payment money, you’ll need to get a signed statement from the giver that explicitly states the money is a gift, not a loan, and that no repayment is required. The mortgage gift letter must include the giver’s name, address, and contact information; the recipient’s name and relationships to the giver; and the dollar amount and approximate date of the gift.
 <br/><br/>
 
@@ -400,7 +403,8 @@ Whatever you do, don’t take a loan from family and try to pass it off as a gif
 The good news is that people can give up to $14,000 to an unlimited number of people each year and still face no federal gift tax. In other words, two parents could each give a son and daughter-in-law $14,000. That’s $28,000 per person, or $56,000 total. That’s a big down payment.
 <br/><br/>
 
-<span style={{fontWeight:'700'}}>Borrow from your retirement account. </span>
+<div style={{fontWeight:'700'}}>Borrow from your retirement account. </div>
+<br/>
 Using retirement funds to pay your down payment expenses is a decision not to be taken lightly. While owning a home is always a smart move, you want to ensure you’ll have enough set aside for your future goals as well. How much you can withdraw and whether you need to pay it back varies depending upon the type of retirement account you have.
 <br/><br/>
 
@@ -410,7 +414,8 @@ If you have a 401(k), you can borrow up to $50,000 or half of your vested balanc
 If you have a traditional IRA, and if you are a first-time homebuyer, you can borrow up to $10,000 for a down payment without paying a tax penalty. You will have to pay income tax on the loan though. If you are married, each spouse can borrow up to $10,000 for a total of $20,000. However, withdrawing money from a traditional IRA is the least advantageous way to access your retirement savings because of taxes. In contrast, withdrawing funds from a Roth IRA is the most advantageous because the withdrawal of any contributions to the account is tax-free and penalty-free.
 <br/><br/>
 
-<span style={{fontWeight:'700'}}>The Low-Down on Down Payments</span>
+<div style={{fontWeight:'700', fontSize:'20px'}}>The Low-Down on Down Payments</div>
+<br/>
 If saving alone is not getting you to your home ownership goal fast enough, you do have options. Research all the outlined suggestions thoroughly before you make any decisions. And of course, talk with your mortgage banker. They will be able to provide customized advice to help you during the home buying process. Armed with this knowledge, you can make an informed decision about how to fund your down payment. 
 <br/><br/>
 

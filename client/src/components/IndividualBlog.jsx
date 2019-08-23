@@ -14,7 +14,7 @@ import TextField from '@material-ui/core/TextField';
 import axios from 'axios';
 import MetaTags from 'react-meta-tags';
 import {isMobile} from 'react-device-detect';
-
+import {Helmet} from 'react-helmet'
 import {
   FacebookShareButton,
   GooglePlusShareButton,
@@ -35,7 +35,7 @@ class Individualblog extends React.Component {
       key: null,
       blog: null,
       email:'',
-      data: null,
+      data: false,
       test: window.location.href.split('/')[window.location.href.split('/').length-2].split('-').join(' '),
     }
     this.submitted = this.submitted.bind(this);
@@ -44,7 +44,6 @@ class Individualblog extends React.Component {
     window.scrollTo(0, 0);
 }
   componentWillMount(){
-    console.log(window.location.href);
       if (typeof this.props.location.state !== 'undefined'){
         this.setState({
           key: this.props.location.state.key
@@ -53,11 +52,7 @@ class Individualblog extends React.Component {
           data: true
         }));
       } else {
-      console.log('trying this one boo');
-      console.log(window.location.href);
       for( let i = 0; i < this.props.blogs.length; i++){
-        console.log(this.state.test)
-        console.log(this.props.blogs[i].blogTitle)
         if(this.state.test === this.props.blogs[i].blogTitle){
           this.setState({
             key: i,
@@ -65,6 +60,7 @@ class Individualblog extends React.Component {
             blog: this.props.blogs[this.state.key],
             data: true
           }));
+          break; 
         }
       };
     }
@@ -86,16 +82,17 @@ class Individualblog extends React.Component {
   }
   render () {
     if (!this.state.data) {
-      return <div />
-  }
+      return <div/>
+  } else {
     return (
     <MuiThemeProvider>
-      <MetaTags>
+      <Helmet>
             <title>{this.state.blog.blogTitle}</title>
+            <meta name="keywords" content={this.state.blog.blogTitle} />
             <meta name="description" content={this.state.blog.blogSnippet} />
             <meta property="og:title" content={this.state.blog.blogTitle} />
             <meta property="og:image" content={this.state.blog.blogImage} />
-          </MetaTags>
+          </Helmet>
     <LeadingBar/>
   <div style={{padding:'5%'}}>
     <h1 style={{marginTop: isMobile ? '21%' :'10%'}}>{this.state.blog.blogTitle}</h1>
@@ -174,6 +171,7 @@ class Individualblog extends React.Component {
    </MuiThemeProvider>
 )
 }
+  }
 };
 
 export default Individualblog;

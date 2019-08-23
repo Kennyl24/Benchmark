@@ -14,6 +14,7 @@ import PlusOneOutlined from '@material-ui/icons/Navigation';
 import Icon from '@material-ui/core/Icon';
 import Popup from "reactjs-popup";
 import BottomNav from './BottomNav.jsx';
+
 const styles = theme => ({
   paper: {
     position: 'absolute',
