@@ -93,8 +93,7 @@ class Individualblog extends React.Component {
             <meta name="og:description" content={this.state.blog.blogSnippet} />
             <meta property="og:title" content={this.state.blog.blogTitle} />
             <meta property="og:image" content={this.state.blog.blogImage} />
-            <meta property="og:url" content={window.location.href}>
-
+            <meta property="og:url" content={window.location.href}/>
           </Helmet>
     <LeadingBar/>
   <div style={{padding:'5%'}}>
