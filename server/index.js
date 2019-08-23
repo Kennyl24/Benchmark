@@ -4,12 +4,14 @@ const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const smtpTransport = require('nodemailer-smtp-transport');
 const fs = require('fs');
-var cors = require('cors');
+let cors = require('cors');
 let forceSsl = require('force-ssl-heroku');
 const compression = require('compression');
 const sitemap = require('express-sitemap');
-var path = require('path');
-
+let path = require('path');
+const fbCrawlerCheck = require('fb-crawler-check');
+let userAgent = 'string';
+let isCrawler = fbCrawlerCheck(userAgent);
 app.use(compression());
 app.use(forceSsl);
 // sitemap.generate(app);
@@ -83,7 +85,6 @@ const blogs = [
   'Construction Loans: What to Expect',
   'Benchmark Introduces New Program to Expand Options for Medical Professionals',
 ];
-
 
 app.post('/Email', (req, res) => {
   const mailOptions = {

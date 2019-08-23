@@ -14,7 +14,9 @@ import TextField from '@material-ui/core/TextField';
 import axios from 'axios';
 import MetaTags from 'react-meta-tags';
 import {isMobile} from 'react-device-detect';
-import {Helmet} from 'react-helmet'
+import {Helmet} from 'react-helmet';
+import { FacebookProvider, Share } from 'react-facebook';
+
 import {
   FacebookShareButton,
   GooglePlusShareButton,
@@ -94,7 +96,7 @@ class Individualblog extends React.Component {
             <meta property="og:title" content={this.state.blog.blogTitle} />
             <meta property="og:image" content={this.state.blog.blogImage} />
             <meta property="og:url" content={window.location.href}/>
-          </Helmet>
+      </Helmet>
     <LeadingBar/>
   <div style={{padding:'5%'}}>
     <h1 style={{marginTop: isMobile ? '21%' :'10%'}}>{this.state.blog.blogTitle}</h1>
@@ -140,6 +142,7 @@ class Individualblog extends React.Component {
   <GooglePlusIcon size={40} round={true} />
   </GooglePlusShareButton>
   </span>
+
   </div>
     }
     
