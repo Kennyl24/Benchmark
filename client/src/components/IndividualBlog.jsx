@@ -92,6 +92,8 @@ class Individualblog extends React.Component {
             <meta name="description" content={this.state.blog.blogSnippet} />
             <meta property="og:title" content={this.state.blog.blogTitle} />
             <meta property="og:image" content={this.state.blog.blogImage} />
+            <meta property="og:url" content={window.location.href}>
+
           </Helmet>
     <LeadingBar/>
   <div style={{padding:'5%'}}>
@@ -102,7 +104,7 @@ class Individualblog extends React.Component {
     { isMobile?     <div style={{display:'flex', flexDirection:'row', paddingLeft:'25%'}}>
   <span style={{cursor:'pointer'}}>
   <span>
-  <FacebookShareButton children="IndividualBlog" url={window.location.href}  quote={this.state.blog.blogTitle} hashtag="#HildaHensleyTeam">
+  <FacebookShareButton children="IndividualBlog" url={window.location.href}  quote={this.state.blog.blogSnippet}>
   <FacebookIcon size={40} round={true} />
   </FacebookShareButton>
   </span>
