@@ -9,6 +9,55 @@ import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'mat
 import Button from '@material-ui/core/Button';
 const homeBlogs = [
   {
+    blogTitle: 'What is an IRRRL VA refinance loan',
+    blogAuthor:'Hilda Hensley',
+    blogText: <p>
+An IRRRL, or Interest Rate Reduction Refinancing Loan, is a quick VA refinance option with fewer qualifications and less paperwork than other refinance loan options. It’s meant to be a quick and non-complicated refinance option for qualified VA homeowners, and there is no appraisal requirement. If you have an existing VA loan and are looking for a quick way to refinance at a lower rate or shorten the term of your mortgage, an IRRRL might be a great option for you!
+
+<br/><br/>
+<h1>How do I know if I qualify?</h1>
+<br/><br/>
+To qualify for a IRRRL you must already have an existing VA loan you are looking to refinance. Approval is also very simple. No credit review is needed, making this one of the easiest refinance options available to VA homeowners.
+
+ 
+<br/><br/>
+
+<h1>Is it worth it? How would I benefit from an IRRRL?</h1>
+<br/><br/>
+
+With an IRRRL, you can potentially refinance at a lower interest rate than when your original VA loan was taken out. It gives existing VA homeowners like you a chance to take advantage of the current low interest rates. If you are looking to reduce your monthly mortgage payment this might be a great opportunity.
+<br/><br/>
+
+You can also shorten a 30-year mortgage to a 15-year mortgage when you refinance with an IRRRL. Be aware that your monthly payment will probably be larger when shortening the term of your mortgage. However, depending on your goals and financial situation, this might be an opportunity to cut your number of mortgage payments significantly. You can also switch from an existing ARM (adjustable-rate mortgage) to a new fixed-rate loan.  
+<br/><br/>
+
+
+ 
+
+<h1>How much does it cost? How do I apply?</h1>
+<br/><br/>
+
+Before discussing the cost, it’s a good idea to understand what the VA funding fee is, exactly.
+<br/><br/>
+
+As we shared in VA Funding Fee: A Closer Look, the VA funding fee is a percentage of the loan amount that is applied to every VA purchase and refinance. The proceeds from the fee go directly to the VA to help keep the loan guarantee program running. While this is a benefit that all veterans have earned, the fee helps to offset any losses that the VA takes on by issuing the guarantee, so that this program will continue to be available for future generations.
+<br/><br/>
+
+The amount of paperwork required for this streamlined loan is very minimal. The VA funding fee for an IRRRL only 0.5%, and there is an exception to this for disabled veterans, or spouses of deceased veterans who died in service or from an injury sustained during service.
+<br/><br/>
+
+If you are ready to get started with an IRRRL, you find your local branch, and contact them, or apply today! For more information, please contact our VA specialists at 1-833-VET-EASY.
+
+ 
+
+Benchmark brings you home.
+
+    </p>,
+    blogSnippet: 'An IRRRL, or Interest Rate Reduction Refinancing Loan, is a quick VA refinance option with fewer qualifications and less paperwork than other refinance loan options.',
+    blogImage: 'https://i.ibb.co/Mc671Cn/save-money-with-an-IRRRL.jpg',
+ 
+  },
+  {
     blogTitle: 'What to do if the Home Appraisal Comes in Low',
     blogAuthor:'Hilda Hensley',
     blogText: <p>
@@ -94,56 +143,6 @@ best decision for your needs.
     </p>,
     blogSnippet: 'Saving for a down payment can take a long time. However, if you’re fortunate to have family willing to give you a monetary gift that you can use for your down payment, you can reach your goal of home ownership must faster.',
     blogImage: 'https://i.ibb.co/vJXG8tf/gift1.jpg',
-  },
-  {
-    blogTitle: 'The Facts about Lender Placed Insurance',
-    blogAuthor:'Hilda Hensley',
-    blogText: <p>
-      All mortgage lenders require homeowners to have adequate insurance on the property. This protects
-the homeowner as well as the mortgage company, which has a vested interest in the home. At some
-point during your home ownership, you may receive notice that your lender has issued “Lender Placed
-Insurance,” “Creditor Placed Insurance,” or “Force Placed Insurance” on your property. What is this?
-And why would a mortgage company make this move?
-<br/><br/>
-Typically, there are three main reasons why Lender Placed Insurance may go into effect.
-<br/><br/>
-<ol>
-  <li>
-Your current homeowner’s insurance has lapsed or been cancelled. If your insurance payments
-are not escrowed and you pay them yourself each year, you may have mistakenly missed your
-payment date. Or perhaps your insurance company cancelled your policy for some other reason.
-While you would likely receive several notifications prior to any termination of coverage,
-oversights happen and your life is busy. So sometimes things get missed. In this case, your
-mortgage company would jump in and secure this insurance for you.
-</li>
-<li>
-Your property insurance doesn’t provide adequate coverage. Maybe your home has significantly
-risen in value, but you haven’t updated your homeowner’s insurance coverage in years. If your
-policy no longer provides adequate protection from a loss, your mortgage company would issue
-Lender Placed Insurance to fill in the gap.
-</li>
-<li>
-Your bank or mortgage servicer has no record of adequate homeowner’s insurance coverage.
-Your insurance company should provide your mortgage company with proof of coverage. If they
-fail to do so, or something gets overlooked, your mortgage company will think you don’t have
-insurance and will issue a policy.
-</li>
-<br/><br/>
-It’s important to note that Lender Placed Insurance is meant to be temporary. It’s usually basic coverage
-that only offers protection for the lender for the loan balance should a major loss occur. Additionally,
-this basic coverage is often more expensive than a traditional homeowner policy, and you as the
-homeowner are responsible for paying the premium of the Lender Placed Insurance.
-<br/><br/>
-Once you have proof that your property is covered by traditional homeowner’s insurance, your
-mortgage company will promptly cancel the Lender Placed Insurance. So if you receive a notice of
-Lender Placed Insurance, address it right away to ensure your home is properly insured.
-<br/><br/>
-Is applying for a mortgage in your future? Contact us. As mortgage bankers, we can help you make the
-best decision for your needs.
-</ol>
-    </p>,
-    blogSnippet: 'At some point during your home ownership, you may receive notice that your lender has issued “Lender Placed Insurance,” “Creditor Placed Insurance,” or “Force Placed Insurance” on your property. Find out what this is and what it means for you.',
-    blogImage: 'https://i.ibb.co/RgmktZN/covered.jpg',
   },
 ]
   const BlogHomePage = () => (
