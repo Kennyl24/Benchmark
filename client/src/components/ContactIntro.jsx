@@ -10,7 +10,6 @@ import TextField from '@material-ui/core/TextField';
 import SvgIcon from '@material-ui/core/SvgIcon';
 import IconButton from '@material-ui/core/IconButton';
 import {isMobile} from 'react-device-detect';
-import hildateam from './hildateam.jpg';
 
 class ContactIntro extends React.Component { 
   constructor(props) {

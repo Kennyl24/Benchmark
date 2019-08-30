@@ -52,11 +52,15 @@ class BottomNav extends Component {
           </div>
           <div className="grid-item">
           <div className='social-bottom'/>
-          <SocialIcon style={{marginRight:'15px'}} url="https://www.facebook.com/hildahensleynapa/" network="facebook" color="#242f6e"/>
-          <SocialIcon style={{marginRight:'15px'}} url="https://www.youtube.com/channel/UCY2tLom-tAtTh-mYMKnsATA/featured" network="youtube"/>
-          <SocialIcon style={{marginRight:'15px'}} url="https://www.zillow.com/lender-profile/hilda%20hensley/" color="#242f6e" />      
-          <SocialIcon style={{marginRight:'15px'}} url="https://www.yelp.com/biz/hilda-garcia-hensley-benchmark-mortgage-napa" network="yelp"/>
-         <div style={{display: 'flex', flexDirection:'column'}}>
+          <SocialIcon style={{marginRight:'10px'}} url="https://www.facebook.com/hildahensleynapa/" network="facebook" color="#242f6e"/>
+          <SocialIcon style={{marginRight:'10px'}} url="https://www.youtube.com/channel/UCY2tLom-tAtTh-mYMKnsATA/featured" network="youtube"/>
+          <SocialIcon style={{marginRight:'10px'}} url="https://www.zillow.com/lender-profile/hilda%20hensley/" color="#242f6e" />      
+          <SocialIcon style={{marginRight:'10px'}} url="https://www.yelp.com/biz/hilda-garcia-hensley-benchmark-mortgage-napa" network="yelp"/>
+          <SocialIcon style={{marginRight:'10px'}} url="https://twitter.com/hildahensley" network="twitter"/>
+          <SocialIcon style={{marginRight:'10px'}} url="https://www.instagram.com/p/ByMMpJUpu0H/" network="instagram"/>
+          <SocialIcon style={{marginRight:'10px'}} url="https://www.linkedin.com/in/hildahensley" network="linkedin"/>
+
+<div style={{display: 'flex', flexDirection:'column'}}>
           <div className="footer-subscribe-title"> 
             Subscribe to receive our latest tips!
           </div>

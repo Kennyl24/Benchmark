@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom';
 import LeadingBar from './LeadingBar.jsx';
 import Paper from 'material-ui/Paper';
 import {isMobile} from 'react-device-detect';
-import backgroundPhoto from './backgroundPhoto.jpg';
 import newBack from './newBack.jpg';
 
 const style = {
