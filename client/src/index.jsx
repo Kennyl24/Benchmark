@@ -130,6 +130,55 @@ const blogs = [
 //     blogSnippet: 'When shopping for a mortgage, you may have heard the phrase “jumbo loan.” What is it? And do you need one? Learn the facts about jumbo loans.',
 //     blogImage: "https://i.ibb.co/9ncw0rP/fha-jumbo-loan.png",
 //   },
+{
+  blogTitle: 'What is an IRRRL VA refinance loan',
+  blogAuthor:'Hilda Hensley',
+  blogText: <p>
+An IRRRL, or Interest Rate Reduction Refinancing Loan, is a quick VA refinance option with fewer qualifications and less paperwork than other refinance loan options. It’s meant to be a quick and non-complicated refinance option for qualified VA homeowners, and there is no appraisal requirement. If you have an existing VA loan and are looking for a quick way to refinance at a lower rate or shorten the term of your mortgage, an IRRRL might be a great option for you!
+
+<br/><br/>
+<h1>How do I know if I qualify?</h1>
+<br/><br/>
+To qualify for a IRRRL you must already have an existing VA loan you are looking to refinance. Approval is also very simple. No credit review is needed, making this one of the easiest refinance options available to VA homeowners.
+
+
+<br/><br/>
+
+<h1>Is it worth it? How would I benefit from an IRRRL?</h1>
+<br/><br/>
+
+With an IRRRL, you can potentially refinance at a lower interest rate than when your original VA loan was taken out. It gives existing VA homeowners like you a chance to take advantage of the current low interest rates. If you are looking to reduce your monthly mortgage payment this might be a great opportunity.
+<br/><br/>
+
+You can also shorten a 30-year mortgage to a 15-year mortgage when you refinance with an IRRRL. Be aware that your monthly payment will probably be larger when shortening the term of your mortgage. However, depending on your goals and financial situation, this might be an opportunity to cut your number of mortgage payments significantly. You can also switch from an existing ARM (adjustable-rate mortgage) to a new fixed-rate loan.  
+<br/><br/>
+
+
+
+
+<h1>How much does it cost? How do I apply?</h1>
+<br/><br/>
+
+Before discussing the cost, it’s a good idea to understand what the VA funding fee is, exactly.
+<br/><br/>
+
+As we shared in VA Funding Fee: A Closer Look, the VA funding fee is a percentage of the loan amount that is applied to every VA purchase and refinance. The proceeds from the fee go directly to the VA to help keep the loan guarantee program running. While this is a benefit that all veterans have earned, the fee helps to offset any losses that the VA takes on by issuing the guarantee, so that this program will continue to be available for future generations.
+<br/><br/>
+
+The amount of paperwork required for this streamlined loan is very minimal. The VA funding fee for an IRRRL only 0.5%, and there is an exception to this for disabled veterans, or spouses of deceased veterans who died in service or from an injury sustained during service.
+<br/><br/>
+
+If you are ready to get started with an IRRRL, you find your local branch, and contact them, or apply today! For more information, please contact our VA specialists at 1-833-VET-EASY.
+
+
+
+Benchmark brings you home.
+
+  </p>,
+  blogSnippet: 'An IRRRL, or Interest Rate Reduction Refinancing Loan, is a quick VA refinance option with fewer qualifications and less paperwork than other refinance loan options.',
+  blogImage: 'https://i.ibb.co/Mc671Cn/save-money-with-an-IRRRL.jpg',
+
+},
   {
     blogTitle: 'What to do if the Home Appraisal Comes in Low',
     blogAuthor:'Hilda Hensley',
