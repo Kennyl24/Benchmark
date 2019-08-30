@@ -943,8 +943,9 @@ li {
   width: 25%;
   min-width: 220px;
   margin-bottom: 2%;
-  margin-right: 150px;
-  margin: 30px;
+  /* margin-right: 150px; */
+  margin: 70px;
+  margin-top: 20px;
   /* box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.2); */
   transition: 0.3s;
   /* z-index: 99999999; */
