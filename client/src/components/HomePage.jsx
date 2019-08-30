@@ -31,13 +31,15 @@ class HomePage extends React.Component {
     window.scrollTo(0, 0);
 }
   render () {
-    <MetaTags>
-            {/* <title>Napa Valley Mortgage Lender Home Page</title>
-            <meta name="description" content="Your napa valley mortgage lenders. Napa Mortgage brokers. Napa mortgage bankers. Napa mortgage. Napa home loans. Here you will see mortgage blogs, vlogs, and more." />
-            <meta name="keywords" content="Your napa valley mortgage lenders. Napa Mortgage brokers. Napa mortgage bankers. Napa mortgage. Napa home loans. Here you will see mortgage blogs, vlogs, and more." />
-            <meta property="og:title" content="Napa Valley Mortgage Lender" />
-            <meta property="og:image" content="https://i.ibb.co/RCsMTx9/teamlogo.png" /> */}
-    </MetaTags>
+    <Helmet>
+            <title>Hilda Hensley Team Vlog</title>
+            {/* <meta name="keywords" content="" />
+            <meta name="description" content={this.state.blog.blogSnippet} />
+            <meta name="og:description" content={this.state.blog.blogSnippet} />
+            <meta property="og:title" content={this.state.blog.blogTitle} />
+            <meta property="og:image" content={this.state.blog.blogImage} /> */}
+            <meta property="og:url" content={window.location.href}/>
+      </Helmet>
     return (  
         <div style={{backgroundColor:'#fafafa'}}>
         <Helmet>

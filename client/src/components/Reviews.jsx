@@ -8,6 +8,8 @@ import LeadingBar from './LeadingBar.jsx';
 import ReviewsMap from './ReviewsMap.jsx';
 import ReviewsIntro from './ReviewsIntro.jsx';
 import BottomNav from './BottomNav.jsx';
+import {Helmet} from "react-helmet";
+
 class Reviews extends React.Component { 
   constructor(props) {
     super(props);
@@ -20,6 +22,10 @@ class Reviews extends React.Component {
   render () {
     return (
     <MuiThemeProvider>
+      <Helmet>
+            <title>Reviews of the Hilda Hensley Team</title>
+            <meta property="og:url" content={window.location.href}/>
+      </Helmet>
         <LeadingBar/>
         <ReviewsIntro/>
         <ReviewsMap/>

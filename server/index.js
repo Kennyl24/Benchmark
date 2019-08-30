@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const smtpTransport = require('nodemailer-smtp-transport');
 const fs = require('fs');
+app.use(require('prerender-node'));
 let cors = require('cors');
 let forceSsl = require('force-ssl-heroku');
 const compression = require('compression');

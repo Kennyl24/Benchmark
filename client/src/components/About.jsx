@@ -8,6 +8,7 @@ import BottomNav from './BottomNav.jsx';
 import CoreValues from './CoreValues.jsx';
 import Mission from './Mission.jsx';
 import AboutNav from './AboutNav.jsx';
+import {Helmet} from "react-helmet";
 
 
 class About extends React.Component { 
@@ -22,6 +23,12 @@ class About extends React.Component {
   render () {
     return (
       <MuiThemeProvider>
+        <Helmet>
+            <title>About The Hilda Hensley Team</title>
+            <meta name="keywords" content="Mortgage Lender, Hilda Hensley, The Hilda Hensley Team, " />
+            <meta name="og:description" content="The Hilda Hensley Team is a team of mortgage lending specialists. We have over 50 years of combinded experiences as a mortgage lender.   " />
+            <meta property="og:url" content={window.location.href}/>
+      </Helmet>
         <LeadingBar/>
         <TeamIntro/>
         {/* <AboutNav/> */}

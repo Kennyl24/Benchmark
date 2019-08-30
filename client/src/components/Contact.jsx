@@ -8,6 +8,7 @@ import BottomNav from './BottomNav.jsx';
 import ContactIntro from './ContactIntro.jsx';
 import GetInTouch from './GetInTouch.jsx';
 import MapContainer from './MapContainer.jsx';
+import {Helmet} from "react-helmet";
 
 class Contact extends React.Component { 
   constructor(props) {
@@ -21,6 +22,15 @@ class Contact extends React.Component {
   render () {
     return (
   <MuiThemeProvider>
+    <Helmet>
+            <title>Contact The Hilda Hensley Team </title>
+            {/* <meta name="keywords" content="" />
+            <meta name="description" content={this.state.blog.blogSnippet} />
+            <meta name="og:description" content={this.state.blog.blogSnippet} />
+            <meta property="og:title" content={this.state.blog.blogTitle} />
+            <meta property="og:image" content={this.state.blog.blogImage} />
+            <meta property="og:url" content={window.location.href}/> */}
+      </Helmet>
     <LeadingBar/>
     <ContactIntro/>
     <GetInTouch/>

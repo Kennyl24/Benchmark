@@ -17,6 +17,7 @@ import BottomNav from './BottomNav.jsx';
 import ComingSoonModal from './ComingSoonModal.jsx';
 import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 import config from '../../../config.js';
+import {Helmet} from "react-helmet";
 
 
 const styles = theme => ({
@@ -63,6 +64,12 @@ class VlogPage extends React.Component {
   render () {
     return (
     <MuiThemeProvider>
+      <Helmet>
+            <title>Hilda Hensley Team Vlog</title>
+            <meta name="keywords" content="Mortgae Lender, Mortgage Lending, Va Loans, First Time home buyers, conventional loans, closing costs" />
+            <meta name="og:description" content="Mortgage Lending in the Napa Valley and surronding areas. You can find out many interestings things about home loans on this page." />
+            <meta property="og:url" content={window.location.href}/>
+      </Helmet>
       <body style={{paddingTop:'0px'}}>
       <div id="helloitsme">
       <LeadingBar/>

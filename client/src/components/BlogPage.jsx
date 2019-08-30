@@ -14,6 +14,7 @@ import PlusOneOutlined from '@material-ui/icons/Navigation';
 import Icon from '@material-ui/core/Icon';
 import Popup from "reactjs-popup";
 import BottomNav from './BottomNav.jsx';
+import {Helmet} from "react-helmet";
 
 const styles = theme => ({
   paper: {
@@ -47,6 +48,12 @@ class BlogPage extends React.Component {
   render () {
     return (
     <MuiThemeProvider>
+      <Helmet>
+            <title>Mortgage Lending 101</title>
+            <meta name="keywords" content="Mortgae Lender, Mortgage Lending, Va Loans, First Time home buyers, conventional loans, closing costs" />
+            <meta name="og:description" content="Mortgage Lending in the Napa Valley and surronding areas. You can find out many interestings things about home loans on this page." />
+            <meta property="og:url" content={window.location.href}/>
+      </Helmet>
       <div style={{backgroundColor: '#F5F5F5'}}>
       <LeadingBar/>
       {/* <BlogIntro/> */}
