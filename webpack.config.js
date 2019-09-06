@@ -1,6 +1,7 @@
 var path = require('path');
 var SRC_DIR = path.join(__dirname, '/client/src');
 var DIST_DIR = path.join(__dirname, '/client/dist');
+const MinifyPlugin = require('babel-minify-webpack-plugin');
 
 module.exports = {
   devtool: 'none',
@@ -9,6 +10,9 @@ module.exports = {
     filename: 'bundle.js',
     path: DIST_DIR
   },
+  plugins: [
+    new MinifyPlugin()
+  ],
   module: {
     rules: [
       {

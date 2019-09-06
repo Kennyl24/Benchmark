@@ -39,7 +39,7 @@ const blogs = [
     Is applying for a mortgage in your future? Contact us. As mortgage bankers, we can help you make the best decision for your needs.
     </p>,
      blogSnippet: 'You probably already know that many things like credit score and employment history affect your mortgage application. But what about those things that don’t affect your mortgage application? Here are the top things lenders never consider when issuing a loan.',
-     blogImage: 'https://i.ibb.co/Mc671Cn/save-money-with-an-IRRRL.jpg',
+     blogImage: 'https://i.ibb.co/N38WjSN/6-tips-home-mortgage-loan-approval-1068x713.jpg',
       },
   {
     blogTitle: 'What is an IRRRL VA refinance loan',
