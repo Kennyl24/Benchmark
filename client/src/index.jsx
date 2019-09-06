@@ -131,6 +131,38 @@ const blogs = [
 //     blogImage: "https://i.ibb.co/9ncw0rP/fha-jumbo-loan.png",
 //   },
 {
+blogTitle: 'Things that Do Not Affect Your Mortgage Application',
+blogAuthor:'Hilda Hensley',
+blogText: <p>
+  You probably already know that many things like credit score and employment history affect your mortgage application. But what about those things that don’t affect your mortgage application? 
+<br/><br/>
+The fact is that several factors people stress about have no bearing on a mortgage application. Here are the top things lenders never consider when issuing a loan.
+<br/><br/>
+<ol>
+  <li>
+  <div style={{fontWeight:'900'}}>Your Age</div>
+While lenders do ask for your date of birth, that’s only needed for identification purposes. For example, if your name is John Smith, there are probably several other John Smiths in the world but only one in your area born on your birthday. The birthdate question also verifies that you’re of legal age to enter into a contract. But other than that, your age does not matter and is not a consideration. Even if you’re 70 years old, if you qualify for a 30-year mortgage, your age alone can’t trigger a denial. 
+</li>
+<li>
+<div style={{fontWeight:'900'}}>Disability</div>
+Realize that it is illegal for a lender to discriminate against people with physical or mental disabilities. It is also illegal to discriminate against people who receive Social Security Disability Income (SSDI). You can definitely count any Social Security or disability payments as income to qualify for a mortgage as long you have a written statement from the Social Security Administration stating that you’ll be receiving that income for at least three years. Additionally, if you don’t need this income to qualify for the mortgage, you don’t have to state it in your mortgage application. 
+</li>
+<li>
+<div style={{fontWeight:'900'}}>How Many Children You Have or Plan to Have</div>
+The Fair Housing Act of 1968 outlaws discrimination on the grounds of “familial status.” That means lenders cannot ask you about your family planning, how many children you want to have, or if you are currently pregnant (even if you obviously are pregnant). Of course, the more children you currently have the higher some expenses may be, and those expenses could factor into your debt-to-income ratio. But if you have ten children, that alone cannot hinder your chances for a mortgage approval. 
+</li>
+<li>
+<div style={{fontWeight:'900'}}>Other Factors</div>
+It should go without saying that it’s illegal for lenders to discriminate on the basis of race, color, religion, gender, or marital status. While questions about these things are asked on the paperwork, that is so the Federal Financial Institutions Examination Council can use the data to detect discrimination. Lenders may audit their own files to prevent bias as well. And in the case of marital status, that’s only used to determine how the property should be titled. This is especially important in “community property” states, such as California. But none of these factors will ever affect your mortgage approval status. 
+</li>
+</ol>
+Is applying for a mortgage in your future? Contact us. As mortgage bankers, we can help you make the best decision for your needs.
+</p>,
+ blogSnippet: 'You probably already know that many things like credit score and employment history affect your mortgage application. But what about those things that don’t affect your mortgage application? Here are the top things lenders never consider when issuing a loan.',
+ blogImage: 'https://i.ibb.co/Mc671Cn/save-money-with-an-IRRRL.jpg',
+
+  },
+{
   blogTitle: 'What is an IRRRL VA refinance loan',
   blogAuthor:'Hilda Hensley',
   blogText: <p>
@@ -1364,10 +1396,10 @@ ReactDOM.render(
   <div>
       <Helmet>
                 <meta charSet="utf-8" />
-                <title>Napa Mortgage Loans, Hilda Hensley Team</title>
+                <title>Hilda Hensley & Team, Napa Mortgage Lender | Benchmark Mortgage </title>
                 <meta name="description" content="The Hilda Hensley Team is a leading mortgage team in the Napa Valley. With over 50 years of combined experience." />
                 <link rel="canonical" href="https://napamortgageloans.com/" />
-            </Helmet>
+      </Helmet>
    {isMobile ?  null : <ConnectTab/>}
   <Router>
     <Switch>
