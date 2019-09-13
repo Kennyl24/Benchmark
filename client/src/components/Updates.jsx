@@ -16,8 +16,24 @@ class Updates extends React.Component {
 
   render () {
     return (
-    <MuiThemeProvider>
-        <LeadingBar/>
+      <MuiThemeProvider>
+
+      <Helmet>
+          <title>Weekly Financial Update</title>
+           <meta charSet="utf-8" />
+
+           <meta name="description" content="Bonds and home loan rates hate good news. So, the influx of positive news abroad coupled with strong jobs data here in the U.S. pressured Mortgage Bonds lower and home loan rates higher."/>
+           <meta name="keywords" content="Napa Mortgage Loans, Mortgage rates, loans, mortgage, interest rates, fha loan, va loan, home loan, mortgage calculator, hilda hensley, benchmark mortgage napa, napa valley, mortgage broker, mortgage banker"/>
+          {/* <meta name="og:description" content={this.state.blog.blogSnippet} />
+    //         <meta property="og:title" content={this.state.blog.blogTitle} />
+    //         <meta property="og:image" content={this.state.blog.blogImage} /> */}
+            <meta property="og:image" content='https://vip.vantageproduction2.com/Share/Content/5062114/top-image-090919.jpg' />
+
+            <meta property="og:url" content={window.location.href}/>
+            <link rel="canonical" href="https://napamortgageloans.com/updates" />
+
+      </Helmet>
+              <LeadingBar/>
    <iframe 
    width="100%"
    style={{marginTop:'130px'}}
