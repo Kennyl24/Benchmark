@@ -8,15 +8,20 @@ const fs = require('fs');
 app.use(require('prerender-node'));
 let cors = require('cors');
 let forceSsl = require('force-ssl-heroku');
-const compression = require('compression');
+// const compression = require('compression');
 const sitemap = require('express-sitemap');
 let path = require('path');
 const fbCrawlerCheck = require('fb-crawler-check');
 let userAgent = 'string';
 let isCrawler = fbCrawlerCheck(userAgent);
-app.use(compression());
+// app.use(compression());
 app.use(forceSsl);
 // sitemap.generate(app);
+app.get('*.js', function (req, res, next) {
+  req.url = req.url + '.gz';
+  res.set('Content-Encoding', 'gzip');
+  next();
+});
 sitemap({
   map: {
     '/': ['get'],
