@@ -28,7 +28,7 @@ class Updates extends React.Component {
           {/* <meta name="og:description" content={this.state.blog.blogSnippet} />
     //         <meta property="og:title" content={this.state.blog.blogTitle} />
     //         <meta property="og:image" content={this.state.blog.blogImage} /> */}
-            <meta property="og:image" content='https://vip.vantageproduction2.com/Share/Content/5062114/top-image-090919.jpg' />
+            <meta property="og:image" content='https://vip.vantageproduction2.com/HtmlTemplate/5062291/7c6db342-673c-40ba-bdf3-8b74cf94ac9d/Render?preview' />
 
             <meta property="og:url" content={window.location.href}/>
             <link rel="canonical" href="https://napamortgageloans.com/updates" />
@@ -39,7 +39,7 @@ class Updates extends React.Component {
    width="100%"
    style={{marginTop:'130px'}}
    height="1500px"
-   src='https://vip.vantageproduction2.com/HtmlTemplate/5062149/7c6db342-673c-40ba-bdf3-8b74cf94ac9d/Render?preview'>  
+   src='https://vip.vantageproduction2.com/HtmlTemplate/5062291/7c6db342-673c-40ba-bdf3-8b74cf94ac9d/Render?preview'>  
      </iframe>
      <BottomNav/>
    </MuiThemeProvider>
