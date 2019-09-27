@@ -218,7 +218,7 @@ resize = () => {
     >
   <button className="dropbtn" style={{borderBottom: `1px solid ${this.state.serviceBackground}`, cursor:'pointer'}}
   onClick={() => window.location.href = '/VA'}
-  >Services</button>
+  >Loan Products</button>
   <div className="dropdown-content">
     <a href="/VA" style={{fontFamily: 'Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important'}}>Va Loans</a>
     <a href="/FHA">FHA</a>

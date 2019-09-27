@@ -17,11 +17,11 @@ let isCrawler = fbCrawlerCheck(userAgent);
 // app.use(compression());
 app.use(forceSsl);
 // sitemap.generate(app);
-app.get('*.js', function (req, res, next) {
-  req.url = req.url + '.gz';
-  res.set('Content-Encoding', 'gzip');
-  next();
-});
+// app.get('*.js', function (req, res, next) {
+//   req.url = req.url + '.gz';
+//   res.set('Content-Encoding', 'gzip');
+//   next();
+// });
 sitemap({
   map: {
     '/': ['get'],
