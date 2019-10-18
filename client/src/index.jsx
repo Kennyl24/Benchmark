@@ -73,63 +73,63 @@ const images = [
       },
     ];
 const blogs = [
-//   {
-//     blogTitle: 'Jumbo Loans',
-//     blogAuthor:'Hilda Hensley',
-//     blogText: <p>
-//       When shopping for a mortgage, you may have heard the phrase “jumbo loan.” What is it? And do you
-// need one?
-// <br/><br/>
-// In most locations, conventional mortgages have loan limits set in place by Fannie Mae and Freddie Mac,
-// the two government-sponsored enterprises that buy mortgages from lenders, pool them together, and
-// sell them as mortgage-backed securities to investors. Typically, the loan limit is set at $484,350.
-// However, if you’re in a more expensive housing area or a hot market, that limit may be higher. For
-// example, in Napa County, CA, the loan limit is currently $726,525. If you need a mortgage greater than
-// that amount, you’ll need to apply for a jumbo loan.
-// <br/><br/>
-// Realize this relates to the mortgage amount, not the home’s sale price. So if you’re buying a home in
-// Napa County for $1 million, and making a down payment of $300,000, then your mortgage amount is
-// $700,000, which is below the conventional loan limit. In this case, there’s no need for a jumbo loan.
-// However, if your down payment were $200,000, then your loan amount would be $800,000, and you
-// would need to apply for a jumbo loan.
-// <br/><br/>
-// <h1>Differences Between a Jumbo Loan and a Conventional Loan</h1>
-// <br/><br/>
-// Since jumbo loans are not backed by Freddie Mac or Fannie Mae, lenders view them as riskier. As such,
-// qualifying for one is a little more difficult. Here are some key things to note.
-// <br/><br/>
-// <ul>
-//   <li>
-// Lenders may require your FICO credit score to be 700 or higher.
-// </li>
-// <li>
-// They may also have stricter limits on debit-to-income ratios.
-// </li>
-// <li>
-// Typically, you’ll need more cash reserves to qualify.
-// </li><li>
-// The documentation process will be more involved.
-// </li>
-// <li>
-// Be prepared to need a higher down payment (lenders for jumbo loans like to see at least 20%
-// being put down).
-// </li>
-// <li>
+  {
+    blogTitle: 'Jumbo Loans',
+    blogAuthor:'Hilda Hensley',
+    blogText: <p>
+      When shopping for a mortgage, you may have heard the phrase “jumbo loan.” What is it? And do you
+need one?
+<br/><br/>
+In most locations, conventional mortgages have loan limits set in place by Fannie Mae and Freddie Mac,
+the two government-sponsored enterprises that buy mortgages from lenders, pool them together, and
+sell them as mortgage-backed securities to investors. Typically, the loan limit is set at $484,350.
+However, if you’re in a more expensive housing area or a hot market, that limit may be higher. For
+example, in Napa County, CA, the loan limit is currently $726,525. If you need a mortgage greater than
+that amount, you’ll need to apply for a jumbo loan.
+<br/><br/>
+Realize this relates to the mortgage amount, not the home’s sale price. So if you’re buying a home in
+Napa County for $1 million, and making a down payment of $300,000, then your mortgage amount is
+$700,000, which is below the conventional loan limit. In this case, there’s no need for a jumbo loan.
+However, if your down payment were $200,000, then your loan amount would be $800,000, and you
+would need to apply for a jumbo loan.
+<br/><br/>
+<h1>Differences Between a Jumbo Loan and a Conventional Loan</h1>
+<br/><br/>
+Since jumbo loans are not backed by Freddie Mac or Fannie Mae, lenders view them as riskier. As such,
+qualifying for one is a little more difficult. Here are some key things to note.
+<br/><br/>
+<ul>
+  <li>
+Lenders may require your FICO credit score to be 700 or higher.
+</li>
+<li>
+They may also have stricter limits on debit-to-income ratios.
+</li>
+<li>
+Typically, you’ll need more cash reserves to qualify.
+</li><li>
+The documentation process will be more involved.
+</li>
+<li>
+Be prepared to need a higher down payment (lenders for jumbo loans like to see at least 20%
+being put down).
+</li>
+<li>
 
-// Finally, because jumbo loans are bigger and harder to qualify for, often involving extra steps,
-// you may have to pay slightly higher closing costs and fees.
-// </li>
-// </ul>
-// <br/><br/>
-// Before proceeding with a jumbo loan, be sure to talk with your mortgage banker. There may be
-// alternative options that fit your needs better.
-// <br/><br/>
-// Is applying for a mortgage in your future? Contact us. As mortgage bankers, we can help you make the
-// best decision for your needs.
-//        </p>,
-//     blogSnippet: 'When shopping for a mortgage, you may have heard the phrase “jumbo loan.” What is it? And do you need one? Learn the facts about jumbo loans.',
-//     blogImage: "https://i.ibb.co/9ncw0rP/fha-jumbo-loan.png",
-//   },
+Finally, because jumbo loans are bigger and harder to qualify for, often involving extra steps,
+you may have to pay slightly higher closing costs and fees.
+</li>
+</ul>
+<br/><br/>
+Before proceeding with a jumbo loan, be sure to talk with your mortgage banker. There may be
+alternative options that fit your needs better.
+<br/><br/>
+Is applying for a mortgage in your future? Contact us. As mortgage bankers, we can help you make the
+best decision for your needs.
+       </p>,
+    blogSnippet: 'When shopping for a mortgage, you may have heard the phrase “jumbo loan.” What is it? And do you need one? Learn the facts about jumbo loans.',
+    blogImage: "https://i.ibb.co/9ncw0rP/fha-jumbo-loan.png",
+  },
 {
 blogTitle: 'Things that Do Not Affect Your Mortgage Application',
 blogAuthor:'Hilda Hensley',

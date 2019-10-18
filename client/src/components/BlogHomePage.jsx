@@ -9,6 +9,63 @@ import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'mat
 import Button from '@material-ui/core/Button';
 const homeBlogs = [
   {
+    blogTitle: 'Jumbo Loans',
+    blogAuthor:'Hilda Hensley',
+    blogText: <p>
+      When shopping for a mortgage, you may have heard the phrase “jumbo loan.” What is it? And do you
+need one?
+<br/><br/>
+In most locations, conventional mortgages have loan limits set in place by Fannie Mae and Freddie Mac,
+the two government-sponsored enterprises that buy mortgages from lenders, pool them together, and
+sell them as mortgage-backed securities to investors. Typically, the loan limit is set at $484,350.
+However, if you’re in a more expensive housing area or a hot market, that limit may be higher. For
+example, in Napa County, CA, the loan limit is currently $726,525. If you need a mortgage greater than
+that amount, you’ll need to apply for a jumbo loan.
+<br/><br/>
+Realize this relates to the mortgage amount, not the home’s sale price. So if you’re buying a home in
+Napa County for $1 million, and making a down payment of $300,000, then your mortgage amount is
+$700,000, which is below the conventional loan limit. In this case, there’s no need for a jumbo loan.
+However, if your down payment were $200,000, then your loan amount would be $800,000, and you
+would need to apply for a jumbo loan.
+<br/><br/>
+<h1>Differences Between a Jumbo Loan and a Conventional Loan</h1>
+<br/><br/>
+Since jumbo loans are not backed by Freddie Mac or Fannie Mae, lenders view them as riskier. As such,
+qualifying for one is a little more difficult. Here are some key things to note.
+<br/><br/>
+<ul>
+  <li>
+Lenders may require your FICO credit score to be 700 or higher.
+</li>
+<li>
+They may also have stricter limits on debit-to-income ratios.
+</li>
+<li>
+Typically, you’ll need more cash reserves to qualify.
+</li><li>
+The documentation process will be more involved.
+</li>
+<li>
+Be prepared to need a higher down payment (lenders for jumbo loans like to see at least 20%
+being put down).
+</li>
+<li>
+
+Finally, because jumbo loans are bigger and harder to qualify for, often involving extra steps,
+you may have to pay slightly higher closing costs and fees.
+</li>
+</ul>
+<br/><br/>
+Before proceeding with a jumbo loan, be sure to talk with your mortgage banker. There may be
+alternative options that fit your needs better.
+<br/><br/>
+Is applying for a mortgage in your future? Contact us. As mortgage bankers, we can help you make the
+best decision for your needs.
+       </p>,
+    blogSnippet: 'When shopping for a mortgage, you may have heard the phrase “jumbo loan.” What is it? And do you need one? Learn the facts about jumbo loans.',
+    blogImage: "https://i.ibb.co/9ncw0rP/fha-jumbo-loan.png",
+  },
+  {
     blogTitle: 'What is an IRRRL VA refinance loan',
     blogAuthor:'Hilda Hensley',
     blogText: <p>
@@ -86,63 +143,6 @@ Is applying for a mortgage in your future? Contact us. As mortgage bankers, we c
     blogSnippet: 'A home appraisal is an important step when buying a home—and one that is absolutely necessary if you’re getting a mortgage. What happens when your home appraisal comes in lower than expected? Here are some things to consider.',
     blogImage: 'https://i.ibb.co/RSCh1cZ/5-Best-Ways-Home-Inspection-1.png',
  
-  },
-  {
-    blogTitle: 'Using Gift Money for Your Down Payment',
-    blogAuthor:'Hilda Hensley',
-    blogText: <p>
-Saving for a down payment can take a long time. However, if you’re fortunate to have family willing to
-give you a monetary gift that you can use for your down payment, you can reach your goal of home
-ownership must faster.
-<br/><br/>
-According to the 2017 National Association of REALTORS® Profile of Home Buyers and Sellers report,
-nearly 25% of first-time home buyers used cash gifts from family for a down payment. If any family
-members are willing to gift you some down payment money, you’ll need to get a signed statement from
-the giver that explicitly states the money is a gift, not a loan, and that no repayment is required. The
-mortgage gift letter must include the giver’s name, address, and contact information; the recipient’s
-name and relationships to the giver; and the dollar amount and approximate date of the gift.
-<br/><br/>
-Here is a sample gift letter you may be able to use. Your lender may require additional information:
-<br/><br/>
-<div style={{marginLeft:'100px'}}>
-August 1, 2019
-<br/><br/>
-To Whom It May Concern:
-<br/><br/>
-I am giving my son, John Smith, a gift of $7,000 toward the purchase of his home. I do not expect
-or require any kind of repayment for this gift. I wrote the check for these funds on July 15, 2019,
-and he deposited it the next day. Should you need to contact me regarding this gift, you can do
-so using the information below.
-<br/><br/>
-Sincerely,
-<br/><br/>
-Michael Smith
-<br/>
-1234 Main Street
-<br/>
-Anytown, CA 90210
-<br/>
-(123) 555-4459
-</div>
-<br/><br/>
-Whatever you do, don’t take a loan from family and try to pass it off as a gift. If it needs to be repaid at
-any time in the future, it’s a loan and not a gift. If the money really is a loan, your lender will need to
-factor that amount into your debt-to-income ratio.
-<br/><br/>
-The good news is an individual can give up to $14,000 to an unlimited number of people each year and
-still face no federal gift tax. In other words, two parents could each give a son and daughter-in-law
-$14,000. That’s $28,000 per person, or $56,000 total. That’s a big down payment.
-<br/><br/>
-So don’t be afraid to ask Mom or Dad (or your favorite aunt or uncle) if a gift is possible. It may help you
-get that home of your dreams sooner than you ever thought possible.
-<br/><br/>
-Is applying for a mortgage in your future? Contact us. As mortgage bankers, we can help you make the
-best decision for your needs.
-
-
-    </p>,
-    blogSnippet: 'Saving for a down payment can take a long time. However, if you’re fortunate to have family willing to give you a monetary gift that you can use for your down payment, you can reach your goal of home ownership must faster.',
-    blogImage: 'https://i.ibb.co/vJXG8tf/gift1.jpg',
   },
 ]
   const BlogHomePage = () => (
