@@ -39,7 +39,7 @@ class Updates extends React.Component {
    width="100%"
    style={{marginTop:'130px'}}
    height="1500px"
-   src='http://vip.vantageproduction2.com/HtmlTemplate/5062433/7c6db342-673c-40ba-bdf3-8b74cf94ac9d/Render?preview'>  
+   src='https://vip.vantageproduction2.com/HtmlTemplate/5064192/7c6db342-673c-40ba-bdf3-8b74cf94ac9d/Render?ver=3&partnerid=0'>  
      </iframe>
      <BottomNav/>
    </MuiThemeProvider>
