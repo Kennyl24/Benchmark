@@ -81,7 +81,13 @@ Of all the reasons to refinance, taking cash out of a home should be the most ca
 Regardless of your goals, the refinancing process is similar to when you purchased your home so be prepared to provide similar documentation. It is important to understand the break-even point on a new mortgage if you are looking for a lower rate/payment. It is critical to seek the advice of a professional who can advise you if refinancing makes sense for your particular situation. 
         </p>
         </div>
+        
+
         <h5 style={{textAlign:'center'}}>If you think refinancing is right for you, or have any questions, feel free to <span><Link to={{ pathname:'/contact' }} style={{color:'inherit', textDecortation:'underline'}}>contact us today!</Link></span></h5>
+        <div>
+          <img style={{display:'block',
+    margin:'auto', marginBottom: '10px'}}src="https://i.ibb.co/h15v1XF/IMG-0835.jpg"/>
+        </div>
         <BottomNav/>
         </MuiThemeProvider>
     )
