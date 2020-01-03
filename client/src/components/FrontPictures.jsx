@@ -121,7 +121,7 @@ changeContact(){
     <Button onMouseEnter={this.changeContact} onMouseLeave={this.changeContact} onClick={ ()=> window.location.href = "/Contact"}  style={{backgroundColor: this.state.hoveringContact ? '#2b36ad' : "#242f6e", marginTop:'2%', marginRight:'4%', color: 'white', borderRadius: 5}} size="large" variant="contained">
      Contact us
     </Button>
-    <Button onMouseEnter={this.changeApply} onMouseLeave={this.changeApply} onClick={() => window.open('https://hildahensley.floify.com/apply?noheaderfooter#tab_a', '_blank')} style={{backgroundColor:  this.state.hoveringApply ? '#2b36ad' : "#242f6e", marginTop:'2%', color: 'white', borderRadius: 5}} size="large" variant="contained">
+    <Button onMouseEnter={this.changeApply} onMouseLeave={this.changeApply} onClick={() => window.open('https://hildahensley.benchmark.us/floify/', '_blank')} style={{backgroundColor:  this.state.hoveringApply ? '#2b36ad' : "#242f6e", marginTop:'2%', color: 'white', borderRadius: 5}} size="large" variant="contained">
      Apply Now
     </Button>
     </div>

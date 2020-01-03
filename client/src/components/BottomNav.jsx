@@ -37,7 +37,7 @@ class BottomNav extends Component {
       <Paper style={{height:'auto', verticalAlign:'middle', paddingBottom:'5%', backgroundColor:'#929497'}}>
       <div style={{color: 'white'}}>
       <h6 style={{margin:'0', marginBottom:'4%'}}> 
-      <img style={{height: '100px', width: '275px', marginTop:"-40px"}}src="https://i.ibb.co/689pygv/welcome.png"/>
+      <img style={{height: '100px', width: '275px', marginTop:"-40px"}}src="https://i.ibb.co/689pygv/welcome.png" alt="Welcome Home, Benchmark Mortgage Napa Valley"/>
       
       </h6>
       <div className="grid" style={{paddingBottom: isMobile ? '100px' : '0px'}}> 
@@ -92,7 +92,7 @@ class BottomNav extends Component {
           <span style={{marginBottom:'20px', fontSize:'16px'}}><a href='/Vlog'className="bottomnav-links">Vlog</a></span>
           <span style={{marginBottom:'20px', fontSize:'16px'}}><a href='/Reviews'className="bottomnav-links">Reviews</a></span>  
           <span><a href='/Contact' className="bottomnav-links">Contact</a></span>
-  <img style={{width:'100px', marginTop:'20px', height:'100px'}}src ="https://i.ibb.co/FHV0ffT/image-12.png"/>
+  <img style={{width:'100px', marginTop:'20px', height:'100px'}}src ="https://i.ibb.co/FHV0ffT/image-12.png" alt="Equal Housing Opportunity"/>
    <div style={{ display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'center'}}>
         <ul style={{listStyle:'none', marginLeft:'-30px'}}>
         <li style={{textDecoration:'underline', cursor:'pointer', marginTop:'2px'}}> <a style={{color:'white'}} href={pdf} type="application/pdf" target="_blank">State Licensing Disclosure</a></li>

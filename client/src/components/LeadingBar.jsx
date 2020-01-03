@@ -262,7 +262,7 @@ onClick={() => window.location.href = '/Blog'}
 </div>
    <a href="/Contact" className="nav-links" style={{borderBottom: `1px solid ${this.state.contactBackground}`}}>Contact</a>
     
-    <Button onClick={() => window.open('https://hildahensley.floify.com/apply?noheaderfooter#tab_a', '_blank')} style={{marginTop:'0%', color: 'white', borderRadius: 2}} size="large" variant="outlined"><a style={{color:'#242f6e'}} className="applybutton" 
+    <Button onClick={() => window.open('https://hildahensley.benchmark.us/floify/', '_blank')} style={{marginTop:'0%', color: 'white', borderRadius: 2}} size="large" variant="outlined"><a style={{color:'#242f6e'}} className="applybutton" 
     
     >Apply Now!</a></Button>
   </div>
