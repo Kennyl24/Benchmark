@@ -27,7 +27,7 @@ const team = [
  
   {
     name: 'Kelly Duke',
-    title: 'Loan Officer Assistant',
+    title: 'Production Partner',
     image: "https://i.ibb.co/DLVvDjc/IMG-1856.jpg",
     // image: 'https://i.ibb.co/py0Qv8T/IMG-1808-removebg-preview.png',
     // image: 'https://i.ibb.co/vVTS49g/IMG-1807-removebg-preview.png',
@@ -39,7 +39,7 @@ const team = [
   },
   {
     name: 'Diana Arana',
-    title: 'Administrative Assistant',
+    title: 'Loan Officer Assistant',
     image: 'https://i.ibb.co/HgxhHzH/cropped-diana.jpg', 
     color: 'blue',
     phone: '7072548891',

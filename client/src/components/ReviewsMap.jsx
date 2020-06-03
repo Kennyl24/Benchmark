@@ -4,6 +4,72 @@ import Review from './Review.jsx';
 
 const reviews = [
   {
+    name: 'Will Carlton',
+    review: 'Hilda and her team were great to work with. They know their stuff, and especially the local real estate market, and were able to get us a great rate for our first home!',
+    date: '05/26/20',
+    stars: 5
+  },
+  {
+    name: 'Beto Johnson',
+    review: 'Hilda was great! Very helpful though the entire process. She was very attentive with our requests and needs. Nearly all of our work together was done via email and phone, which made it very easy to find time to get the paper work together as both my wife and I work outside of the home.',
+    date: '05/13/20',
+    stars: 5
+  },
+  {
+    name: 'Fred Flores',
+    review: 'Working with Hilda and the team at Benchmark was a very simple process. Hilda has a great deal of experience and that made the process flow effortlessly and quickly. Everyone at Benchmark was friendly, helpful and knowledgable. They made me feel right at home and I had complete confidence that they were working hard to help me in every way possible. Hilda and the Team at Benchmark helped me get the home I wanted with as little stress as possible. What more could you ask for?',
+    date: '02/04/20',
+    stars: 5
+  },
+  {
+    name: 'Macaraig Alex',
+    review: 'Competent and friendly! I had a great experience working with the Benchmark team. All of my questions were answered right away and they always took the time to make sure it was an easy and comfortable process.',
+    date: '02/01/20',
+    stars: 5
+  },
+  {
+    name: 'Jeremy',
+    review: 'My wife and I just purchased our 1st home together with the outstanding help of Benchmark Mortgage. This being our 1st home I thought it was going to be overwhelming, but everyone at Hilda’s office made it so much better than I thought it would be. The entire team at Benchmark was EXTREMELY helpful and professional but at the same time made it feel more personal and caring , answering any questions I had , they kept me up to date on everything, they checked in with me frequently via telephone call and email , they put a rush on things even though it was during the holiday season ..I could not be more happy with them and I HIGHLY recommend them to anyone! Thank you so much Team Hensley',
+    date: '01/02/20',
+    stars: 5
+  },
+  {
+    name: 'CBrewer',
+    review: 'Hilda and team was super helpful and made the process very easy in purchasing our forever home. They are knowledgeable, always available and worked with us through the whole process.',
+    date: '12/20/19',
+    stars: 5
+  },
+  {
+    name: 'Connie R.',
+    review: 'Hilda and her team never disappoint us. Every transaction we have had with them has run smoothly and timely. In regards to communication, they outdo themselves every time and we give them a 10 out of 10.',
+    date: '12/19/19',
+    stars: 5
+  },
+  {
+    name: 'Tiffanie S.',
+    review: 'I would without a doubt recommend Hilda and her team for a home loan. They were extremely friendly, very responsive and available for any questions we had. Since we were selling a house and buying a new one at the same time, it could have been a stressful process but not once did we doubt or question the process. Hilda and her team made it very easy for us to understand what to expect and it all went very smoothly.',
+    date: '08/13/19',
+    stars: 5
+  },
+  {
+    name: 'Jasmine',
+    review: 'It’s was great working with Hilda. Good communication and available to answer questions. Working with her and her team was great. Would definitely recommend benchmark to friends and family.',
+    date: '07/09/19',
+    stars: 5
+  },
+  {
+    name: 'Rebecca M.',
+    review: 'We recently refinanced our home through Benchmark and could not be more pleased with the customer service we received.  Hilda and her team are efficient and professional.   They made the process easy and most of the transactions were done electronically which saved us time.  Thank you Hilda and entire Benchmark team!',
+    date: '12/20/19',
+    stars: 5
+  },
+  {
+    name: 'Jerry P.',
+    review: 'I have been referring this team to my clients for many years. However, recently they did a loan for our family vacation home. This re-affirmed why we trust them with all of our clients. The transaction was smooth, clear and timely. Not to mention the amazing interest rate they were able to lock for us. Five stars are not enough to describe Hilda Hensley and the Benchmark team.',
+    date: '09/11/19',
+    stars: 5
+  },
+  {
     name: 'Nancy Silva',
     review: 'Great speedy service on my refi by John Weber! and super support every step of the way!',
     date: '11/26/18',
