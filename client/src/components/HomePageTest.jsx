@@ -134,7 +134,7 @@ function ButtonBases(props) {
     onClick={()=> window.location.href = "/about"}
     >WHY THE HILDA HENSLEY TEAM?</h3>
       <p style={{fontFamily: 'plexeina-regular,Helvetica,sans-serif', marginLeft: isMobile ? '5%' :'20%', marginRight: isMobile ? '5%': '20%',color: 'black', fontSize: '18px', lineHeight:'1.6', textAlign:'center'}}>
-      We are a team of home financial experts that are all ready to provide clear options and advice to help you with any of your home purchase needs. 
+      We are a team of mortgage financial experts here in the Napa Valley. We have provided a variety of home loans to many customers in Napa, Sonoma, and Solano counties. We are all ready to provide clear options and advice to help you with any of your home purchase needs. 
       Below are some of the mortgages we deal with on a daily basis. 
         </p>
     <div className={classes.root}>

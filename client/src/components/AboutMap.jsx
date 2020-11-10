@@ -24,19 +24,6 @@ const team = [
     about: 'I have been a Loan Processor since 2003, and I have been with Hilda for 10 years now.'
   },
   
- 
-  {
-    name: 'Kelly Duke',
-    title: 'Production Partner',
-    image: "https://i.ibb.co/DLVvDjc/IMG-1856.jpg",
-    // image: 'https://i.ibb.co/py0Qv8T/IMG-1808-removebg-preview.png',
-    // image: 'https://i.ibb.co/vVTS49g/IMG-1807-removebg-preview.png',
-    // image: 'https://i.ibb.co/qkx4RZP/IMG-1807-removebg-preview.png', 
-    color: 'blue',
-    phone: '7072548891',
-    email: 'kelly.duke@benchmark.us',
-    about: 'I started in the mortgage business in 2002. I have worked as a Loan Originator, Processor and now currently work as an Operations Manager for the Bencmark community.'
-  },
   {
     name: 'Diana Arana',
     title: 'Loan Officer Assistant',
@@ -46,6 +33,30 @@ const team = [
     email: 'diana.arana@benchmark.us',
     about: 'I came to Benchmark after two years at a Credit Union. I have been fortunate to work with Hilda and her team for 4 years now.'
   },
+   /* {
+    name: 'Perla',
+    title: 'Production Partner',
+    image: "",
+    // image: 'https://i.ibb.co/py0Qv8T/IMG-1808-removebg-preview.png',
+    // image: 'https://i.ibb.co/vVTS49g/IMG-1807-removebg-preview.png',
+    // image: 'https://i.ibb.co/qkx4RZP/IMG-1807-removebg-preview.png', 
+    color: 'blue',
+    phone: '7072548891',
+    email: 'perla.duke@benchmark.us',
+    about: ''
+  }, */
+ /*   {
+    name: 'Angela Hensley',
+    title: 'Production Partner',
+    image: "",
+    // image: 'https://i.ibb.co/py0Qv8T/IMG-1808-removebg-preview.png',
+    // image: 'https://i.ibb.co/vVTS49g/IMG-1807-removebg-preview.png',
+    // image: 'https://i.ibb.co/qkx4RZP/IMG-1807-removebg-preview.png', 
+    color: 'blue',
+    phone: '7072548891',
+    email: 'angela.hensley@benchmark.us',
+    about: ''
+  }, */
   // {
   //   name: 'Jeff Pinto',
   //   title: 'Regional Operations Manager',

@@ -3,6 +3,37 @@ import { Link } from 'react-router-dom';
 import Review from './Review.jsx';
 
 const reviews = [
+{
+    name: 'Maribel C.',
+    review: 'I had a great experience from the beginning until the end. Hilda and her team are extremely professional. They are always there to help when needed and explain everything in detail. I would absolutely recommend them to anyone looking to buy a home or refinance their home.',
+    date: '10/08/20',
+    stars: 5
+  },
+  {
+    name: 'Megan B.',
+    review: 'We have worked many of times with Hilda and her team. They are always such a pleasure to work with and always make the mortgage processes easy and enjoyable. The team is extremely organized and friendly. We highly recommend Benchmark for any of your mortgage needs, including a new purchase or refinance.',
+    date: '10/08/20',
+    stars: 5
+  },
+  {
+    name: 'Steven Smyth',
+    review: 'Hilda was great to work with. Over the years I have had many mortgages and sometimes the process can be quite long and tedious. I felt Hilda was more like a partner thought out the entire process. She took the time to provide to provide guidance and support. I will definitely reach out to her for my next mortgage or refinance.',
+    date: '10/08/20',
+    stars: 5
+  },
+   {
+    name: 'Katie Simas',
+    review: 'Hilda and her team were very professional, friendly and helpful through the process of becoming pre-approved for a home loan to closing. The programs they use are user friendly and easy to submit paperwork. We started the process of purchasing a home with Benchmark being our Lender in February, and we became home owners with an amazing interest rate at the beginning of April. We were first time home buyers and we couldn’t have asked for a more smooth process for buying a home. Thank you so much Hilda and the Benchmark team for everything!!',
+    date: '06/03/20',
+    stars: 5
+  },
+{
+    name: 'AJ Gracy',
+    review: 'Hilda and her whole team are absolutely amazing at what they do!! I would never recommend anyone one else. They are prompt, professional and just down right wonderful people. They were ready every step of the way and always made sure I felt as if I was the only one they were helping. I could not have asked for a better experience. Getting a home loan is not the funnest thing to do but they made it effortless and I can not thank them enough for their hard work.',
+    date: '08/26/20',
+    stars: 5
+  },
+
   {
     name: 'Will Carlton',
     review: 'Hilda and her team were great to work with. They know their stuff, and especially the local real estate market, and were able to get us a great rate for our first home!',
